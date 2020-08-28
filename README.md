@@ -36,7 +36,7 @@ Annotation infrastructure problems that we try to tackle are:
 
 - storage and distribution
 - querying
-- interoperability 
+- interoperability
 - provenance and context of creation
 - shared libraries of basic annotation components
 - choosing standards
@@ -47,6 +47,7 @@ Annotation infrastructure problems that we try to tackle are:
 - Jaap Blom (Netherlands Institute for Sound and Vision)
 - Maarten van Gompel (KNAW Humanities Cluster)
 - Roeland Ordelman (Netherlands Institute for Sound and Vision)
+- Hennie Brugman (KNAW Humanities Cluster)
 
 The group is open to new members. Contact Marijn Koolen.
 

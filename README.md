@@ -6,7 +6,7 @@ Processing.
 ## Introduction
 
 There is a CLARIAH-wide need for robust text processing technologies that can handle historical as well as contemporary
-Dutch texts. Partners like VU, INT and RU have contributeddifferent components in WP3 and WP6.
+Dutch texts. Partners like VU, INT and RU have contributed different components in WP3 and WP6.
 
 ## Aims of the Interest Group
 
@@ -37,9 +37,15 @@ We use the following communication channel:
 Text processing problems that we try to tackle are:
 
 - automatic linguistic enrichment for multiple languages and multiple time periods
+    - named entity extraction
+    - dependency relations
+    - part-of-speech tagging
+    - lemmatisation
+    - sentiment analysis
+- text normalisation (including post-OCR/HTR correction)
 - interoperability
 - choosing standards
-- TODO
+- ... (todo)
 
 ## Group Members
 

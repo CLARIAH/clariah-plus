@@ -55,5 +55,6 @@ Text processing problems that we try to tackle are:
 - Maarten van Gompel (KNAW Humanities Cluster)
 - Jesse de Does (INT)
 - Roeland Ordelman (Netherlands Institute for Sound and Vision)
+- Martin Reynaert (DCA - Tilburg University / ILLC - Universiteit van Amsterdam)
 
 The group is open to new members.

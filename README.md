@@ -23,7 +23,7 @@ The aims of the IG on Annotation Infrastructure are:
 - support of the creation and use of annotations on any media type
 - support of manual annotation processes
 - support of manual correction of automatic annotation
-- ...
+- [inventory of and recommendations for annotation models, formats and converters](./inventory.md)
 
 Annotation aspects that are outside the scope of this Interest Group (because they are covered by other IGs):
 
@@ -32,7 +32,11 @@ Annotation aspects that are outside the scope of this Interest Group (because th
 - ...
 
 
-## Communication
+## Contributing and Communication
+
+This group is open to anyone interested in annotation in the context of CLARIAH.
+
+If you want to contribute, please the [Contributing guidelines](./CONTRIBUTING.md)
 
 We use the following communication channel:
 

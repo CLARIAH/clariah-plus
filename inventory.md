@@ -27,8 +27,10 @@ This document provides an inventory of the annotation models, paradigms, formats
 - [LAF](https://www.cs.vassar.edu/~ide/papers/ide-romary-clergerie.pdf) (**Linguistic Annotation Framework**) -  A abstract meta-model for annotation interchange and merging developed in ISO TC37
     SC4, and its GraF (Graph Annotation Format) serialisation. Usage within CLARIAH unclear (less immediate practical
     implications), may possibly influence some theoretical foundations?
-- [TigerXML](https://www.ims.uni-stuttgart.de/documents/ressourcen/werkzeuge/tigersearch/doc/html/TigerXML.html) - (Treebank encoding format). Probably not used in CLARIAH?
-- [PaulaXML](https://github.com/korpling/paula-xml) - (Potsdamer AUstauschformat Linguistischer Annotationen). Probably not used in CLARIAH?
+- [TigerXML](https://www.ims.uni-stuttgart.de/documents/ressourcen/werkzeuge/tigersearch/doc/html/TigerXML.html) (Treebank encoding format). Probably not used in CLARIAH?
+- [PaulaXML](https://github.com/korpling/paula-xml) (Potsdamer AUstauschformat Linguistischer Annotationen). Probably not used in CLARIAH?
+- [ALTO](https://www.loc.gov/standards/alto/) (Analyzed Layout and Text Object) - An XML-based format developed for the description of text OCR and layout information of pages for digitized material. Used in CLARIAH WP3.
+- [hOCR](http://kba.cloud/hocr-spec/1.2/) (Analyzed Layout and Text Object) - XHTML-based data representation for formatted text obtained from optical character recognition. Used by software such as Tesseract and used in CLARIAH WP3.
 
 ### Audiovisual Annotation Models
 
@@ -36,7 +38,40 @@ This document provides an inventory of the annotation models, paradigms, formats
 
 ## Converters
 
+### Text Annotation Conversion
 
+- alpino→folia: [alpino2folia (foliatools)](https://github.com/proycon/foliatools), integrated into [piereling](https://github.com/proycon/piereling) webservice. Information loss: Minimal to None
+- alto→folia: [FoLiA-alto (foliautils)](https://github.com/LanguageMachines/foliautils), integrated into [piereling](https://github.com/proycon/piereling) webservice. Information loss: unknown.
+- alto→tei: [OpenConvert](https://github.com/INL/OpenConvert). Information loss: unknown
+- conll→folia: [conllu2folia (foliatools)](https://github.com/proycon/foliatools), integrated into [piereling](https://github.com/proycon/piereling) webservice. Information loss: None
+- conll→salt: [Pepper](https://corpus-tools.org/pepper/).
+- hocr→folia: [FoLiA-hocr (foliautils)](https://github.com/LanguageMachines/foliautils), integrated into [piereling](https://github.com/proycon/piereling) webservice.
+- folia→naf: [folia2naf (NAFFoLiAPy)](https://github.com/cltl/NaFFoLiAPy)). Information loss: considerable, converter is
+- folia→salt: [folia2salt (foliatools)](https://github.com/proycon/foliatools)
+- folia→tei: [OpenConvert](https://github.com/INL/OpenConvert). Information loss: considerable
+- graf→salt: [Pepper](https://corpus-tools.org/pepper/).
+- naf→folia [naf2folia (NAFFoLiAPy)](https://github.com/cltl/NaFFoLiAPy)). Information loss: not all layers are
+    implemented yet, but converter is usable to for the various layers that are. Converter is currently not actively
+    maintained.
+- paula→salt: [Pepper](https://corpus-tools.org/pepper/).
+- salt→graf: [Pepper](https://corpus-tools.org/pepper/).
+- salt→tcf: [Pepper](https://corpus-tools.org/pepper/).
+- salt→tei: [Pepper](https://corpus-tools.org/pepper/).
+- salt→paula: [Pepper](https://corpus-tools.org/pepper/).
+- tei→folia:
+    * [tei2folia (foliatools)](https://github.com/proycon/foliatools), integrated into [piereling](https://github.com/proycon/piereling) webservice. Supports a notable subset of TEI P5.
+        * *Information loss*: The converter will only work for a certain subset of TEI, mostly equivalent to TEI Lite, and may fail on others. Though a lot of TEI elements are supported there is also still a lot that is not covered by the converter due to the vastness of TEI. There will be comments in the output for anything that could not be converted properly.
+    * [OpenConvert](https://github.com/INL/OpenConvert) (the above tei2folia implemention is derived from initial work on this and supersedes it)
+- tcf→salt: [Pepper](https://corpus-tools.org/pepper/).
+- tiger→salt: [Pepper](https://corpus-tools.org/pepper/).
+- tei→salt: [Pepper](https://corpus-tools.org/pepper/). Information loss: supports only a subset of TEI.
+
+### Text Conversion
+
+The conversion of text mark-up and structure from and to presentional formats that do not have a deeper annotation
+dimension are considered out of scope for this interest group. This includes formats such as plain text, reStructuredText,
+Markdown, Word, OpenOffice, PDF, LaTeX, docbook, HTML, EPUB. There is, however, work in this area in WP3 in tools/services
+such as [piereling](https://github.com/proycon/piereling) (FoLiA-centric) and [OpenConvert](https://github.com/INL/OpenConvert) (TEI-centric).
 
 ## Annotation Storage
 

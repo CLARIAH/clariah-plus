@@ -8,22 +8,16 @@ This document provides an inventory of the annotation models, paradigms, formats
 
 ### Generic Annotation Models:
 
-- [W3C Web Annotation Data Model](https://www.w3.org/TR/annotation-model/): this model connects the Interest Group on Annotation with the Interest Group on Linked Open Data. 
+- [W3C Web Annotation Data Model](https://www.w3.org/TR/annotation-model/): this model connects the Interest Group on Annotation with the Interest Group on Linked Open Data.
 
-### Linguistic Annotation Models
+### Text Annotation Models
 
 - [TEI](https://tei-c.org)
+- [FoLiA](https://proycon.github.io/folia/)
 
 ### Audiovisual Annotation Models
 
 - [ELAN](https://archive.mpi.nl/tla/elan)
-
-
-## Annotation Formats
-
-
-- [FoLiA](https://proycon.github.io/folia/)
-
 
 ## Converters
 

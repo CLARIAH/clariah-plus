@@ -32,10 +32,11 @@ AV processing infrastructure problems that we try to tackle are:
 
 ## Group Members
 - Richard Zijdeman (International Institute of Social History, group coordinator)
-- Jauco Noordzij (KNAW Humanties Cluster)
-- Menzo Windhouwer (KNAW Humanities Cluster)
-- Joe Raad (VU University)
+- Wouter Beek (VU University, Triply) (tbc)
+- Enno Meijers (National Library of the Netherlands, Dutch Digital Heritage Network (tbc)
 - Willem Melder (Sound & Vision)
-
+- Jauco Noordzij (KNAW Humanties Cluster)
+- Joe Raad (VU University)
+- Menzo Windhouwer (KNAW Humanities Cluster)
 
 The group is open to new members. Contact [Richard Zijdeman](https://github.com/rlzijdeman)

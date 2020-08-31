@@ -35,6 +35,7 @@ This document provides an inventory of the annotation models, paradigms, formats
 ### Audiovisual Annotation Models
 
 - [ELAN](https://archive.mpi.nl/tla/elan)
+- [Praat TextGrids](https://www.fon.hum.uva.nl/praat/)
 
 ## Converters
 
@@ -79,4 +80,9 @@ such as [piereling](https://github.com/proycon/piereling) (FoLiA-centric) and [O
 
 - [Elucidate](https://github.com/dlcs/elucidate-server)
 - [Scholarly Web Annotation Server](https://github.com/CLARIAH/scholarly-web-annotation-server)
+
+### Format-specific servers
+
+- [FoLiA Document Server](https://github.com/proycon/foliadocserve) - Back-end for
+    [FLAT](https://github.com/proycon/flat). Actively developed/maintained in WP3.
 

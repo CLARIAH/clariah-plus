@@ -28,7 +28,7 @@ Annotation aspects that are outside the scope of this Interest Group (because th
 
 We use the following communication channel:
 
-- gitter?
+- [gitter](https://gitter.im/CLARIAH/chat)
 
 ## Tasks
 

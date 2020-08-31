@@ -84,5 +84,26 @@ such as [piereling](https://github.com/proycon/piereling) (FoLiA-centric) and [O
 ### Format-specific servers
 
 - [FoLiA Document Server](https://github.com/proycon/foliadocserve) - Back-end for
-    [FLAT](https://github.com/proycon/flat). Actively developed/maintained in WP3.
+    [FLAT](https://github.com/proycon/flat), operates directly on FoLiA XML files through an in-memory representation. Actively developed/maintained in WP3.
+
+## Annotation Tools
+
+All tools in this section focus on human-mediated annotation, not automatic annotation:
+
+### Text Annotation Tools
+
+- [FLAT](https://github.com/proycon/FLAT) (FoLiA Linguistic Annotation Tool) - Web-based annotation environment for
+    linguistic annotation. Document-centric, builds on the FoLiA format and aims to support manual annotation for all annotation
+    types supported by FoLiA. Actively developed/maintained in WP3 and used in various projects.
+- [CoBaLT](https://github.com/INL/COBALT/) (IMPACT Corpus Based Lexicon Tool) - Keyword-in-Context style annotation of tokens (e.g. lemmatisation and pos-tagging). Web-based and with TEI import/export.
+- [WebAnno](https://webanno.github.io/webanno/) - a general purpose web-based annotation tool for a wide range of linguistic annotations.  Usage in CLARIAH unknown, but offered as a service by other national CLARIN projects (CLARIN-D, FIN-CLARIN, CLARIN:el).
+- [BRAT](http://http://brat.nlplab.org/) (Brat rapid annotation tool) - A web-based tool for text annotation. Use in CLARIAH unknown, but this tool
+    is very popular in the field.
+
+### Audiovisual Annotation Tools
+
+- [ELAN](https://archive.mpi.nl/tla/elan)
+- [Praat](https://www.fon.hum.uva.nl/praat/)
+- [EXMARaLDA](https://exmaralda.org)
+
 

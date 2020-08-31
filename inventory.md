@@ -12,8 +12,10 @@ This document provides an inventory of the annotation models, paradigms, formats
 
 ### Text Annotation Models
 
-- [TEI](https://tei-c.org)
-- [FoLiA](https://proycon.github.io/folia/)
+- [TEI](https://tei-c.org) (Text Encoding Initiative) -  An international and widely used encoding method for
+    machine-readable text, chiefly in the humanities, social sciences and linguistics. Used by various CLARIAH partners.
+- [FoLiA](https://proycon.github.io/folia/) (Format for Linguistic Annotation) - A generic paradigm and XML-based format for encoding linguistic annotation on text, aimed at the storage and exchange of linguistically annotated documents. The goal is to deliver a practical format with rich tooling infrastructure. Used by various CLARIAH partners, various dutch corpora, and developed/maintained in WP3.
+
 
 ### Audiovisual Annotation Models
 

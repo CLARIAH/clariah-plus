@@ -2,11 +2,9 @@
 
 [Back to main page](../README.md)
 
-[TOC]
+## Annotation Needs
 
-## Annotation Needs {#annotation-needs}
-
-### Scholarly Needs {#scholarly-needs}
+### Scholarly Needs
 
 CLARIAH research on need for scholarly annotation support:
 
@@ -15,7 +13,7 @@ CLARIAH research on need for scholarly annotation support:
 * **Need for sharing and permissions**: scholars want to be able to have private annotations, but also to share them in a project group or make public so they can be cited (Koolen & Boot in press).
 * **Need for searching and querying**: scholars want to bring together annotations related to a single research project, regardless of whether they were made on different (types of) resources. Querying for annotations that belong to the same project, or have specific annotation types of bodies (e.g. comments, transcriptions, codes, links), types of motivations (corrections, tags, comments) or different types of targets (newspaper articles, TV programs, correspondences, government resolutions, …). See Melgar-Estrada et al. (2017), Koolen et al. (2020).
 
-### Use cases {#use-cases}
+### Use cases
 
 CLARIAH research on use cases:
 
@@ -33,18 +31,20 @@ Specific use cases:
 * REPUBLIC end-user annotations (using Docere?)
 * WP6 text annotations (using Inception)
 
-## Annotation Support {#annotation-support}
+## Annotation Support
 
 See the [inventory in this GitHub repository](https://github.com/CLARIAH/IG-Annotation/blob/master/inventory.md).
 
-## Manual vs. Automatic Annotations {#manual-vs-automatic-annotations}
+## Manual vs. Automatic Annotations
 
 Considerations:
 
 * WA format has huge overhead, fine for manual annotations, which won’t scale to the same extent as automatic annotations.
 * Automatic annotations can be generated in vast quantities. Given the huge overhead in WA format, storing automatic annotations should preferably be in proprietary formats. Only for exchange of subsets of automatic annotations to viewing applications should WA be considered.
 
-## Presentations {#presentations}
+## Presentations
+
+A list of presentations on CLARIAH research related to manual annotation and user needs.
 
 Marijn Koolen. [Facilitating third party reusable annotations in online resources](https://docs.google.com/presentation/d/1sfM66pQTQCmriv6wAxN8Wqu_omsdh8jsgtyUP3Y9z_M/edit#slide=id.p). Koninklijke Bibliotheek 2019-07-05
 
@@ -56,7 +56,7 @@ Marijn Koolen. [CLARIAH Scholarly Web Annotation](https://docs.google.com/presen
 
 Marijn Koolen. [Facilitating Fine-grained Open Annotations of Scholarly Sources](https://docs.google.com/presentation/d/1Xlo75WSbo_Uwr8-ikd1bl_NV_HsRG_VfoJeLz9vHS4I/edit#slide=id.p). Digital Humanities 2017 Conference - 2017-08-11
 
-## References {#references}
+## References
 
 Peter Boot and Ronald Haentjes Dekker and Marijn Koolen and Liliana Melgar. Facilitating Fine-grained Open Annotations of Scholarly Sources. In Digital Humanities 2017, Montreal, Canada, 2017.
 

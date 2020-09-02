@@ -1,8 +1,8 @@
 # Tooling for Manual Annotation
 
-[TOC]
+[Back to main page](../README.md)
 
-## Clients {#clients}
+## Clients
 
 Below is a list of client-side annotation tools that are relevant to the users of the CLARIAH infrastructure. For a longer list of annotation tools, see Melgar-Estrada & Koolen (2017).
 
@@ -22,7 +22,7 @@ Below is a list of client-side annotation tools that are relevant to the users o
 |                     |                                                            |                           |                 |                                                                         |                                                                                        |                                                                                                  |
 |                     |                                                            |                           |                 |                                                                         |                                                                                        |                                                                                                  |
 
-## Servers {#servers}
+## Servers
 
 Below is a list of annotation servers that are relevant for storing and retrieving annotations for the users of the CLARIAH infrastructure.
 
@@ -42,6 +42,5 @@ Below is a list of annotation servers that are relevant for storing and retrievi
 Considerations:
 
 * **Elucidate**: Although the CLARIAH SWA server is intended to capture all needs, the Elucidate server seems to have developed more to a stable and advanced implementation ([https://github.com/dlcs/elucidate-server/blob/master/USAGE.md](https://github.com/dlcs/elucidate-server/blob/master/USAGE.md)). One issue with Elucidate is that its maintenance seems to have stopped (the latest commit to the master branch is from October 2018, for the develop branch it is April 2019). Currently we’re conducting a test to set up the server and submit and retrieve annotations, but there are several code updates required and the API seems to not work as documented. TO DO: check if extensions on WA format can be stored and retrieved. Particularly NestedPIDSelector.
-* **Hypothes.is**: Hypothes.is could be used but has its own database. For CLARIAH we could run our own instance, but the Hypothes.is API ([https://h.readthedocs.io/en/latest/api/](https://h.readthedocs.io/en/latest/api/)) seems less advanced than the Elucidate API ([https://github.com/dlcs/elucidate-server/blob/master/USAGE.md](https://github.com/dlcs/elucidate-server/blob/master/USAGE.md)). 
-*   For many use cases ([see above](#use-cases)), the Elucidate server seems to offer the required support. 
-
+* **Hypothes.is**: Hypothes.is could be used but has its own database. For CLARIAH we could run our own instance, but the Hypothes.is API ([https://h.readthedocs.io/en/latest/api/](https://h.readthedocs.io/en/latest/api/)) seems less advanced than the Elucidate API ([https://github.com/dlcs/elucidate-server/blob/master/USAGE.md](https://github.com/dlcs/elucidate-server/blob/master/USAGE.md)).
+* For many use cases (see [annotation needs documents](./annotation-needs.md)), the Elucidate server seems to offer the required support.

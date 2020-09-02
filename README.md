@@ -20,10 +20,11 @@ The aims of the IG on Annotation Infrastructure are:
 
 ## Scope of the Interest Group
 
+- [inventory of need for manual annotation support in CLARIAH](./docs/annotation-needs.md)
 - support of the creation and use of annotations on any media type
 - support of manual annotation processes
 - support of manual correction of automatic annotation
-- [inventory of and recommendations for annotation models, formats and converters](./inventory.md)
+- [inventory of and recommendations for annotation models, formats and converters](./docs/inventory.md)
 
 Annotation aspects that are outside the scope of this Interest Group (because they are covered by other IGs):
 

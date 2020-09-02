@@ -1,5 +1,7 @@
 # Annotation Needs and Support
 
+[Back to main page](../README.md)
+
 [TOC]
 
 ## Annotation Needs {#annotation-needs}

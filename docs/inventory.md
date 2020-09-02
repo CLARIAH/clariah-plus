@@ -1,6 +1,6 @@
 # Inventory of Annotation Models, Formats, Converters used in CLARIAH
 
-[Back to main page](./README.md)
+[Back to main page](../README.md)
 
 This document provides an inventory of the annotation models, paradigms, formats and converters used in CLARIAH. Eventually, we aim to create recommendations based on this inventory.
 
@@ -74,12 +74,20 @@ dimension are considered out of scope for this interest group. This includes for
 Markdown, Word, OpenOffice, PDF, LaTeX, docbook, HTML, EPUB. There is, however, work in this area in WP3 in tools/services
 such as [piereling](https://github.com/proycon/piereling) (FoLiA-centric) and [OpenConvert](https://github.com/INL/OpenConvert) (TEI-centric).
 
+### Protocols
+
+There are various protocols for storing, retrieving and querying annotation services:
+
+- [Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol/) - a minimal standard for storing and retrieving Web Annotations.
+- [Distributed Text Services](https://distributed-text-services.github.io/specifications/) - a specification that defines an API for working with collections of text as machine-actionable data. This specification is under active development and is mainly relevant for CLARIAH Work Package 6 when used in combination with Web Annotation, as it addresses the need for semantic targeting (see [Annotation needs](./annotation-needs.md)) and using the [Scholarly Web Annotation Client](https://github.com/CLARIAH/scholarly-web-annotation-client).
+- [International Image Interoperability Framework](https://iiif.io) - a set of API specifications for [delivering](https://iiif.io/api/search/1.0/), [presenting](https://iiif.io/api/presentation/3.0/) and [searching](https://iiif.io/api/search/1.0/) images.
+
 ## Annotation Storage
 
 ### Web Annotation Servers
 
-- [Elucidate](https://github.com/dlcs/elucidate-server)
-- [Scholarly Web Annotation Server](https://github.com/CLARIAH/scholarly-web-annotation-server)
+- [Elucidate](https://github.com/dlcs/elucidate-server) - this server extends the Web Annotation Protocol mentioned above, to support authenticion, user management and querying of Web Annotations.
+- [Scholarly Web Annotation Server](https://github.com/CLARIAH/scholarly-web-annotation-server) - similar to Elucidate, it extends the WA Protocol.
 
 ### Format-specific servers
 
@@ -97,11 +105,12 @@ All tools in this section focus on human-mediated annotation, not automatic anno
     types supported by FoLiA. Actively developed/maintained in WP3 and used in various projects.
 - [CoBaLT](https://github.com/INL/COBALT/) (IMPACT Corpus Based Lexicon Tool) - Keyword-in-Context style annotation of tokens (e.g. lemmatisation and pos-tagging). Web-based and with TEI import/export.
 - [WebAnno](https://webanno.github.io/webanno/) - a general purpose web-based annotation tool for a wide range of linguistic annotations.  Usage in CLARIAH unknown, but offered as a service by other national CLARIN projects (CLARIN-D, FIN-CLARIN, CLARIN:el).
-- [BRAT](http://http://brat.nlplab.org/) (Brat rapid annotation tool) - A web-based tool for text annotation. Use in CLARIAH unknown, but this tool
-    is very popular in the field.
+- [INCEpTION](https://inception-project.github.io) - similar to WebAnno, it is used at least in CLARIAH WP6
+- [BRAT](http://http://brat.nlplab.org/) (Brat rapid annotation tool) - A web-based tool for text annotation. Use in CLARIAH unknown, but this tool is very popular in the field.
 
 ### Audiovisual Annotation Tools
 
+- [CLARIAH MediaSuite](https://mediasuite.clariah.nl) - a platform for searching, viewing and annotating audiovisual materials from a range of collections, including the Radio and Television broadcast collections at the Netherlands Institute for Sound and Vision.
 - [ELAN](https://archive.mpi.nl/tla/elan)
 - [Praat](https://www.fon.hum.uva.nl/praat/)
 - [EXMARaLDA](https://exmaralda.org)

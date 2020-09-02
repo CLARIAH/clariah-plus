@@ -27,29 +27,28 @@ We use the following communication channel:
 ## Products
 
 ### LOD Browsers
-Anansi
-Brwsr
-Druid
+- Anansi
+- Brwsr
+- Druid
 
 ### LOD Storage
-Anansi
-Druid
-DIVE (deprecated). Media Suite aims for a hybrid approach where LOD can
-provide an auxiliary mechanism for connecting information sources. 
+- Anansi
+- Druid
+- DIVE (deprecated). Media Suite aims for a hybrid approach where LOD can provide an auxiliary mechanism for connecting information sources. 
 
 ### Linked Data Converters
-CoW (csv to RDF)
-CMDI2RDF (CMDI to RDF)
+- CoW (csv to RDF)
+- CMDI2RDF (CMDI to RDF)
 
 ### Miscellaneous
-FoLiA Set Definitions (...)
-Codemeta in LaMachine (...)
+- FoLiA Set Definitions (...)
+- Codemeta in LaMachine (...)
 
 ### Outreach
-datastories (tool for creating webpages based on sparql queries)
+- datastories (tool for creating webpages based on sparql queries)
 
 ### SPARQL API Generators
-[grlc](grlc.io)
+- [grlc](grlc.io)
 
 ### Vocabularies
 See specifically IG-Curation and the [awesome humanities ontologies](https://github.com/CLARIAH/awesome-humanities-ontologies) list. 

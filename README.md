@@ -65,6 +65,7 @@ See specifically IG-Curation and the [awesome humanities ontologies](https://git
 - Jauco Noordzij (KNAW Humanties Cluster)
 - Herbert van de Sompel (DANS) (invited, tbc)
 - Joe Raad (VU University)
+- Mari Wigham (Sound & Vision)
 - Menzo Windhouwer (KNAW Humanities Cluster)
 
 

@@ -114,5 +114,14 @@ All tools in this section focus on human-mediated annotation, not automatic anno
 - [ELAN](https://archive.mpi.nl/tla/elan)
 - [Praat](https://www.fon.hum.uva.nl/praat/)
 - [EXMARaLDA](https://exmaralda.org)
+- [Advene](https://www.advene.org)
+- [VIAN](https://blog.filmcolors.org/2018/03/08/vian/)
+- [FrameTrail](https://frametrail.org)
+- [Semantic Annotation Tool](http://www.johnpbell.com/the-semantic-annotation-tool/)
+
+### Vocabulary Services for Manual Annotation
+
+- [GTAA](https://labs.beeldengeluid.nl/dataset/5520ccca-2c8e-11e6-a743-005056a71e3a)
+- [Onomy](https://onomy.org)
 
 

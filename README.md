@@ -64,3 +64,10 @@ Annotation infrastructure problems that we try to tackle are:
 
 The group is open to new members. Contact Marijn Koolen.
 
+
+## Other Interest Groups
+
+- [Text Processing](https://github.com/CLARIAH/IG-Text)
+- [Audiovisuaal Processing](https://github.com/CLARIAH/IG-AVProcessing)
+- [Reseaarch Workflows](https://github.com/CLARIAH/IG-Workflows) (pipelines and toolchains)
+- [Linked Open Data](https://github.com/CLARIAH/IG-LOD)

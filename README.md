@@ -1,6 +1,6 @@
 # CLARIAH Interest Group on Annotation Infrastructure
 
-This repository is intended to organize the work, output and documentation of the CLARIAH Interest Group (IG) on Annotation Infrastructure. Other [CLARIAH Interest Groups](#-other-interets-groups) are listed below. 
+This repository is intended to organize the work, output and documentation of the CLARIAH Interest Group (IG) on Annotation Infrastructure. Other [CLARIAH Interest Groups](#other-interets-groups) are listed below. 
 
 ## Introduction
 
@@ -47,12 +47,13 @@ We use the following communication channel:
 
 Annotation infrastructure problems that we try to tackle are:
 
-- storage and distribution
-- querying
-- interoperability
-- provenance and context of creation
-- shared libraries of basic annotation components
-- choosing standards
+- Storage and distribution
+- Querying
+- Interoperability
+    - Video Annotation Interoperability ([VAINT](https://github.com/CLARIAH/video-annotation-interoperability)) initiative
+- Provenance and context of creation
+- Shared libraries of basic annotation components
+- Choosing standards
 
 ## Group Members
 
@@ -70,5 +71,5 @@ The group is open to new members. Contact Marijn Koolen.
 
 - [Text Processing](https://github.com/CLARIAH/IG-Text)
 - [Audiovisuaal Processing](https://github.com/CLARIAH/IG-AVProcessing)
-- [Reseaarch Workflows](https://github.com/CLARIAH/IG-Workflows) (pipelines and toolchains)
+- [Research Workflows](https://github.com/CLARIAH/IG-Workflows) (pipelines and toolchains)
 - [Linked Open Data](https://github.com/CLARIAH/IG-LOD)

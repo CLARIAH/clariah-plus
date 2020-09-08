@@ -61,6 +61,7 @@ Annotation infrastructure problems that we try to tackle are:
 - Maarten van Gompel (KNAW Humanities Cluster)
 - Roeland Ordelman (Netherlands Institute for Sound and Vision)
 - Hennie Brugman (KNAW Humanities Cluster)
+- Dirk Roorda (DANS)
 
 The group is open to new members. Contact Marijn Koolen.
 

@@ -1,6 +1,6 @@
 # CLARIAH Interest Group on Annotation Infrastructure
 
-This repository is intended to organize the work, output and documentation of the CLARIAH Interest Group (IG) on Annotation Infrastructure
+This repository is intended to organize the work, output and documentation of the CLARIAH Interest Group (IG) on Annotation Infrastructure. Other [CLARIAH Interest Groups](#-other-interets-groups) are listed below. 
 
 ## Introduction
 

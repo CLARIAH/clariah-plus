@@ -58,7 +58,7 @@ See specifically IG-Curation and the [awesome humanities ontologies](https://git
 - Richard Zijdeman (International Institute of Social History, group coordinator)
 - Wouter Beek (VU University, Triply) (invited, tbc)
 - Jaap Blom (Sound & Vision) (invited, tbc)
-- Carlos Martinez-Ortis (eScience Center) (invited, tbc)
+- Carlos Martinez-Ortis (eScience Center)
 - Enno Meijers (National Library of the Netherlands, Dutch Digital Heritage Network (invited,tbc)
 - Willem Melder (invited, Sound & Vision)
 - Jauco Noordzij (KNAW Humanties Cluster)

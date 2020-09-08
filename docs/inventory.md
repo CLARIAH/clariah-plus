@@ -124,4 +124,23 @@ All tools in this section focus on human-mediated annotation, not automatic anno
 - [GTAA](https://labs.beeldengeluid.nl/dataset/5520ccca-2c8e-11e6-a743-005056a71e3a)
 - [Onomy](https://onomy.org)
 
+## Annotation Search
+
+The following tools allow the user to search/query annotations in resources, the focus is on searching in large amounts
+of data.
+
+### Text Annotation Search
+
+- [Blacklab](https://github.com/INL/Blacklab) - A corpus retrieval engine built on top of Apache Lucene. This is a
+    back-end system upon which multiple front-ends can run. It is actively maintained and used.
+    - [Corpus Frontend](https://github.com/INL/corpus-frontend) - A corpus search application that works with BlackLab Server, used at INT for CHN, Letters as Loot, and AutoSearch.
+    - [Whitelab](https://github.com/Taalmonsters/WhiteLab2.0) - A web-based front-end for the search and exploration of large corpora with linguistic annotations, developed in the scope of CLARIN's OpenSoNaR project, but no longer maintained. (there is also an older [Whitelab 1](https://github.com/TiCCSoftware/WhiteLab) version, an entirely different codebase, which is deprecated)
+- [MTAS](https://github.com/matthijsbrouwer/mtas) (Multi Tier Annotation Search) - An annotation search system built on Lucene & Solr, developed for the [Nederlab](https://www.nederlab.nl) project. It was initially developed at the Meertens institute but the lead/sole developer left in 2018, he is still maintaining the software (as time allows).
+- [GreTeL](https://github.com/UUDigitalHumanitieslab/gretel) (Greedy Extraction of Trees for Empirical Linguistics) - A
+    web-based search engine for the exploitation of syntactically generated corpora aka treebanks.
+    Actively developed in CLARIAH WP3. GreTeL 4 is a fork of earlier work (GreTeL 3): https://github.com/CCL-KULeuven/gretel/
+- [PaQu](https://github.com/rug-compling/paqu) (Parse & Query) - A web-based tool to query treebanks (it also has a
+    major parse compononent for automatic enrichment using Alpino but that is out of scope for this interest group).
+- [ANNIS](ANNotation of Information Structure) (ANNotation of Information Structure) - A web-based search and visualization architecture for complex multilevel linguistic corpora with diverse types of annotation. Usage in CLARIAH unknown.
+
 

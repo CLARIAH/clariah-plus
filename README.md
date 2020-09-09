@@ -39,6 +39,7 @@ We use the following communication channel:
 ### Linked Data Converters
 - CoW (csv to RDF)
 - CMDI2RDF (CMDI to RDF)
+- LDWizard (csv to RDF)
 
 ### Miscellaneous
 - FoLiA Set Definitions (...)

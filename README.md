@@ -63,16 +63,20 @@ See specifically IG-Curation and the [awesome humanities ontologies](https://git
 
 ## Group Members
 - Richard Zijdeman (International Institute of Social History, group coordinator)
-- Wouter Beek (VU University, Triply) (invited, tbc)
-- Jaap Blom (Sound & Vision) (invited, tbc)
+- Wouter Beek (VU University, Triply)
+- Antske Fokkens (VU University)
 - Carlos Martinez-Ortis (eScience Center)
 - Enno Meijers (National Library of the Netherlands, Dutch Digital Heritage Network (invited,tbc)
 - Willem Melder (invited, Sound & Vision)
 - Jauco Noordzij (KNAW Humanties Cluster)
+- Jacco van Ossenbrugge (CWI, VU University) (invited, tbc)
+- Ronald Siebes (DANS)(invited, tbc)
 - Herbert van de Sompel (DANS) (invited, tbc)
 - Joe Raad (VU University)
 - Mari Wigham (Sound & Vision)
 - Menzo Windhouwer (KNAW Humanities Cluster)
 
+Persons invited, but currently engaged in other activities:
+Jaap Blom, Marieke van Erp,
 
 The group is open to new members. Contact [Richard Zijdeman](https://github.com/rlzijdeman)

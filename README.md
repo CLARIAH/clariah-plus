@@ -64,7 +64,7 @@ See specifically IG-Curation and the [awesome humanities ontologies](https://git
 ## Group Members
 - Richard Zijdeman (International Institute of Social History, group coordinator)
 - Wouter Beek (VU University, Triply)
-- Antske Fokkens (VU University)
+- Antske Fokkens (VU University) (invited, tbc)
 - Carlos Martinez-Ortis (eScience Center)
 - Enno Meijers (National Library of the Netherlands, Dutch Digital Heritage Network (invited,tbc)
 - Willem Melder (invited, Sound & Vision)

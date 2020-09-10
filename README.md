@@ -37,9 +37,9 @@ We use the following communication channel:
 - DIVE (deprecated). Media Suite aims for a hybrid approach where LOD can provide an auxiliary mechanism for connecting information sources. 
 
 ### Linked Data Converters
-- CoW (csv to RDF)
+- CoW (CSV to RDF)
 - CMDI2RDF (CMDI to RDF)
-- LDWizard (csv to RDF)
+- LDWizard (CSV to RDF)
 
 ### Miscellaneous
 - FoLiA Set Definitions (...)
@@ -52,10 +52,16 @@ We use the following communication channel:
 - [grlc](grlc.io)
 
 ### Topics suggested
-- Find compatibility between various solutions (e.g. Anansi/Druid, CoW/LD Wizard) within the ClaaS framework;
-- Improved out-of-the-box availability of existing tools (e.g. DIVE, brwsr) within the CLAAS framework;
-- Improve compatibility with inter- and national initiatives (e.g. within Pelagios, Odissei and NDE);
-- To attract and interact with a larger less technical audience (e.g. via LD Wizard, Data Stories, Notebooks)
+- find compatibility between various solutions (e.g. Anansi/Druid, CoW/LD Wizard) within the ClaaS framework;
+- improved out-of-the-box availability of existing tools (e.g. DIVE, brwsr) within the CLAAS framework;
+- improve compatibility with inter- and national initiatives (e.g. within Pelagios, Odissei and NDE);
+- to attract and interact with a larger less technical audience (e.g. via LD Wizard, Data Stories, Notebooks)
+- what is the CLAAS way to store & retrieve triples (file storage, triple stores, media fragments)
+- how/when/why can/should partners share LD services & data in the CLAAS the infrastructure (using Docker/Kubernetes)
+- performance (of querying, updating data, etc)
+- the use of grlc (and further development on it)
+- link with NDE principles
+- link with NDE termennetwerk
 
 ### Vocabularies
 See specifically IG-Curation and the [awesome humanities ontologies](https://github.com/CLARIAH/awesome-humanities-ontologies) list. 

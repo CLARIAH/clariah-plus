@@ -51,6 +51,12 @@ We use the following communication channel:
 ### SPARQL API Generators
 - [grlc](grlc.io)
 
+### Topics suggested
+- Find compatibility between various solutions (e.g. Anansi/Druid, CoW/LD Wizard) within the ClaaS framework;
+- Improved out-of-the-box availability of existing tools (e.g. DIVE, brwsr) within the CLAAS framework;
+- Improve compatibility with inter- and national initiatives (e.g. within Pelagios, Odissei and NDE);
+- To attract and interact with a larger less technical audience (e.g. via LD Wizard, Data Stories, Notebooks)
+
 ### Vocabularies
 See specifically IG-Curation and the [awesome humanities ontologies](https://github.com/CLARIAH/awesome-humanities-ontologies) list. 
 

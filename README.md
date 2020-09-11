@@ -79,7 +79,9 @@ See specifically IG-Curation and the [awesome humanities ontologies](https://git
 - Ronald Siebes (DANS)(invited, tbc)
 - Herbert van de Sompel (DANS) (invited, tbc)
 - Joe Raad (VU University)
+- Thomas Vermaut (KNAW Humanities Cluster)
 - Mari Wigham (Sound & Vision)
+- Leon Wisse (Create, UVA)
 - Menzo Windhouwer (KNAW Humanities Cluster)
 
 Persons invited, but currently engaged in other activities:

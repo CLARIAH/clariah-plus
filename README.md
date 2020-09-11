@@ -81,7 +81,7 @@ See specifically IG-Curation and the [awesome humanities ontologies](https://git
 - Joe Raad (VU University)
 - Thomas Vermaut (KNAW Humanities Cluster)
 - Mari Wigham (Sound & Vision)
-- Leon Wisse (Create, UVA)
+- Leon van Wissen (UVA)
 - Menzo Windhouwer (KNAW Humanities Cluster)
 
 Persons invited, but currently engaged in other activities:

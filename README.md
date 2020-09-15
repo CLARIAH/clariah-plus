@@ -62,6 +62,7 @@ We use the following communication channel:
 - the use of grlc (and further development on it)
 - link with NDE principles
 - link with NDE termennetwerk
+- distributed search functionality for vocab and ontology resources
 
 ### Vocabularies
 See specifically IG-Curation and the [awesome humanities ontologies](https://github.com/CLARIAH/awesome-humanities-ontologies) list. 
@@ -73,19 +74,20 @@ See specifically IG-Curation and the [awesome humanities ontologies](https://git
 - Antske Fokkens (VU University) (invited, tbc)
 - Willem van Hage (eScience Center)
 - Carlos Martinez-Ortis (eScience Center)
-- Enno Meijers (National Library of the Netherlands, Dutch Digital Heritage Network (invited,tbc)
+- Enno Meijers (National Library of the Netherlands, Dutch Digital Heritage Network)
 - Willem Melder (invited, Sound & Vision)
 - Jauco Noordzij (KNAW Humanties Cluster)
 - Jacco van Ossenbrugge (CWI, VU University) (invited, tbc)
 - Ronald Siebes (DANS)(invited, tbc)
 - Herbert van de Sompel (DANS) (invited, tbc)
 - Joe Raad (VU University)
+- Sjors de Valk (Dutch Digital Heritage Network)
 - Thomas Vermaut (KNAW Humanities Cluster)
 - Mari Wigham (Sound & Vision)
-- Leon van Wissen (UVA)
+- Leon van Wissen (University of Amsterdam)
 - Menzo Windhouwer (KNAW Humanities Cluster)
 
 Persons invited, but currently engaged in other activities:
-Jaap Blom, Marieke van Erp,
+Jaap Blom, Marieke van Erp, ...
 
 The group is open to new members. Contact [Richard Zijdeman](https://github.com/rlzijdeman)

@@ -65,7 +65,8 @@ We use the following communication channel:
 - distributed search functionality for vocab and ontology resources
 
 ### Vocabularies
-See specifically IG-Curation and the [awesome humanities ontologies](https://github.com/CLARIAH/awesome-humanities-ontologies) list. 
+- See specifically IG-Curation and the [awesome humanities ontologies](https://github.com/CLARIAH/awesome-humanities-ontologies) list. 
+- The need for a good vocabulary to describe metadata as related to linksets datasets
 
 
 ## Group Members

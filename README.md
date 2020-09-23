@@ -66,7 +66,7 @@ We use the following communication channel:
 
 ### Vocabularies
 - See specifically IG-Curation and the [awesome humanities ontologies](https://github.com/CLARIAH/awesome-humanities-ontologies) list. 
-- The need for a good vocabulary to describe metadata as related to linksets datasets
+- The need for a good vocabulary to describe metadata as related to linksets datasets (VOID?)
 
 
 ## Group Members

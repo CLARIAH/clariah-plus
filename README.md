@@ -2,7 +2,7 @@
 CLARIAH is organized in Work Packages and Interest Groups (IG's). The key goal of each IG is to research, negotiate, propose, and implement technical choices that become a standard requirement in CLARIAH. This repository is intended to organize the work, output and documentation of the IG on Linked Open Data (LOD).
 
 ## Newsflash!
-Our first meetup will be October 26th. Please reach out via an issue if you missed the details!
+Our first meetup will be October 26th, 12:00-13:00 hours CET. Please reach out via an issue if you missed the details!
 
 
 ## Aims of the Interest Group
@@ -76,23 +76,25 @@ We use the following communication channel:
 ## Group Members
 - Richard Zijdeman (International Institute of Social History, group coordinator)
 - Wouter Beek (VU University, Triply)
-- Antske Fokkens (VU University) (invited, tbc)
+- Victor de Boer (VU University)
+- Antske Fokkens (VU University)
 - Willem van Hage (eScience Center)
+- Chiara Latronic (UvA)
 - Carlos Martinez-Ortis (eScience Center)
 - Enno Meijers (National Library of the Netherlands, Dutch Digital Heritage Network)
 - Willem Melder (invited, Sound & Vision)
-- Jauco Noordzij (KNAW Humanties Cluster)
-- Jacco van Ossenbrugge (CWI, VU University) (invited, tbc)
+- Harmen Nijboer (Huygens ING)
+- Jacco van Ossenbrugge (CWI, VU University) (invited)
 - Ronald Siebes (DANS)(invited, tbc)
-- Herbert van de Sompel (DANS) (invited, tbc)
 - Joe Raad (VU University)
 - Sjors de Valk (Dutch Digital Heritage Network)
 - Thomas Vermaut (KNAW Humanities Cluster)
+- Jerry de Vries (DANS)
 - Mari Wigham (Sound & Vision)
 - Leon van Wissen (University of Amsterdam)
 - Menzo Windhouwer (KNAW Humanities Cluster)
 
 Persons invited, but currently engaged in other activities:
-Jaap Blom, Marieke van Erp, ...
+Jaap Blom, Marieke van Erp, Jauco Noordzij, Paul Groth, Herbert van de Sompel, ...
 
 The group is open to new members. Contact [Richard Zijdeman](https://github.com/rlzijdeman)

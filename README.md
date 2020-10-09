@@ -45,5 +45,6 @@ Unclear, to be defined still!
 - Martijn van de Donk (Netherlands Institute for Sound and Vision)
 - Roeland Ordelman (Netherlands Institute for Sound and Vision)
 - Joe Raad (VU Amsterdam)
+- Adam Belloum (eScience Center)
 
 The group is open to new members.

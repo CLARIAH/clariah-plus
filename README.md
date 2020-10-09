@@ -26,7 +26,9 @@ Possible characteristics of workflow systems (not all need apply):
 - **Correction**: Ability to resume the workflow after failure and manual intervention; and/or automated fallbacks
 - **Reproducibility**: Given the same input, the workflow should ideally produce the same output every time
     - This requires solutions for software deployment and versioning and is mostly in the realm of the DevOps Interest Group.
+    - Handling of provenance data
 - **Discovery**: automated discovery of possible workflows
+- **Interaction**: Human intervention (steering/inspection/visualisation) in at specific points in a workflow
 - **Specification**: How are the workflow specified? (e.g. in what language(s)). The specification can be very specific (e.g a shell script on one extreme of the spectrum) or can be completely abstracted from the executioner (Common Workflow Language (CWL) on the other end of the spectrum).
 
 There are various paradigms for workflow systems and very layers of complexity, a simple shell script or Makefile can already be

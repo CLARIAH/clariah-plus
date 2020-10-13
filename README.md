@@ -56,6 +56,7 @@ We use the following communication channel:
 - [grlc](grlc.io)
 
 ### Topics suggested
+- Service for permanant identifiers for subjects (e.g. Shall we bless w3id next to handle?)
 - find compatibility between various solutions (e.g. Anansi/Druid, CoW/LD Wizard) within the ClaaS framework;
 - improved out-of-the-box availability of existing tools (e.g. DIVE, brwsr) within the CLAAS framework;
 - improve compatibility with inter- and national initiatives (e.g. within Pelagios, Odissei and NDE);
@@ -94,8 +95,9 @@ We use the following communication channel:
 - Mari Wigham (Sound & Vision)
 - Leon van Wissen (University of Amsterdam)
 - Menzo Windhouwer (KNAW Humanities Cluster)
+- Jauco Noordzij (KNAW Humanities Cluster)
 
 Persons invited, but currently engaged in other activities:
-Jaap Blom, Marieke van Erp, Jauco Noordzij, Paul Groth, Herbert van de Sompel, ...
+Jaap Blom, Marieke van Erp, , Paul Groth, Herbert van de Sompel, ...
 
 The group is open to new members. Contact [Richard Zijdeman](https://github.com/rlzijdeman)

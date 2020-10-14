@@ -6,9 +6,7 @@ Our first meetup will be October 26th, 12:00-13:30 hours CET. Please reach out v
 
 
 ## Aims of the Interest Group
-
 The aims of the IG on Linked Open Data are:
-
 - foster discussion and knowledge sharing regarding infrastructure and applications of LOD
 - develop and share best practices
 - inform development of CLARIAH LOD tools and services
@@ -42,6 +40,7 @@ We use the following communication channel:
 
 ### Linked Data Converters
 - CoW (CSV to RDF)
+- Kabara
 - CMDI2RDF (CMDI to RDF)
 - LDWizard (CSV to RDF)
 
@@ -86,16 +85,16 @@ We use the following communication channel:
 - Enno Meijers (National Library of the Netherlands, Dutch Digital Heritage Network)
 - Willem Melder (invited, Sound & Vision)
 - Harmen Nijboer (Huygens ING)
+- Jauco Noordzij (KNAW Humanities Cluster)
 - Jacco van Ossenbrugge (CWI, VU University) (invited)
-- Ronald Siebes (DANS)(invited, tbc)
 - Joe Raad (VU University)
+- Ronald Siebes (DANS)(invited, tbc)
 - Sjors de Valk (Dutch Digital Heritage Network)
 - Thomas Vermaut (KNAW Humanities Cluster)
 - Jerry de Vries (DANS)
 - Mari Wigham (Sound & Vision)
-- Leon van Wissen (University of Amsterdam)
 - Menzo Windhouwer (KNAW Humanities Cluster)
-- Jauco Noordzij (KNAW Humanities Cluster)
+- Leon van Wissen (University of Amsterdam)
 
 Persons invited, but currently engaged in other activities:
 Jaap Blom, Marieke van Erp, , Paul Groth, Herbert van de Sompel, ...

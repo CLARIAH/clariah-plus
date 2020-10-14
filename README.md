@@ -1,4 +1,4 @@
-# CLARIAH Interest Group on Text
+# CLARIAH Interest Group on Workflows
 
 This repository is intended to organize the work, output and documentation of the CLARIAH Interest Group (IG) on
 Workflows.

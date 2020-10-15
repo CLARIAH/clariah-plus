@@ -24,7 +24,7 @@ We use the following communication channel:
 - slack
 
 ## Tasks
-- 
+-
 
 ## Products
 
@@ -36,7 +36,7 @@ We use the following communication channel:
 ### LOD Storage
 - Anansi
 - Druid
-- DIVE (deprecated). Media Suite aims for a hybrid approach where LOD can provide an auxiliary mechanism for connecting information sources. 
+- DIVE (deprecated). Media Suite aims for a hybrid approach where LOD can provide an auxiliary mechanism for connecting information sources.
 
 ### Linked Data Converters
 - CoW (CSV to RDF)
@@ -67,10 +67,10 @@ We use the following communication channel:
 - link with NDE principles
 - link with NDE termennetwerk
 - distributed search functionality for vocab and ontology resources
-- recommendation on metadata describing (documenting) a dataset within Clariah; ex: title (name), description, ownership, license, provenance, temporal and/or spatial coverage, keywords, etc. Which properties should be made mandatory? Which vocabulary (schema, dc, void, etc.)? 
+- recommendation on metadata describing (documenting) a dataset within Clariah; ex: title (name), description, ownership, license, provenance, temporal and/or spatial coverage, keywords, etc. Which properties should be made mandatory? Which vocabulary (schema, dc, void, etc.)?
 
 ### Vocabularies
-- See specifically IG-Curation and the [awesome humanities ontologies](https://github.com/CLARIAH/awesome-humanities-ontologies) list. 
+- See specifically IG-Curation and the [awesome humanities ontologies](https://github.com/CLARIAH/awesome-humanities-ontologies) list.
 - The need for a good vocabulary to describe metadata as related to linksets datasets (VOID?)
 
 
@@ -95,6 +95,7 @@ We use the following communication channel:
 - Mari Wigham (Sound & Vision)
 - Menzo Windhouwer (KNAW Humanities Cluster)
 - Leon van Wissen (University of Amsterdam)
+- Maarten van Gompel (KNAW Humanities Cluster)
 
 Persons invited, but currently engaged in other activities:
 Jaap Blom, Marieke van Erp, , Paul Groth, Herbert van de Sompel, ...

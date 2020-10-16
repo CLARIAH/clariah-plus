@@ -6,6 +6,17 @@ The CLARIAH Interest Groups are groups of engineers that share a common ... well
 It shows however, that there is a demand for much interaction between the engineers and on a more granular level. Therefore, in the current tranch of CLARIAH ('PLUS'), we foster the cooperation of engineers and harmonization of the infrastructure through Interest Groups. We set out with a number of Interest Groups knowing that during the development of the project there may be need of alternative Interest Groups and some IG's might cease to exist. Below is the list of Interest Groups we will set out with, but this ['live' query](https://github.com/CLARIAH?q=ig&type=&language=) will always be more up to date.
 
 The interest groups are:
+Devops
+Preservation
+Security & Monitoring
+[Audiovisual processing](https://github.com/CLARIAH/IG-AVProcessing)
+[Text processing](https://github.com/CLARIAH/IG-Text)
+[Annotation](https://github.com/CLARIAH/IG-Annotation)
+[Linked Open Data](https://github.com/CLARIAH/IG-LOD)
+[Workflows](https://github.com/CLARIAH/IG-Workflows)
+Curation
+UI/UX
+
 
 
 

@@ -49,11 +49,9 @@ Text processing problems that we try to tackle are:
 
 ## Group Members
 
-(Group coordinator is not yet clear)
-
+- Jesse de Does (INT) (coordinator)
+- Maarten van Gompel (KNAW Humanities Cluster) (coordinator)
 - Hennie Brugman (KNAW Humanities Cluster)
-- Maarten van Gompel (KNAW Humanities Cluster)
-- Jesse de Does (INT)
 - Roeland Ordelman (Netherlands Institute for Sound and Vision)
 - Martin Reynaert (DCA - Tilburg University / ILLC - Universiteit van Amsterdam)
 

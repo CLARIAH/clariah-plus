@@ -30,7 +30,7 @@ Aspects that are outside the scope of this Interest Group (because they are cove
 
 We use the following communication channel:
 
-- [gitter](https://gitter.im/CLARIAH/home)
+- slack (to be announced)
 
 ## Tasks
 

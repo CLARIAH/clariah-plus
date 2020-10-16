@@ -38,7 +38,7 @@ This last list consists of noteworthy mature third-party tools that may or may n
 - [SpaCy](https://spacy.io/) - Popular python library for a wide variety of linguistic enrichments in many languages, including part-of-speech tagging, dependency parsing. Many statistical models and pretrained word vectors. We have a [webservice & web-application](https://webservices-lst.science.ru.nl/spacy) in the scope of CLARIAH, which adds FoLiA support.
 - [UDPipe](https://github.com/ufal/udpipe) is a trainable pipeline for tokenizing, tagging, lemmatizing and parsing Universal Treebanks and other CoNLL-U files. Primarily written in C++, offers a fast and reliable solution for multilingual NLP processing.
 - [FastText](https://fasttext.cc/) - FastText is an open-source, free, lightweight library that allows users to learn text representations and text classifiers. Developed by Facebook.
-
+- [Pattern](https://github.com/clips/pattern) - A web mining module for Python. Integrates some NLP and Machine learning components.
 
 ### Tokenisers
 
@@ -51,6 +51,12 @@ This last list consists of noteworthy mature third-party tools that may or may n
   identification for historical documents in Dutch. Developed in CLARIAH.
 - [wikiente](https://github.com/proycon/wikiente) - Named entity recogniser (and linker) using [DBPedia Spotlight](https://www.dbpedia-spotlight.org/) (multiple languages), provides FoLiA support.
 - NER is often integrated into larger libraries/tools (see *Multi-purpose NLP suites and libraries* above)
+
+### Morphological Analysis
+
+- [Memory-based Morphological Parser](https://github.com/INL/MBMP-morphological-parser) - A memory-based morphological
+    parser for Python.
+- This is often integrated into larger libraries/tools (see *Multi-purpose NLP suites and libraries* above)
 
 ### Language Detection
 

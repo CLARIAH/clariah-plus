@@ -37,6 +37,7 @@ This last list consists of noteworthy mature third-party tools that may or may n
 - [Huggingface Transformers](https://github.com/huggingface/transformers) - Provides state-of-the-art general-purpose architectures (BERT, GPT-2, RoBERTa, XLM, DistilBert, XLNet, T5, CTRL...) for Natural Language Understanding (NLU) and Natural Language Generation (NLG) with over thousands of pretrained models in 100+ languages and deep interoperability between PyTorch & TensorFlow 2.0.
 - [SpaCy](https://spacy.io/) - Popular python library for a wide variety of linguistic enrichments in many languages, including part-of-speech tagging, dependency parsing. Many statistical models and pretrained word vectors. We have a [webservice & web-application](https://webservices-lst.science.ru.nl/spacy) in the scope of CLARIAH, which adds FoLiA support.
 - [UDPipe](https://github.com/ufal/udpipe) is a trainable pipeline for tokenizing, tagging, lemmatizing and parsing Universal Treebanks and other CoNLL-U files. Primarily written in C++, offers a fast and reliable solution for multilingual NLP processing.
+- [FastText](https://fasttext.cc/) - FastText is an open-source, free, lightweight library that allows users to learn text representations and text classifiers. Developed by Facebook.
 
 
 ### Tokenisers

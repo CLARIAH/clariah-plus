@@ -63,6 +63,9 @@ Annotation infrastructure problems that we try to tackle are:
 - Roeland Ordelman (Netherlands Institute for Sound and Vision)
 - Hennie Brugman (KNAW Humanities Cluster)
 - Dirk Roorda (DANS)
+- Lodewijk Petram (Huygens ING)
+- Peter Boot (Huygens ING)
+- Han Sloetjes (Max Planck Institute Nijmegen)
 
 The group is open to new members. Contact Marijn Koolen.
 

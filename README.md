@@ -1,6 +1,3 @@
-# IG-Curation
-Repository for the Interest Group on Data Curation
-
 # CLARIAH Interest Group on Curation
 
 CLARIAH is organized in Work Packages and Interest Groups (IG's). The main goal of each IG is to research, negotiate, propose, and implement technical choices that become a standard requirement in CLARIAH. This repository is intended to organize the work, output and documentation of the CLARIAH Interest Group (IG) on Curation. Please check out the overall [IG page](https://github.com/clariah/ig/) for more information.
@@ -10,7 +7,7 @@ CLARIAH is organized in Work Packages and Interest Groups (IG's). The main goal 
 The aims of the IG on Curation are:
 - foster discussion and knowledge sharing regarding data curation, modeling and enrichment
 - develop and share best practices
-- inform development of CLARIAH Curation tools and services
+- inform development of CLARIAH curation tools and services
 
 ## Scope of the Interest Group
 
@@ -32,9 +29,9 @@ We use the following communication channel:
 ## Products
 
 ### Topics suggested
--  the development of a toolbox of conversion tools
+-  the development of a toolbox / library of conversion tools
 -  inform development of a central forum for evaluation and training data
--  vocabularies and humanities ontologies
+-  reuse and design of data models, vocabularies and ontologies
 -  data validation and citizen science
 -  data provenance
 -  data ethics and privacy legislation
@@ -46,5 +43,5 @@ We use the following communication channel:
 
 TBA...
 
-The group is open to new members. Please contact Sebastiaan Derks.
+The group is open to new members. 
 

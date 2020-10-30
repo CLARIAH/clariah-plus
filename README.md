@@ -14,7 +14,7 @@ The interest groups are:
 - [Annotation](https://github.com/CLARIAH/IG-Annotation)
 - [Linked Open Data](https://github.com/CLARIAH/IG-LOD)
 - [Workflows](https://github.com/CLARIAH/IG-Workflows)
-- Curation
+- [Curation](https://github.com/CLARIAH/IG-Curation)
 - UI/UX
 
 

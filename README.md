@@ -58,7 +58,7 @@ The aims of the IG on Workflows are:
 
 We use the following communication channel:
 
-- [gitter](https://gitter.im/CLARIAH/home)
+- [slack](clariah-workspace.slack.com) (if you don't have access yet, please contact one of the coordinators)
 
 ## Tasks
 

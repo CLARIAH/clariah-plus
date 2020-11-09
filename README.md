@@ -1,6 +1,6 @@
 # CLARIAH Interest Group on Annotation Infrastructure
 
-This repository is intended to organize the work, output and documentation of the CLARIAH Interest Group (IG) on Annotation Infrastructure. Other [CLARIAH Interest Groups](#other-interets-groups) are listed below. 
+Development in the [CLARIAH](https://clariah.nl) project is coordinated through themed [Interest Groups](https://github.com/CLARIAH/IG). This repository is intended to organize the work, output and documentation of the CLARIAH Interest Group (IG) on Annotation Infrastructure. Other [CLARIAH Interest Groups](#other-interets-groups) are listed below. 
 
 ## Introduction
 
@@ -71,7 +71,11 @@ Annotation infrastructure problems that we try to tackle are:
 The group is open to new members. Contact Marijn Koolen.
 
 
-## Other Interest Groups
+## Related Interest Groups
+
+The CLARIAH IGs have a [shared work plan](https://github.com/CLARIAH/IG/blob/main/docs/workplan.pdf)
+
+The following IGs are related in their scope to the Annotation IG:
 
 - [Text Processing](https://github.com/CLARIAH/IG-Text)
 - [Audiovisuaal Processing](https://github.com/CLARIAH/IG-AVProcessing)

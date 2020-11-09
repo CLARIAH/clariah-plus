@@ -66,6 +66,7 @@ Annotation infrastructure problems that we try to tackle are:
 - Lodewijk Petram (Huygens ING)
 - Peter Boot (Huygens ING)
 - Han Sloetjes (Max Planck Institute Nijmegen)
+- Ted van der Togt (KB)
 
 The group is open to new members. Contact Marijn Koolen.
 

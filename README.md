@@ -40,8 +40,16 @@ We use the following communication channel:
 - Cf. the [awesome humanities ontologies](https://github.com/CLARIAH/awesome-humanities-ontologies) list.
 
 ## Group Members
-
-TBA...
+- Steven Claeyssens (National Library of the Netherlands)
+- Sebastiaan Derks (Huygens ING / KNAW Humanities Cluster, group coordinator)
+- Ed de Heer (National Archives of the Netherlands)
+- Lizzy Jongma (Netwerk Oorlogsbronnen)
+- Willem Melder (Netherlands Institute for Sound and Vision)
+- Harm Nijboer (University of Amsterdam)
+- Ruben Schalk (Utrecht University)
+- Ronald Sluijter (Huygens ING / KNAW Humanities Cluster)
+- Mari Wigham (Netherlands Institute for Sound and Vision)
+- Douwe Zeldenrust (Meertens Institute / KNAW Humanities Cluster)
 
 The group is open to new members. 
 

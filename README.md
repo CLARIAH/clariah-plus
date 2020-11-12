@@ -48,11 +48,13 @@ The aims of the IG on Workflows are:
 - Foster discussion and knowledge sharing regarding research workflows/pipelines
 - Develop and share best practices for setting up workflows, recommend solutions
     - Different audiences may require different solutions
-- Create an inventory of existing workflow solutions in CLARIAH
-- Determine which CLARIAH tools can or should be connected into a larger workflow and for which there is an actual need from the research community; coordinate such solutions
+- Create an inventory of workflow systems used in CLARIAH
 - Promote interoperability between CLARIAH tools
     - More attention for underlying standards and protocols; focus should first and foremost be on clear specifications of input and output data and communicatin protocols. Tools need a common ground to communicate, if this does not exist then higher-level workflow orchestration is pointless.
     - This details of these are mostly in the scope of the other interest groups on Annotation, Text, Audio/Video, Linked Data.
+
+Determining exactly which CLARIAH tools can or should be connected in a workflow, or envisioning possible workflows, is
+**NOT** in the scope of this group but in that of other interest groups such as Text, Audio/Video.
 
 ## Communication
 

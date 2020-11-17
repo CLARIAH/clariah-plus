@@ -79,5 +79,6 @@ Unclear, to be defined still!
 - Roeland Ordelman (Netherlands Institute for Sound and Vision)
 - Joe Raad (VU Amsterdam)
 - Adam Belloum (eScience Center)
+- Lucien van Wouw (KNAW Humanities Cluster)
 
 The group is open to new members.

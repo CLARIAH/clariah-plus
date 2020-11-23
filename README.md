@@ -67,5 +67,12 @@ We use the following communication channel:
 - Hennie Brugman (KNAW Humanities Cluster)
 - Roeland Ordelman (Netherlands Institute for Sound and Vision)
 - Martin Reynaert (DCA - Tilburg University / ILLC - Universiteit van Amsterdam)
+- Dirk Roorda (DANS)
+- Eduard Drenth (Fryske Akademy)
+- Piek Vossen (CLTL, Vrije Universiteit Amsterdam)
+- Sophie Arnoult (CLTL, Vrije Universiteit Amsterdam)
+- Jan Wijffels (Vrije Universiteit Brussel)
+- Enno Meijers (Koninklijke Bibliotheek)
+- Rana Klein (Netherlands Institute for Sound and Vision)
 
 The group is open to new members.

@@ -21,22 +21,22 @@ The aims of the IG on Text are:
 
 ## Scope of the Interest Group
 
-Our scope is automatic text processing, including but not limited to linguistic enrichment and NLP:
+Our scope is **automatic** text processing, and roughly encompasses the following fields:
 
-- automatic linguistic enrichment for multiple languages and multiple time periods
-    - named entity extraction & linking
-    - dependency parsing, syntactic parsing, morphological analysis
-    - part-of-speech tagging
-    - lemmatisation
-    - sentiment analysis
-    - tokenisation and sentence segmentation
-- text normalisation (including post-OCR/HTR correction)
-- optical character recognition & handwriting recognition
-- machine translation
-- language modelling
-- text analysis
-- text retrieval, indexing, and querying (raw text, querying of annotations is covered by the [annotation group](https://github.com/CLARIAH/IG-Annotation))
-- (list is not exhaustive)
+- Natural Language Processing
+    - automatic linguistic enrichment for multiple languages and multiple time periods
+        - named entity extraction & linking
+        - dependency parsing, syntactic parsing, morphological analysis
+        - part-of-speech tagging
+        - lemmatisation
+        - sentiment analysis
+        - tokenisation and sentence segmentation
+    - text normalisation (including post-OCR/HTR correction)
+    - optical character recognition & handwriting recognition
+    - machine translation
+    - language modelling
+- Text Mining
+- Text Search & Retrieval (raw text, querying of annotations is covered by the [annotation group](https://github.com/CLARIAH/IG-Annotation))
 
 Though our scope is not limited to Dutch, it is probably fair to say that Dutch, Flemish and Frisian, merit most
 attention, as we are a project in the Netherlands.

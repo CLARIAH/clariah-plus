@@ -45,6 +45,10 @@ This last list consists of noteworthy mature third-party tools that may or may n
 - [Ucto](https://github.com/LanguageMachines/ucto) - A regular-expression based tokeniser and sentence segmenter. Supports multiple language including Dutch. Full FoLiA import/output support. Also integrated into Frog and maintained in that context as part of CLARIAH PLUS WP3. It is a command-line tool and C++ library, but it also made available as a [webservice & web-application](https://webservices-lst.science.ru.nl/ucto) or a [python binding](https://github.com/proycon/python-ucto). Status: mature/production.
 - Tokenisers are often also part of larger libraries (see *Multi-purpose NLP suites and libraries* above)
 
+### Part-of-Speech Tagging
+
+- [pos-tagger](https://bitbucket.org/fryske-akademy/pos-tagger) - An R script for Frisian Pos-tagging powered by UDPipe.
+
 ### (Named) Entity Recognition
 
 - [entity identification from scratch](https://github.com/cltl/entity-identification-from-scratch) - Entity

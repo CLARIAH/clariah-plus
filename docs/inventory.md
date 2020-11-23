@@ -48,6 +48,8 @@ This last list consists of noteworthy mature third-party tools that may or may n
 ### Part-of-Speech Tagging
 
 - [pos-tagger](https://bitbucket.org/fryske-akademy/pos-tagger) - An R script for Frisian Pos-tagging powered by UDPipe.
+- [pos-tagger & lemmatiser 18th Century Dutch](https://github.com/DIGI-VUB/udpipe.vosters)
+- [pos-tagger & lemmatiser 18th-19th Century Dutch](https://github.com/DIGI-VUB/udpipe.bab)
 
 ### (Named) Entity Recognition
 

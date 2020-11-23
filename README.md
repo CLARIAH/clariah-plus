@@ -57,7 +57,9 @@ We use the following communication channel:
 
 1. Provide [an inventory](docs/inventory.md) of current text processing tools, services and models in CLARIAH,
    either developed in CLARIAH (WP3 or WP6), or third party projects that are adopted as solutions.
-2. Specify what requirements we want text processing solutions to adhere to for CLARIAH, to facilitate interoperability
+2. Identify connections that can be made between various tools (specific workflows/pipelines) to certain specific ends
+   desired by the research community.
+3. Specify what requirements we want text processing solutions to adhere to for CLARIAH, to facilitate interoperability
    between tools/services. Indicate to what extent the existing solutions adhere to these requirements.
 
 ## Group Members

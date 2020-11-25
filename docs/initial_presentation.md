@@ -12,7 +12,7 @@
 - Create an inventory of workflow systems used in CLARIAH
 - Promote interoperability between CLARIAH tools
     - More attention for underlying standards and protocols
-    - This details of these are mostly in the scope of the other interest groups on Annotation, Text, Audio/Video, Linked Data.
+    - The details of these are mostly in the scope of the other interest groups on Annotation, Text, Audio/Video, Linked Data.
 
 ## What is a workflow?
 
@@ -24,7 +24,8 @@ considered a basic form of a workflow.
 - **data-flow oriented** (Nextflow, SciPipe)
 
 We can also make a distinction on the nature of the software components that are connected; are those local components
-(local processes) or remote networked components (webservices).
+(local processes) or remote networked components (webservices). Moreover, workflows can be fully automated to require
+human interaction.
 
 ## Characteristics
 
@@ -41,4 +42,4 @@ We can also make a distinction on the nature of the software components that are
 ## Tasks
 
 * Not really defined yet.
-* Suggestion: Start with an inventory of solutions in use.
+* Suggestion: Start with an inventory of solutions in use and the needs within CLARIAH.

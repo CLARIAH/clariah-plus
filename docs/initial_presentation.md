@@ -13,6 +13,8 @@ The aims of the IG on Text are:
 - Develop and share best practices
 - Inform development of CLARIAH text processing tools and services
 
+Strong affiliation with WP3 and WP6.
+
 ## Scope of the Interest Group
 
 Our scope is **automatic** text processing, and roughly encompasses the following fields:

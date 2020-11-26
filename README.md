@@ -46,6 +46,7 @@ We use the following communication channel:
 - Lizzy Jongma (Netwerk Oorlogsbronnen)
 - Willem Melder (Netherlands Institute for Sound and Vision)
 - Harm Nijboer (University of Amsterdam)
+- Dirk Roorda (DANS / KNAW)
 - Ruben Schalk (Utrecht University)
 - Ronald Sluijter (Huygens ING / KNAW Humanities Cluster)
 - Mari Wigham (Netherlands Institute for Sound and Vision)

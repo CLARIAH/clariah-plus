@@ -64,8 +64,8 @@ We use the following communication channel:
 
 ## Group Members
 
-- Jesse de Does (INT) (coordinator)
 - Maarten van Gompel (KNAW Humanities Cluster) (coordinator)
+- Jesse de Does (INT)
 - Hennie Brugman (KNAW Humanities Cluster)
 - Roeland Ordelman (Netherlands Institute for Sound and Vision)
 - Martin Reynaert (DCA - Tilburg University / ILLC - Universiteit van Amsterdam)

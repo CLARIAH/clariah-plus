@@ -76,5 +76,6 @@ We use the following communication channel:
 - Jan Wijffels (Vrije Universiteit Brussel)
 - Enno Meijers (Koninklijke Bibliotheek)
 - Rana Klein (Netherlands Institute for Sound and Vision)
+- Jan Niestadt (INT)
 
 The group is open to new members.

@@ -50,6 +50,7 @@ We use the following communication channel:
 - Ruben Schalk (Utrecht University)
 - Ronald Sluijter (Huygens ING / KNAW Humanities Cluster)
 - Mari Wigham (Netherlands Institute for Sound and Vision)
+- Leon van Wissen (University of Amsterdam)
 - Douwe Zeldenrust (Meertens Institute / KNAW Humanities Cluster)
 
 The group is open to new members. 

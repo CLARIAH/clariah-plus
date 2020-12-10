@@ -16,6 +16,10 @@
 
 (Description of your use case here, you can use the following subdivision, but you may also deviate from it and use whatever you see fit)
 
+### Data
+
+(if known, describe the data that is needed for the intended research, bne as specific as possible)
+
 ### What is the problem?
 
 (mention the research project and research question if relevant)

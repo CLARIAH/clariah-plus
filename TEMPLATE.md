@@ -16,21 +16,25 @@
 
 (Description of your use case here, you can use the following subdivision, but you may also deviate from it and use whatever you see fit)
 
-### Data
+### What is the research about?
 
-(if known, describe the data that is needed for the intended research, bne as specific as possible)
+(mention the research project, the research domain, e.g., linguistics or media studies, and research question if relevant)
 
-### What is the problem?
-
-(mention the research project and research question if relevant)
-
-### What functionality is needed?
+### What is needed to do the research?
 
 (How can we go about solving the problem?)
 
-### What software tools and services are involved?
+#### Data
 
-(What existing tools/services are involved, which needs tools/services need to be developed? Please link to the tools if possible and specify whether it can be used as is, needs extra work, needs to be developed from scratch etc..)
+(if known, describe the data that are needed for the intended research, be as specific as possible)
+
+#### Tools
+
+(if known, describe what tools or functionalities you need to work with the data and do the research. Take the different stadia of the research into account, such as exploration phase, distant reading, close reading, annotating data, publishing, etc. Be as specific as possible)
+
+### What software and services are involved?
+
+(if known, what existing software and services are involved, which need to be developed? Please link to the tools if possible and specify whether it can be used as is, needs extra work, needs to be developed from scratch etc.)
 
 ### How to evaluate this?
 

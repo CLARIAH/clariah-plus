@@ -1,0 +1,17 @@
+@startuml
+actor User
+participant "webservice A" as A
+participant "webservice B" as B
+User -[#red]> A: [1] Call webservice (with or without input data)
+A -[#red]> User: [1] Authentication Request (HTTP 401)
+User -[#green]> A: [2] Call webservice with authentication response and input data
+A -[#green]> User: [2] Respond with output data
+User -[#green]> A: [3] Request delegation of output to webservice B
+A -[#green]> User: [3] Respond with a link to B containing\n a randomised public backlink component\n to retrieve the output (HTTP 302)
+User -[#red]> B: [4] Call webservice using given link
+B -[#red]> User: [4] Authentication Request (HTTP 401)
+User -[#green]> B: [5] Call webservice using given link and authentication response
+B -[#red]> A: [6] Request input data through the single-use backlink
+A -[#red]> B: [6] Respond with output data
+B -[#green]> User: [5] Respond with output data
+@enduml

@@ -6,10 +6,10 @@
 * **Type:** Specific/Generic (is this a specific use-case, with identifiable end-users, or a more generic use case?)
 * **Work Package**: WPx
 * **Coordinators:**  (who is coordinating this use case? If decided)
-* **Participating Institutes:** (what institutes are participating in handling use case?)
+* **Participating Institutes:** (what institutes are participating in handling this use case?)
 * **End-users**: (Who is involved as end-user for this use-case? Try to mention name, institute, role/responsibility)
 * **Developers**: (Who is involved in implementing this use-case (if any)? Try to mention name, institute, role/responsibility)
-* **Interest Groups**: (a list of CLARIAH interest groups for which this use case may be relevant, e.g: Text, DevOps, Annotation, LOD)
+* **Interest Groups**: (a list of CLARIAH interest groups, such as Text and DevOps, for which this use case may be relevant. See the list of IG's at: https://github.com/clariah/ig/.
 * **Task IDs**: (zero or more task IDs if this is addressed in existing CLARIAH-PLUS tasks)
 
 ## Description

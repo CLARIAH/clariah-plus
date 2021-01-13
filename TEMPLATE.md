@@ -20,9 +20,13 @@
 
 (mention the research project, the research domain, e.g., linguistics or media studies, and research question if relevant)
 
+### What problem is hindering the research?
+
+(What is currently lacking that inhibits this research?)
+
 ### What is needed to do the research?
 
-(How can we go about solving the problem?)
+(How can we go about solving this problem?)
 
 #### Data
 

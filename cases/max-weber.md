@@ -1,4 +1,4 @@
-# Max Weber Retrodigitization
+# Retrodigitization of Text-critical Editions
 
 ## Metadata
 
@@ -18,8 +18,12 @@
 
 ### What is the research about?
 
-The goal is to retrodigitize the complete Max Weber ouvre, 50+ thick books containing German historical data from the
-1910s.
+The goal is to establish a pipeline to retrodigitize text-critical editions. We do not merely reproduce printed text
+(which has a sort of linear reading logic), like e.g. the Deutches Textarchiv, but we need to represent complex edition
+logic, thus one needs to treat rich typographic style and page-layout logic.
+
+This will be initially applied to the Max Weber oeuvre, 50+ thick books containing German historical data from the 1910s, but is
+more generic in set-up.
 
 ### What problem is hindering the research?
 
@@ -31,16 +35,16 @@ conversion pathways. The existing pipeline solution in PICCL is not adequate eno
 
 #### Data
 
-Needed is a data format capable of representing text structure, text markup as well as linguistic annotations. They are
+Needed is a data format capable of representing text structure, text markup as well as (linguistic) annotations. They are
 looking at FoLiA to provide an integrated solution for this, so support is being provided as part of the normal FoLiA
 support task (T108).
 
 #### Tools
 
-A proper pipeline to go from the scanned books to digitised versions is needed, retaining as much information as possible,
-including information about text markup, structure and layout. This includes an OCR component, a post-correction
-component, and components capable of visualising the output and allowing further annotation for manual post
-correction.
+A proper pipeline to go from the scanned books to digitised versions is needed, retaining as much information as
+possible, including information about text markup, structure and layout. This includes an OCR component, a
+post-correction component, semantic transformation components with respect to text structures, and components capable of
+visualising the output and allowing further annotation for manual post correction.
 
 We are providing support for all the various FoLiA-based tools that may help them,
 including a conversion from ABBY output to FoLiA by Ko van der Sloot,

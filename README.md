@@ -23,3 +23,4 @@ The below listing links to all use cases in no particular order, better ordering
 
 * [Retrodigitization of Text-critical Editions](cases/max-weber.md) (WP3, FoLiA/FLAT/LaMachine)
 * [Negation Annotation in Dutch dialogue](cases/negation-annotation-task.md) (WP3, FLAT/FoLiA)
+* [PARSEME: Annotation of verbal multi-word expressions](cases/parseme.md) (WP3, FLAT)

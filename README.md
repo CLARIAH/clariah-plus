@@ -21,4 +21,5 @@ use cases. Please see the [contribution guidelines](CONTRIBUTING.md) and the [te
 
 The below listing links to all use cases in no particular order, better ordering will be applied at a later stage and is all subject to further discussion as we grow.
 
-* [Retrodigitization of Text-critical Editions](cases/max-weber.md) (WP3)
+* [Retrodigitization of Text-critical Editions](cases/max-weber.md) (WP3, FoLiA/FLAT/LaMachine)
+* [Negation Annotation in Dutch dialogue](cases/negation-annotation-task.md) (WP3, FLAT/FoLiA)

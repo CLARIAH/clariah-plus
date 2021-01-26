@@ -8,7 +8,7 @@
 
 - CLARIAH aims for a common **infrastructure**
 - **Interoperability** and **connectivity** between CLARIAH tools
-- The workflow interest groups aims to help define these connections
+- The Workflow Interest Group aims to help define these connections
 - Connecting tools/services produces a **workflow**
 
 ## What is a workflow?
@@ -16,7 +16,7 @@
 - A sequence of steps towards a particular end
     - a sequence of local tools
         - ``cat input.txt | sed "s/ /\n/g" | sort | uniq -c | sort -rn``
-    - a sequence of local tools distributed over a computing cluster
+    - a sequence of tools distributed over a computing cluster
     - a sequence of remote networked components (e.g. **webservices**)
     - some hybrid form of the above
 - May involve **parallelisation**
@@ -35,7 +35,7 @@
 
 (this is not a mutually exclusive division)
 
-## Workflow characteristics
+## Characteristics of Workflow Managagement Systems
 
 - **Scheduling**: Determining which sequence of tasks leads to the desired end result
 - **Execution**: Execution of tasks, possibly with automatic parallelisation/abstraction
@@ -43,9 +43,8 @@
 - **Monitoring**: Real-time monitoring of a running workflow and ability to inspect logs on failure
 - **Correction**: Ability to resume the workflow after failure and manual intervention; and/or automated fallbacks
 - **Reproducibility**: Given the same input, the workflow should ideally produce the same output every time
-- **Discovery**: automated discovery of possible workflows
+- **Discovery**: Automated discovery of possible workflows
 - **Interaction**: Human intervention (steering/inspection/visualisation) in at specific points in a workflow
-- **Specification**: How are the workflow specified? (languages, abstraction).
 
 (not all need apply)
 

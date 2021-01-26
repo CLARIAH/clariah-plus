@@ -2,10 +2,11 @@
 
 ## Metadata
 
-* **Status:**  Proposed/In Progress/Solved/Cancelled/Rejected
+* **Status:**  Proposed/In Progress/Completed/Cancelled/Rejected
 * **Type:** Specific/Generic (is this a specific use-case, with identifiable end-users, or a more generic use case?)
 * **Work Package**: WPx
-* **Coordinators:**  (who is coordinating this use case? If decided)
+* **Research Coordinators:**  (who is coordinating the research? If decided)
+* **Coordinators for CLARIAH:**  (who is coordinating this use case for CLARIAH? If decided)
 * **Participating Institutes:** (what institutes are participating in handling this use case?)
 * **End-users**: (Who is involved as end-user for this use-case? Try to mention name, institute, role/responsibility)
 * **Developers**: (Who is involved in implementing this use-case (if any)? Try to mention name, institute, role/responsibility)

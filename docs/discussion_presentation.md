@@ -74,6 +74,14 @@ A prerequisite for a workflow is that the underlying tools or services are in so
 **Discussion Point #2**: I advocate a bottom-up focus; setting interoperability requirements at this lower level is a
 prerequisite for integrating tools/services in any higher-level workflow. We should focus more on the former than the latter. I think the workflow group could play a role in defining common interfaces, environments and data exchange conventions.
 
+## Pitfalls in building an infrastructure (1/1)
+
+![Endless Abstraction](pitfall1.jpg)
+
+## Pitfalls in building an infrastructure (2/2)
+
+![Dependencies](pitfall2.png)
+
 ## Workflow solutions used in CLARIN/CLARIAH (1/3)
 
 * *TTNWW* (CLARIN-NL) - A failed project in CLARIN-NL to offer workflows based on Apache Taverna

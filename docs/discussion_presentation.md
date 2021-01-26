@@ -19,7 +19,7 @@
     - a sequence of local tools distributed over a computing cluster
     - a sequence of remote networked components (e.g. **webservices**)
     - some hybrid form of the above
-- May involve **parallellisation**
+- May involve **parallelisation**
 - May involve **orchestration** through a workflow management system: determines which tasks are run when and where
 - May be fully **automated** or involve **user interaction**
 
@@ -38,7 +38,7 @@
 ## Workflow characteristics
 
 - **Scheduling**: Determining which sequence of tasks leads to the desired end result
-- **Execution**: Execution of tasks, possibly with automatic parallellisation/abstraction
+- **Execution**: Execution of tasks, possibly with automatic parallelisation/abstraction
     - Abstraction of pipeline logic from execution layer: local execution, computing cluster, cloud platform
 - **Monitoring**: Real-time monitoring of a running workflow and ability to inspect logs on failure
 - **Correction**: Ability to resume the workflow after failure and manual intervention; and/or automated fallbacks
@@ -65,23 +65,23 @@ Different audiences may require different workflows.
 
 A prerequisite for a workflow is that the underlying tools or services are in some way **interoperable**.
 
-- **Data format and vocabulary** - Do the tools use the same data format? And are vocabularies they use (e.g. tag sets
+- **Data exchange formats and vocabulary** - Do the tools use the same data format? Are vocabularies they use (e.g. tag sets
     in linguistic annotation) compatible?
 - **Interface specification** - Does the tool/service have a clear interface specification (CLI, API, web API) that is
     well documented and facilitates interoperability?
 - **Environment compatibility** - Do the tools run on the same platform (OS/software ecosystem) and architecture? Can the interface of tool B be called from tool A?
 
 **Discussion Point #2**: I advocate a bottom-up focus; setting interoperability requirements at this lower level is a
-prerequisite for integrating tools/services in any higher-level workflow. We should focus more on the former than the latter. I think the workflow group could play a role in defining common interfaces, environments and data formats.
+prerequisite for integrating tools/services in any higher-level workflow. We should focus more on the former than the latter. I think the workflow group could play a role in defining common interfaces, environments and data exchange conventions.
 
 ## Workflow solutions used in CLARIN/CLARIAH (1/3)
 
 * *TTNWW* (CLARIN-NL) - A failed project in CLARIN-NL to offer workflows based on Apache Taverna
 * [Weblicht](Weblicht https://weblicht.sfs.uni-tuebingen.de/) (CLARIN-D) - An execution environment for automatic annotation of text corpora, integrating various NLP tools. Probably the most populated and well-known environment in the CLARIN domain.
-* [Nextflow](https://nextflow.io) - General data-driven pipelines. Used in WP3 by PICCL, Nederlab.
+* [Nextflow](https://nextflow.io) - General data-driven pipelines. Used in CLARIAH WP3 by PICCL, Nederlab Enrichment Pipeline.
 * [Apache Airflow](https://airflow.apache.org/) - Workflow Management system - A platform to programmatically author, schedule and monitor workflows.
-* [Apache Taverna](https://taverna.incubator.apache.org/) - Workflow Management System – a suite of tools used to design and execute scientific workflows and aid in silico experimentation.
-* [Text Tonsorium](https://cst.dk/WMS) (CLARIN-DK) An NLP workflow managment system that automatically combines the necessary
+* [Apache Taverna](https://taverna.incubator.apache.org/) - Workflow Management System – a suite of tools used to design and execute scientific workflows and aid in experimentation.
+* [Text Tonsorium](https://cst.dk/WMS) (CLARIN-DK) - An NLP workflow management system that automatically combines the necessary
 natural language processing tools to achieve your goal.
 
 
@@ -124,22 +124,22 @@ and the Audio/Video group.
 ## Proposed specification for simple forwarding of data between webservices
 
 I [propose a simple solution](https://github.com/CLARIAH/IG-Workflows/issues/6) for forwarding data between webservices
-in a *heterogenous* authentication environment:
+in a *heterogeneous* authentication environment:
 
 ![Webservices forwarding](webservices_forwarding.png)
 
 **Discussion Point #6**: What do you think about the proposed forwarding mechanism? And about the focus on such
-interoperability issues in general?
+interoperability issues in general? Are there other proposals at this stage?
 
 ## Discussion
 
 * **Discussion Point #1**: What aims do we prioritise in CLARIAH, with respect to workflows?
-* **Discussion Point #2**: I advocate a bottom-up focus; focus on interoperability in the tools rather than on the
-    workflow management side.
+* **Discussion Point #2**: I advocate a bottom-up focus; focus on interoperability in the tools first and foremost, and on the
+    workflow management side afterwards.
 * **Discussion Point #3**: What other workflow solutions are in use? What do we think about the existing initiatives?
 * **Discussion Point #4**: What does it mean to develop an infrastructure with respect to workflows? I don't think we
 should force any particular workflow management solution, nor set up one centralised platform.
 * **Discussion Point #5**: What tools/services need to be connected? What use cases are there for the connections?
 * **Discussion Point #6**: What do you think about the proposed forwarding mechanism? And about the focus on such
-interoperability issues in general?
+interoperability issues in general? Are there other proposals at this stage?
 

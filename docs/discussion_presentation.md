@@ -9,7 +9,7 @@
 - CLARIAH aims for a common **infrastructure**
 - **Interoperability** and **connectivity** between CLARIAH tools
 - The Workflow Interest Group aims to help define these connections
-- Connecting tools/services produces a **workflow**
+- Connecting tools/services creates the potential for **workflows**
 
 ## What is a workflow?
 
@@ -23,13 +23,13 @@
 - May involve **orchestration** through a workflow management system: determines which tasks are run when and where
 - May be fully **automated** or involve **user interaction**
 
-## Workflow paradigms
+## Workflow specification paradigms
 
 - **goal oriented** (GNU Make, luigi, snakemake, Airflow)
     - specify the goal and the initial input and intermediate tasks are resolved automatically
     - Often implemented as directed acyclic graphs consisting of tasks
 - **data-flow oriented** (Unix pipes, Nextflow, SciPipe)
-    - tasks are defined as a function of how the data flows through
+    - specify tasks as a function of how the data flows through
 - **procedural** ((shell) scripts)
     - tasks are defined in the order they are performed
 
@@ -38,17 +38,17 @@
 ## Characteristics of Workflow Managagement Systems
 
 - **Scheduling**: Determining which sequence of tasks leads to the desired end result
-- **Execution**: Execution of tasks, possibly with automatic parallelisation/abstraction
+- **Execution**: Execution of tasks, possibly with automatic parallelisation, abstraction and distribution
     - Abstraction of pipeline logic from execution layer: local execution, computing cluster, cloud platform
 - **Monitoring**: Real-time monitoring of a running workflow and ability to inspect logs on failure
 - **Correction**: Ability to resume the workflow after failure and manual intervention; and/or automated fallbacks
-- **Reproducibility**: Given the same input, the workflow should ideally produce the same output every time
-- **Discovery**: Automated discovery of possible workflows
 - **Interaction**: Human intervention (steering/inspection/visualisation) in at specific points in a workflow
+- **Discovery**: Automated discovery of possible workflows
+- **Reproducibility**: Given the same input, the workflow should ideally produce the same output every time
 
 (not all need apply)
 
-## Workflow aims
+## Workflow uses
 
 - Offer a more accessible abstraction over a series of complex tasks
     - Offer a series of predefined workflows
@@ -70,8 +70,7 @@ A prerequisite for a workflow is that the underlying tools or services are in so
     well documented and facilitates interoperability?
 - **Environment compatibility** - Do the tools run on the same platform (OS/software ecosystem) and architecture? Can the interface of tool B be called from tool A?
 
-**Discussion Point #2**: I advocate a bottom-up focus; setting interoperability requirements at this lower level is a
-prerequisite for integrating tools/services in any higher-level workflow. We should focus more on the former than the latter. I think the workflow group could play a role in defining common interfaces, environments and data exchange conventions.
+**Discussion Point #2**: I advocate to focus especially on this lower-level interoperability, as this is a prerequisite for integration in any higher-level workflow and will have most impact. I think the workflow group could play a role in defining common interfaces, environments and data exchange conventions.
 
 ## Pitfalls in building an infrastructure (1/1)
 
@@ -103,7 +102,8 @@ natural language processing tools to achieve your goal.
 
 ## Workflow solutions used in CLARIN/CLARIAH (3/3)
 
-**Discussion Point #3**: What other workflow solutions are in use? What do we think about the existing initiatives?
+**Discussion Point #3**: What other workflow solutions are in use? What do we think about the existing initiatives and
+what does it teach us that there are so many of them and that they are often domain-specific?
 
 **Discussion Point #4**: What does it mean to develop an infrastructure with respect to workflows? I don't think we
 should force any particular workflow management solution, nor set up one centralised platform (and most certainly not develop and add yet another workflow system to the existing jungle)
@@ -138,15 +138,14 @@ in a *heterogeneous* authentication environment:
 **Discussion Point #6**: What do you think about the proposed forwarding mechanism? And about the focus on such
 interoperability issues in general? Are there other proposals at this stage?
 
-## Discussion
+## Discussion Points
 
-* **Discussion Point #1**: What aims do we prioritise in CLARIAH, with respect to workflows?
-* **Discussion Point #2**: I advocate a bottom-up focus; focus on interoperability in the tools first and foremost, and on the
-    workflow management side afterwards.
-* **Discussion Point #3**: What other workflow solutions are in use? What do we think about the existing initiatives?
-* **Discussion Point #4**: What does it mean to develop an infrastructure with respect to workflows? I don't think we
+1. What aims do we prioritise in CLARIAH, with respect to workflows?
+2. I advocate to focus especially on this lower-level interoperability, as this is a prerequisite for integration in any higher-level workflow and will have most impact.
+3. What other workflow solutions are in there? What do we think about thes? What does it teach us that there so many and often so domain specific?
+4. What does it mean to develop an infrastructure with respect to workflows? I don't think we
 should force any particular workflow management solution, nor set up one centralised platform.
-* **Discussion Point #5**: What tools/services need to be connected? What use cases are there for the connections?
-* **Discussion Point #6**: What do you think about the proposed forwarding mechanism? And about the focus on such
+5. What tools/services need to be connected? What use cases are there for the connections?
+6. What do you think about the proposed forwarding mechanism? And about the focus on such
 interoperability issues in general? Are there other proposals at this stage?
 

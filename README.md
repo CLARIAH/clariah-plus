@@ -28,5 +28,5 @@ The below listing links to all use cases in no particular order, better ordering
 * [Research Environment for Workshop: Cataloguing of Textual Cultural Heritage
     Objects](cases/cataloguing-of-textual-cultural-heritage-objects.md) (WP3, LaMachine)
 * [PICCL deployment at a CLARIN centre](cases/piccl-deployment.md) (WP3, LaMachine/PICCL)
-
+* [Linkage of Dutch Civil Records](cases/civil-records-linkage.md) (WP4)
 

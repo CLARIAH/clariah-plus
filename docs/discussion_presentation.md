@@ -128,12 +128,14 @@ and the Audio/Video group.
 
 ![VRE Services](vre_services.png)
 
-## Proposed specification for simple forwarding of data between webservices
+## Proposed specification for simple forwarding of data between webservices (2/2)
 
 I [propose a simple solution](https://github.com/CLARIAH/IG-Workflows/issues/6) for forwarding data between webservices
 in a *heterogeneous* authentication environment:
 
 ![Webservices forwarding](webservices_forwarding.png)
+
+## Proposed specification for simple forwarding of data between webservices (1/2)
 
 **Discussion Point #6**: What do you think about the proposed forwarding mechanism? And about the focus on such
 interoperability issues in general? Are there other proposals at this stage?

@@ -30,4 +30,5 @@ The below listing links to all use cases in no particular order, better ordering
 * [PICCL deployment at a CLARIN centre](cases/piccl-deployment.md) (WP3, LaMachine/PICCL)
 * [Linkage of Dutch Civil Records](cases/civil-records-linkage.md) (WP4)
 * [Extracting Information about Flood Disasters ](cases/flood-tags.md) (WP3, FLAT)
+* [Nederlab: Automatic Linguistic Enrichment of Historical Dutch](cases/nederlab-enrichment.md) (WP3, Frog/FoLiA)
 

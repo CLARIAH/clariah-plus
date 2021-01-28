@@ -9,7 +9,7 @@
 * **Coordinators:**  Richard Zijdeman (IISG)
 * **Developers**: Joe Raad (VU)
 * **End-users**: The software is designed for the so called "digital historians" (e.g. someone with basic command line skills) who are interested in using the Dutch civil registries for their studies or linking their data to it.
-* **Interest Groups**: [IG-LOD](https://github.com/CLARIAH/IG-LOD) and [IG-Curation](https://github.com/CLARIAH/IG-Curation)
+* **Interest Groups**: [IG-LOD](https://github.com/CLARIAH/IG-LOD), [IG-Workflows](https://github.com/CLARIAH/IG-Workflows), and [IG-Curation](https://github.com/CLARIAH/IG-Curation)
 <!-- * **Task IDs**: (zero or more task IDs if this is addressed in existing CLARIAH-PLUS tasks) -->
 
 ## Description

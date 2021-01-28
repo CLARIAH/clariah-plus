@@ -4,7 +4,7 @@
 
 * **Status:**  Completed
 * **Type:** Specific
-* **Work Package**: WP3
+* **Work Package**: WP3/WP6
 * **Research Coordinators:**  Katrien DePuydt (INT), Hennie Brugman (KNAW HuC)
 * **Participating Institutes:** INT, KNAW HuC, Radboud
 * **Developers**: Erik Tjong Kim Sang (KNAW HuC), Maarten van Gompel (RU), Jesse de Does (INT), Erwin Komen (RU)

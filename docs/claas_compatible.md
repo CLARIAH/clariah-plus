@@ -7,6 +7,8 @@ CLaaS is a concept that deals with three problem domains:
 1. How can the Clariah software components become an integrated whole? How can we allow the user to seamlessly switch from one component to the next?
 1. How can we balance the overhead of integration and quality with the need to improve, innovate and try new things?
 
+## Making software CLaaS compatible
+
 The CLaaS concept proposes to handle these problems using the following techniques:
 1. To ensure that the software can be hosted by people who are not the developers
     1. the released artifacts of the software components should be in a standardised format. This is not just the binary, but also the ways that the binary interacts with the host system. So that someone who is not the original programmer is able to 
@@ -30,8 +32,10 @@ We take a proactive stance here. If the software does not score high on the abov
 These points are rather handwavy. The Interest Groups were formed to elaborate them and make them concrete. In the IG providers and users collaborate to reach a level where the standard achieves these goals, while still being practical.
 
 
-## Operationalization
+### Operationalization
 
 Being “CLaaS compatible” therefore means that the first a judgement is made where the software is placed on the axis from “very experimental” to “very fundamental”. This is a decision by the CLARIAH board that is made based on information on the technical fit of the software within the infrastructure (as provided by the technical board) and the impact that it can have on the user’s work (as provided by the work packages 3 - 6). 
 
 Based on that decision the software receives either requirements on quality and stability or requirements on “unstability”. Here we are talking about the "right to exist" of the applications and to what extent we think it is good that the application violates our own rules and what measures we take to limit its impact. If you remember the presentation, we say that an experiment does not have to adhere to any standards at all, but that it does not remain in the air as a service after the experiment has ended (and that only the buildbase + code + paper is published and is archived). Or that it is best to write a piece of software that does exactly the same as another existing piece of software, but that evaluation criteria and an evaluation moment are planned in which it is determined with which service the CLARIAH project will continue.
+
+## Making institutes CLaaS compatible

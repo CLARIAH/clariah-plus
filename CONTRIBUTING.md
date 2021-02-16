@@ -12,3 +12,17 @@
       repository.
     - If you prefer to push directly to the repository and skip the review/discussion stage offered by the Pull Request, then that is fine too at
       this point in time.
+
+## Help for beginners
+
+If you're new to git and github and this looks a bit daunting to you, then don't panic! You can simply edit directly from github's interface as follows:
+
+1. Make sure you have a Github account and are logged in
+2. Go to https://github.com/CLARIAH/usecases/tree/master/cases directory, click the **Add file** button on the top-right and select **Create new file**.
+3. Copy the contents from https://raw.githubusercontent.com/CLARIAH/usecases/master/TEMPLATE.md , paste it into the text field and adapt it.
+4. Enter a filename in the *Create* field, make sure it is a simple descriptive filename without no spaces, prerefably all lowercase and ends in ``.md``. You
+   can optionally enter a short description in the field below.
+5. Choose the *Create a new branch for this commit and start a pull request.* option and press **Commit new file**,
+6. Submit the pull request in the new form that appears
+
+

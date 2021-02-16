@@ -1,7 +1,7 @@
 # CLARIAH Use Cases: Contribution Guidelines
 
 1. Each use case is described by a Markdown file in the ``cases/`` directory, one file per use-case.
-    - Choose a simple descriptibe filename, avoid spaces, and mind that filenames are case-sensitive.
+    - Choose a simple descriptive filename, avoid spaces, and mind that filenames are case-sensitive.
     - All documents should be plain text following [Markdown](https://guides.github.com/features/mastering-markdown/) syntax and always use the UTF-8 character encoding. Use the ``.md`` extension.
     - We recommend you use [this template](TEMPLATE.md) as a basis for your use case document, but feel free to add things or deviate from it if it's not sufficient for your needs. Do make sure to check out the template for an idea of the information we request.
     - You can use any text editor you like, or edit online through the interface offered by Github.

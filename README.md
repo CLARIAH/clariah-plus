@@ -19,16 +19,24 @@ use cases. Please see the [contribution guidelines](CONTRIBUTING.md) and the [te
 
 ## Use cases
 
-The below listing links to all use cases in no particular order, better ordering will be applied at a later stage and is all subject to further discussion as we grow.
+The below listing links to all use cases based on their state, but in no further particular order, better ordering will be applied at a later stage and is all subject to further discussion as we grow.
+
+### Proposed
+
+* [Triples-workbench: store, browse, query and visualize triples](cases/triples-workbench.md) (WP4)
+
+### In progress
 
 * [Retrodigitization of Text-critical Editions](cases/max-weber.md) (WP3, FoLiA/FLAT/LaMachine)
 * [Negation Annotation in Dutch dialogue](cases/negation-annotation-task.md) (WP3, FLAT/FoLiA)
+* [Linkage of Dutch Civil Records](cases/civil-records-linkage.md) (WP4)
+
+### Completed
+
+* [PICCL deployment at a CLARIN centre](cases/piccl-deployment.md) (WP3, LaMachine/PICCL)
 * [PARSEME: Annotation of verbal multi-word expressions](cases/parseme.md) (WP3, FLAT)
 * [Tools to the data: Text Mining for Health Inspection](cases/text-mining-for-health-inspection.md) (WP3, LaMachine/Frog)
 * [Research Environment for Workshop: Cataloguing of Textual Cultural Heritage
     Objects](cases/cataloguing-of-textual-cultural-heritage-objects.md) (WP3, LaMachine)
-* [PICCL deployment at a CLARIN centre](cases/piccl-deployment.md) (WP3, LaMachine/PICCL)
-* [Linkage of Dutch Civil Records](cases/civil-records-linkage.md) (WP4)
 * [Extracting Information about Flood Disasters ](cases/flood-tags.md) (WP3, FLAT)
 * [Nederlab: Automatic Linguistic Enrichment of Historical Dutch](cases/nederlab-enrichment.md) (WP3/WP6, Frog/FoLiA)
-* [Triples-workbench: store, browse, query and visualize triples](cases/triples-workbench.md)

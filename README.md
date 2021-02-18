@@ -30,6 +30,7 @@ The below listing links to all use cases based on their state, but in no further
 * [Retrodigitization of Text-critical Editions](cases/max-weber.md) (WP3, FoLiA/FLAT/LaMachine)
 * [Negation Annotation in Dutch dialogue](cases/negation-annotation-task.md) (WP3, FLAT/FoLiA)
 * [Linkage of Dutch Civil Records](cases/civil-records-linkage.md) (WP4)
+* [Speech transcription of audiovisual data](cases/mediasuite-speech-transcription.md) (WP5)
 
 ### Completed
 

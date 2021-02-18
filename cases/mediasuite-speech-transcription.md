@@ -9,7 +9,7 @@
 * **Coordinators for CLARIAH:**  Roeland Ordelman
 * **Participating Institutes:** Netherlands Institute for Sound and Vision, Radboud Universiteit Nijmegen, Meertens Instituut, Universiteit Twente
 * **End-users**: (Who is involved as end-user for this use-case? Try to mention name, institute, role/responsibility)
-* **Developers**: Jaap Blom, Maarten van Gompel, Nanne van Noord, Martijn van de Donk, Willem Melder
+* **Developers**: Jaap Blom, Maarten van Gompel, Nanne van Noord, Martijn van de Donk, Willem Melder, Louis ten Bosch
 * **Interest Groups**: Audiovisual Processing, DevOps
 * **Task IDs**: (zero or more task IDs if this is addressed in existing CLARIAH-PLUS tasks)
 
@@ -48,9 +48,9 @@ This can be facilitated with three tools:
 
 ### What software and services are involved?
 
-Currently we are working with the Kaldi_NL open-source speech recognition toolkit and alignment tool maintained by [Stichting Openspraaktechnologie](https://openspraaktechnologie.org/). See also this [GitHub Repository](https://github.com/opensource-spraakherkenning-nl)
+Currently we are working with the Kaldi_NL open-source speech recognition toolkit and alignment tool maintained by [Stichting Openspraaktechnologie](https://openspraaktechnologie.org/). See also this [GitHub Repository](https://github.com/opensource-spraakherkenning-nl). A special version of this recognizer tuned towards Oral History collections within CLARIAH is also offered via [Lama webservies at CLST](https://webservices.cls.ru.nl/oralhistory).
 
-Kaldi_NL is implemented in the [DANE](https://github.com/CLARIAH/DANE) workflow tool at NISV facilitating ASR transcription for the collections in the [CLARIAH Media Suite](https://mediasuite.clariah.nl/).
+Kaldi_NL is implemented in the [DANE](https://github.com/CLARIAH/DANE) workflow tool at NISV facilitating ASR transcription for the collections in the [CLARIAH Media Suite](https://mediasuite.clariah.nl/). 
 
 #### Data
 

@@ -7,7 +7,7 @@
 * **Work Package**: WP5
 * **Research Coordinators:**  Roeland Ordelman, Nanne van Noord
 * **Coordinators for CLARIAH:**  Nanne van Noord
-* **Participating Institutes:** NISV, UvA
+* **Participating Institutes:** NISV, UvA, Eye
 * **End-users**: Christian Olesen (UvA/UU), Jasmijn van Gorp (UU), Julia Noordegraaf (UvA) [Links to use cases will follow]
 * **Developers**: Nanne van Noord
 * **Interest Groups**: Audiovisual processing, Devops, Workflows

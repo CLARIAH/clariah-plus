@@ -3,7 +3,7 @@
 ## Metadata
 
 * **Status:**  Proposed
-* **Type:** Specific: institutes within NDE, CLARIAH-NL and specifically IISG, UVA UB and CLARIAH Vlaanderen
+* **Type:** Generic: institutes within NDE, CLARIAH-NL and specifically IISG, UVA UB and CLARIAH Vlaanderen
 * **Work Package**: WP4
 * **Research Coordinators:**  Richard Zijdeman
 * **Coordinators for CLARIAH:**  

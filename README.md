@@ -24,6 +24,7 @@ The below listing links to all use cases based on their state, but in no further
 ### Proposed
 
 * [Triples-workbench: store, browse, query and visualize triples](cases/triples-workbench.md) (WP4)
+* [Sex, Beer and RomComs: Studying the Debate on Dutch film](cases/debate_on_dutch_film.md) (WP5)
 
 ### In progress
 

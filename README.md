@@ -46,4 +46,4 @@ The below listing links to all use cases based on their state, but in no further
 * [Extracting Information about Flood Disasters ](cases/flood-tags.md) (WP3, FLAT)
 * [Nederlab: Automatic Linguistic Enrichment of Historical Dutch](cases/nederlab-enrichment.md) (WP3/WP6, Frog/FoLiA)
 * [Syntactic Movement Annotation](cases/syntactic-movement-annotation.md) (WP3, FoLiA/FLAT)
-* [COW:Integrated CSV to RDF converter](https://github.com/CLARIAH/usecases/blob/master/cases/usecase-cow.md)(WP4)
+* [COW:Integrated CSV to RDF converter](https://github.com/CLARIAH/usecases/blob/master/cases/usecase-cow.md) (WP4)

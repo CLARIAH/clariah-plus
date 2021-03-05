@@ -1,4 +1,4 @@
-# CoW: Csv On the Web
+# CoW: CSV On the Web
 
 ## Metadata
 

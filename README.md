@@ -37,6 +37,7 @@ The below listing links to all use cases based on their state, but in no further
 * [Speech transcription of audiovisual data](cases/mediasuite-speech-transcription.md) (WP5)
 * [Providing Language and Speech webservices at CLST (Radboud University, Nijmegen)](cases/clst-webservices.md) (WP3, CLAM/LaMachine)
 * [Computer vision annotations 'n' enrichments of audiovisual data](cases/dane-av-enrichments.md) (WP5, DANE)
+* [DANS CMDI use case for CLARIAH WP3](cases/dans-cmdi.md) (WP3)
 
 ### Completed
 

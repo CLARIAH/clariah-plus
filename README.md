@@ -26,6 +26,7 @@ The below listing links to all use cases based on their state, but in no further
 * [Triples-workbench: store, browse, query and visualize triples](cases/triples-workbench.md) (WP4)
 * [Sex, Beer and RomComs: Studying the Debate on Dutch film](cases/debate_on_dutch_film.md) (WP5)
 * [Historical research across (audio)visual and textual archives and collections](cases/historical_research_across_archives_collections.md) (WP5)
+* [A Cross-Media Analysis of the Refugee Crisis](cases/Cross-Media_Analysis_of_the_Refugee_Crisis.md) (WP5/6)
 
 ### In progress
 

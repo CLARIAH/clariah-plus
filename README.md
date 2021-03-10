@@ -40,6 +40,7 @@ We use the following communication channel:
 - Cf. the [awesome humanities ontologies](https://github.com/CLARIAH/awesome-humanities-ontologies) list.
 
 ## Group Members
+- Mike Bryant (EHRI / King's College London)
 - Steven Claeyssens (National Library of the Netherlands)
 - Sebastiaan Derks (Huygens ING / KNAW Humanities Cluster, group coordinator)
 - Ed de Heer (National Archives of the Netherlands)
@@ -49,6 +50,7 @@ We use the following communication channel:
 - Dirk Roorda (DANS / KNAW)
 - Ruben Schalk (Utrecht University)
 - Ronald Sluijter (Huygens ING / KNAW Humanities Cluster)
+- Frank Uiterwaal (EHRI / NIOD)
 - Mari Wigham (Netherlands Institute for Sound and Vision)
 - Leon van Wissen (University of Amsterdam)
 - Douwe Zeldenrust (Meertens Institute / KNAW Humanities Cluster)

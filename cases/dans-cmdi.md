@@ -34,18 +34,19 @@ DANS data station API, using the to be developed pipeline for CMDI metadata extr
 Apache Superset will be used to visualize all relations between CMDI fields and external ontologies.
  
 ### How to evaluate this?
-Export Dataverse datasets back to CMDI format and compare all fields with originally archived CMDI files. 
+Export Dataverse datasets back to CMDI format and compare all fields with originally archived CMDI files. The quality of the created datasets could be automatically checked using F-UJI assestment tool. 
  
 ### References
 * [Adding CMDI support in Dataverse (presentation)](https://www.slideshare.net/vty/clarin-cmdi-support-in-dataverse)
 * [Clariah Tech Day: Controlled Vocabularies and Ontologies in Dataverse](https://www.slideshare.net/vty/clariah-tech-day-controlled-vocabularies-and-ontologies-in-dataverse) 
 * [CMDI Component Registry](https://catalog.clarin.eu/ds/ComponentRegistry/#/)
 * [BeFAIR networked services infrastructure](http://github.com/CoronaWhy/befair/)
-* [Apache Airflow https://airflow.apache.org)
+* [Apache Airflow] https://airflow.apache.org)
 * [Apache Superset](https://superset.apache.org)
 * [SKOSMOS framework](http://skosmos.org)
 * [Semantic Bot](https://github.com/opendatasoft/semantic-bot)
 * [Dataverse DDI Converter tool](http://github.com/IQSS/dataverse-ddi-converter-tool)
 * [Metadata & CMDI CLARIN Component Metadata Infrastructure](https://www.clarin.nl/sites/default/files/MetadataEnCMDI.pptx)
+* [F-UJI, FAIRsFAIR Research Data Object Assessment Service](https://github.com/pangaea-data-publisher/fuji)
 
 

@@ -58,7 +58,7 @@ CLARIN/CLARIAH services.
 
 Related use cases:
 
-* [Providing Language and Speech webservices at CLST (Radboud University, Nijmegen)](cases/clst-webservices.md) (WP3, CLAM/LaMachine)
+* [Providing Language and Speech webservices at CLST (Radboud University, Nijmegen)](clst-webservices.md) (WP3, CLAM/LaMachine)
 
 Publications:
 

@@ -42,7 +42,7 @@ The below listing links to all use cases based on their state, but in no further
 ### Completed
 
 * [Data format for linguistically-annotated corpora](cases/folia-corpora.md) (WP3, FoLiA)
-* [Quickly building webservices](cases/clam-webservice.md) (WP3, CLAM)
+* [Quickly building webservices with CLAM](cases/clam-webservice.md) (WP3, CLAM)
 * [PICCL deployment at a CLARIN centre](cases/piccl-deployment.md) (WP3, LaMachine/PICCL)
 * [PARSEME: Annotation of verbal multi-word expressions](cases/parseme.md) (WP3, FLAT)
 * [Tools to the data: Text Mining for Health Inspection](cases/text-mining-for-health-inspection.md) (WP3, LaMachine/Frog)

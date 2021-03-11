@@ -43,6 +43,7 @@ The below listing links to all use cases based on their state, but in no further
 
 ### Completed
 
+* [Automatic linguistic enrichment for Dutch texts using Frog](cases/frog.md) (WP3, Frog/FoLiA)
 * [Data format for linguistically-annotated corpora](cases/folia-corpora.md) (WP3, FoLiA)
 * [Quickly building webservices with CLAM](cases/clam-webservice.md) (WP3, CLAM)
 * [PICCL deployment at a CLARIN centre](cases/piccl-deployment.md) (WP3, LaMachine/PICCL)

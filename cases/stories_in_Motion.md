@@ -19,7 +19,7 @@
 
 How can we make immaterial traces from the past tangible as sustainable and reusable data for urban  communities and stakeholders? The [Stories in Motion](https://docs.google.com/document/d/1aihuRMvYeU5nrKOLG0D47h2CTQw0i1S2rBREE52mttk/edit) project aims to create a much-needed model for collecting, archiving and (re-)using oral histories.
 
-This use case on ‘Gerse Vrouwen’ and ‘[Out in Rotterdam](https://digitup.nl/outinrotterdam/)’ will make the oral histories collected accessible as data in the Media Suite. The resulting model (‘Story Cycle Model’) will be developed in co-creative workshops with the project’s collaboration partners and their volunteers throughout June 2021-May 2022.
+This use case on ‘[Gerse Vrouwen](https://digitup.nl/gerse-vrouwen/)’ and ‘[Out in Rotterdam](https://digitup.nl/outinrotterdam/)’ will make the oral histories collected accessible as data in the Media Suite. The resulting model (‘Story Cycle Model’) will be developed in co-creative workshops with the project’s collaboration partners and their volunteers throughout June 2021-May 2022.
 
 
 ### What problem is hindering the research?

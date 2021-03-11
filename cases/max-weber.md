@@ -67,6 +67,10 @@ I do have to explicitly note that we can not provide proper PICCL support, as Ko
 
 ## References
 
+Related use cases:
+
+* [Data format for linguistically-annotated corpora](folia-corpora.md) (WP3, FoLiA)
+
 Some of the specific issues that popped up thus-far, and have been mostly dealt with already:
 
 * [Rendering problem in FLAT](https://github.com/proycon/flat/issues/166)

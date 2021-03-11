@@ -41,9 +41,15 @@ TSV format to FoLiA, and many fixes.
 
 ## References
 
-References to related resources and publications and especially links to related use-cases:
+Related use cases:
+
+* [Data format for linguistically-annotated corpora](folia-corpora.md) (WP3, FoLiA)
+
+Links:
 
 * [PARSEME guide for FLAT users (annotators)](https://docs.google.com/document/d/1bmO_H5rZZFZODvHIKf6VC0a_RCQe2H81yrd_EypCVyQ/edit?ts=594aaeb5)
+
+Publications:
 
 * Agata  Savary , Marie  Candito , Verginica Barbu  Mititelu , Eduard  Bejček , Fabienne  Cap , Slavomír  Čéplö , Silvio Ricardo  Cordeiro , Gülşen  Eryiğit , Voula  Giouli , Maarten  Gompel , al. (2018) — PARSEME multilingual corpus of verbal multiword expressions — In: Multiword expressions at length and in depth: Extended papers from the mwe 2017 workshop,. Language Science Press. Berlin. [DOI 10.5281/zenodo.1471591](https://doi.org/10.5281/zenodo.1471591)
 * Ramisch, Carlos; Cordeiro, Silvio Ricardo; Savary, Agata; et al., 2018, Annotated corpora and tools of the PARSEME Shared Task on Automatic Identification of Verbal Multiword Expressions (edition 1.1), LINDAT/CLARIAH-CZ digital library at the Institute of Formal and Applied Linguistics (ÚFAL), Faculty of Mathematics and Physics, Charles University, http://hdl.handle.net/11372/LRT-2842.

@@ -71,11 +71,18 @@ contemporary translation could be used for further enrichment with tools (Frog) 
 
 ## References
 
-References to related resources and publications and especially links to related use-cases:
+Related use cases:
+
+* [Automatic linguistic enrichment for Dutch texts using Frog](frog.md) (WP3, Frog/FoLiA)
+* [Data format for linguistically-annotated corpora](folia-corpora.md) (WP3, FoLiA)
+
+Links:
 
 * [Nederlab Pipeline](https://github.com/proycon/nederlab-pipeline)
 * [Nederlab Portal](https://nederlab.nl)
 * [Nederlab Linguistic Enrichment work repositor](https://github.com/INL/nederlab-linguistic-enrichment) (private)
+
+Publications:
 
 * [The CLIN27 Shared Task: Translating Historical Text to Contemporary Language for Improving Automatic Linguistic Annotation](https://clinjournal.org/clinj/article/view/68/61), by Erik Tjong Kim Sang, Marcel Bollmann, Remko Boschker, Francisco Casacuberta, Feike Dietz, Stefanie Dipper, Miguel Domingo, Rob van der Goot, Marjo van Koppen, Nikola Ljubešiç, Robert Östling, Florian Petran, Eva Pettersson, Yves Scherrer, Marijn Schraagen, Leen Sevens, Jörg Tiedemann, Tom Vanallemeersch and Kalliopi Zervanou. In: Computational Linguistics in the Netherlands Journal, volume 7, pages 53-64, 2017, ISSN 2211-4009.
 * [Nederlab: Towards a Single Portal and Research Environment for Diachronic Dutch Text Corpora](https://ifarm.nl/erikt/papers/lrec2016nederlab.pdf), by Hennie Brugman, Martin Reynaert, Nicoline van der Sijs, René van Stipriaan, Erik Tjong Kim Sang and Antal van den Bosch. Proceedings of LREC 2016, Tenth International Conference on Language Resources and Evaluation, ELRA, Portoroz, Slovenia, pages 1277-1281, 2016, ISBN 978-2-9517408-9-1.

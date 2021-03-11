@@ -23,37 +23,42 @@ The below listing links to all use cases based on their state, but in no further
 
 ### Proposed
 
-* [Triples-workbench: store, browse, query and visualize triples](cases/triples-workbench.md) (WP4)
-* [Sex, Beer and RomComs: Studying the Debate on Dutch film](cases/debate_on_dutch_film.md) (WP5)
-* [Historical research across (audio)visual and textual archives and collections](cases/historical_research_across_archives_collections.md) (WP5)
-* [A Cross-Media Analysis of the Refugee Crisis](cases/Cross-Media_Analysis_of_the_Refugee_Crisis.md) (WP5/6)
-* [Stories in Motion: Integrating oral histories into the Media Suite](cases/stories_in_Motion.md) (WP5)
-* [Deep-learning for Dutch text mining](cases/deepfrog.md) (WP3, DeepFrog)
+|   Name                                                          |      WP | IG  | Tech |
+| :-------------------------------------------------------------- | :------ | :-- | :--- |
+| [Triples-workbench: store, browse, query and visualize triples](cases/triples-workbench.md) | 4 | LoD, UI, WF |
+| [Sex, Beer and RomComs: Studying the Debate on Dutch film](cases/debate_on_dutch_film.md) | 5, 2, 3, 4, 6 | AV, TP, Ann, LoD, WF, Cur, UI |
+| [Historical research across (audio)visual and textual archives and collections](cases/historical_research_across_archives_collections.md) | 5 | Ann, WF, Cur | MediaSuite |
+| [A Cross-Media Analysis of the Refugee Crisis](cases/Cross-Media_Analysis_of_the_Refugee_Crisis.md) | 5, 6 | WF,AV,TP
+| MediaSuite |
+| [Stories in Motion: Integrating oral histories into the Media Suite](cases/stories_in_Motion.md) | 5 | AV | MediaSuite |
+| [Deep-learning for Dutch text mining](cases/deepfrog.md) | 3 | TP | DeepFrog |
 
 ### In progress
 
-* [Retrodigitization of Text-critical Editions](cases/max-weber.md) (WP3, FoLiA/FLAT/LaMachine)
-* [Negation Annotation in Dutch dialogue](cases/negation-annotation-task.md) (WP3, FLAT/FoLiA)
-* [Linkage of Dutch Civil Records](cases/civil-records-linkage.md) (WP4)
-* [Speech transcription of audiovisual data](cases/mediasuite-speech-transcription.md) (WP5)
-* [Providing Language and Speech webservices at CLST (Radboud University, Nijmegen)](cases/clst-webservices.md) (WP3, CLAM/LaMachine)
-* [Computer vision annotations 'n' enrichments of audiovisual data](cases/dane-av-enrichments.md) (WP5, DANE)
-* [DANS CMDI use case for CLARIAH WP3](cases/dans-cmdi.md) (WP3)
-* [Historical research on media-events across heterogenous broadcast datasets with linked and missing data](cases/historical_research_on_media-events_across_heterogenous_broadcast_data.md)
- (WP5)
+|   Name                                                          |      WP | IG  | Tech |
+| :-------------------------------------------------------------- | :------ | :-- | :--- |
+| [Retrodigitization of Text-critical Editions](cases/max-weber.md) | 3 | TP,Ann | FoLiA, FLAT |
+| [Negation Annotation in Dutch dialogue](cases/negation-annotation-task.md) | 3 | Ann | FLAT |
+| [Linkage of Dutch Civil Records](cases/civil-records-linkage.md) | 4 | LINKS |
+| [Speech transcription of audiovisual data](cases/mediasuite-speech-transcription.md) | 5 | MediaSuite |
+| [Providing Language and Speech webservices at CLST (Radboud University, Nijmegen)](cases/clst-webservices.md) | 3, 2 | DO,TP,WF | CLAM, LaMachine |
+| [Computer vision annotations 'n' enrichments of audiovisual data](cases/dane-av-enrichments.md) | 5 | AV,DO,WF | DANE |
+| [DANS CMDI use case for CLARIAH WP3](cases/dans-cmdi.md) | 3 | Pr | CMDI |
+| [Historical research on media-events across heterogenous broadcast datasets with linked and missing data](cases/historical_research_on_media-events_across_heterogenous_broadcast_data.md) | 5 | AV,TP,Ann,LoD | MediaSuite |
 
 ### Completed
 
-* [Automatic linguistic enrichment for Dutch texts using Frog](cases/frog.md) (WP3, Frog/FoLiA)
-* [Data format for linguistically-annotated corpora](cases/folia-corpora.md) (WP3, FoLiA)
-* [Quickly building webservices with CLAM](cases/clam-webservice.md) (WP3, CLAM)
-* [PICCL deployment at a CLARIN centre](cases/piccl-deployment.md) (WP3, LaMachine/PICCL)
-* [PARSEME: Annotation of verbal multi-word expressions](cases/parseme.md) (WP3, FLAT)
-* [Tools to the data: Text Mining for Health Inspection](cases/text-mining-for-health-inspection.md) (WP3, LaMachine/Frog)
-* [Research Environment for Workshop: Cataloguing of Textual Cultural Heritage
-    Objects](cases/cataloguing-of-textual-cultural-heritage-objects.md) (WP3, LaMachine)
-* [Extracting Information about Flood Disasters ](cases/flood-tags.md) (WP3, FLAT)
-* [Annotation of spelling correction for CLIN28 Shared Task](cases/clin28sharedtask.md) (WP3, FLAT/FoLiA)
-* [Nederlab: Automatic Linguistic Enrichment of Historical Dutch](cases/nederlab-enrichment.md) (WP3/WP6, Frog/FoLiA)
-* [Syntactic Movement Annotation](cases/syntactic-movement-annotation.md) (WP3, FoLiA/FLAT)
-* [COW:Integrated CSV to RDF converter](https://github.com/CLARIAH/usecases/blob/master/cases/usecase-cow.md) (WP4)
+|   Name                                                          |      WP | IG  | Tech |
+| :-------------------------------------------------------------- | :------ | :-- | :--- |
+| [Automatic linguistic enrichment for Dutch texts using Frog](cases/frog.md) | 3 | TP | Frog, FoLiA |
+| [Data format for linguistically-annotated corpora](cases/folia-corpora.md) | 3 | Ann,TP,LoD | FoLiA |
+| [Quickly building webservices with CLAM](cases/clam-webservice.md) | 3, 2 | DO,WF,TP | CLAM |
+| [PICCL deployment at a CLARIN centre](cases/piccl-deployment.md) | 3 | DO | LaMachine |
+| [PARSEME: Annotation of verbal multi-word expressions](cases/parseme.md) | 3 | Ann | FoLiA |
+| [Tools to the data: Text Mining for Health Inspection](cases/text-mining-for-health-inspection.md) | 3 | DO,TP | LaMachine, Frog |
+| [Research Environment for Workshop: Cataloguing of Textual Cultural Heritage Objects](cases/cataloguing-of-textual-cultural-heritage-objects.md) | 3 | DO,TP | LaMachine |
+| [Extracting Information about Flood Disasters ](cases/flood-tags.md) | 3 | Ann | FLAT |
+| [Annotation of spelling correction for CLIN28 Shared Task](cases/clin28sharedtask.md) | 3 | Ann | FLAT |
+| [Nederlab: Automatic Linguistic Enrichment of Historical Dutch](cases/nederlab-enrichment.md) | 3, 6 | TP,Ann | Frog,FoliA |
+| [Syntactic Movement Annotation](cases/syntactic-movement-annotation.md) | 3 | Ann | FLAT |
+| [COW:Integrated CSV to RDF converter](https://github.com/CLARIAH/usecases/blob/master/cases/usecase-cow.md) | 4 | LoD,Cur,WF | COW |

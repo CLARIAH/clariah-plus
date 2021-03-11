@@ -29,8 +29,7 @@ The below listing links to all use cases based on their state, but in no further
 | [Triples-workbench: store, browse, query and visualize triples](cases/triples-workbench.md) | 4 | LoD, UI, WF |
 | [Sex, Beer and RomComs: Studying the Debate on Dutch film](cases/debate_on_dutch_film.md) | 5, 2, 3, 4, 6 | AV, TP, Ann, LoD, WF, Cur, UI |
 | [Historical research across (audio)visual and textual archives and collections](cases/historical_research_across_archives_collections.md) | 5 | Ann, WF, Cur | MediaSuite |
-| [A Cross-Media Analysis of the Refugee Crisis](cases/Cross-Media_Analysis_of_the_Refugee_Crisis.md) | 5, 6 | WF,AV,TP
-| MediaSuite |
+| [A Cross-Media Analysis of the Refugee Crisis](cases/Cross-Media_Analysis_of_the_Refugee_Crisis.md) | 5, 6 | WF,AV,TP | MediaSuite |
 | [Stories in Motion: Integrating oral histories into the Media Suite](cases/stories_in_Motion.md) | 5 | AV | MediaSuite |
 | [Deep-learning for Dutch text mining](cases/deepfrog.md) | 3 | TP | DeepFrog |
 

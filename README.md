@@ -28,6 +28,7 @@ The below listing links to all use cases based on their state, but in no further
 * [Historical research across (audio)visual and textual archives and collections](cases/historical_research_across_archives_collections.md) (WP5)
 * [A Cross-Media Analysis of the Refugee Crisis](cases/Cross-Media_Analysis_of_the_Refugee_Crisis.md) (WP5/6)
 * [Stories in Motion: Integrating oral histories into the Media Suite](cases/stories_in_Motion.md) (WP5)
+* [Deep-learning for Dutch text mining](cases/deepfrog.md) (WP3, DeepFrog)
 
 ### In progress
 

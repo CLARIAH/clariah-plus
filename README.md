@@ -40,11 +40,11 @@ The below listing links to all use cases based on their state, but in no further
 | [Computer vision annotations 'n' enrichments of audiovisual data](cases/dane-av-enrichments.md) | 5 | AV,DO,WF | DANE |
 | [DANS CMDI use case for CLARIAH WP3](cases/dans-cmdi.md) | 3 | Prv | CMDI |
 | [Historical research on media-events across heterogenous broadcast datasets with linked and missing data](cases/historical_research_on_media-events_across_heterogenous_broadcast_data.md) | 5 | AV,TP,Ann,LoD | MediaSuite |
-| [Linkage of Dutch Civil Records](cases/civil-records-linkage.md) | 4 | LoD,WF,Cur, LINKS |
+| [Linkage of Dutch Civil Records](cases/civil-records-linkage.md) | 4 | LoD,WF,Cur | LINKS |
 | [Negation Annotation in Dutch dialogue](cases/negation-annotation-task.md) | 3 | Ann | FLAT |
 | [Providing Language and Speech webservices at CLST (Radboud University, Nijmegen)](cases/clst-webservices.md) | 3, 2 | DO,TP,WF | CLAM, LaMachine |
 | [Retrodigitization of Text-critical Editions](cases/max-weber.md) | 3 | TP,Ann | FoLiA, FLAT |
-| [Speech transcription of audiovisual data](cases/mediasuite-speech-transcription.md) | 5 | MediaSuite |
+| [Speech transcription of audiovisual data](cases/mediasuite-speech-transcription.md) | 5 | AV,Do | MediaSuite |
 
 ### Completed
 

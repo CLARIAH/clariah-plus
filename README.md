@@ -21,6 +21,7 @@ use cases. Please see the [contribution guidelines](CONTRIBUTING.md) and the [te
 
 The below listing links to all use cases based on their state, but in no further particular order, better ordering will be applied at a later stage and is all subject to further discussion as we grow.
 
+
 ### Proposed
 
 |   Name                                                          |      WP | IG  | Tech |
@@ -39,11 +40,11 @@ The below listing links to all use cases based on their state, but in no further
 | :-------------------------------------------------------------- | :------ | :-- | :--- |
 | [Retrodigitization of Text-critical Editions](cases/max-weber.md) | 3 | TP,Ann | FoLiA, FLAT |
 | [Negation Annotation in Dutch dialogue](cases/negation-annotation-task.md) | 3 | Ann | FLAT |
-| [Linkage of Dutch Civil Records](cases/civil-records-linkage.md) | 4 | LINKS |
+| [Linkage of Dutch Civil Records](cases/civil-records-linkage.md) | 4 | LoD,WF,Cur, LINKS |
 | [Speech transcription of audiovisual data](cases/mediasuite-speech-transcription.md) | 5 | MediaSuite |
 | [Providing Language and Speech webservices at CLST (Radboud University, Nijmegen)](cases/clst-webservices.md) | 3, 2 | DO,TP,WF | CLAM, LaMachine |
 | [Computer vision annotations 'n' enrichments of audiovisual data](cases/dane-av-enrichments.md) | 5 | AV,DO,WF | DANE |
-| [DANS CMDI use case for CLARIAH WP3](cases/dans-cmdi.md) | 3 | Pr | CMDI |
+| [DANS CMDI use case for CLARIAH WP3](cases/dans-cmdi.md) | 3 | Prv | CMDI |
 | [Historical research on media-events across heterogenous broadcast datasets with linked and missing data](cases/historical_research_on_media-events_across_heterogenous_broadcast_data.md) | 5 | AV,TP,Ann,LoD | MediaSuite |
 
 ### Completed
@@ -62,3 +63,19 @@ The below listing links to all use cases based on their state, but in no further
 | [Nederlab: Automatic Linguistic Enrichment of Historical Dutch](cases/nederlab-enrichment.md) | 3, 6 | TP,Ann | Frog,FoliA |
 | [Syntactic Movement Annotation](cases/syntactic-movement-annotation.md) | 3 | Ann | FLAT |
 | [COW:Integrated CSV to RDF converter](https://github.com/CLARIAH/usecases/blob/master/cases/usecase-cow.md) | 4 | LoD,Cur,WF | COW |
+
+### Legend
+
+[Interest groups](https://github.com/CLARIAH/ig):
+
+* Ann = [Annotation](https://github.com/CLARIAH/IG-Annotation)
+* AV = [Text Processing](https://github.com/CLARIAH/IG-AVProcessing)
+* Cur = [Curation](https://github.com/CLARIAH/IG-Curation)
+* DO = [DevOps](https://github.com/CLARIAH/IG-DevOPS)
+* LoD = [Linked Open Data](https://github.com/CLARIAH/IG-LOD)
+* TP = [Text Processing](https://github.com/CLARIAH/IG-Text)
+* Prv = Preservating
+* UI = UI/UX
+* WF = [Workflows](https://github.com/CLARIAH/IG-Workflows)
+
+The technology column refers to the most prominent CLARIAH products that feature in the use case (keep it short)

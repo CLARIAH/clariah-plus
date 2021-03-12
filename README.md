@@ -78,4 +78,17 @@ The below listing links to all use cases based on their state, but in no further
 * UI = UI/UX
 * WF = [Workflows](https://github.com/CLARIAH/IG-Workflows)
 
-The technology column refers to the most prominent CLARIAH products that feature in the use case (keep it short)
+The technology column refers to the most prominent CLARIAH products that feature in the use case (keep it short):
+
+* [CLAM](https://proycon.github.io/clam) - A framework to quickly build RESTful webservices and have a generic web-UI
+* [CMDI](https://www.clarin.eu/content/component-metadata) - CLARIN's Component Metadata Infrastructure
+* [COW](https://github.com/clariah/cow/) - CSV to RDF converter (CSVW)
+* [DANE](https://github.com/CLARIAH/DANE) - Handles compute task assignment and file storage for the automatic annotation of content.
+* [DeepFrog](https://github.com/proycon/deepfrog) - Deep-learning NLP tool & models for Dutch
+* [FLAT](https://github.com/proycon/flat) - A web-based annotation tool for (linguistic) annotation of text documents
+* [FoLiA](https://proycon.github.io/folia) - An XML-based Format for Linguistic Annotation
+* [Frog](https://languagemachines.github.io/frog) - An NLP-suite for Dutch
+* [LINKS](https://github.com/CLARIAH/burgerLinker) - Command line tool for linking civil registries
+* [LaMachine](https://proycon.github.io/LaMachine) - A meta-distribution with various NLP/CLARIAH tools and services
+* [MediaSuite](https://mediasuite.clariah.nl/) - A research environment to search, analyse, and annotate media
+    collections.

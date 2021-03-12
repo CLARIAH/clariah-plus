@@ -45,6 +45,7 @@ The below listing links to all use cases based on their state, but in no further
 | [Providing Language and Speech webservices at CLST (Radboud University, Nijmegen)](cases/clst-webservices.md) | 3, 2 | DO,TP,WF | CLAM, LaMachine |
 | [Retrodigitization of Text-critical Editions](cases/max-weber.md) | 3 | TP,Ann | FoLiA, FLAT |
 | [Speech transcription of audiovisual data](cases/mediasuite-speech-transcription.md) | 5 | AV,Do | MediaSuite |
+| [Vocab Recommender](cases/vocab-recommender.md) | 4 | LoD,CuR,WF |
 
 ### Completed
 

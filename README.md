@@ -32,7 +32,7 @@ The below listing links to all use cases based on their state, but in no further
 | [Sex, Beer and RomComs: Studying the Debate on Dutch film](cases/debate_on_dutch_film.md) | 5, 2, 3, 4, 6 | AV, TP, Ann, LoD, WF, Cur, UI |
 | [Stories in Motion: Integrating oral histories into the Media Suite](cases/stories_in_Motion.md) | 5 | AV | MediaSuite |
 | [Triples-workbench: store, browse, query and visualize triples](cases/triples-workbench.md) | 4 | LoD, UI, WF |
-| [Key point detection/pose analysis for Eye Jean Desmet collection through DANE](cases/key_point_detection-pose_analysis.md) | 5 | AV |
+| [Key point detection/pose analysis for Eye Jean Desmet collection through DANE](cases/key_point_detection-pose_analysis.md) | 5 | AV | MediaSuite |
 
 ### In progress
 

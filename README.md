@@ -13,6 +13,7 @@ The interest groups are:
 - [Text processing](https://github.com/CLARIAH/IG-Text)
 - [Annotation](https://github.com/CLARIAH/IG-Annotation)
 - [Linked Open Data](https://github.com/CLARIAH/IG-LOD)
+    -   [IG LOD: Publication and Use, Findability](https://github.com/CLARIAH/IG-LOD-Findability)
 - [Workflows](https://github.com/CLARIAH/IG-Workflows)
 - [Curation](https://github.com/CLARIAH/IG-Curation)
 - UI/UX

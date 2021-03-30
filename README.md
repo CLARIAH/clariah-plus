@@ -58,6 +58,7 @@ The below listing links to all use cases based on their state, but in no further
 | [COW:Integrated CSV to RDF converter](https://github.com/CLARIAH/usecases/blob/master/cases/usecase-cow.md) | 4 | LoD,Cur,WF | COW |
 | [Data format for linguistically-annotated corpora](cases/folia-corpora.md) | 3 | Ann,TP,LoD | FoLiA |
 | [Extracting Information about Flood Disasters ](cases/flood-tags.md) | 3 | Ann | FLAT |
+| [grlc -> sparql queries as api and with metadata](cases/queries-api-fair.md) | 4 | LoD | grlc |
 | [Nederlab: Automatic Linguistic Enrichment of Historical Dutch](cases/nederlab-enrichment.md) | 3, 6 | TP,Ann | Frog,FoliA |
 | [PARSEME: Annotation of verbal multi-word expressions](cases/parseme.md) | 3 | Ann | FoLiA |
 | [PICCL deployment at a CLARIN centre](cases/piccl-deployment.md) | 3 | DO | LaMachine |
@@ -90,6 +91,7 @@ The technology column refers to the most prominent CLARIAH products that feature
 * [FLAT](https://github.com/proycon/flat) - A web-based annotation tool for (linguistic) annotation of text documents
 * [FoLiA](https://proycon.github.io/folia) - An XML-based Format for Linguistic Annotation
 * [Frog](https://languagemachines.github.io/frog) - An NLP-suite for Dutch
+* [grlc](http://grlc.io/) - converts your SPARQL queries into RESTful APIs.
 * [LINKS](https://github.com/CLARIAH/burgerLinker) - Command line tool for linking civil registries
 * [LaMachine](https://proycon.github.io/LaMachine) - A meta-distribution with various NLP/CLARIAH tools and services
 * [MediaSuite](https://mediasuite.clariah.nl/) - A research environment to search, analyse, and annotate media

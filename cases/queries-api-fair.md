@@ -5,7 +5,7 @@
 * **Status:**  Completed, but underused by CLARIAH!
 * **Type:** Generic
 * **Work Package**: WP4, useful to WP2, WP5, perhaps WP6
-* **Research Coordinators:**  
+* **Research Coordinators:**
 * **Coordinators for CLARIAH:**  Richard Zijdeman
 * **Participating Institutes:** VU, UU
 * **End-users**: Anybody writing sparql queries, or anybody in need of an API, who doesn't write sparql queries
@@ -22,7 +22,7 @@ The research questions can really be from any domain even outside CLARIAH. The r
 
 ### What problem is hindering the research?
 - sparql being a rather new query language is new to both developers and researchers;
-- sparql queries are not Findable, Accessible (often hard coded in an application), Interoperable and Reusable. 
+- sparql queries are not Findable, Accessible (often hard coded in an application), Interoperable and Reusable.
 
 ### What is needed to do the research?
 - grlc.io (developed in CLARIAH CORE) helps to solve these issues. What is still need to is to make grlc.io sustainable software (e.g. make it a CLAAS service)

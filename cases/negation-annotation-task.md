@@ -2,7 +2,7 @@
 
 ## Metadata
 
-* **Status:**  In progress
+* **Status:**  Completed
 * **Type:** Specific
 * **Work Package**: WP3
 * **Coordinators:**  Tom Sweers (Radboud), Iris Hendrickx (supervisor, Radboud)

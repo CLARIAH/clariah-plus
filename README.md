@@ -54,6 +54,7 @@ The below listing links to all use cases based on their state, but in no further
 | [Providing Language and Speech webservices at CLST (Radboud University, Nijmegen)](cases/clst-webservices.md) | 3, 2 | DO,TP,WF | CLAM, LaMachine |
 | [Retrodigitization of Text-critical Editions](cases/max-weber.md) | 3 | TP,Ann | FoLiA, FLAT |
 | [Speech transcription of audiovisual data](cases/mediasuite-speech-transcription.md) | 5 | AV,Do | Media Suite |
+| [Store, share and search web annotations](cases/web-annotation-services.md) | 6, 3, 5 | AG, LoD |
 | [Tracing Re-use](cases/tracing_re-use.md) | 5 | WF,AN,AVP  | Media Suite|
 | [Vocab Recommender](cases/vocab-recommender.md) | 4 | LoD,CuR,WF |
 | [WP6 Use Case 005: Lossless Text Data Exchange](cases/wp6-use-case-5-lossless.md) | 6 | TP |

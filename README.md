@@ -33,6 +33,11 @@ The below listing links to all use cases based on their state, but in no further
 | [Stories in Motion: Integrating oral histories into the Media Suite](cases/stories_in_Motion.md) | 5 | AV | MediaSuite |
 | [Triples-workbench: store, browse, query and visualize triples](cases/triples-workbench.md) | 4 | LoD, UI, WF |
 | [Key point detection/pose analysis for Eye Jean Desmet collection through DANE](cases/key_point_detection-pose_analysis.md) | 5 | AV | MediaSuite |
+| [Corpus-based history of ideas](cases/black-phil-lab.md) | 6 | TP |
+| [Parallel historical corpus mining](cases/hipaco.md) | 3 | TP |
+| [Parallel corpus mining](cases/parallel-corpus-mining.md) | 3 | TP |
+| [Historical enrichment: Proof of concept corpus exploitation](cases/poc-corpus-historical-enrichment.md) | 3,6 | TP |
+| [Exploiting UD treebanks for the extraction of word combination statistics](cases/treebank-combi.md) | 3 | TP |
 
 ### In progress
 
@@ -47,6 +52,11 @@ The below listing links to all use cases based on their state, but in no further
 | [Speech transcription of audiovisual data](cases/mediasuite-speech-transcription.md) | 5 | AV,Do | Media Suite |
 | [Vocab Recommender](cases/vocab-recommender.md) | 4 | LoD,CuR,WF |
 | [Tracing Re-use](cases/tracing_re-use.md) | 5 | WF,AN,AVP  | Media Suite|
+| [Curation of transcribed historical newspaper corpus (Wp6 Use case 2)](cases/curation-historical-newspapers.md) | 6 | TP |
+| [Digitization workflow for historical newspapers (WP6 use case 2)](cases/ocr-historical-newspapers.md) | 6,3 | TP |
+| [WP6 use case VOC](cases/wp6-use-case-1-voc.md) | 6 | TP | 
+| [WP6 Use case 3: Tools to data](cases/wp6-use-case-3-tools-to-data.md) | 6 | DevOps, TP |
+| [WP6 Use Case 005: Lossless Text Data Exchange](cases/wp6-use-case-5-lossless.md) | 6 | TP |
 
 ### Completed
 

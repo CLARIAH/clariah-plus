@@ -45,9 +45,13 @@ Suitable tools were lacking for historical text processing, a.o.
 Among others:
 * Generale Missiven (TEI data converted from ABBYY XML, also NAF and Text fabric representations)
 * Pieter van Dam, Beschryvinge van de Oostindische Compagnie
+* Dagh-register gehouden int Casteel Batavia vant passerende daer ter plaetse als over geheel Nederlandts-India (1624-1682, uitgegeven in periode 1887-1931)
+* De dagregisters van het kasteel Zeelandia, Taiwan (1629-1662, uitgegeven in periode 1986-2000)
+* several relevant books, newpaper articles and periodicals
+* a range of available relevant structural data Sources
 
 
-#### Tools 
+#### Tools
 
 Currently deployed:
 * Conversion pipeline Abbyy XML --> TEI --> NAF/XMI (Sophie Arnoult and Jesse de Does)

@@ -27,6 +27,7 @@ The below listing links to all use cases based on their state, but in no further
 |   Name                                                          |      WP | IG  | Tech |
 | :-------------------------------------------------------------- | :------ | :-- | :--- |
 | [A Cross-Media Analysis of the Refugee Crisis](cases/Cross-Media_Analysis_of_the_Refugee_Crisis.md) | 5, 6 | WF,AV,TP | MediaSuite |
+| [Annotatable collections](cases/annotatable-collections.md) | 6, 3, 5 | Ann, AV, LoD |
 | [Corpus-based history of ideas](cases/black-phil-lab.md) | 6 | TP |
 | [Deep-learning for Dutch text mining](cases/deepfrog.md) | 3 | TP | DeepFrog |
 | [Exploiting UD treebanks for the extraction of word combination statistics](cases/treebank-combi.md) | 3 | TP |

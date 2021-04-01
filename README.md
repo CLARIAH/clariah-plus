@@ -33,6 +33,7 @@ The below listing links to all use cases based on their state, but in no further
 | [Exploiting UD treebanks for the extraction of word combination statistics](cases/treebank-combi.md) | 3 | TP |
 | [Historical enrichment: Proof of concept corpus exploitation](cases/poc-corpus-historical-enrichment.md) | 3,6 | TP |
 | [Historical research across (audio)visual and textual archives and collections](cases/historical_research_across_archives_collections.md) | 5 | Ann, WF, Cur | MediaSuite |
+| [Interoperability Integrated Text Annotation and Linked Open Data](cases/folia-lod.md) | 3,6 | Ann,LoD,TP | FoLiA |
 | [Key point detection/pose analysis for Eye Jean Desmet collection through DANE](cases/key_point_detection-pose_analysis.md) | 5 | AV | MediaSuite |
 | [Micro-frontends for manual scholarly annotations](cases/scenarios-manual-annotation.md) | 6, (2, 3, 5) | Ann, LoD, Prv |
 | [Parallel corpus mining](cases/parallel-corpus-mining.md) | 3 | TP |

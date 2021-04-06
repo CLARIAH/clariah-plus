@@ -31,6 +31,7 @@ The below listing links to all use cases based on their state, but in no further
 | [Corpus-based history of ideas](cases/black-phil-lab.md) | 6 | TP |
 | [Deep-learning for Dutch text mining](cases/deepfrog.md) | 3 | TP | DeepFrog |
 | [Exploiting UD treebanks for the extraction of word combination statistics](cases/treebank-combi.md) | 3 | TP |
+| [Exploring Dialect2Keyword](cases/Usecase-CLARIAH-dialect2keyword.md) | 3 | Ann, Cur |
 | [Historical enrichment: Proof of concept corpus exploitation](cases/poc-corpus-historical-enrichment.md) | 3,6 | TP |
 | [Historical research across (audio)visual and textual archives and collections](cases/historical_research_across_archives_collections.md) | 5 | Ann, WF, Cur | MediaSuite |
 | [Interoperability Integrated Text Annotation and Linked Open Data](cases/folia-lod.md) | 3,6 | Ann,LoD,TP | FoLiA |

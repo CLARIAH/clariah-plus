@@ -17,6 +17,7 @@ The interest groups are:
 - [Workflows](https://github.com/CLARIAH/IG-Workflows)
 - [Curation](https://github.com/CLARIAH/IG-Curation)
 - UI/UX
+- [Sustainability & Storage](https://github.com/CLARIAH/IG-Sustainability)
 
 
 

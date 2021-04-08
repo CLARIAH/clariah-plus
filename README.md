@@ -1,4 +1,4 @@
-# IG Sustainability and Storage
+# IG Sustainability & Storage
 
 This repository is intended to organize the work, output and documentation of the CLARIAH Interest Group (IG) on Sustainability and Storage.
 

@@ -52,7 +52,7 @@ The below listing links to all use cases based on their state, but in no further
 | [DANS CMDI use case for CLARIAH WP3](cases/dans-cmdi.md) | 3 | Prv | CMDI |
 | [Digitization workflow for historical newspapers (WP6 use case 2)](cases/ocr-historical-newspapers.md) | 6,3 | TP |
 | [Historical research on media-events across heterogenous broadcast datasets with linked and missing data](cases/historical_research_on_media-events_across_heterogenous_broadcast_data.md) | 5 | AV,TP,Ann,LoD | MediaSuite |
-| [Linkage of Dutch Civil Records (burgerLinker)](cases/civil-records-linkage.md) | 4 | LoD,WF,Cur | LINKS |
+| [Linkage of Dutch Civil Records](cases/civil-records-linkage.md) | 4 | LoD,WF,Cur | burgerLinker |
 | [Providing Language and Speech webservices at CLST (Radboud University, Nijmegen)](cases/clst-webservices.md) | 3, 2 | DO,TP,WF | CLAM, LaMachine |
 | [Retrodigitization of Text-critical Editions](cases/max-weber.md) | 3 | TP,Ann | FoLiA, FLAT |
 | [Speech transcription of audiovisual data](cases/mediasuite-speech-transcription.md) | 5 | AV,Do | Media Suite |
@@ -98,6 +98,7 @@ The below listing links to all use cases based on their state, but in no further
 
 The technology column refers to the most prominent CLARIAH products that feature in the use case (keep it short):
 
+* [BurgerLinker](https://github.com/CLARIAH/burgerLinker) - Command line tool for linking civil registries
 * [CLAM](https://proycon.github.io/clam) - A framework to quickly build RESTful webservices and have a generic web-UI
 * [CMDI](https://www.clarin.eu/content/component-metadata) - CLARIN's Component Metadata Infrastructure
 * [COW](https://github.com/clariah/cow/) - CSV to RDF converter (CSVW)
@@ -107,7 +108,6 @@ The technology column refers to the most prominent CLARIAH products that feature
 * [FoLiA](https://proycon.github.io/folia) - An XML-based Format for Linguistic Annotation
 * [Frog](https://languagemachines.github.io/frog) - An NLP-suite for Dutch
 * [grlc](http://grlc.io/) - converts your SPARQL queries into RESTful APIs.
-* [LINKS](https://github.com/CLARIAH/burgerLinker) - Command line tool for linking civil registries
 * [LaMachine](https://proycon.github.io/LaMachine) - A meta-distribution with various NLP/CLARIAH tools and services
 * [MediaSuite](https://mediasuite.clariah.nl/) - A research environment to search, analyse, and annotate media
     collections.

@@ -2,21 +2,21 @@
 
 This repository is intended to organize the work, output and documentation of the CLARIAH Interest Group (IG) on Sustainability and Storage.
 
-### IG Goals
+### Goals
 - How to archive datasets?
    - Where to store them and in what format
    - How to make them queryable and resolvable
 - How to exchange large datasets?
 - How to keep endpoints alive and IRIs resolvable?
 
-### IG Meetings
+### Meetings
 1. ~~December 7, 2020 at 11.00~~
 2. ~~January 14, 2021 at 10:00~~
 3. ~~February 11, 2021 at 10:00~~
 4. ~~March 11, 2021 at 10:00~~
 5. **April 19, 2021 at 11:00**
 
-### IG members
+### Members
 - Harm Nijboer (Huygens ING, Golden Agents)
 - Jerry de Vries (DANS, WP4)
 - Joe Raad (VU, WP4)

@@ -12,7 +12,7 @@ The interest groups are:
 - Devops
 - Linked Open Data
     - [Depracated](https://github.com/CLARIAH/IG-LOD), now split into "Modeling and Vocabulary Alignment", "Publication, Use Findability", "Sustainability and Storage"
-- [Modeling and Vocabulary Alignment](https://github.com/CLARIAH/IG-MoVA)
+- [Modeling and Vocabulary Alignment](https://github.com/CLARIAH/IG-Vocabularies)
 - Preservation
 - [Publication and Use, Findability](https://github.com/CLARIAH/IG-LOD-Findability)
 - Security & Monitoring

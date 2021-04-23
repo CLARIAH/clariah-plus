@@ -1,5 +1,5 @@
 # IG-Vocabularies
-Modeling and Vocabulary alignment
+Modelling and Vocabulary alignment
 
 ### Goals
 - Advice, best practices

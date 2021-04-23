@@ -25,5 +25,5 @@ Modeling and Vocabulary alignment
 - ~~November 26, 2020~~
 
 ### Contact
-Please join the [mailing list](https://groups.google.com/u/1/g/clariah-ig-vocabularies).
+Please join the [mailing list](https://groups.google.com/u/1/g/clariah-ig-vocabularies) or use #ig-vocabularies in the [CLARIAH slack](https://clariah.slack.com/).
 

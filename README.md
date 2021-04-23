@@ -22,7 +22,7 @@ Modelling and Vocabulary alignment
 - ~~March 11, 2021~~
 - ~~February 4, 2021~~
 - ~~December 19, 2020~~
-- ~~November 26, 2020~~
+- ~~[November 26, 2020](minutes/20201126.md)~~
 
 ### Contact
 Please join the [mailing list](https://groups.google.com/u/1/g/clariah-ig-vocabularies) or use #ig-vocabularies in the [CLARIAH slack](https://clariah.slack.com/).

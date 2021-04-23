@@ -21,7 +21,7 @@ Modelling and Vocabulary alignment
 - ~~April 21, 2021~~
 - ~~March 11, 2021~~
 - ~~February 4, 2021~~
-- ~~December 19, 2020~~
+- ~~{December 19, 2020](minutes/20201219.md)~~
 - ~~[November 26, 2020](minutes/20201126.md)~~
 
 ### Contact

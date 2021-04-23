@@ -18,11 +18,11 @@ Modeling and Vocabulary alignment
   - between data models or entities
 
 ### Meetings
-- ~~April 21, 2021
-- ~~March 11, 2021
-- ~~February 4, 2021
-- ~~December 19, 2020
-- ~~November 26, 2020 
+- ~~April 21, 2021~~
+- ~~March 11, 2021~~
+- ~~February 4, 2021~~
+- ~~December 19, 2020~~
+- ~~November 26, 2020~~
 
 ### Contact
 Please join the [mailing list]=https://groups.google.com/u/1/g/clariah-ig-vocabularies).

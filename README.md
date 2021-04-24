@@ -11,7 +11,7 @@ Modelling and Vocabulary alignment
   - media fragments
   - provenance
 - Common thesauri, vocabs (terms and/or entities)
-  - What to do if you havre a new candidate term/entity/concept?
+  - What to do if you have a new candidate term/entity/concept?
 - Alignment/matching (reconciliation)
   - Tools
   - (data) scope/lenses

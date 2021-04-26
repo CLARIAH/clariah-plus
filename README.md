@@ -3,7 +3,7 @@
 This repository contains tasks descriptions of all the tasks for CLARIAH-PLUS. The task descriptions here
 should be kept up to date and are the authoritative source.
 
-Please see the [Contribution Guidelines](CONTRIBUTE.md) on how to add your tasks to this repository.
+Please see the [Contribution Guidelines](CONTRIBUTING.md) on how to add your tasks to this repository.
 
 Links to the task descriptions per work package:
 

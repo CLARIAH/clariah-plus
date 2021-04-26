@@ -1,6 +1,6 @@
 # The title of your task
 
-**ID**: *(The ID of your task as it was granted, should be Txxx where xxx is a number)*
+**ID**: *(The ID of your task as it was granted, IDs format may differ per WP, for WP3 it should be Txxx where xxx is a number)*
 
 **Author:** *(your name)*
 
@@ -36,11 +36,11 @@
 
 ## Deliverables
 
-*(Please list all the deliverables of this task, give each an ID like ``TxxxDy`` where Txxx is the task ID, y the deliverable number. These should also be mentioned in the WP3 Workplan).*
+*(Please list all the deliverables of this task, give each an ID (for WP3 something like ``TxxxDy`` where Txxx is the task ID, y the deliverable number) These deliverables should also be mentioned in the WP workplan).*
 
 ## Milestones
 
-*(Please list all the milestones of this task, give each an idea like ``TxxxMy`` where Txxx is the task ID, y the milestone number).*
+*(Please list all the milestones of this task, give each an ID (for WP3 something like ``TxxxMy`` where Txxx is the task ID, y the milestone number. The milestones should also be mentioned in the WP Workplan).*
 
 ## References
 

@@ -16,4 +16,6 @@ Links to the task descriptions per work package:
 Links to the workplans for the work packages (Google Docs, read-only):
 
 * [WP3](https://docs.google.com/spreadsheets/d/e/2PACX-1vTXKu7TKL_ow2y-d5yV9u0y_WaSUp9iLP884MCwqHXNfkw8p4RxP30Lo0EBbtG4ARFsUpnzyRy00M2W/pubhtml)
+* [WP4](https://docs.google.com/spreadsheets/d/e/2PACX-1vRCuCmNHNTy8e5xstODFsiJtNWtTSZS3vf5gwhQpJrK4R6jWAjrKbY-VY1PL8cyxD0uJPgopF4SAGeX/pubhtml)
+
 

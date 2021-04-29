@@ -21,6 +21,7 @@ This repository is intended to organize the work, output and documentation of th
 - Jerry de Vries (DANS, WP4)
 - Joe Raad (VU, WP4)
 - Menzo Windhouwer (KNAW, WP3)
+- René Voorburg (KB)
 - Willem Melder (NISV, WP5)
 - Wouter Beek (Triply, WP4)
 

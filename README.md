@@ -14,7 +14,8 @@ This repository is intended to organize the work, output and documentation of th
 2. ~~January 14, 2021 at 10:00~~
 3. ~~February 11, 2021 at 10:00~~
 4. ~~March 11, 2021 at 10:00~~
-5. **April 19, 2021 at 11:00**
+5. ~~April 19, 2021 at 11:00~~
+6. **TBD**
 
 ### Members
 - Harm Nijboer (Huygens ING, Golden Agents)
@@ -22,6 +23,7 @@ This repository is intended to organize the work, output and documentation of th
 - Joe Raad (VU, WP4)
 - Menzo Windhouwer (KNAW, WP3)
 - René Voorburg (KB)
+- Slava Tykhonov (DANS)
 - Willem Melder (NISV, WP5)
 - Wouter Beek (Triply, WP4)
 

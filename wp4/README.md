@@ -4,4 +4,4 @@ This directory contains the WP4 tasks
 
 Please see the [contribution guidelines](../CONTRIBUTING.md) to read how to add your task description.
 
-The full WP4 work plan can be viewed [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vRCuCmNHNTy8e5xstODFsiJtNWtTSZS3vf5gwhQpJrK4R6jWAjrKbY-VY1PL8cyxD0uJPgopF4SAGeX/pubhtml)
+The full work plan for this WP can be viewed in the  [CLARIAH+ work plan](https://docs.google.com/spreadsheets/d/e/2PACX-1vTXKu7TKL_ow2y-d5yV9u0y_WaSUp9iLP884MCwqHXNfkw8p4RxP30Lo0EBbtG4ARFsUpnzyRy00M2W/pubhtml#) (make sure to select the right tab for the WP)

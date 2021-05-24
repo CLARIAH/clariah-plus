@@ -18,10 +18,11 @@ Modelling and Vocabulary alignment
   - between data models or entities
 
 ### Meetings
-- ~~April 21, 2021~~
-- ~~March 11, 2021~~
-- ~~February 4, 2021~~
-- ~~{December 19, 2020](minutes/20201219.md)~~
+- May 25, 2021
+- ~~[April 21, 2021](minutes/20210421.md)~~
+- ~~[March 11, 2021](minutes/20210311.md)~~
+- ~~[February 4, 2021](minutes/20210204.md)~~
+- ~~[December 19, 2020](minutes/20201219.md)~~
 - ~~[November 26, 2020](minutes/20201126.md)~~
 
 ### Contact

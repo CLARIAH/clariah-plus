@@ -48,7 +48,7 @@ The below listing links to all use cases based on their state, but in no further
 
 |   Name                                                          |      WP | IG  | Tech |
 | :-------------------------------------------------------------- | :------ | :-- | :--- |
-| [ASR for sensitive data](usecases/Usecase-sensitiveASR.md) | 3 | AV |
+| [ASR for sensitive data](cases/Usecase-sensitiveASR.md) | 3 | AV |
 | [Computer vision annotations 'n' enrichments of audiovisual data](cases/dane-av-enrichments.md) | 5 | AV,DO,WF | DANE |
 | [Curation of transcribed historical newspaper corpus (Wp6 Use case 2)](cases/curation-historical-newspapers.md) | 6 | TP |
 | [DANS CMDI use case for CLARIAH WP3](cases/dans-cmdi.md) | 3 | Prv | CMDI |

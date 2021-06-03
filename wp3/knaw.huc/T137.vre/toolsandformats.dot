@@ -1,0 +1,149 @@
+digraph G {
+    {
+        node [ shape=box style=rounded fontcolor=black ]
+        frog [ label="Frog\nNLP suite" fontcolor="#006600" ]
+        ucto [ label="Ucto\ntokeniser" fontcolor="#006600" ]
+        piereling [ label="Piereling\nconverter" fontcolor="#006600" ]
+        openconvert [ label="OpenConvert\nconverter" ]
+        piccl [ label="PICCL\nOCR/normalisation" fontcolor="#006600" ]
+        flat [ label="FLAT\nAnnotation Environment & Viewer" fontcolor="#006600" ]
+        valkuil [ label="Valkuil\nSpelling correction" style=filled fillcolor=grey fontcolor="#006600" ]
+        tscan [ label="T-Scan\nAnalytics" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        oersetter [ label="Oersetter\nFrisian MT" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        colibri [ label="Colibri Core\nAnalytics" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        labirinto [ label="Labirinto\nPortal page in e.g. LaMachine" fontcolor="#006600" ]
+        switchboard [ label="CLARIN Switchboard" style="filled,rounded" fillcolor=grey ]
+        autosearch [ label="Autosearch\nCorpus search" ]
+        alpino [ label="Alpino\nNLP suite" fontcolor="#006600" ]
+        paqu [ label="Paqu\nTreebank search" ]
+        gretel [ label="GreTeL\nTreebank search" ]
+        opensonar [ label="OpenSoNaR\nCorpus search" ]
+        oh [ label="Oral History\nDutch ASR" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        engasr [ label="English ASR" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        g2p [ label="g2p\nTranscription" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        t2t [ label="t2t\nTranslitteration" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+    }
+
+    {
+        node [ shape=box style=filled fillcolor="#9ca072" ]
+        folia [ label="Folia XML" ]
+        tei [ label="TEI P5 XML" ]
+        alpinoxml [ label="Alpino XML" ]
+        txt [ label="plain text" ]
+        docx [ label="MS Word" ]
+        odt [ label="OpenDocument" ]
+        rst [ label="ReStructuredText" ]
+        conllu [ label="CONLL-U" ]
+        md [ label="Markdown" ]
+        pdf [ label="PDF" ]
+        csv [ label="csv/tsv" ]
+        wav [ label="Wav audio" ]
+        mp3 [ label="MP3 audio" ]
+        ogg [ label="OGG audio" ]
+    }
+
+    folia -> switchboard [ color=blue ]
+    tei -> switchboard [ color=blue ]
+    txt -> switchboard [ color=blue ]
+    docx -> switchboard [ color=blue ]
+    odt -> switchboard [ color=blue ]
+    rst -> switchboard [ color=blue ]
+    pdf -> switchboard [ color=blue ]
+    wav -> switchboard [ color=blue ]
+    mp3 -> switchboard [ color=blue ]
+    ogg -> switchboard [ color=blue ]
+    conllu -> switchboard [ color=blue ]
+    alpinoxml -> switchboard [ color=blue ]
+
+    docx -> piereling [ color=blue ]
+    odt -> piereling [ color=blue ]
+    rst -> piereling [ color=blue ]
+    md -> piereling [ color=blue ]
+    conllu -> piereling [ color=blue ]
+    alpinoxml -> piereling [ color=blue ]
+
+    folia -> flat [ color=blue ]
+    folia -> frog [ color=blue ]
+    folia -> ucto [ color=blue ]
+    folia -> piereling [ color=blue ]
+    folia -> openconvert [ color=blue ]
+    folia -> paqu [ color=blue ]
+
+    tei -> piereling [ color=blue ]
+    tei -> autosearch [ color=blue ]
+
+    pdf -> piccl [ color=blue ]
+
+    txt -> piereling [ color=blue ]
+    txt -> frog [ color=blue ]
+    txt -> ucto [ color=blue ]
+    txt -> piccl [ color=blue ]
+    txt -> oersetter [ color=blue ]
+    txt -> valkuil [ color=blue ]
+    txt -> colibri [ color=blue ]
+    txt -> g2p [ color=blue ]
+    txt -> t2t [ color=blue ]
+    txt -> tscan [ color=blue ]
+    txt -> alpino [ color=blue ]
+    txt -> openconvert [ color=blue ]
+
+    ucto -> txt [ color=red ]
+    oersetter -> txt [ color=red ]
+
+    alpino -> alpinoxml [ color=red ]
+
+    frog -> csv [ color=red ]
+    tscan -> csv [ color=red ]
+
+    frog -> folia [ color=red ]
+    ucto -> folia [ color=red ]
+    piccl -> folia [ color=red ]
+    tscan -> folia [ color=red ]
+    alpino -> folia [ color=red ]
+
+    valkuil -> folia [ color=red ]
+    piereling -> folia [ color=red ]
+
+    openconvert -> tei [ color=red ]
+
+
+    switchboard -> ucto [ color=magenta label="txt/folia" labelfontsize=8 fontcolor=magenta ]
+    switchboard -> frog [ color=magenta label="txt/folia" labelfontsize=8 fontcolor=magenta ]
+    switchboard -> piereling [ color=magenta label="many formats\n(txt/pdf/rst/docx/odt/tei)"  labelfontsize=8 fontcolor=magenta ]
+    switchboard -> piccl [ color=magenta label="txt/folia/pdf" labelfontsize=8 fontcolor=magenta ]
+    switchboard -> tscan [ color=magenta label="txt" labelfontsize=8 fontcolor=magenta ]
+    switchboard -> alpino [ color=magenta label="txt/folia" labelfontsize=8 fontcolor=magenta ]
+    switchboard -> colibri [ color=magenta label="txt/folia" labelfontsize=8 fontcolor=magenta ]
+    switchboard -> oh [ color=magenta label="wav/mp3/ogg" labelfontsize=8 fontcolor=magenta ]
+    switchboard -> engasr [ color=magenta label="wav/mp3/ogg" labelfontsize=8 fontcolor=magenta ]
+    switchboard -> g2p [ color=magenta label="txt" labelfontsize=8 fontcolor=magenta ]
+    switchboard -> t2t [ color=magenta label="txt" labelfontsize=8 fontcolor=magenta ]
+
+
+    labirinto -> ucto
+    labirinto -> frog
+    labirinto -> piereling
+    labirinto -> piccl
+    labirinto -> flat
+    labirinto -> valkuil
+    labirinto -> tscan
+    labirinto -> oersetter
+    labirinto -> tscan
+    labirinto -> alpino
+    labirinto -> colibri
+    labirinto -> oh
+    labirinto -> engasr
+    labirinto -> g2p
+    labirinto -> t2t
+
+    ucto -> flat [ label="folia" color=magenta fontcolor=magenta labelfontsize=8 ]
+    frog -> flat [ label="folia" color=magenta fontcolor=magenta labelfontsize=8 ]
+    piereling -> flat [ label="folia" color=magenta fontcolor=magenta labelfontsize=8 ]
+    alpino -> flat [ label="folia" color=magenta fontcolor=magenta labelfontsize=8 ]
+    tscan -> flat [ label="folia" color=magenta fontcolor=magenta labelfontsize=8 style=dashed ]
+
+    piccl -> flat [ color=magenta label="folia" fontcolor="magenta" ]
+    piccl -> autosearch [ color=magenta label="folia" fontcolor="magenta" ]
+
+
+}

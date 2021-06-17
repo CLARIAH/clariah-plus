@@ -37,9 +37,6 @@ date: June 24th, 2021
     * Not compiled but interpreted? Bob must have the necessary interpreter (e.g. Python, JS, Java)
 
 
-[comment]: # static linking vs dynamic linking
-[comment]: # and these in turn may have dependencies too: welcome to **dependency Hell**
-
 ## Back to the origin: Open Source
 
  * Give Bob the source code and let him build the program himself?
@@ -57,6 +54,10 @@ date: June 24th, 2021
     * Bob must ensure they're installed and set up properly
     * Related: Static linking vs Dynamic linking
 * Recursive problem, conflicting requirements: **Dependency Hell**
+
+[comment]: # static linking vs dynamic linking
+[comment]: # and these in turn may have dependencies too: welcome to **dependency Hell**
+
 
 ![Dependencies](dependencies.png)\
 
@@ -164,9 +165,8 @@ date: June 24th, 2021
 **Docker**:
 
 * Application containers, lightweight containers serving ideally single applications
-* Non-persistant storage
+* Non-persistant storage: containers are stateless (spun upon anew), all persistant data on externally mounted volumes
 * Layered images
-* Containers are stateless (spun upon anew), all persistant data on externally mounted volumes
 * Docker Hub as Container Registry (image store)
 * Great for applications containers, deployment of services in cloud infrastructure
 * Most known and widely used
@@ -190,23 +190,24 @@ date: June 24th, 2021
 * Can use docker images
 * No elevated permissions required (security)
 
-## Provisioning a container (or VM)
+## Building a container (or VM)
 
 * *"Alice gives Bob a copy of her machine"*
-
 * Alice builds a (container/VM) image
-* using an automated recipe for provisioning (e.g. Dockerfile, shell script, Ansible)
-* Alice publishes the container image in a registry
-* Bob obtains the container image from the registry
+* This build process is captured in an automated recipe (Dockerfile); *infrastructure as code*
+* Takes care of **installation** and **configuration** of all components
+* Can be like a simple shell-script
+* Dedicated sofware for such automation: e.g. Ansible
+* Alice publishes the container image in a registry; Bob obtains the container image from the registry
 
-![Alice and Bob: Containerisation](alice-and-bob-container2.png){ height=50% }\
+![Alice and Bob: Containerisation](alice-and-bob-container2.png){ height=30% }\
 
 ## Container Orchestration
 
 * Alice decided on Software-as-a-Service
 * Alice gives Charlie a copy of her machine: a **container**, to offer as a service for Bob and others.
 
-![Alice and Bob: Software as a Service](alice-and-bob-saas.png){ height=50% }\
+![Alice and Bob: Software as a Service](alice-and-bob-saas.png){ height=60% }\
 
 -------------------------
 
@@ -218,7 +219,8 @@ date: June 24th, 2021
 * What if Alice's program fails and the service goes down?
 
 * **Distributed Computing**: containers can easily be deployed on multiple systems
-    * Schedule when a container runs and where it runs (load balancing etc)
+    * Spin up more containers when there are more users,
+    * ...shut down containers when there are less users
     * Spin up multiple containers at once (e.g. docker compose)
     * Spin them up over multiple machines (e.g. docker swarm, kubernetes)
     * Restart a container when it fails (kubernetes)

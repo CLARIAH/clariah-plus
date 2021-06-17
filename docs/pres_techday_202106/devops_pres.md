@@ -1,3 +1,9 @@
+---
+title: Alice, Bob, and the problem of distributing software -- a DevOps tale
+author: Maarten van Gompel, KNAW HuC / CLST
+date: June 24th, 2021
+---
+
 # Alice, Bob, and the problem of distributing software -- a DevOps tale
 
 ## The core problem

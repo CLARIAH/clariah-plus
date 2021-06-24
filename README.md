@@ -15,7 +15,8 @@ This repository is intended to organize the work, output and documentation of th
 3. ~~February 11, 2021 at 10:00~~
 4. ~~March 11, 2021 at 10:00~~
 5. ~~April 19, 2021 at 11:00~~
-6. **TBD**
+6. ~~May 26, 2021 at 13:00~~
+7. **June 29, 2021 at 13:00** 
 
 ### Members
 - Harm Nijboer (Huygens ING, Golden Agents)

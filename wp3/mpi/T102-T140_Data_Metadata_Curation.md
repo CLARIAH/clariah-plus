@@ -40,7 +40,7 @@ The archive will also curate and archive additional third-party data collections
 
 **Why important for CLARIAH (scientific impact):**
 
-*(Why is this task important for CLARIAH? What does it contribute?)*
+The Language Archive contains unique data collections from languages and cultures around the world, that are of interest to language scientists as well as researchers in other disciplines. Improved discoverability as well as the ability to quickly assess the content of the collections and the option to easily cite them will only increase their value. Valuable collections that are not yet archived elsewhere and are therefore at risk of being lost will find a trusted home at TLA.
 
 **Targeted/Actual users:**
 

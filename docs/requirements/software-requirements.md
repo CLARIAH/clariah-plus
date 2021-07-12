@@ -9,6 +9,10 @@ against. The aim is to ensure a certain level of software quality and
 sustainability, and to lay out basic requiments needed for interoperability
 within the larger CLARIAH infrastructure.
 
+The document is loosely derived from [earlier work to establish Software Quality
+Guidelines](https://github.com/CLARIAH/software-quality-guidelines/) within CLARIAH-CORE, but attempts to condense this
+elaborate work to the most relevant and directly actionable points.
+
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”,
 “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be
 interpreted as described in [RFC

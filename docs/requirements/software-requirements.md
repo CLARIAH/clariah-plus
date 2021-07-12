@@ -176,8 +176,10 @@ local Mac or Windows machine.
 3. Configuration values (such as database connection strings or API URLs) that may vary between deployments
    *SHOULD* be parameters to the container. This is implemented through environment variables. The infrastructure in
    turn configures applications through environment variables (see [IR4](infrastructure-requirements.md#4-the-infrastructure-configures-applications-through-environment-variables-must-have-sep) and also related to point 7).
-4. Containers should output all log information to ``stdout`` so it can be captured by the infrestructure (see IR5 and
+4. Containers should output all log information to ``stdout`` so it can be captured by the infrastructure (see IR5 and
    IR6).
+5. Application data (state) that needs to be persistant between runs *MUST* be stored separate from the container (e.g. in a
+   mounted volume) (See point 3 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
 
 ### 13. Service developers *SHOULD* provide an initial template when of multi-container orchestration is needed
 

@@ -1,4 +1,4 @@
-# Requirements for NDE application infrastructure
+# CLARIAH Requirements for Application Infrastructure
 
 * [Introduction](#introduction)
 * [Principles](#principles)
@@ -7,24 +7,28 @@
 
 ## Introduction
 
-Netwerk Digitaal Erfgoed (NDE) develops applications that are foundational services in the heritage network,
-including the [Network of Terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq) and [Register](https://demo.netwerkdigitaalerfgoed.nl/register-api/static/index.html).
+This set of requirements is largely derived from [earlier work](https://github.com/netwerk-digitaal-erfgoed/requirements-infrastructure/) done in the scope of the Netwerk Digitaal Erfgoed (NDE).
+
+CLARIAH aims to develop a service-oriented infrastructure consisting of a wide variety of different applications, this
+is often denotes as CLARIAH-as-a-Service (CLaaS) for short.
 
 The user adoption of applications depends not only on their usefulness and quality,
 but also on their reliability and performance.
 When applications are slow or buggy, users will drop out.
-For foundational services such as those delivered by NDE, on which large groups of users depend,
+For foundational services such as those delivered by CLARIAH, on which large groups of users depend,
 this problem is even more prominent.
 
-Infrastructure plays an important role in delivering reliable software. 
+Infrastructure plays an important role in delivering reliable software.
 This document describes requirements for a fault tolerant, performant and reliable infrastructure.
 The requirements are based on modern DevOps and other best practices, including [Twelve-Factor](https://12factor.net)
 and [FAIR4RS](https://www.rd-alliance.org/system/files/FAIR4RS_Principles_v0.3_RDA-RFC.pdf).
-The [current NDE infrastructure](https://github.com/netwerk-digitaal-erfgoed/infrastructure) is based on these requirements.
+The [current NDE infrastructure](https://github.com/netwerk-digitaal-erfgoed/infrastructure) is based on these requirements and CLARIAH would do good to follow suit here.
 
-This document is aimed at organisations that would like to take ownership of (‘borgen’) NDE applications.
+This document is aimed at organisations and the IT operators within it that would like to take ownership of (‘borgen’) CLARIAH applications.
 By joining us in following these practices,
 organisations will contribute to the longevity and adoption of the applications.
+
+For technical requirements from the perspective of the software developer/technology provider, we refer to the [CLARIAH Technical Requirements for Software and Services](software-requirements.md).
 
 ## Principles
 
@@ -32,16 +36,16 @@ Guiding principles of these requirements are:
 
 ### SEP
 
-A clear separation between the application and the infrastructure it runs on. 
+A clear separation between the application and the infrastructure it runs on.
 The application code should not contain infrastructure specifics and be portable so application instances can be hosted by multiple parties, including developers that want to run or debug the application locally.
 The infrastructure, in turn, should not have to change to accommodate the application.
 
-#### Example 
+#### Example
 
 An infrastructure provider runs the Red Hat Linux distribution and require developers to package their applications as RPMs.
 This violates the SEP principle because the artifact that is deployed is no longer portable to other, non-Red Hat, environments.
 
-### AUTO 
+### AUTO
 
 Processes are automated, which strengthens transparency, prevents human error and reduces the lead time between a feature request,
 code changes to build that feature, and the availability of the feature to users.
@@ -61,9 +65,9 @@ Both software developers and end-users need reliable and performant services to 
 #### Example
 
 An infrastructure provider hosts many applications on a single virtual machine (VM).
-Application usage increases, and so does server load. 
+Application usage increases, and so does server load.
 To increase the VM’s resources, the system administrator takes down the VM and deploys a larger instance.
-During that time the applications are unavailable to users. 
+During that time the applications are unavailable to users.
 This violates the REL principle.
 Horizontal scaling, by running multiple application containers in parallel, would solve this issue.
 
@@ -84,7 +88,7 @@ Horizontal scaling, by running multiple application containers in parallel, woul
     <dt>Application data</dt>
     <dd>Data that is produced by applications, for instance data stored in databases. Also called application state.</dd>
     <dt>Container</dt>
-    <dd>A package that contains both the application and its dependencies, 
+    <dd>A package that contains both the application and its dependencies,
         standardized by the <a href="https://opencontainers.org">Open Container Initiative (OCI)</a>.
     </dd>
     <dt>User</dt>
@@ -93,18 +97,18 @@ Horizontal scaling, by running multiple application containers in parallel, woul
         <ul>
             <li>primary: persons who use the application, either directly or through a demonstrator;</li>
             <li>secondary: other software that uses the applications on behalf of the primary users. For instance: a Collection Management System that connects to the application.</li>
-        </ul>    
+        </ul>
     </dd>
 </dl>
 
 ## Requirements
 
-The requirements are prioritized. Priorities follow the [MoSCoW method](https://en.wikipedia.org/wiki/MoSCoW_method): 
+The requirements are prioritized. Priorities follow the [MoSCoW method](https://en.wikipedia.org/wiki/MoSCoW_method):
 
 | Priority    | Explanation                                     | Applies to                 |
 | ----------- | ----------------------------------------------- | -------------------------- |
-| Must have   | The requirement is necessary                    | Requirements 1 – 15  | 
-| Should have | The requirement is important, but not necessary | Requirements 16 – 22 | 
+| Must have   | The requirement is necessary                    | Requirements 1 – 15  |
+| Should have | The requirement is important, but not necessary | Requirements 16 – 22 |
 | Could have  | The requirement is desired, but not important   | Requirement 23             |
 
 ### 1. The infrastructure runs applications that are packaged as _OCI containers_. (Must have, [SEP](#sep))
@@ -114,6 +118,8 @@ Containers are self-sufficient (without external dependencies) and uniform (they
 This makes them decoupled from infrastructure specifics (such as the OS used by the infrastructure provider).
 The same container can be run on any Linux distribution, cloud provider (including AWS, Azure, Google and DigitalOcean)
 as well as on a developer’s local Mac or Windows machine.
+
+(This corresponds to point 12 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 2. The infrastructure connects to a **container registry**. (Must have, [SEP](#sep))
 
@@ -125,10 +131,14 @@ The built artifacts must be accessible not only to the infrastructure itself but
 who can then [access and reuse](https://www.rd-alliance.org/system/files/FAIR4RS_Principles_v0.3_RDA-RFC.pdf) those same containers,
 for example to run them locally (see requirement 1).
 
+(This corresponds to point 12.1 of the [Software/Service Requirements (SR)](software-requirements.md))
+
 ### 3. The infrastructure runs _stateful applications_. (Must have)
 
 The infrastructure can run both stateless applications (that store no state) and stateful applications, such as triple stores.
-For the latter to work, the infrastructure must be able to persist data between application runs (for instance on data volumes). 
+For the latter to work, the infrastructure must be able to persist data between application runs (for instance on data volumes).
+
+(This corresponds to point 12.5 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 4. The infrastructure _configures applications_ through environment variables. (Must have, [SEP](#sep))
 
@@ -136,11 +146,15 @@ Configuration values (such as database connection strings or API URLs) must be p
 The best way to do so is with [environment variables](https://12factor.net/config), a language- and OS-agnostic standard.
 The infrastructure must therefore support providing these environment variables to the application.
 
+(This corresponds to point 12.3 of the [Software/Service Requirements (SR)](software-requirements.md))
+
 ### 5. The infrastructure _captures application logs_ at stdout. (Must have, [SEP](#sep))
 
 Traditionally, logs are written by applications to a log file or an API (such as Logstash) as dictated by the infrastructure.
 This couples the application to the infrastructure it runs on.
-To safeguard proper separation, the infrastructure must capture application logs at the [standard output stream](https://12factor.net/logs) (`stdout`). 
+To safeguard proper separation, the infrastructure must capture application logs at the [standard output stream](https://12factor.net/logs) (`stdout`).
+
+(This corresponds to point 12.4 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 6. The infrastructure _aggregates logs_. (Must have, [REL](#rel))
 
@@ -157,6 +171,8 @@ producing an OCI container build artefact.
 ### 8. The infrastructure _automatically runs application tests_ when commits are pushed to the application repository. (Must have, [AUTO](#auto))
 
 Automated tests prevent regressions only when they are run automatically on a standardized environment.
+
+(This corresponds to point 8 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 9. The infrastructure _automatically delivers_ new application versions to an acceptance and/or production environment. (Must have, [AUTO](#auto))
 
@@ -213,10 +229,12 @@ an approach known as [Infrastructure as Code (IaC)](https://en.wikipedia.org/wik
 Having the configuration as code makes it transparent and declarative.
 Preferably, the code is opened up to developers, so they can view it and propose the changes to it that are needed to run their applications.
 
+(This relates to points 1 and 13 of the [Software/Service Requirements (SR)](software-requirements.md))
+
 ### 18. The infrastructure _captures metrics_. (Should have, [REL](#rel))
 
 Logs (requirement 5) are used to diagnose and fix problems that have already occurred.
-Metrics, on the other hand, help prevent failures. 
+Metrics, on the other hand, help prevent failures.
 They are values that measure the infrastructure resources and applications.
 For example by measuring CPU usage, capacity can be increased in time so user service will not be interrupted.
 Like log output (requirement 6), the metrics must be made available for reporting and analysis, preferably in a web interface.
@@ -224,7 +242,7 @@ Like log output (requirement 6), the metrics must be made available for reportin
 ### 19. The infrastructure _sends alerts_. (Should have, [AUTO](#auto))
 
 Having a centralized place to view logs (requirement 6) is only part of a monitoring solution.
-Viewing logs is pull-based, so a push mechanism for software failure notifications, on channels such as e-mail or Slack, must be added. 
+Viewing logs is pull-based, so a push mechanism for software failure notifications, on channels such as e-mail or Slack, must be added.
 The infrastructure, therefore, must have a way to send out alerts based on both logs and metrics thresholds.
 
 ### 20. The application repository is _open source_. (Should have, [REL](#rel))
@@ -247,6 +265,6 @@ In the case of horizontal scaling (scaling in and out) this requires load-balanc
 ### 23. The infrastructure has an optimized way of hosting _static files_. (Could have, [REL](#rel))
 
 If the infrastructure is able to directly serve static files, without configuring a web server first,
-this speeds up delivery. 
+this speeds up delivery.
 Moreover, caching these files in a third-party Content Delivery Network (CDN) will reduce latency for users.
 This is useful mainly for static HTML/JavaScript applications.

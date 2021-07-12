@@ -18,6 +18,7 @@ Modelling and Vocabulary alignment
   - between data models or entities
 
 ### Meetings
+- ~~[June 24, 2021](minutes/20210624.md)~~
 - ~~[May 25, 2021](minutes/20210525.md)~~
 - ~~[April 21, 2021](minutes/20210421.md)~~
 - ~~[March 11, 2021](minutes/20210311.md)~~

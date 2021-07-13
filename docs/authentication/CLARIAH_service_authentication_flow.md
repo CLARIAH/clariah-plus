@@ -4,9 +4,9 @@ This article is mostly useful for CLARIAH application developers who would like 
 
 ## Some context
 
-The CLARIAH community, comprised of mainly acedemic institutes and universities, shares a common Identity Provider (IdP), required for user authentication, via the CLARIN organisation. This way CLARIAH can enable login functionality for CLARIAH services
+The CLARIAH community, comprised of mainly acedemic institutes and universities, shares a common Identity Provider (IdP), required for user authentication, via the [CLARIN](https://www.clarin.eu/) organisation. This way CLARIAH can enable login functionality for CLARIAH services
 
-This CLARIN IdP is connected to the CLARIAH authentication system (SATOSA) and enables CLARIAH services, such as LaMachine and the [Media Suite](https://mediasuite.clariah.nl) to provide a login functionality for (all) members/organisations connected via the CLARIN IdP. (TODO a bit terrible phrasing, fix later)
+This CLARIN IdP is connected to the CLARIAH authentication system (SATOSA) and enables CLARIAH services, such as LaMachine and the [Media Suite](https://mediasuite.clariah.nl) a way to implement a login functionality for (all) members/organisations connected via the CLARIN IdP.
 
 
 # How to connect your service

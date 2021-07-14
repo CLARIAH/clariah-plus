@@ -229,4 +229,6 @@ The CLARIN switchboard aims to direct a user with a given data file to useful se
 * **VCS** - A **version control system**, e.g. Git, Mercurial, SVN, etc
 
 
+## License
 
+This document is licensed under the Creative Commons Attribution-ShareAlike (v. 3.0) license.

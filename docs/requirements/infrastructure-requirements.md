@@ -268,3 +268,7 @@ If the infrastructure is able to directly serve static files, without configurin
 this speeds up delivery.
 Moreover, caching these files in a third-party Content Delivery Network (CDN) will reduce latency for users.
 This is useful mainly for static HTML/JavaScript applications.
+
+## License
+
+This document is licensed under the Creative Commons Attribution-ShareAlike (v. 3.0) license.

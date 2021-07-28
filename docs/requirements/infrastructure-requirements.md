@@ -10,7 +10,7 @@
 This set of requirements is largely derived from [earlier work](https://github.com/netwerk-digitaal-erfgoed/requirements-infrastructure/) done in the scope of the Netwerk Digitaal Erfgoed (NDE).
 
 CLARIAH aims to develop a service-oriented infrastructure consisting of a wide variety of different applications, this
-is often denotes as CLARIAH-as-a-Service (CLaaS) for short.
+is often denoted as CLARIAH-as-a-Service (CLaaS) for short.
 
 The user adoption of applications depends not only on their usefulness and quality,
 but also on their reliability and performance.

@@ -22,7 +22,7 @@ interpreted as described in [RFC
 
 ### 1. The software's source code *MUST* be stored in a public **version control system** (VCS).
 
-1. The use of a publically accessible VCS platforms such as Github, Gitlab, Bitbucket or SourceHut are *REQUIRED*. This may be hosted at an instition rather than outsourcing this to a third party.
+1. The use of a publicly accessible VCS platforms such as Github, Gitlab, Bitbucket or SourceHut is *REQUIRED*. This may be self-hosted by an institution rather than outsourcing it to a third party.
 2. CLARIAH is registered as an [organization](https://github.com/CLARIAH) on github, any CLARIAH software project *MAY* be hosted there.
 3. Git is *RECOMMENDED*
 4. As much as possible, such as documentation, *SHOULD* be stored alongside the code in the VCS.

@@ -25,7 +25,7 @@ interpreted as described in [RFC
 1. The use of a publicly accessible VCS platforms such as Github, Gitlab, Bitbucket or SourceHut is *REQUIRED*. This may be self-hosted by an institution rather than outsourcing it to a third party.
 2. CLARIAH is registered as an [organization](https://github.com/CLARIAH) on github, any CLARIAH software project *MAY* be hosted there.
 3. Git is *RECOMMENDED*
-4. As much as possible, such as documentation, *SHOULD* be stored alongside the code in the VCS.
+4. All content, including documentation, *SHOULD* be stored alongside the code in the VCS.
 5. The source code repository *SHOULD* be publically accessible from day 1 of development; it is *MUST NOT* be reduced to a release/file-transfer mechanism for completed products. Exceptions are when things are under embargo or privacy-sensitive.
 
 ### 2. A README file *MUST* be provided in the root directory of the VCS

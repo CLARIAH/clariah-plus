@@ -24,7 +24,7 @@ The requirements are based on modern DevOps and other best practices, including 
 and [FAIR4RS](https://www.rd-alliance.org/system/files/FAIR4RS_Principles_v0.3_RDA-RFC.pdf).
 The [current NDE infrastructure](https://github.com/netwerk-digitaal-erfgoed/infrastructure) is based on these requirements and CLARIAH would do good to follow suit here.
 
-This document is aimed at organisations and the IT operators within it that would like to take ownership of (‘borgen’) CLARIAH applications.
+This document is aimed at organisations and the IT operators within it that would like to take ownership of CLARIAH applications.
 By joining us in following these practices,
 organisations will contribute to the longevity and adoption of the applications.
 

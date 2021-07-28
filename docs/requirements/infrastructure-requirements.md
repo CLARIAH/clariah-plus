@@ -80,7 +80,7 @@ Horizontal scaling, by running multiple application containers in parallel, woul
       These functions may be delivered by a single component or be spread over multiple components (for instance, GitHub Actions as a CI pipeline, hosting on a cluster).
     </dd>
     <dt>Application</dt>
-    <dd>Any software application developed by Netwerk Digitaal Erfgoed (NDE) including supporting services such as databases.</dd>
+    <dd>Any software application running on CLaaS including supporting services such as databases.</dd>
     <dt>Application repository</dt>
     <dd>The code repository that contains the application’s source code.</dd>
     <dt>Application tests</dt>

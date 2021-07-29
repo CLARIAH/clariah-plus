@@ -58,8 +58,10 @@ We have a test application at aboutme.diginfra.net which does nothing except for
 
 ![aboutme](./images/aboutme.png)
 
-### TODO
+## Giving users access based on their attributes
 
-describe probable need for whitelisting on the basis of attributes delivered by the identity provider
+If you just configure OpenID authentication based on the OpenID provider at authentication.clariah.nl and leave it at that, be aware that you have now given access to users from around 2300 institutions from all around Europe. That may be a bit much. A more sane approach might be to use authentication.clariah.nl as the first step, and use your own filters on the logged in users: for example, an explicit allow list on the user level (probably a list of email addresses of users who have access), or limit access to all users from particular institutions. In that case, you could filter on the basis of `idp` or `schac_home_organisation`, depending on which of those attributes are available. `idp` should always be available (it is already known before the login process starts), but for the other attributes, authentication.clariah.nl may request them (requested attributes are: `eduPersonTargetedID`,`eduPersonPrincipalName`, `displayName`, `schacHomeOrganization`, `mail`), but it is the decision of the IdP to supply them or not. So, depending on which attributes your application needs, and which attributes an IdP provides, for certain IdP's a successful login may not even be possible.
+
+### TODO
 
 more detailed description of configuration of a specific OpenID client

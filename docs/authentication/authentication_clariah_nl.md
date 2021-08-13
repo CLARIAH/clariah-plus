@@ -62,6 +62,52 @@ We have a test application at aboutme.diginfra.net which does nothing except for
 
 If you just configure OpenID authentication based on the OpenID provider at authentication.clariah.nl and leave it at that, be aware that you have now given access to users from around 2300 institutions from all around Europe. That may be a bit much. A more sane approach might be to use authentication.clariah.nl as the first step, and use your own filters on the logged in users: for example, an explicit allow list on the user level (probably a list of email addresses of users who have access), or limit access to all users from particular institutions. In that case, you could filter on the basis of `idp` or `schac_home_organisation`, depending on which of those attributes are available. `idp` should always be available (it is already known before the login process starts), but for the other attributes, authentication.clariah.nl may request them (requested attributes are: `eduPersonTargetedID`,`eduPersonPrincipalName`, `displayName`, `schacHomeOrganization`, `mail`), but it is the decision of the IdP to supply them or not. So, depending on which attributes your application needs, and which attributes an IdP provides, for certain IdP's a successful login may not even be possible.
 
-### TODO
+## Example of an OpenID client: Apache with mod_auth_openidc
 
-more detailed description of configuration of a specific OpenID client
+`mod_auth_openidc` (https://github.com/zmartzone/mod_auth_openidc) is an Apache module which can be used to protect locations on an Apache webserver, similar to Basic HTTP authentication, but using an OpenID provider for authentication instead of a local `htpasswd` file.
+After installing and activating `mod_auth_openidc`, a directory (the root in this case) can be protected using the OpenID provider at authentication.clariah.nl with the following configuration:
+
+```apacheconf
+<VirtualHost *:80>
+ ServerName ${SERVERNAME}
+ DocumentRoot /var/www/html
+ 
+ OIDCProviderMetadataURL https://authentication.clariah.nl/.well-known/openid-configuration
+ OIDCSSLValidateServer Off
+ # some string which uniquely identifies this client on the OpenID provider
+ OIDCClientID the_client_id
+ # some random string
+ OIDCClientSecret randomstring
+ OIDCResponseType "code"
+ OIDCScope "openid email profile"
+ # this is needed if the client wants to receive non-standard OpenID attributes.
+ # in this case edupersontargetedid, schac_home_organisation and eppn, which are requested from the IdPs by authentication.clariah.nl
+ OIDCAuthRequestParams claims={"userinfo":{"edupersontargetedid":null,"schac_home_organisation":null,"nickname":null,"email":null,"eppn":null}}
+ OIDCRedirectURI https://<hostname>/oauth2/redirect
+ OIDCCryptoPassphrase randompassword
+ 
+ <LocationMatch ^/>
+ AuthType openid-connect
+ Require valid-user
+ </LocationMatch>
+ 
+</VirtualHost>
+```
+
+The three configuration options `ClientID`, `ClientSecret` and `RedirectURI` need to be present with the same values on both the OpenID client and the OpenID provider.
+
+To make this OpenID client known to authentication.clariah.nl, it needs information about the client in the following JSON format:
+```json
+{
+  "client_name" : "Some human-readable string",
+  "client_secret" : "randomstring",
+  "redirect_uris" : [
+    "https://<hostname>/oauth2/redirect"
+  ]
+}
+```
+
+This small JSON file should be named `<client_id>.json` (so in this example `the_client_id.json`)  and should contain at least the `ClientSecret` in the key `client_secret` and the `RedirectURI` in the key `redirect_uris` (an array, as there can be more than one). Depending on the OpenID implementation on the client, more configuration options may be necessary.
+The system administrators at KNAW HuC DI can add this information to authentication.clariah.nl, and if everything works correctly a federated login flow as described above will be active from then on.
+
+It is the responsibility of the client to handle session management and authorization for logged in users, the OpenID provider only handles the authentication.

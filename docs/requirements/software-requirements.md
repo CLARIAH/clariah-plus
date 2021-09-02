@@ -61,7 +61,17 @@ Periodic releases of the software should be released with a clear version number
    major CVS platforms provide for this. Alternatively you can use a ``NEWS``
    or a ``CHANGELOG`` file.
 
-### 5. Each release of the software *SHOULD* be installable through a proper package manager
+### 5. The software *MUST* separate code from configuration.
+
+Configuration values (such as database connection strings, API URLs or secrets) *MUST* be parameterized;
+they *MUST NOT* be hard-coded in the application source.
+
+The software *MUST* read these configuration values from [environment variables](https://12factor.net/config),
+a language- and OS-agnostic standard.
+
+This is a corollary of [Infrastructure Requirement 4](infrastructure-requirements.md).
+
+### 6. Each release of the software *SHOULD* be installable through a proper package manager
 
 When the software fits in a certain language ecosystem or targets a very
 specific distribution/OS, it *MUST* be packaged in a package manager
@@ -90,7 +100,7 @@ complex web application) and consisting of too many components for any
 packaging ecosystem. In such a case, the individual components should still be
 packaged as much as possible.
 
-### 6. The software *SHOULD* have a public support channel
+### 7. The software *SHOULD* have a public support channel
 
 This can be an issue tracker as automatically provided by the major VCS
 platforms, or even a simple mailing-list, on the precondition that a public
@@ -106,18 +116,14 @@ interest in the project.
 The only acceptable deviation to this rule is when the software is explicitly unmaintained
 and unsupported, which must be clearly indicated in the README (see 1.3).
 
-### 7. Software *SHOULD* be reusable
+### 8. Software *SHOULD* be reusable
 
 1. To foster reusability, any meaningful reusable component of your sofware *SHOULD* be
    split into reusable software libraries/tools rather than be part of an
    indivisible monolithical whole. This ensures the work can be reused where
    appropriate.
-2. Software *MUST* separate code from configuration, they *MUST NOT* be hard-coded to only work on a single system or
-   for a specific user; hard-coded user/installation-specific paths and sensitive credentials *MUST NOT* be part of the
-   software source code. Software *MUST* be made configurable (through configuration files, command line parameters,
-   environment variables) to be deployable in multiple environments.
 
-### 8. Software *SHOULD* come with automated tests
+### 9. Software *SHOULD* come with automated tests
 
 1. To ensure software quality, software *SHOULD* have a test set consisting of
 unit and/or integration tests with a fair degree of coverage.
@@ -130,7 +136,7 @@ code change.
 Deviations from this are only acceptable for initial proof-of-concept or highly
 experimental software (see 1.3).
 
-### 9. Software **MUST** define codemeta software metadata along with the source code
+### 10. Software **MUST** define codemeta software metadata along with the source code
 
 1. The VCS repository must have a ``codemeta.json`` file in the root directory containing basic high-level
    software metadata. We adopt the [CodeMeta project](https://codemeta.github.io/) to this end. The ``codemeta.json`` file is a JSON-LD file that is machine-parseable and may be
@@ -138,7 +144,7 @@ experimental software (see 1.3).
    software. The codemeta file can be in part automatically generated from the metadata you already
    provided for your packages (see point 5)
 
-### 10. Software **SHOULD** be documented.
+### 11. Software **SHOULD** be documented.
 
 Whereas minimal documentation is already *REQUIRED* per point 2, more extensive documentation is *RECOMMENDED*. The sources of
 which *SHOULD* be stored alongside the source code, ensuring they describe the same version, and the resulting
@@ -156,13 +162,13 @@ the README (see 1.3).
 
 ## Software-as-a-Service Requirements (CLaaS)
 
-### 11. Services *SHOULD* provide a simple RESTful API
+### 12. Services *SHOULD* provide a simple RESTful API
 
 A simple RESTful API is *RECOMMENDED* over more complex solutions such as SOAP. SOAP *SHOULD NOT* be used if it can be
 avoided. XML-RPC *MAY* be used. CLAM *MAY* be used as a home-grown CLARIAH solution to deliver RESTful webservices around
 existing tools.
 
-### 12. Services *MUST* be packaged as containers
+### 13. Services *MUST* be packaged as containers
 
 All software services *MUST* be packaged as [OCI](https://opencontainers.org/) containers (e.g. Docker containers).
 Containers are self-sufficient (without external dependencies) and uniform
@@ -185,26 +191,26 @@ local Mac or Windows machine.
 5. Application data (state) that needs to be persistant between runs *MUST* be stored separate from the container (e.g. in a
    mounted volume) (See point 3 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
 
-### 13. Service developers *SHOULD* provide an initial template when of multi-container orchestration is needed
+### 14. Service developers *SHOULD* provide an initial template when of multi-container orchestration is needed
 
 If a complex service consists of multiple interacting containers, the developers *SHOULD* provide an initial template in
 the form of a Docker Compose configuration or a Kubernetes deployment configuration that illustrates how the containers
 are orchestrated to form the application. This *MUST* be maintained in a VCS repository (infrastructure as code
 principle). Infrastructure operators can build on this example to deploy the application.
 
-### 14. Services *MUST* be compatible with CLARIAH's authentication and authorization infrastructure
+### 15. Services *MUST* be compatible with CLARIAH's authentication and authorization infrastructure
 
 All services open to end-users and which require some form of user authentication should be compatible with
 CLARIAH's authentication and authorization infrastructure. That is, they should be able to communicate with CLARIAH's
 [SATOSA](https://github.com/IdentityPython/SATOSA) Authentication Provider. It is *RECOMMENDED* to use OpenID Connect
 for this communication. Instruction can be found [(TODO add link!)]().
 
-### 15. Services *MUST* expose a public endpoint providing their specification
+### 16. Services *MUST* expose a public endpoint providing their specification
 
 1. Swagger, WADL, and CLAM are *SUGGESTED* as possible interface description languages.
 2. The endpoint *SHOULD NOT* be hindered by any authentication barriers.
 
-### 16. Services *SHOULD* expose a public endpoint providing high-level codemeta metadata
+### 17. Services *SHOULD* expose a public endpoint providing high-level codemeta metadata
 
 This is the corollary of point 9 for software. The codemeta metadata for the service as a whole must be available at a
 public endpoint returning a codemeta JSON-LD file. Note that this is not does describe the API (unlike point 14). This
@@ -213,7 +219,7 @@ is used for automatic harvesting and inclusion in e.g. Ineo.
 The only exception to this rule is if the endpoint offered in point 14 already provides enough information to *automatically*
 derive a codemeta representation from.
 
-### 17. Services *MAY* participate in the CLARIN switchboard
+### 18. Services *MAY* participate in the CLARIN switchboard
 
 The CLARIN switchboard aims to direct a user with a given data file to useful services. Participation is encouraged.
 

@@ -11,7 +11,7 @@ within the larger CLARIAH infrastructure.
 Only software that is built and maintained well will get used and thus provide value.
 
 The document is loosely derived from [earlier work to establish Software Quality
-Guidelines](https://github.com/CLARIAH/software-quality-guidelines/) within CLARIAH-CORE, but attempts to condense this
+Guidelines](https://github.com/CLARIAH/software-quality-guidelines/) within CLARIAH-CORE, but condenses that
 elaborate work to the most relevant and directly actionable points.
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”,

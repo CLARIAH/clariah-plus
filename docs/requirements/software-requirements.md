@@ -205,7 +205,7 @@ for this communication. Instruction can be found [(TODO add link!)]().
 1. Swagger, WADL, and CLAM are *SUGGESTED* as possible interface description languages.
 2. The endpoint *SHOULD NOT* be hindered by any authentication barriers.
 
-### 16. Services *SHOULD* expose a public endpoint providing high-level codemeta metadata
+### 16. Services *SHOULD* expose a public endpoint providing high-level CodeMeta metadata
 
 This is the corollary of point 9 for software. The codemeta metadata for the service as a whole must be available at a
 public endpoint returning a codemeta JSON-LD file. Note that this is not does describe the API (unlike point 14). This

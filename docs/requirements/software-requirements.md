@@ -51,7 +51,7 @@ Developers *MUST* ensure the license is not in conflict with the licenses of the
 
 ### 4. The software *MUST* be released periodically with clear version numbers
 
-Periodic releases of the software should be released with a clear version number.
+Periodic releases of the software *SHOULD* be released with a clear version number.
 
 1. The use of [semantic versioning](https://semver.org/) is *RECOMMENDED*.
 2. Each release *must* be accompanied by a tag in the VCS (e.g ``git tag``).

@@ -214,10 +214,10 @@ for this communication. Instruction can be found [here](https://github.com/CLARI
 ### 17. Services *SHOULD* expose a public endpoint providing high-level CodeMeta metadata
 
 This is the corollary of point 9 for software. The codemeta metadata for the service as a whole must be available at a
-public endpoint returning a codemeta JSON-LD file. Note that this is not does describe the API (unlike point 14). This
+public endpoint returning a codemeta JSON-LD file. Note that this does not describe the API (unlike point 16). This
 is used for automatic harvesting and inclusion in e.g. Ineo.
 
-The only exception to this rule is if the endpoint offered in point 14 already provides enough information to *automatically*
+The only exception to this rule is if the endpoint offered in point 16 already provides enough information to *automatically*
 derive a codemeta representation from.
 
 ### 18. Services *MAY* participate in the CLARIN switchboard

@@ -37,7 +37,7 @@ interpreted as described in [RFC
 4. The README *MUST* make clear wrote the software, including a contact link, and acknowledge the funders. 
 5. The README *MUST* provide (or link to) installation instructions.
 6. The README *MUST* provide (or link to) usage instructions for a quick start, explaining how the first task can be performed with the system.
-7. The README *should* make explicit any software and minimal hardware requirements the software relies on. This includes making explicit the software's main dependencies, target OS, and minimally required resources.
+7. The README *SHOULD* make explicit any software and minimal hardware requirements the software relies on. This includes making explicit the software's main dependencies, target OS, and minimally required resources.
 8. The README *MUST* make clear (link to) a public support channel (e.g. an issue tracker, mailing list) where people can submit bug reports and feature requests.
 
 ### 3. The software *MUST* be distributed as open source under an OSI approved license

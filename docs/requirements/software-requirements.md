@@ -8,6 +8,7 @@ evaluators. It provides a minimal list of specific and directly actionable crite
 against. The aim is to ensure a certain level of software quality and
 sustainability, and to lay out basic requiments needed for interoperability
 within the larger CLARIAH infrastructure.
+Only software that is built and maintained well will get used and thus provide value.
 
 The document is loosely derived from [earlier work to establish Software Quality
 Guidelines](https://github.com/CLARIAH/software-quality-guidelines/) within CLARIAH-CORE, but attempts to condense this

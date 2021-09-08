@@ -34,8 +34,8 @@ interpreted as described in [RFC
 1. This should be a readable plain-text files. Markup formats such as Markdown (``README.md``, or alternatively ReStructuredText, ``README.rst``) are *RECOMMENDED*. Other formats such as LaTeX, HTML, Word, etc *MUST NOT* be used for the README.
 2. The README *MUST* have a clear description of what the software does (what problems it solves) and whom it is intended for.
 3. The README *MUST* make the current status of the software clear: is it ready for production, experimental, or a proof-of-concept? It *MUST* also make clear whether the software is actively maintained or not. The use of the [repostatus](https://www.repostatus.org/) vocabulary is *RECOMENDED* to this end. A simple repostatus badge suffices.
-4. The README *MUST* make clear who a) wrote the software and have a contact link, b) acknowledge the funders
-https://github.com/IdentityPython/SATOSA5. The README *MUST* provide (or link to) installation instructions.
+4. The README *MUST* make clear wrote the software, including a contact link, and acknowledge the funders. 
+5. The README *MUST* provide (or link to) installation instructions.
 6. The README *MUST* provide (or link to) usage instructions for a quick start, explaining how the first task can be performed with the system.
 7. The README *should* make explicit any software and minimal hardware requirements the software relies on. This includes making explicit the software's main dependencies, target OS, and minimally required resources.
 8. The README *MUST* make clear (link to) a public support channel (e.g. an issue tracker, mailing list) where people can submit bug reports and feature requests.

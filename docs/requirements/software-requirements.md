@@ -131,7 +131,7 @@ code change.
 Deviations from this are only acceptable for initial proof-of-concept or highly
 experimental software (see 1.3).
 
-### 9. Software **MUST** define codemeta software metadata along with the source code
+### 9. Software **MUST** define CodeMeta software metadata along with the source code
 
 1. The VCS repository must have a ``codemeta.json`` file in the root directory containing basic high-level
    software metadata. We adopt the [CodeMeta project](https://codemeta.github.io/) to this end. The ``codemeta.json`` file is a JSON-LD file that is machine-parseable and may be

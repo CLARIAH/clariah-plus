@@ -142,7 +142,7 @@ For the latter to work, the infrastructure must be able to persist data between 
 
 ### 4. The infrastructure _configures applications_ through environment variables. (Must have, [SEP](#sep))
 
-Configuration values (such as database connection strings or API URLs) must be parameterized.
+Configuration values (such as database connection strings, API URLs or secrets) must be parameterized.
 The best way to do so is with [environment variables](https://12factor.net/config), a language- and OS-agnostic standard.
 The infrastructure must therefore support providing these environment variables to the application.
 

@@ -119,7 +119,7 @@ This makes them decoupled from infrastructure specifics (such as the OS used by 
 The same container can be run on any Linux distribution, cloud provider (including AWS, Azure, Google and DigitalOcean)
 as well as on a developer’s local Mac or Windows machine.
 
-(This corresponds to point 12 of the [Software/Service Requirements (SR)](software-requirements.md))
+(This corresponds to point 13 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 2. The infrastructure connects to a **container registry**. (Must have, [SEP](#sep))
 
@@ -131,14 +131,14 @@ The built artifacts must be accessible not only to the infrastructure itself but
 who can then [access and reuse](https://www.rd-alliance.org/system/files/FAIR4RS_Principles_v0.3_RDA-RFC.pdf) those same containers,
 for example to run them locally (see requirement 1).
 
-(This corresponds to point 12.1 of the [Software/Service Requirements (SR)](software-requirements.md))
+(This corresponds to point 13.1 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 3. The infrastructure runs _stateful applications_. (Must have)
 
 The infrastructure can run both stateless applications (that store no state) and stateful applications, such as triple stores.
 For the latter to work, the infrastructure must be able to persist data between application runs (for instance on data volumes).
 
-(This corresponds to point 12.5 of the [Software/Service Requirements (SR)](software-requirements.md))
+(This corresponds to point 13.5 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 4. The infrastructure _configures applications_ through environment variables. (Must have, [SEP](#sep))
 
@@ -146,7 +146,7 @@ Configuration values (such as database connection strings, API URLs or secrets) 
 The best way to do so is with [environment variables](https://12factor.net/config), a language- and OS-agnostic standard.
 The infrastructure must therefore support providing these environment variables to the application.
 
-(This corresponds to point 12.3 of the [Software/Service Requirements (SR)](software-requirements.md))
+(This corresponds to point 13.3 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 5. The infrastructure _captures application logs_ at stdout. (Must have, [SEP](#sep))
 
@@ -154,7 +154,7 @@ Traditionally, logs are written by applications to a log file or an API (such as
 This couples the application to the infrastructure it runs on.
 To safeguard proper separation, the infrastructure must capture application logs at the [standard output stream](https://12factor.net/logs) (`stdout`).
 
-(This corresponds to point 12.4 of the [Software/Service Requirements (SR)](software-requirements.md))
+(This corresponds to point 13.4 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 6. The infrastructure _aggregates logs_. (Must have, [REL](#rel))
 
@@ -229,7 +229,7 @@ an approach known as [Infrastructure as Code (IaC)](https://en.wikipedia.org/wik
 Having the configuration as code makes it transparent and declarative.
 Preferably, the code is opened up to developers, so they can view it and propose the changes to it that are needed to run their applications.
 
-(This relates to points 1 and 13 of the [Software/Service Requirements (SR)](software-requirements.md))
+(This relates to points 1 and 15 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 18. The infrastructure _captures metrics_. (Should have, [REL](#rel))
 

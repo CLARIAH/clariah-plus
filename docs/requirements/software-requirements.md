@@ -33,7 +33,10 @@ interpreted as described in [RFC
 
 1. This should be a readable plain-text files. Markup formats such as Markdown (``README.md``, or alternatively ReStructuredText, ``README.rst``) are *RECOMMENDED*. Other formats such as LaTeX, HTML, Word, etc *MUST NOT* be used for the README.
 2. The README *MUST* have a clear description of what the software does (what problems it solves) and whom it is intended for.
-3. The README *MUST* make the current status of the software clear: is it ready for production, experimental, or a proof-of-concept? It *MUST* also make clear whether the software is actively maintained or not. The use of the [repostatus](https://www.repostatus.org/) vocabulary is *RECOMENDED* to this end. A simple repostatus badge suffices.
+3. The README *MUST* make the current status of the software clear: is it ready for production, experimental, or a
+   proof-of-concept? It *MUST* also make clear whether the software is actively maintained or not, and if so, by whom
+   (see point 12). The use of the [repostatus](https://www.repostatus.org/) vocabulary is *RECOMMENDED* to this end. A
+   simple repostatus badge suffices.
 4. The README *MUST* make clear who wrote the software, including a contact link, and acknowledge the funders.
 5. The README *MUST* provide (or link to) installation instructions.
 6. The README *MUST* provide (or link to) usage instructions for a quick start, explaining how the first task can be performed with the system.
@@ -45,7 +48,7 @@ interpreted as described in [RFC
 The full license *MUST* be stored in a ``LICENSE`` (``LICENSE.md``) file in the root of the VCS, the same format
 recommendations and restrictions apply as to the ``README`` file.
 
-Developers *MUST* ensure the license is not in conflict with the licenses of the dependencies they use.
+The maintainer of the software *MUST* ensure the license is not in conflict with the licenses of the dependencies they use.
 
 * See the list of [OSI-approved licenses](https://opensource.org/licenses)
 
@@ -160,15 +163,28 @@ documentation *SHOULD* be served on a website (platforms like readthedocs.io *MA
 Deviations to this rule are for unsupported/proof-of-concept/experimental software, which must be clearly indicated in
 the README (see 1.3).
 
+### 12. Software *MUST* have a clear maintainer
+
+All software *MUST* have a clear mainainer. The only exception is if the software is explicitly unsupported, abandoned
+or an initial experimental prototype not ready for adoption. The maintainer may be a person (or
+multiple) or an institution. The maintainer is responsible for responding to user requests, bug reports, security
+vulnerabilities and for releases and packaging.
+
+A project is *RECOMMENDED* to be open to contributions from the open source community (pull requests/merge
+requests/patches), the maintainer is responsible for reviewing those. It is *RECOMMENDED* to provide a ``CONTRIBUTE.md``
+file in the version control root directory file with guidelines contributors to your software should follow.
+
+The use of any software that is not or no longer maintained is *NOT RECOMMENDED*.
+
 ## Software-as-a-Service Requirements (CLaaS)
 
-### 12. Services *SHOULD* provide a simple RESTful API
+### 13. Services *SHOULD* provide a simple RESTful API
 
 A simple RESTful API is *RECOMMENDED* over more complex solutions such as SOAP. SOAP *SHOULD NOT* be used if it can be
 avoided. XML-RPC *MAY* be used. [CLAM](https://github.com/proycon/clam) *MAY* be used as a home-grown CLARIAH solution to deliver RESTful webservices around
 existing tools.
 
-### 13. Services *MUST* be packaged as containers
+### 14. Services *MUST* be packaged as containers
 
 All software services *MUST* be packaged as [OCI](https://opencontainers.org/) containers (e.g. Docker containers).
 Containers are self-sufficient (without external dependencies) and uniform
@@ -191,26 +207,26 @@ local Mac or Windows machine.
 5. Application data (state) that needs to be persistant between runs *MUST* be stored separate from the container (e.g. in a
    mounted volume) (See point 3 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
 
-### 14. Service developers *SHOULD* provide an initial template when multi-container orchestration is needed
+### 15. Service developers *SHOULD* provide an initial template when multi-container orchestration is needed
 
 If a complex service consists of multiple interacting containers, the developers *SHOULD* provide an initial template in
 the form of a Docker Compose configuration or a Kubernetes deployment configuration that illustrates how the containers
 are orchestrated to form the application. This *MUST* be maintained in a VCS repository (infrastructure as code
 principle). Infrastructure operators can build on this example to deploy the application.
 
-### 15. Services *MUST* be compatible with CLARIAH's authentication and authorization infrastructure
+### 16. Services *MUST* be compatible with CLARIAH's authentication and authorization infrastructure
 
 All services open to end-users and which require some form of user authentication *MUST* be compatible with
 CLARIAH's authentication and authorization infrastructure. That is, they should be able to communicate with CLARIAH's
 [SATOSA](https://github.com/IdentityPython/SATOSA) Authentication Provider. It is *RECOMMENDED* to use OpenID Connect
 for this communication. Instruction can be found [here](https://github.com/CLARIAH/IG-DevOps/tree/main/docs/authentication).
 
-### 16. Services *MUST* expose a public endpoint providing their specification
+### 17. Services *MUST* expose a public endpoint providing their specification
 
 1. Swagger, WADL, and CLAM are *SUGGESTED* as possible interface description languages.
 2. The endpoint *SHOULD NOT* be hindered by any authentication barriers.
 
-### 17. Services *SHOULD* expose a public endpoint providing high-level CodeMeta metadata
+### 18. Services *SHOULD* expose a public endpoint providing high-level CodeMeta metadata
 
 This is the corollary of point 9 for software. The codemeta metadata for the service as a whole must be available at a
 public endpoint returning a codemeta JSON-LD file. Note that this does not describe the API (unlike point 16). This
@@ -219,7 +235,7 @@ is used for automatic harvesting and inclusion in e.g. Ineo.
 The only exception to this rule is if the endpoint offered in point 16 already provides enough information to *automatically*
 derive a codemeta representation from.
 
-### 18. Services *MAY* participate in the CLARIN switchboard
+### 19. Services *MAY* participate in the CLARIN switchboard
 
 The CLARIN switchboard aims to direct a user with a given data file to useful services. Participation is encouraged.
 

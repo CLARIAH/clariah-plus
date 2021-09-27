@@ -34,7 +34,7 @@ interpreted as described in [RFC
 1. This should be a readable plain-text files. Markup formats such as Markdown (``README.md``, or alternatively ReStructuredText, ``README.rst``) are *RECOMMENDED*. Other formats such as LaTeX, HTML, Word, etc *MUST NOT* be used for the README.
 2. The README *MUST* have a clear description of what the software does (what problems it solves) and whom it is intended for.
 3. The README *MUST* make the current status of the software clear: is it ready for production, experimental, or a proof-of-concept? It *MUST* also make clear whether the software is actively maintained or not. The use of the [repostatus](https://www.repostatus.org/) vocabulary is *RECOMENDED* to this end. A simple repostatus badge suffices.
-4. The README *MUST* make clear wrote the software, including a contact link, and acknowledge the funders. 
+4. The README *MUST* make clear who wrote the software, including a contact link, and acknowledge the funders.
 5. The README *MUST* provide (or link to) installation instructions.
 6. The README *MUST* provide (or link to) usage instructions for a quick start, explaining how the first task can be performed with the system.
 7. The README *SHOULD* make explicit any software and minimal hardware requirements the software relies on. This includes making explicit the software's main dependencies, target OS, and minimally required resources.
@@ -59,7 +59,7 @@ Periodic releases of the software *SHOULD* be released with a clear version numb
    platforms such a GitHub, GitLab, Bitbucket.
 3. Each release *must* be accompanied by release notes describing on a more
    general level what is new in the release. Again, the release mechanisms by
-   major CVS platforms provide for this. Alternatively you can use a ``NEWS``
+   major CVS platforms provide for this. Alternatively you *MAY* use a ``NEWS``
    or a ``CHANGELOG`` file.
 
 ### 5. The software *MUST* separate code from configuration.
@@ -119,10 +119,10 @@ and unsupported, which must be clearly indicated in the README (see 1.3).
 
 ### 8. Software *SHOULD* be reusable
 
-1. To foster reusability, any meaningful reusable component of your sofware *SHOULD* be
-   split into reusable software libraries/tools rather than be part of an
-   indivisible monolithical whole. This ensures the work can be reused where
-   appropriate.
+To foster reusability, any meaningful reusable component of your sofware *SHOULD* be
+split into reusable software libraries/tools rather than be part of an
+indivisible monolithical whole. This ensures the work can be reused where
+appropriate.
 
 ### 9. Software *SHOULD* come with automated tests
 
@@ -137,7 +137,7 @@ code change.
 Deviations from this are only acceptable for initial proof-of-concept or highly
 experimental software (see 1.3).
 
-### 10. Software **MUST** define CodeMeta software metadata along with the source code
+### 10. Software *MUST* define CodeMeta software metadata along with the source code
 
 1. The VCS repository must have a ``codemeta.json`` file in the root directory containing basic high-level
    software metadata. We adopt the [CodeMeta project](https://codemeta.github.io/) to this end. The ``codemeta.json`` file is a JSON-LD file that is machine-parseable and may be
@@ -145,7 +145,7 @@ experimental software (see 1.3).
    software. The codemeta file can be in part automatically generated from the metadata you already
    provided for your packages (see point 5)
 
-### 11. Software **SHOULD** be documented.
+### 11. Software *SHOULD* be documented.
 
 Whereas minimal documentation is already *REQUIRED* per point 2, more extensive documentation is *RECOMMENDED*. The sources of
 which *SHOULD* be stored alongside the source code, ensuring they describe the same version, and the resulting
@@ -156,7 +156,6 @@ documentation *SHOULD* be served on a website (platforms like readthedocs.io *MA
 3. When the software has a command line interface, usage example should be given in the documentation. Furthermore a ``--help`` parameter *MUST* be provided in the software itself.
 4. When the software has a graphical/web user interface, the documentation *SHOULD* explain how to use it.
 5. The use of API documentation as integral part of the code and tools such as doxygen, sphinx is *RECOMMENDED*.
-6. The use of API documentation as integral part of the code and tools such as doxygen, sphinx is *RECOMMENDED*.
 
 Deviations to this rule are for unsupported/proof-of-concept/experimental software, which must be clearly indicated in
 the README (see 1.3).
@@ -166,7 +165,7 @@ the README (see 1.3).
 ### 12. Services *SHOULD* provide a simple RESTful API
 
 A simple RESTful API is *RECOMMENDED* over more complex solutions such as SOAP. SOAP *SHOULD NOT* be used if it can be
-avoided. XML-RPC *MAY* be used. CLAM *MAY* be used as a home-grown CLARIAH solution to deliver RESTful webservices around
+avoided. XML-RPC *MAY* be used. [CLAM](https://github.com/proycon/clam) *MAY* be used as a home-grown CLARIAH solution to deliver RESTful webservices around
 existing tools.
 
 ### 13. Services *MUST* be packaged as containers
@@ -192,7 +191,7 @@ local Mac or Windows machine.
 5. Application data (state) that needs to be persistant between runs *MUST* be stored separate from the container (e.g. in a
    mounted volume) (See point 3 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
 
-### 14. Service developers *SHOULD* provide an initial template when of multi-container orchestration is needed
+### 14. Service developers *SHOULD* provide an initial template when multi-container orchestration is needed
 
 If a complex service consists of multiple interacting containers, the developers *SHOULD* provide an initial template in
 the form of a Docker Compose configuration or a Kubernetes deployment configuration that illustrates how the containers

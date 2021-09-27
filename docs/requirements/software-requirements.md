@@ -200,7 +200,7 @@ principle). Infrastructure operators can build on this example to deploy the app
 
 ### 15. Services *MUST* be compatible with CLARIAH's authentication and authorization infrastructure
 
-All services open to end-users and which require some form of user authentication should be compatible with
+All services open to end-users and which require some form of user authentication *MUST* be compatible with
 CLARIAH's authentication and authorization infrastructure. That is, they should be able to communicate with CLARIAH's
 [SATOSA](https://github.com/IdentityPython/SATOSA) Authentication Provider. It is *RECOMMENDED* to use OpenID Connect
 for this communication. Instruction can be found [here](https://github.com/CLARIAH/IG-DevOps/tree/main/docs/authentication).

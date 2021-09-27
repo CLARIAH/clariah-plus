@@ -122,8 +122,7 @@ and unsupported, which must be clearly indicated in the README (see 1.3).
 
 ### 8. Software *SHOULD* be reusable
 
-To foster reusability, any meaningful reusable component of your sofware *SHOULD* be
-split into reusable software libraries/tools rather than be part of an
+To foster reusability, any meaningful reusable component of your sofware *SHOULD* be split into reusable software libraries/tools rather than be part of an
 indivisible monolithical whole. This ensures the work can be reused where
 appropriate.
 
@@ -176,15 +175,32 @@ file in the version control root directory file with guidelines contributors to 
 
 The use of any software that is not or no longer maintained is *NOT RECOMMENDED*.
 
+### 13. Software *MUST* be developed with attention to security & privacy
+
+Security and privacy *MUST* be a point of attention throughout the software's lifecycle. Malicious actors are ubiquitous
+and looking for vulnerabilities to exploit, whilst nobody can guarantee to keep out all intruders and bugs are an
+inevitable part of software development, a best effort *MUST* be made.
+
+1. Software *MUST NOT* store any unhashed user credentials.
+2. Software *MUST* guard against common attacks such as [SQL injection](https://owasp.org/Top10/A03_2021-Injection/), Shell injection, Cross-site request forgery, session hijacking attacks, broken access control, and more. For web applications, the [OWASP Top 10](https://owasp.org/www-project-top-ten/) is a good resource listing the most critical security risks to look out for in web applications.
+3. Components with major known vulnerabilities *MUST NOT* be used (see [OWASP A06:2021](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/))
+4. Software services *MUST* comply to the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation).
+5. All outside traffic *MUST* be properly encrypted. (e.g. use HTTPS)
+6. Security issues *SHOULD* be disclosed publicly. The most critical security problems should be kept under embargo first to give
+   affected parties the chance to upgrade.
+7.  To safeguard the privacy of your users, it is *RECOMMENDED* to limit the amount of cross-site requests to third party
+content, to only those that are really needed. This is relevant not only from a privacy, but also from a security point
+of view. Be especially vigilant when incorporating social network 'like' buttons, as those are in essence trackers.
+
 ## Software-as-a-Service Requirements (CLaaS)
 
-### 13. Services *SHOULD* provide a simple RESTful API
+### 14. Services *SHOULD* provide a simple RESTful API
 
 A simple RESTful API is *RECOMMENDED* over more complex solutions such as SOAP. SOAP *SHOULD NOT* be used if it can be
 avoided. XML-RPC *MAY* be used. [CLAM](https://github.com/proycon/clam) *MAY* be used as a home-grown CLARIAH solution to deliver RESTful webservices around
 existing tools.
 
-### 14. Services *MUST* be packaged as containers
+### 15. Services *MUST* be packaged as containers
 
 All software services *MUST* be packaged as [OCI](https://opencontainers.org/) containers (e.g. Docker containers).
 Containers are self-sufficient (without external dependencies) and uniform
@@ -214,19 +230,19 @@ the form of a Docker Compose configuration or a Kubernetes deployment configurat
 are orchestrated to form the application. This *MUST* be maintained in a VCS repository (infrastructure as code
 principle). Infrastructure operators can build on this example to deploy the application.
 
-### 16. Services *MUST* be compatible with CLARIAH's authentication and authorization infrastructure
+### 17. Services *MUST* be compatible with CLARIAH's authentication and authorization infrastructure
 
 All services open to end-users and which require some form of user authentication *MUST* be compatible with
 CLARIAH's authentication and authorization infrastructure. That is, they should be able to communicate with CLARIAH's
 [SATOSA](https://github.com/IdentityPython/SATOSA) Authentication Provider. It is *RECOMMENDED* to use OpenID Connect
 for this communication. Instruction can be found [here](https://github.com/CLARIAH/IG-DevOps/tree/main/docs/authentication).
 
-### 17. Services *MUST* expose a public endpoint providing their specification
+### 18. Services *MUST* expose a public endpoint providing their specification
 
 1. Swagger, WADL, and CLAM are *SUGGESTED* as possible interface description languages.
 2. The endpoint *SHOULD NOT* be hindered by any authentication barriers.
 
-### 18. Services *SHOULD* expose a public endpoint providing high-level CodeMeta metadata
+### 19. Services *SHOULD* expose a public endpoint providing high-level CodeMeta metadata
 
 This is the corollary of point 9 for software. The codemeta metadata for the service as a whole must be available at a
 public endpoint returning a codemeta JSON-LD file. Note that this does not describe the API (unlike point 16). This
@@ -235,7 +251,7 @@ is used for automatic harvesting and inclusion in e.g. Ineo.
 The only exception to this rule is if the endpoint offered in point 16 already provides enough information to *automatically*
 derive a codemeta representation from.
 
-### 19. Services *MAY* participate in the CLARIN switchboard
+### 20. Services *MAY* participate in the CLARIN switchboard
 
 The CLARIN switchboard aims to direct a user with a given data file to useful services. Participation is encouraged.
 

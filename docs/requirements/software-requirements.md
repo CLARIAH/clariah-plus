@@ -37,7 +37,7 @@ interpreted as described in [RFC
    proof-of-concept? It *MUST* also make clear whether the software is actively maintained or not, and if so, by whom
    (see point 12). The use of the [repostatus](https://www.repostatus.org/) vocabulary is *RECOMMENDED* to this end. A
    simple repostatus badge suffices.
-4. The README *MUST* make clear who wrote the software, including a contact link, and acknowledge the funders.
+4. The README *MUST* make clear who wrote and currently maintains the software, including a contact link, and acknowledge the funders.
 5. The README *MUST* provide (or link to) installation instructions.
 6. The README *MUST* provide (or link to) usage instructions for a quick start, explaining how the first task can be performed with the system.
 7. The README *SHOULD* make explicit any software and minimal hardware requirements the software relies on. This includes making explicit the software's main dependencies, target OS, and minimally required resources.
@@ -167,7 +167,9 @@ the README (see 1.3).
 All software *MUST* have a clear mainainer. The only exception is if the software is explicitly unsupported, abandoned
 or an initial experimental prototype not ready for adoption. The maintainer may be a person (or
 multiple) or an institution. The maintainer is responsible for responding to user requests, bug reports, security
-vulnerabilities and for releases and packaging.
+vulnerabilities and for releases and packaging. The maintainer *MUST* be specified in the formal software metadata
+(point 10) and *SHOULD* also be documented in the README (if not immediately obvious from context), additionally a
+[``CODEOWNERS``](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) file *MAY* be included in the root of your repository.
 
 A project is *RECOMMENDED* to be open to contributions from the open source community (pull requests/merge
 requests/patches), the maintainer is responsible for reviewing those. It is *RECOMMENDED* to provide a ``CONTRIBUTE.md``

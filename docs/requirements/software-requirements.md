@@ -186,13 +186,15 @@ inevitable part of software development, a best effort *MUST* be made.
 1. Software *MUST NOT* store any unhashed user credentials.
 2. Software *MUST* guard against common attacks such as [SQL injection](https://owasp.org/Top10/A03_2021-Injection/), Shell injection, Cross-site request forgery, session hijacking attacks, broken access control, and more. For web applications, the [OWASP Top 10](https://owasp.org/www-project-top-ten/) is a good resource listing the most critical security risks to look out for in web applications.
 3. Components with major known vulnerabilities *MUST NOT* be used (see [OWASP A06:2021](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/))
-4. Software services *MUST* comply to the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation).
-5. All outside traffic *MUST* be properly encrypted. (e.g. use HTTPS)
+4. Software services *MUST* comply to the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation). This corresponds to Point 14 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md).
+5. All outside traffic *MUST* be properly encrypted. (e.g. use HTTPS). This corresponds to Points 11 and 12 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md).
 6. Security issues *SHOULD* be disclosed publicly. The most critical security problems should be kept under embargo first to give
    affected parties the chance to upgrade.
-7.  To safeguard the privacy of your users, it is *RECOMMENDED* to limit the amount of cross-site requests to third party
+7. To safeguard the privacy of your users, it is *RECOMMENDED* to limit the amount of cross-site requests to third party
 content, to only those that are really needed. This is relevant not only from a privacy, but also from a security point
 of view. Be especially vigilant when incorporating social network 'like' buttons, as those are in essence trackers.
+
+This relates to Point 13 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md)
 
 ## Software-as-a-Service Requirements (CLaaS)
 

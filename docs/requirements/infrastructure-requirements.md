@@ -187,8 +187,9 @@ The application remains available with as little interruption as possible.
 
 ### 11. The infrastructure exposes applications at _public HTTPS web endpoints_. (Must have)
 
-Traditionally, large parts of infrastructure are only accessible internally in the organization.
-NDE applications, however, are meant for the public and therefore must be publicly accessible over HTTPS.
+CLARIAH services span a shared infrastucture over multiple partners, most services are directly intended for public consumption, therefore they must be publicly accessible over HTTPS.
+
+(This corresponds to point 13.5 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 12. The infrastructure provisions and renews _TLS certificates_ for the web endpoints. (Must have, [REL](#rel))
 
@@ -203,6 +204,8 @@ Data loss is unacceptable, especially when that data has been provided by users.
 ### 14. The infrastructure is _GDPR-compliant_, for instance in the way it stores data. (Must have)
 
 If the infrastructure stores personal data, for instance logs, this must be done in a GDPR-compliant manner.
+
+(This corresponds to point 13.4 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 15. The infrastructure is _secure_. (Must have, [REL](#rel))
 

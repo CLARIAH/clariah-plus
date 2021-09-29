@@ -146,7 +146,7 @@ Configuration values (such as database connection strings, API URLs or secrets) 
 The best way to do so is with [environment variables](https://12factor.net/config), a language- and OS-agnostic standard.
 The infrastructure must therefore support providing these environment variables to the application.
 
-(This corresponds to point 14.3 of the [Software/Service Requirements (SR)](software-requirements.md))
+(This corresponds to point 15.3 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 5. The infrastructure _captures application logs_ at stdout. (Must have, [SEP](#sep))
 
@@ -154,7 +154,7 @@ Traditionally, logs are written by applications to a log file or an API (such as
 This couples the application to the infrastructure it runs on.
 To safeguard proper separation, the infrastructure must capture application logs at the [standard output stream](https://12factor.net/logs) (`stdout`).
 
-(This corresponds to point 14.4 of the [Software/Service Requirements (SR)](software-requirements.md))
+(This corresponds to point 15.4 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 6. The infrastructure _aggregates logs_. (Must have, [REL](#rel))
 
@@ -189,7 +189,7 @@ The application remains available with as little interruption as possible.
 
 CLARIAH services span a shared infrastucture over multiple partners, most services are directly intended for public consumption, therefore they must be publicly accessible over HTTPS.
 
-(This corresponds to point 13.5 of the [Software/Service Requirements (SR)](software-requirements.md))
+(This relates to point 13.5 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 12. The infrastructure provisions and renews _TLS certificates_ for the web endpoints. (Must have, [REL](#rel))
 
@@ -205,7 +205,7 @@ Data loss is unacceptable, especially when that data has been provided by users.
 
 If the infrastructure stores personal data, for instance logs, this must be done in a GDPR-compliant manner.
 
-(This corresponds to point 13.4 of the [Software/Service Requirements (SR)](software-requirements.md))
+(This relates to point 13.4 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 15. The infrastructure is _secure_. (Must have, [REL](#rel))
 

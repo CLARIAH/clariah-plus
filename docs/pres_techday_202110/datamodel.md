@@ -9,8 +9,8 @@ The Shared Development roadmap provides:
 
 In order to:
 
-* pave to road for CLARIAH-PLUS and possible successor: decide what to do
-  and what not to do (**planning**).
+* pave to road for CLARIAH-PLUS and possible successor: decide what to postpone
+  and what not to do or postpone (**planning**).
 * have a complete and transparent **overview**
 * promote **interoperability**, cross-WP collaboration and **harmonize** solutions
 

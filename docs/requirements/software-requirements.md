@@ -27,7 +27,7 @@ interpreted as described in [RFC
 2. CLARIAH is registered as an [organization](https://github.com/CLARIAH) on github, any CLARIAH software project *MAY* be hosted there.
 3. Git is *RECOMMENDED*
 4. All content, including documentation, *SHOULD* be stored alongside the code in the VCS.
-5. The source code repository *SHOULD* be publicly accessible from day 1 of development so interested third parties can follow development and provide feedback. The software code *MUST NOT* be reduced to a release/file-transfer mechanism for completed products. Exceptions are when code is under embargo or privacy-sensitive.
+5. The source code repository *SHOULD* be publicly accessible from day 1 of development so interested third parties can follow development and provide feedback. The source code repository *MUST NOT* be reduced to a release/file-transfer mechanism for completed products. Exceptions are when code is under embargo or privacy-sensitive.
 
 ### 2. A README file *MUST* be provided in the root directory of the VCS
 
@@ -118,7 +118,7 @@ developers. The public support channel also gives an indication of community
 interest in the project.
 
 The only acceptable deviation to this rule is when the software is explicitly unmaintained
-and unsupported, which must be clearly indicated in the README (see 1.3).
+and unsupported, which must be clearly indicated in the README (see 2.3).
 
 ### 8. Software *SHOULD* be reusable
 
@@ -143,7 +143,7 @@ experimental software (see 1.3).
 
 1. The VCS repository must have a ``codemeta.json`` file in the root directory containing basic high-level
    software metadata. We adopt the [CodeMeta project](https://codemeta.github.io/) to this end. The ``codemeta.json`` file is a JSON-LD file that is machine-parseable and may be
-   used by metadata harvesters, for inclusion in e.g. Ineo. Moreover, it enable citability of the
+   used by metadata harvesters, for inclusion in e.g. Ineo. Moreover, it enables citability of the
    software. The codemeta file can be in part automatically generated from the metadata you already
    provided for your packages (see point 5)
 
@@ -160,7 +160,7 @@ documentation *SHOULD* be served on a website (platforms like readthedocs.io *MA
 5. The use of API documentation as integral part of the code and tools such as doxygen, sphinx is *RECOMMENDED*.
 
 Deviations to this rule are for unsupported/proof-of-concept/experimental software, which must be clearly indicated in
-the README (see 1.3).
+the README (see 2.3).
 
 ### 12. Software *MUST* have a clear maintainer
 
@@ -224,7 +224,7 @@ local Mac or Windows machine.
    turn configures applications through environment variables (see [IR4](infrastructure-requirements.md#4-the-infrastructure-configures-applications-through-environment-variables-must-have-sep) and also related to point 7).
 4. Containers should output all log information to ``stdout`` so it can be captured by the infrastructure (see IR5 and
    IR6).
-5. Application data (state) that needs to be persistant between runs *MUST* be stored separate from the container (e.g. in a
+5. Application data (state) that needs to be persistent between runs *MUST* be stored separate from the container (e.g. in a
    mounted volume) (See point 3 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
 
 ### 15. Service developers *SHOULD* provide an initial template when multi-container orchestration is needed

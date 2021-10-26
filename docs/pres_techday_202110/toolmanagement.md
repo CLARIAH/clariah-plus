@@ -7,5 +7,5 @@
     * Automatic harvesting of software/service metadata
     * Registry and backend API for collected software/service metadata
     * Possible collaboration with the CLARIN switchboard
-    * Ineo only as a thin frontend layer
+    * Ineo and limitations; only as a thin frontend layer (portal)
 

@@ -7,8 +7,8 @@
     * Covers a wide variety of NLP tasks & tools (Frog, Alpino, ucto, UDpipe-frysk)
     * Covers multiple languages (focus often on dutch), also consideration for historical language
     * **Proposed discussion points:**
-        * Focus on state-of-the-art techniques (e.g. transformers) for future development?
-        * Do we want to standardize web APIs for NLP tools?
+        * Investing in state-of-the-art techniques (e.g. transformers)
+        * Standardize web APIs for NLP tools?
 
 ## CLARIAH Services (2)
 
@@ -19,7 +19,7 @@
         * **Proposed discussion points:** PICCL maintenance issues
     2. **NLP Suites**
         * **Proposed discussion points:**
-        * Suites or individually offered tools?
+        * Suites vs individual components
         * Concerns of modularity, reusability and maintainability
     3. **Grapheme to Phoneme conversion**
 2. (Annotated) Text Conversion
@@ -29,6 +29,10 @@
 
 4. Speech Recognition
     * **User story**: As a scholar, I want to create a speech transcripts for an audiofile so that I have a textual representation of it for browsing/close reading
+    * **Proposed discussion points:**
+    * Suitability of DANE in a wider context (text)?
+    * User-story 2 (search)
+    * Most dane worker links give a 404
 
 5. Computer vision
     * **User story**: As a scholar, I want to use computer vision to explore data collections based on image features such as objects that are visible, shots or colours.
@@ -38,10 +42,14 @@
 6. Linguistic Diagnostics Database
     * **User story**: As a scholar, I want to quickly find all arguments from the literature for or against a linguistic property of a word or construction
     * **Proposed discussion points:**
-        * Interesting but very specific use case, less relevant from an cross-WP and overall infrastructure perspective
+        * Interesting but very specific use case; less relevant from a cross-WP and overall infrastructure perspective
+        * Suitability of PICCL for this is questionable due to sustainability issues
+        * PDF processing components
 
 7. Glossing service
     * **User story**: As a scholar, I want to use dutch examples in an English article and the gloss and translation should be added automatically
     * **Proposed discussion points:**
         * Move to NLP?
+        * Suitability of PICCL for this is questionable due to sustainability issues
+
 

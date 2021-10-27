@@ -8,6 +8,7 @@
     * Covers multiple languages (focus often on dutch), also consideration for historical language
     * **Proposed discussion points:**
         * Focus on state-of-the-art techniques (e.g. transformers) for future development?
+        * Do we want to standardize web APIs for NLP tools?
 
 ## CLARIAH Services (2)
 
@@ -20,6 +21,7 @@
         * **Proposed discussion points:**
         * Suites or individually offered tools?
         * Concerns of modularity, reusability and maintainability
+    3. **Grapheme to Phoneme conversion**
 2. (Annotated) Text Conversion
     * **User story**: As a scholar, I want to convert my (annotated) text document from one format to another *in order to* use my data with a tool that requires a different format, or because I want to store and archive it in a different format
 

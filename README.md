@@ -48,6 +48,8 @@ suffices.
 Some notable resources for the project as a whole:
 
 * [CLARIAH Workplan](https://docs.google.com/spreadsheets/d/1WTbtA20vpKz5Oo_EnDYe1xNhRpR24mr0eESPa49jALg/edit#gid=151792289)
+* [CLARIAH Projects page at GitHub](https://github.com/orgs/CLARIAH/projects/) - Project planning (kanban boards etc)
+* [CLARIAH Issue Tracker](https://github.com/CLARIAH/clariah-plus/issues) - Issue tracker for meta-issues regarding the project
 * [CLARIAH Shared Development Roadmap - phase 1](https://docs.google.com/document/d/1dCTK5w9jJRKIQuQ9t_xl7YbTtFljLoLTNT3C2EEIPtg/edit)
 * [CLARIAH Shared Development Roadmap - phase 2](https://docs.google.com/document/d/1n3WzvFbYuKnlR4IsYNZV8p61rQBZUVzLwpLbE5lueBU/edit)
 * [CLARIAH Website](https://clariah.nl)

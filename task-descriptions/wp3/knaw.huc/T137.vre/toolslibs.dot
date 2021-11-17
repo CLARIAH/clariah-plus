@@ -1,0 +1,55 @@
+
+digraph G {
+    {
+        node [ shape=box fontcolor=black ]
+        frog [ label="Frog\nNLP suite" fontcolor="#006600" ]
+        ucto [ label="Ucto\ntokeniser" fontcolor="#006600" ]
+        libfolia [ label="libfolia\nlibrary" fontcolor="#006600" ]
+        foliapy [ label="FoLiAPy\nlibrary" fontcolor="#006600" ]
+        foliarust [ label="folia-rust\nlibrary" fontcolor="#006600" ]
+
+        python [ label="Python" fontcolor="#006600" shape=circle style=filled fillcolor=grey ]
+        r [ label="R" fontcolor="#006600" shape=circle style=filled fillcolor=grey ]
+        rust [ label="Rust" fontcolor="#006600" shape=circle style=filled fillcolor=grey ]
+        go [ label="Go" fontcolor="#006600" shape=circle style=filled fillcolor=grey ]
+        julia [ label="Julia" fontcolor="#006600" shape=circle style=filled fillcolor=grey ]
+        cpp [ label="C++" fontcolor="#006600" shape=circle style=filled fillcolor=grey ]
+
+
+        libfolia -> cpp
+        frog -> cpp
+        ucto -> cpp
+
+        ucto -> frog
+        libfolia -> frog
+        libfolia -> ucto
+
+        foliapy -> python
+
+
+
+
+        piereling [ label="Piereling\nconverter" fontcolor="#006600" ]
+        openconvert [ label="OpenConvert\nconverter" fontcolor=red ]
+        opensonar [ label="OpenSoNaR\ncorpus search" fontcolor=red ]
+        piccl [ label="PICCL\nOCR/normalisation" fontcolor="#006600" ]
+        flat [ label="FLAT\nAnnotation Env.\n& Viewer" fontcolor="#006600" ]
+        valkuil [ label="Valkuil\nSpelling correction" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        tscan [ label="T-Scan\nText Analytics" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        oersetter [ label="Oersetter\nFrisian MT" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        colibri [ label="Colibri Core\nText Analytics" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        labirinto [ label="Portal page\n(in LaMachine)" fontcolor="#006600" ]
+        switchboard [ label="CLARIN Switchboard" style="filled,rounded" fillcolor=grey fontcolor=red ]
+        autosearch [ label="Autosearch\nCorpus search" fontcolor=red ]
+        alpino [ label="Alpino\nNLP suite" fontcolor="#006600" ]
+        paqu [ label="Paqu\nTreebank search" fontcolor=red ]
+        gretel [ label="GreTeL\nTreebank search" fontcolor=red]
+        opensonar [ label="OpenSoNaR\nCorpus search" fontcolor=red ]
+        oh [ label="Oral History\nDutch ASR" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        engasr [ label="English ASR" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        g2p [ label="g2p\nTranscription" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        t2t [ label="t2t\nTranslitteration" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        forcedalignment2 [ label="forcedalignment2\nASR" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        spacy [ label="spaCy\nNLP suite" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+        lab [ label="Jupyter Labs\nWeb-based IDE" style="filled,rounded" fillcolor=grey fontcolor="#006600" ]
+    }

@@ -9,8 +9,11 @@ All tasks for all work packages, and their current status, are listed in the [CL
 
 Links to the task descriptions per work package:
 
-* [WP2](wp2/)
 * [WP3](wp3/)
+
+The following are reserved but currently not used:
+
+* [WP2](wp2/)
 * [WP4](wp4/)
 * [WP5](wp5/)
 * [WP6](wp6/)

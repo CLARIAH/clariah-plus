@@ -1,18 +1,18 @@
 ---
-#This frontmatter block follows YAML syntax
-id: $epic-title-in-lowercase-with-hyphens
-coordinator:
+#(This frontmatter block follows YAML syntax)
+id: #epic-title-in-lowercase-with-hyphens
+coordinator: #person or list of people
 wp: [ 1, 2, 3, 4, 5, 6]
-github-projects-link:
-participants:
-themes:
+github-projects-link: https://github.com/orgs/CLARIAH/projects?type=beta #link to a specific project under here
+participants: [ ] #list of people
+themes: [ Text, Audio, Visual, Geo, Metadata, Annotation, DevOps, Curation, Vocabularies, Sustainability, Monitoring, Publication, Processing, Search, UI-and-UX, Workflows ] #remove what is not relevant
 evaluation:
     trl: ?
     cl: ?
     srl: ?
 ---
 
-## Epic title
+## $Epic title
 
 ### Rationale
 
@@ -44,6 +44,7 @@ evaluation:
 * **Service Component:**: **$Name**
     * **Description:** (Description)
     * **Provider**: (Institute that hosts the service)
+    * **Interface**: (WebUI, REST, GraphQL, multiple options allowed)
     * **TRL**: ?
     * **CL**: ?
     * **Sofware Component:** **$Name**
@@ -57,6 +58,11 @@ evaluation:
             * **CL**: ?
     * **Interoperability Standard:** **$Name**
         * **Type**:
+
+### Workflow Schema
+
+> Draw a schema indicating how the various software and data components interact. This is required only when many
+> components are involved and their connection is not immediately obvious.
 
 ### Evaluation
 

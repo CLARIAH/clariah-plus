@@ -1,0 +1,81 @@
+---
+#This frontmatter block follows YAML syntax
+id: $epic-title-in-lowercase-with-hyphens
+coordinator:
+wp: [ 1, 2, 3, 4, 5, 6]
+github-projects-link:
+participants:
+themes:
+evaluation:
+    trl: ?
+    cl: ?
+    srl: ?
+---
+
+## Epic title
+
+### Rationale
+
+> Describe, from a high-level perspective, the rationale of what important role
+> the service(s) that implement this epic fulfill in the CLARIAH infrastructure
+
+### User Stories
+
+> Describe, from a high-level scholarly perspective and in minimal and generic terms, the user stories that define this epic.
+
+1. **As a scholar, I** ... **in order to** ...
+
+### Needs & Dependencies
+
+> Describe organisational and technical dependencies that are crucial for the success of this service.
+
+### Requirements
+
+> Describe software, infrastructure & interoperability requirements that arise from this service or that are especially relevant for this service. These must be formulated in further detail in the corresponding requirements documents.
+
+### Service Description
+
+> Describe the service, mention software components, data components and interoperability standards where appropriate.
+
+### Components
+
+> Describe the components and subcomponents involved in this epic in a simple tree form; specify whether the component is: a service (instance), software, data, and estimate a TRL. Please consult the [definitions](introduction.md#definitions) and [data model](introduction.md#data-model)
+
+* **Service Component:**: **$Name**
+    * **Description:** (Description)
+    * **Provider**: (Institute that hosts the service)
+    * **TRL**: ?
+    * **CL**: ?
+    * **Sofware Component:** **$Name**
+        * **Function:** (function of the software, may be repeated)
+        * **Provider**: (Institute that maintains/develops the software)
+        * **TRL**: ?
+        * **CL**: ?
+        * **Data Component:**: **$Name**
+            * **Provider**: (Institute that provides the data)
+            * **TRL**: ?
+            * **CL**: ?
+    * **Interoperability Standard:** **$Name**
+        * **Type**:
+
+### Evaluation
+
+> Estimate the overall readiness of the implementation(s) for this epic in the frontmatter
+
+### Context
+
+> Sketch the wider context of the implementations for this epic in relation to other (existing/proposed) projects and initiatives.
+
+### Use cases
+
+> Link to specific use cases for which this user story is relevant, use cases should reside in the [use cases directory](../../use-cases/)
+
+### Planning
+
+> A rough planning for this epic. The GitHub Projects kanban board for this epic should be used for more detailed planning during development
+
+### Resources
+
+> Resources? I don't really know what goes here yet
+
+

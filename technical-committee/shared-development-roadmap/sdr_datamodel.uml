@@ -1,0 +1,287 @@
+@startuml
+hide stereotype
+
+skinparam class {
+    HeaderBackgroundColor LightSteelBlue
+    BackgroundColor LightGray
+    ArrowColor Black
+    BorderColor SteelBlue
+
+    HeaderBackgroundColor<<user-perspective>> SteelBlue
+    FontColor<<user-perspective>> White
+    ArrowColor<<user-perspective>> Black
+}
+
+
+title "CLARIAH+ Shared Development Roadmap phase 2: Data model"
+
+together {
+
+    class "CLARIAH Epic" <<user-perspective>> {
+        name
+        user stories
+        rationale
+        context
+        themes [1..*]
+        components
+        --
+        <font color="DarkSlateGray"><i> An abstract grouping of high-level user stories,
+        <font color="DarkSlateGray"><i> formulated from a scholarly user
+        <font color="DarkSlateGray"><i> perspective in a geneneric (non-implementation-specific).
+        <font color="DarkSlateGray"><i> terms. The epics describe the high-level services or products
+        <font color="DarkSlateGray"><i> we offer to scholarly users.
+    }
+
+    <> components
+
+    "CLARIAH Epic" "1" *--> "+" "User Story" #line:navy;text:navy : > user stories
+    "CLARIAH Epic" "1" o--> "+" "CLARIAH Epic Type" #line:navy;text:navy : > type
+    "CLARIAH Epic" "1" o-[bold]-> "+" components : > components
+
+
+    components "1" o-[bold]-> "*" "Service Instance" : > components
+    components "1" o-[bold]-> "*" "Software" : > components
+    components "1" o-[bold]-> "*" "Data" : > components
+
+
+
+    class "User Story" <<user-perspective>> {
+        description
+        specific variant of
+        user type
+        themes
+        --
+        <font color="DarkSlateGray"><i> A minimal user story</i>
+    }
+
+    enum "User Type" <<user-perspective>> {
+        scholar,
+        developer,
+        administrator,
+        collection provider,
+    }
+
+}
+
+class "Service Instance" {
+    name
+    implements user stories [1..*]
+    interfacetype
+    provider
+    url
+    components [1..*]
+    themes [1..*]
+    technology readiness level
+    compliance level
+    --
+    <font color="DarkSlateGray"><i> An instance of software running
+    <font color="DarkSlateGray"><i> somewhere (@provider) as a service
+    <font color="DarkSlateGray"><i> for users (or machines) to interact
+    <font color="DarkSlateGray"><i> with over the web. This corresponds
+    <font color="DarkSlateGray"><i> to the technical notion of 'service'
+}
+
+"Service Instance" "1" o-[bold]> "+" components : > components
+
+components "1" o-[bold]-> "*" "Service Instance" : > components
+components "1" o-[bold]-> "*" "Software" : > components
+components "1" o-[bold]-> "*" "Data" : > components
+components "1" o-[bold]-> "*" "Interoperability Standard" : > components
+
+together {
+
+    class "Software" {
+        name
+        implements user stories [1..*]
+        functions [1..*]
+        provider
+        interfacetype
+        themes [1..*]
+        software components [0..*]
+        data components [0..*]
+        interoperability standards [0..*]
+        source repository
+        technology readiness level
+        stakeholder readiness level
+        compliance level
+        --
+        <font color="DarkSlateGray"><i> Any piece of software or software product </i>
+        <font color="DarkSlateGray"><i> This refers to the codebase as such</i>
+        <font color="DarkSlateGray"><i> rather than to any specific <b>instance</b></i>
+        <font color="DarkSlateGray"><i> running in the infrastucture</i>
+    }
+
+    class "Data" {
+        name
+        description
+        functions [1..*]
+        provider
+        source url
+        data components [0..*]
+        data readiness level
+        compliance level
+        interoperability standards [0..*]
+        --
+        <font color="DarkSlateGray"><i> A data collection</i>
+        <font color="DarkSlateGray"><i> This refers to data collection as such</i>
+        <font color="DarkSlateGray"><i> rather than to an instance</i>
+        <font color="DarkSlateGray"><i> through which it is made available</i>
+        <font color="DarkSlateGray"><i> in a particular application.</i>
+    }
+
+
+    class "Interoperability Standard" {
+        name
+        functions [1..*]
+        type
+        provider
+        specification url
+        data readiness level
+        compliance level
+        --
+        <font color="DarkSlateGray"><i> An data standard, protocol, or API</i>
+        <font color="DarkSlateGray"><i> standard that plays a role in an</i>
+        <font color="DarkSlateGray"><i> implementation</i>
+    }
+
+}
+
+enum "Interface Type" {
+    Command Line Interface
+    Application Programming Interface
+    Web Application Programming Interface
+    Graphical User Interface (desktop)
+    Mobile App Interface
+    Text User Interface
+    Web User Interface
+}
+
+enum "Service Interface Type" {
+    REST
+    GraphQL
+    SOAP
+    SPARQL
+    SQL
+    WebUserInterface
+}
+
+enum "Interoperability Type" {
+    API
+    WebAPI
+    DataFormat
+    CommunicationProtocol
+}
+
+class "Provider" {
+    name
+    type
+    affiliation [0..1]
+    --
+    <font color="DarkSlateGray"><i> The provider/maintainer of a service,</i>
+    <font color="DarkSlateGray"><i> software component, or data collection.</i>
+}
+
+enum "Provider Type" {
+    Project
+    Institute
+    WorkPackage
+    Team
+    Person
+}
+
+enum "CLARIAH Epic Type" <<user-perspective>> {
+    Core Shared
+    Domain-specific
+    Provisioning
+    --
+    <font color="DarkSlateGray"><i> Indicates if the implementation of the epic is a </i>
+    <font color="DarkSlateGray"><i> core shared component in the infrastructure, </i>
+    <font color="DarkSlateGray"><i> heavily intertwined with other shared components, </i>
+    <font color="DarkSlateGray"><i> a domain-specific service, or a more technical </i>
+    <font color="DarkSlateGray"><i> (non-scholarly) provisioning service </i>
+}
+
+enum "Theme" <<user-perspective>> {
+    Text
+    Audio
+    Visual
+    Geo
+    Metadata
+    Annotation
+    DevOps
+    Curation
+    Vocabularies
+    Sustainability
+    Monitoring
+    Publication
+    Processing
+    Search
+    UI-and-UX
+    Workflows
+    --
+    <font color="DarkSlateGray"><i> An overarching theme </i>
+    <font color="DarkSlateGray"><i> to group things </i>
+}
+
+together {
+
+    enum "Technology Readiness Level" {
+        "0 - Idea"
+        "1 - Initial Research"
+        "2 - Concept Formulated"
+        "3 - Proof of Concept"
+        "4 - Validated PoC"
+        "5 - Early Prototype"
+        "6 - Late Prototype"
+        "7 - Release Candidate"
+        "8 - Complete"
+        "9 - Proven"
+    }
+
+    enum "Compliance Level" {
+        "A - Excellent"
+        "B - Good"
+        "C - Adequate"
+        "D - Lacking"
+        "E - Bad"
+        "F - Unacceptable"
+    }
+
+}
+
+"Service Instance" "1" o--> "+" "User Story" #line:navy;text:navy : > user stories
+"Service Instance" "1" o--> "1" "Provider" : > provider
+"Service Instance" "1" o--> "*" "Service Interface Type" : > interfacetype
+
+"Service Instance" "1" o--> "1" "Technology Readiness Level" #line:green;text:green : > TRL
+"Service Instance" "1" o--> "1" "Compliance Level" #line:green;text:green : > CL
+
+
+"Software" "1" o--> "+" "User Story" #line:navy;text:navy : > user stories
+"Software" "1" o-[bold]-> "*" "Software" : > "software components"
+"Software" "1" o-[bold]-> "*" "Data" : > "data components"
+"Software" "1" o-[bold]-> "*" "Interoperability Standard" : > "interoperability standards"
+"Software" "1" o--> "*" "Interface Type" : > interfacetype
+"Software" "1" o--> "1" "Provider" : > provider
+
+"Software" "1" o--> "1" "Technology Readiness Level" #line:green;text:green : > TRL
+"Software" "1" o--> "1" "Compliance Level" #line:green;text:green : > CL
+
+"Interoperability Standard" "1" o--> "*" "Interoperability Type" : > type
+
+"Data" "1" o--> "1" "Provider" : > provider
+"Data" "1" o-[bold]-> "*" "Interoperability Standard" : > "interoperability standards"
+"Data" "1" o-[bold]-> "*" "Data" : > "data components"
+
+"Provider" "1" o--> "0..1" "Provider" : > affiliation
+"Provider" "1" o--> "0..1" "Provider Type" : > type
+
+"User Story" "1" o--> "1" "User Type" #line:navy;text:navy : > "user type"
+"User Story" "1" o--> "1" "User Story" #line:navy;text:navy : > "specific variant of"
+
+"Software" "1" o--> "+" Theme #line:navy;text:navy : > themes
+"Service Instance" "1" o--> "+" Theme #line:navy;text:navy : > themes
+"Data" "1" o--> "+" Theme #line:navy;text:navy : > themes
+"User Story" "1" o--> "+" Theme #line:navy;text:navy : > themes
+@enduml
+

@@ -120,7 +120,9 @@ levels should also be independently estimated, but in this phase a self-assessme
 
 ### Data model
 
-The following schematic (UML) illustrates the data model we use for describing CLARIAH services.
+The following schematic (UML) illustrates the data model we use for describing CLARIAH services. Classes with dark blue
+headers are described primarily from a user perspective, these are connected with blue arrow, classes with light blue headers denote more technical
+terms. Green arrows are used for evaluation relations.
 
 ![Data model](sdr_datamodel.png)
 

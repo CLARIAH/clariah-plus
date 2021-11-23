@@ -97,7 +97,7 @@ the tool store over an API, or we offer export facilities over an API.
     * **Implements:** 1
     * **Interface**: WebUI
     * **TRL**: ?
-    * **Sofware Component:** **Ineo**
+    * **Software Component:** **Ineo**
         * **Provider**: KNAW HuC with external party
         * **URL:** ?
 * **Service Component:** **CLARIN Switchboard**
@@ -107,7 +107,7 @@ the tool store over an API, or we offer export facilities over an API.
     * **Implements:** 1, 2, 5
     * **Interface**: WebUI
     * **TRL**: 8
-    * **Sofware Component:** **CLARIN Switchboard**
+    * **Software Component:** **CLARIN Switchboard**
         * **URL:** <https://github.com/clarin-eric/switchboard>
         * **Provider**: CLARIN-ERIC (partner)
     * **Data Component**: **CLARIN Switchboard Tool Registry**
@@ -120,7 +120,7 @@ the tool store over an API, or we offer export facilities over an API.
     * **Function:** API for querying (invoked by end-user, portals)
     * **Interface**: REST, possibly SPARQL
     * **TLR:** 0
-    * **Sofware Component:** **CLARIAH Tool Harvester**
+    * **Software Component:** **CLARIAH Tool Harvester**
         * **URL**: (does not exist yet)
         * **Function:** Harvester for software & service metadata. Periodically queries all endpoints listed in the CLARIAH Tool Source Registry and updates the tool store.
         * **Provider**: ?
@@ -135,21 +135,21 @@ the tool store over an API, or we offer export facilities over an API.
         * **Function:** Simple registry of software source repositories and service endpoints. Serves as input for the harvester.
         * **Comment:** Could be Implemented as a simple plain text list of URLs in a git repository on github, new registrations can be added using pull requests. Or implemented using the planned baserow database that holds all software components.
         * **TRL**: 0
-    * **Sofware Component:** **Ineo Export**
+    * **Software Component:** **Ineo Export**
         * **URL**: (does not exist yet)
         * **Provider**: ?
         * **Function:** Client using the tool store API (or a direct extension thereof) converting output to a format understood by Ineo, for interoperability with it. Needed if (and only if) we can't make Ineo correct directly to our tool store backend
         * **Implements:** 4
         * **Interface**: CLI or WebAPI
         * **TRL**: 0
-    * **Sofware Component:** **Switchboard Export**
+    * **Software Component:** **Switchboard Export**
         * **URL**: (does not exist yet)
         * **Provider**: ?
         * **Function:** Client using the tool store API (or a direct extension thereof) converting output to the format required by the CLARIN Switchboard, for interoperability with it
         * **Implements:** 4, 5
         * **Interface**: CLI or WebAPI
         * **TRL**: 0
-    * **Sofware Component:** **CMDI Export**
+    * **Software Component:** **CMDI Export**
         * **URL**: (does not exist yet)
         * **Provider**: ?
         * **Function:** Client using the tool store API (or a direct extension thereof) converting output to an established CMDI software metadata profile for interoperability with CLARIN

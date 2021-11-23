@@ -543,3 +543,6 @@ MigrationBackup/
 .ionide/
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,emacs,windows,visualstudio,visualstudiocode,macos,linux,notepadpp,sublimetext
+
+#generated files
+shared-development-roadmap.md

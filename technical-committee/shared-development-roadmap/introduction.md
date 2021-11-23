@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 To streamline the development of the CLARIAH infrastructure across work
 packages, a CLARIAH Shared Development Roadmap (SDR) is created. This SDR
@@ -6,14 +6,14 @@ specifies what high-level epics CLARIAH will implement and deliver in its the
 infrastructure. These can subsequently serve as a showcase for the success of
 CLARIAH.
 
-### Prior work
+## Prior work
 
 In phase 1 we identified and described all components and services that are
 existing or have been worked on in CLARIAH-CORE/PLUS. We called those "CLARIAH+
 services" but there was some confusion about the term, we are moving to the
 term "CLARIAH+ epic" now.
 
-### Goals
+## Goals
 
 In this phase 2 we will put the emphasis on formulating high-level epics and
 the underlying services, sofware and data components that implement these
@@ -46,9 +46,9 @@ The overall objectives of the Shared Development Roadmap are:
 * We seek to harmonize various solutions developed within CLARIAH; determine which are mature and have potential, which can be discarded, which to go forward with in a potential successor project.
 * Foster interoperability between software/data components
 
-### Definitions
+## Definitions
 
-#### CLARIAH Epic
+### CLARIAH Epic
 
 A **CLARIAH Epic** is describes the needs of a scholar in broad and generic themes. The epic is made up of multiple user
 stories, which are mostly described from a scholarly perspective. The epic effectively formulates a 'CLARIAH
@@ -75,7 +75,7 @@ We aim for “minimal viable” epics and services, this means that we also aim 
 *Note:* Our use of epic corresponds largely with a (highest-level) epic in 'agile' terminology (although some might call this a theme).
 However, underlying user stories may themselves be considered epics. At this stage we are not concerned with what can be accomplished in single 'sprints'.
 
-#### Software
+### Software
 
 **Software** is any computer program and refers to the codebase as such. We make an explicit distinction between the
 software and software offered as a service, a **service instance**. Software can be described on any level, it may
@@ -85,14 +85,14 @@ and/or develops it.
 
 Software is described in terms of the function(s) that it implements.
 
-#### Service Instance
+### Service Instance
 
 This is an instance of **software** when running as a *service* in the CLARIAH infrastructure, offered over the web
 using a particular *interface*. We use this term to refer to a specific service instance, hosted by a specific
 *provider*. The provider of an instance need not be the same as the provider of the underlying software. Services
 consist of underlying software/data components. A software component is mandatory.
 
-#### Data
+### Data
 
 **Data** is any kind of data collection, usually in a specific form and fit for a particular purpose.
 Data should best be considered immutable, any processing done on it forms a new (derived) dataset. Data
@@ -100,12 +100,12 @@ can therefore itself consist of *data components* to describe that it is builds 
 
 Data can also be linked to interoperability standards, such as data formats.
 
-#### Interoperability Standard
+### Interoperability Standard
 
 An **Interoperability Standard** is any agreement/protocol/data model/data format designed to facilitate
 interoperability between multiple software components.
 
-### Evaluation
+## Evaluation
 
 The status of all service/software/data components and the CLARIAH services as a whole are assessed on three axes: a
 user axis, a technology axis, and compliance axis:
@@ -118,7 +118,7 @@ Standard](), and possible other future requirement specifications. The complianc
 [here](compliance-level.md).  It is suggested that SRL level should be estimated by a user panel. Ideally the other
 levels should also be independently estimated, but in this phase a self-assessment is more realistic.
 
-### Data model
+## Data model
 
 The following schematic (UML) illustrates the data model we use for describing CLARIAH services. Classes with dark blue
 headers are described primarily from a user perspective, these are connected with blue arrow, classes with light blue headers denote more technical

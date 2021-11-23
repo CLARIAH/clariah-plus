@@ -9,8 +9,8 @@ participants:
 themes: [ Metadata, DevOps, Curation, Vocabularies, Sustainability, Processing, Search ]
 evaluation: #overall evaluation for the (best) implementation of this epic
     trl: 0 #technology readiness level
-    cl: ? #compliance level
-    srl: ? #stakeholder readiness level
+    cl: 0 #compliance level
+    srl: 0 #stakeholder readiness level
 ---
 
 ## FAIR Tool Discovery

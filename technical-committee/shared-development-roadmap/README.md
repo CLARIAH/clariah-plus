@@ -23,3 +23,10 @@ infrastructure.
     * [Compliance Level](compliance-level.md)
     * [Stakeholder Readiness Level](stakeholder-readiness-level.md)
 
+## Generating the PDF
+
+To generate the PDF, you need GNU Make, pandoc and python, then simply run:
+
+```
+$ make shared-development-roadmap.pdf
+```

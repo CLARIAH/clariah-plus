@@ -28,44 +28,49 @@ evaluation: #overall evaluation for the (best) implementation of this epic
 
 ### Needs & Dependencies
 
-> Describe organisational and technical dependencies that are crucial for the success of this service.
+> Describe organisational and technical dependencies that are crucial for the success of the implementation(s) for this epic.
 
 ### Requirements
 
-> Describe software, infrastructure & interoperability requirements that arise from this service or that are especially relevant for this service. These must be formulated in further detail in the corresponding requirements documents.
+> Describe software, infrastructure & interoperability requirements that arise from this epic or that are especially relevant. These must be formulated in further detail in the corresponding requirements documents.
 
 ### Service Description
 
-> Describe the service, mention software components, data components and interoperability standards where appropriate.
+> Describe the service(s) that implement(s) this epic, mention software components, data components and interoperability standards where appropriate.
 
 ### Components
 
 > Describe the components and subcomponents involved in this epic in a simple tree form; specify whether the component
 > is: a service (instance), software, data, and estimate a TRL. Please consult the
 > [definitions](introduction.md#definitions) and [data model](introduction.md#data-model). In case of multiple
-> implementations, use multiple detached trees/lists.
+> implementations, use multiple detached trees/lists and add a level-4 heading for each.
 
 * **Service Component:** **$Name**
-    * **Description:** (Description)
     * **Provider**: (Institute that hosts the service)
+    * **URL:** (URL to the instance)
+    * **Function:** (Function/description of the component, may be repeated)
     * **Implements:** (the numbers of the user stories implemented)
     * **Interface**: (WebUI, REST, GraphQL, multiple options allowed)
     * **TRL**: ?
     * **SRL**: ?
     * **CL**: ?
-    * **Sofware Component:** **$Name**
-        * **Function:** (function of the software, may be repeated)
+    * **Software Component:** **$Name**
         * **Provider**: (Institute that maintains/develops the software)
+        * **URL:** (URL to the source code repository, NOT to an instance!)
+        * **Function:** (function of the software, may be repeated)
         * **Implements:** (the numbers of the user stories implemented)
         * **Interface**: (WebUI, WebAPI, API, CLI, GUI, GraphQL, multiple options allowed)
         * **TRL**: ?
         * **CL**: ?
         * **Data Component:** **$Name**
             * **Provider**: (Institute that provides the data)
+            * **URL:** (Direct URL to where the data is provided, if possible)
+            * **Function:** (Function/description of the component, may be repeated)
             * **TRL**: ?
             * **CL**: ?
     * **Interoperability Standard:** **$Name**
-        * **Type**:
+        * **Function:** (function/description of the component, may be repeated)
+        * **URL:** (URL to the specification of the standard)
 
 ### Workflow Schema
 

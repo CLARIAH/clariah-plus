@@ -2,14 +2,14 @@
 #(This frontmatter block follows YAML syntax)
 id: #epic-title-in-lowercase-with-hyphens
 coordinator: #person or list of people
-wp: [ 1, 2, 3, 4, 5, 6]
+wp: [ 1, 2, 3, 4, 5, 6] #involved workpackages
 github-projects-link: https://github.com/orgs/CLARIAH/projects?type=beta #link to a specific project under here
 participants: [ ] #list of people
 themes: [ Text, Audio, Visual, Geo, Metadata, Annotation, DevOps, Curation, Vocabularies, Sustainability, Monitoring, Publication, Processing, Search, UI-and-UX, Workflows ] #remove what is not relevant
-evaluation:
-    trl: ?
-    cl: ?
-    srl: ?
+evaluation: #overall evaluation for the (best) implementation of this epic
+    trl: ? #technology readiness level
+    cl: ? #compliance level
+    srl: ? #stakeholder readiness level
 ---
 
 ## $Epic title
@@ -22,6 +22,7 @@ evaluation:
 ### User Stories
 
 > Describe, from a high-level scholarly perspective and in minimal and generic terms, the user stories that define this epic.
+> We recommend using sublists (i.e. a simple tree structure) for breaking down user stories into parts when needed.
 
 1. **As a scholar, I** ... **in order to** ...
 
@@ -39,20 +40,27 @@ evaluation:
 
 ### Components
 
-> Describe the components and subcomponents involved in this epic in a simple tree form; specify whether the component is: a service (instance), software, data, and estimate a TRL. Please consult the [definitions](introduction.md#definitions) and [data model](introduction.md#data-model)
+> Describe the components and subcomponents involved in this epic in a simple tree form; specify whether the component
+> is: a service (instance), software, data, and estimate a TRL. Please consult the
+> [definitions](introduction.md#definitions) and [data model](introduction.md#data-model). In case of multiple
+> implementations, use multiple detached trees/lists.
 
-* **Service Component:**: **$Name**
+* **Service Component:** **$Name**
     * **Description:** (Description)
     * **Provider**: (Institute that hosts the service)
+    * **Implements:** (the numbers of the user stories implemented)
     * **Interface**: (WebUI, REST, GraphQL, multiple options allowed)
     * **TRL**: ?
+    * **SRL**: ?
     * **CL**: ?
     * **Sofware Component:** **$Name**
         * **Function:** (function of the software, may be repeated)
         * **Provider**: (Institute that maintains/develops the software)
+        * **Implements:** (the numbers of the user stories implemented)
+        * **Interface**: (WebUI, WebAPI, API, CLI, GUI, GraphQL, multiple options allowed)
         * **TRL**: ?
         * **CL**: ?
-        * **Data Component:**: **$Name**
+        * **Data Component:** **$Name**
             * **Provider**: (Institute that provides the data)
             * **TRL**: ?
             * **CL**: ?
@@ -66,7 +74,8 @@ evaluation:
 
 ### Evaluation
 
-> Estimate the overall readiness of the implementation(s) for this epic in the frontmatter
+> Estimate the overall readiness of the implementation(s) for this epic in the frontmatter. You may add any additional
+> evaluation here.
 
 ### Context
 

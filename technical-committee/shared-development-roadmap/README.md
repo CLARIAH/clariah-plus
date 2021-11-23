@@ -16,6 +16,8 @@ infrastructure.
     * [Goals](introduction.md#goals)
     * [Definitions](introduction.md#definitions)
     * [Data Model](introduction.md#data-model)
+* [Shared Core Epics](epics/shared/README.md)
+* [Domain-Specific Epics](epics/specific/README.md)
 * Appendices
     * [Technology Readiness Level](technology-readiness-level.md)
     * [Compliance Level](compliance-level.md)

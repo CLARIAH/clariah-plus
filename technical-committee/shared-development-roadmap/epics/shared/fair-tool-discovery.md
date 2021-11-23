@@ -4,15 +4,16 @@ id: fair-tool-discovery #epic-title-in-lowercase-with-hyphens
 coordinator: Maarten van Gompel #person or list of people
 wp: [ 1, 2, 3, 4, 5, 6] #involved workpackages
 github-projects-link: https://github.com/orgs/CLARIAH/projects/1 #link to a specific project under here
-participants: [ Maarten van Gompel ] #list of people
+participants:
+    - Maarten van Gompel (KNAW HuC)
 themes: [ Metadata, DevOps, Curation, Vocabularies, Sustainability, Processing, Search ]
 evaluation: #overall evaluation for the (best) implementation of this epic
-    trl: ? #technology readiness level
+    trl: 0 #technology readiness level
     cl: ? #compliance level
     srl: ? #stakeholder readiness level
 ---
 
-## $Epic title
+## FAIR Tool Discovery
 
 ### Rationale
 

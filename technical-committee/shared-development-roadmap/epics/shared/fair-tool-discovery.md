@@ -20,26 +20,35 @@ evaluation: #overall evaluation for the (best) implementation of this epic
 > Describe, from a high-level perspective, the rationale of what important role
 > the service(s) that implement this epic fulfill in the CLARIAH infrastructure
 
-One key goal of the CLARIAH infrastructure is to provide scholars with information where they can find tools that they
-need for their work. CLARIAH and its predecessor projects have developed a lot of useful tools already. Some of these
-can be found in repositories such as the CLARIN switchboard. Others are distributed and disseminated on an individual or
-work package level. However, it would be in the benefit of both scholars and tool providers to have a central place
-(INEO) where scholars can go to **find** and/or discover tools. At the same time, the tools that they find via the CLARIAH
-infrastructure should also be **accessible**, so that these tools can indeed be used. From a CLARIAH perspective, we would
-to some extent also like to guarantee accessibility/usability of tools, and also, that tools are **interoperable** with
-other tools or CLARIAH infrastructure components. Finally, ideally tools should also be **re-usable**, even if tools change
-during time (related to sustainability of tools). In practice, it will be hard to warrant full FAIRness of tools
-provided/disseminated by CLARIAH. We could however at least aim for making tools findable and accessible. For
-interoperability and re-usability (sustainability) we could aim for a system that informs scholars of the status of
-tools that are disseminated, e.g., by labeling tools (giving “stars”) for it compatibility level, documentation level,
-and adherence to CLARIAH software requirements. One of the key requirements of a tools discovery service that we propose
-therefore, is a sound system for aggregating and updating information on tools that reside in various places, the tool
-metadata.
+One key goal of the CLARIAH infrastructure is to provide scholars with
+information where they can find tools that they need for their work. CLARIAH and
+its predecessor projects have developed a lot of useful tools already. Some of
+these can be found in repositories such as the CLARIN switchboard. Others are
+distributed and disseminated on an individual or work package level. However, it
+would be in the benefit of both scholars and tool providers to have a central
+place (INEO) where scholars can go to **find** and/or discover tools. At the
+same time, the tools that they find via the CLARIAH infrastructure should also
+be **accessible**, so that these tools can indeed be used. From a CLARIAH
+perspective, we would to some extent also like to guarantee
+accessibility/usability of tools, and also, that tools are **interoperable**
+with other tools or CLARIAH infrastructure components. Finally, ideally tools
+should also be **re-usable**, even if tools change during time (related to
+sustainability of tools). In practice, it will be hard to warrant full FAIRness
+of tools provided/disseminated by CLARIAH. We could however at least aim for
+making tools findable and accessible. For interoperability and re-usability
+(sustainability) we could aim for a system that informs scholars of the status
+of tools that are disseminated, e.g., by labeling tools (giving “stars”) for it
+compatibility level, documentation level, and adherence to CLARIAH software
+requirements. One of the key requirements of a tools discovery service that we
+propose therefore, is a sound system for aggregating and updating information on
+tools that reside in various places, the tool metadata.
 
-It is not the aim of the tool discovery service itself to provide means for execution. We assume that (if applicable)
-the service provides links to individual services (e.g., LaMachine) for executing code using data. However, as being
-able to execute code is key to “accessibility”, making (CLARIAH) tools executable on e.g., web services or local
-services is part of the development roadmap for this service.
+It is not the aim of the tool discovery service itself to provide means for
+execution. We assume that (if applicable) the service provides links to
+individual services (e.g., LaMachine) for executing code using data. However, as
+being able to execute code is key to “accessibility”, making (CLARIAH) tools
+executable on e.g., web services or local services is part of the development
+roadmap for this service.
 
 ### User Stories
 
@@ -55,7 +64,7 @@ services is part of the development roadmap for this service.
 ### Needs & Dependencies
 
 > Describe organisational and technical dependencies that are crucial for the success of this service.
->
+
 * Compliance to the software/infrastructure requirements as described in the next section
 * Cross-WP agreement on some additional vocabulary
 * WP4 involvement
@@ -73,15 +82,19 @@ services is part of the development roadmap for this service.
 
 > Describe the service(s) that implement(s) this epic, mention software components, data components and interoperability standards where appropriate.
 
-This core service provides infrastructure for finding tools. The term “tool” here is deliberately ambiguous and can
-refer to a piece of software in the broadest sense, it may be a web application, web service, programming library, or
-any composition thereof. Tools may live in a wide variety of places. We seek to standardize the way by which their
-metadata is described using Codemeta and OpenAPI, which will be posited as software & infrastructure requirements.
-Codemeta provides basic software metadata, whilst OpenAPI provides metadata covering web service specification. We
-automatically collect this metadata from as close to the source as possible using a CLARIAH Tool Harvester, the source
-being either a source code repository or a webservice endpoint. We aggregate all metadata into a central backend
-solution called the CLARIAH Tool Store. Portals like Ineo, the CLARIN Switchboard or others can either directly query
-the tool store over an API, or we offer export facilities over an API.
+This core service provides infrastructure for finding tools. The term “tool”
+here is deliberately ambiguous and can refer to a piece of software in the
+broadest sense, it may be a web application, web service, programming library,
+or any composition thereof. Tools may live in a wide variety of places. We seek
+to standardize the way by which their metadata is described using Codemeta and
+OpenAPI, which will be posited as software & infrastructure requirements.
+Codemeta provides basic software metadata, whilst OpenAPI provides metadata
+covering web service specification. We automatically collect this metadata from
+as close to the source as possible using a CLARIAH Tool Harvester, the source
+being either a source code repository or a webservice endpoint. We aggregate all
+metadata into a central backend solution called the CLARIAH Tool Store. Portals
+like Ineo, the CLARIN Switchboard or others can either directly query the tool
+store over an API, or we offer export facilities over an API.
 
 ### Components
 
@@ -194,15 +207,10 @@ the tool store over an API, or we offer export facilities over an API.
 
 > Sketch the wider context of the implementations for this epic in relation to other (existing/proposed) projects and initiatives.
 
-* Ineo is supposed to become the entry point for CLARIAH tools, however, it can be considered a thin layer and back-end
-  functionality and automatic harvesting needs to be resolved separately.
-* A system called CLAPOP was developed in CLARIN and uses manually crafted software metadata descriptions in CMDI (no harvesting) with rich information for scholars. The
-  information may be outdated however.
-* A LaMachine Portal (labirinto) was developed as a solution to provide a portal page for any LaMachine installation/deployment,
-  automatically harvesting the tools available within. It uses CodeMeta which is more generic but less specific for scholars.
-* The CLARIN Switchboard is developed by CLARIN-ERIC and gives users the option
-  to select tools from a wider CLARIN ecosystem, based on the data they upload. It is largely limited to singular data
-  (single files).
+* Ineo is supposed to become the entry point for CLARIAH tools, however, it can be considered a thin layer and back-end functionality and automatic harvesting needs to be resolved separately.
+* A system called CLAPOP was developed in CLARIN and uses manually crafted software metadata descriptions in CMDI (no harvesting) with rich information for scholars. The information may be outdated however.
+* A LaMachine Portal (labirinto) was developed as a solution to provide a portal page for any LaMachine installation/deployment, automatically harvesting the tools available within. It uses CodeMeta which is more generic but less specific for scholars.
+* The CLARIN Switchboard is developed by CLARIN-ERIC and gives users the option to select tools from a wider CLARIN ecosystem, based on the data they upload. It is largely limited to singular data (single files).
 
 
 ### Use cases

@@ -50,7 +50,7 @@ The overall objectives of the Shared Development Roadmap are:
 
 ### CLARIAH Epic
 
-A **CLARIAH Epic** is describes the needs of a scholar in broad and generic themes. The epic is made up of multiple user
+A **CLARIAH Epic** describes the needs of a scholar in broad and generic themes. The epic is made up of multiple user
 stories, which are mostly described from a scholarly perspective. The epic effectively formulates a 'CLARIAH
 service' in the largest sense of the word; a product/functionality offered by CLARIAH to scholars.
 

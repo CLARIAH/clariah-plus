@@ -2,7 +2,7 @@
 
 To streamline the development of the CLARIAH infrastructure across work
 packages, a CLARIAH Shared Development Roadmap (SDR) is created. This SDR
-specifies what high-level epics CLARIAH will implement and deliver in its the
+specifies what high-level epics CLARIAH will implement and deliver in its
 infrastructure. These can subsequently serve as a showcase for the success of
 CLARIAH.
 

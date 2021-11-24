@@ -1,6 +1,6 @@
 # CLARIAH Shared Development Roadmap: Shared core Epics
 
-**Shared core epics** describe epic stories providing core shared functionality
+**Shared core epics** describe epics providing core shared functionality
 for the infrastructure as a whole. The services that implement these serve
 scholarly use cases and are generic or pervasive (i.e. the needs or
 requirements that need to be fulfilled are often not directly formulated and

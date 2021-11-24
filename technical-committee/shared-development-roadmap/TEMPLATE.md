@@ -21,29 +21,37 @@ evaluation: #overall evaluation for the (best) implementation of this epic
 
 ### User Stories
 
-> Describe, from a high-level scholarly perspective and in minimal and generic terms, the user stories that define this epic.
-> We recommend using sublists (i.e. a simple tree structure) for breaking down user stories into parts when needed.
+> Describe, from a high-level scholarly perspective and in minimal and generic
+> terms, the user stories that define this epic.  We recommend using sublists
+> (i.e. a simple tree structure) for breaking down user stories into parts when
+> needed.
 
 1. **As a scholar, I** ... **in order to** ...
 
 ### Needs & Dependencies
 
-> Describe organisational and technical dependencies that are crucial for the success of the implementation(s) for this epic.
+> Describe organisational and technical dependencies that are crucial for the
+> success of the implementation(s) for this epic.
 
 ### Requirements
 
-> Describe software, infrastructure & interoperability requirements that arise from this epic or that are especially relevant. These must be formulated in further detail in the corresponding requirements documents.
+> Describe software, infrastructure & interoperability requirements that arise
+> from this epic or that are especially relevant. These must be formulated in
+> further detail in the corresponding requirements documents.
 
 ### Service Description
 
-> Describe the service(s) that implement(s) this epic, mention software components, data components and interoperability standards where appropriate.
+> Describe the service(s) that implement(s) this epic, mention software
+> components, data components and interoperability standards where appropriate.
 
 ### Components
 
-> Describe the components and subcomponents involved in this epic in a simple tree form; specify whether the component
-> is: a service (instance), software, data, and estimate a TRL. Please consult the
-> [definitions](introduction.md#definitions) and [data model](introduction.md#data-model). In case of multiple
-> implementations, use multiple detached trees/lists and add a level-4 heading for each.
+> Describe the components and subcomponents involved in this epic in a simple
+> tree form; specify whether the component is: a service (instance), software,
+> data, and estimate a TRL. Please consult the
+> [definitions](introduction.md#definitions) and [data
+> model](introduction.md#data-model). In case of multiple implementations, use
+> multiple detached trees/lists and add a level-4 heading for each.
 
 * **Service Component:** **$Name**
     * **Provider**: (Institute that hosts the service)
@@ -74,25 +82,29 @@ evaluation: #overall evaluation for the (best) implementation of this epic
 
 ### Workflow Schema
 
-> Draw a schema indicating how the various software and data components interact. This is required only when many
-> components are involved and their connection is not immediately obvious.
+> Draw a schema indicating how the various software and data components
+> interact. This is required only when many components are involved and their
+> connection is not immediately obvious.
 
 ### Evaluation
 
-> Estimate the overall readiness of the implementation(s) for this epic in the frontmatter. You may add any additional
-> evaluation here.
+> Estimate the overall readiness of the implementation(s) for this epic in the
+> frontmatter. You may add any additional evaluation here.
 
 ### Context
 
-> Sketch the wider context of the implementations for this epic in relation to other (existing/proposed) projects and initiatives.
+> Sketch the wider context of the implementations for this epic in relation to
+> other (existing/proposed) projects and initiatives.
 
 ### Use cases
 
-> Link to specific use cases for which this user story is relevant, use cases should reside in the [use cases directory](../../use-cases/)
+> Link to specific use cases for which this user story is relevant, use cases
+> should reside in the [use cases directory](../../use-cases/)
 
 ### Planning
 
-> A rough planning for this epic. The GitHub Projects kanban board for this epic should be used for more detailed planning during development
+> A rough planning for this epic. The GitHub Projects kanban board for this epic
+> should be used for more detailed planning during development
 
 ### Resources
 

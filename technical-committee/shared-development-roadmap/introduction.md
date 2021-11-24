@@ -51,11 +51,8 @@ The overall objectives of the Shared Development Roadmap are:
 ### CLARIAH Epic
 
 A **CLARIAH Epic** describes the needs of a scholar in broad and generic themes. The epic is made up of multiple user
-stories, which are mostly described from a scholarly perspective. The epic effectively formulates a 'CLARIAH
-service' in the largest sense of the word; a product/functionality offered by CLARIAH to scholars.
-
-The implementation(s) of an epic facilitate a certain *scholarly workflow*; a scholarly workflow is defined as a
-sequence of steps (e.g. analysis, data transformation, presentation) that serves specific needs of a scholar.
+stories, which are mostly described from a scholarly perspective. It describes, from a high-level view, the user stories that
+CLARIAH providers a solution for.
 
 We distinguish three types of CLARIAH epics:
 

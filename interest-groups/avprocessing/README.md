@@ -44,6 +44,7 @@ AV processing infrastructure problems that we try to tackle are:
 - Henk van den Heuvel (Radboud University)
 - Maarten van Gompel (KNAW Humanities Cluster)
 - Arjan van Hessen (University of Twente) 
+- Jaap Blom (Netherlands Institute for Sound and Vision)
 
 
 The group is open to new members. Contact Roeland Ordelman.

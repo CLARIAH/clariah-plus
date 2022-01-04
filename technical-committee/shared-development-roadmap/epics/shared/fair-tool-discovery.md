@@ -246,16 +246,8 @@ months) of the work we expect. This may still shift significantly as details are
 
 ### Resources
 
-Initial concept budget as set prior to full formulation of this epic:
+Some comments on resource allocation:
 
-* Budget: €52,500
-    * Store  - €30,000
-    * INEO integration - €15,000
-    * Harvester - €7,500
-
-Some comments on this:
-
-* I think the subdivision may be a bit premature.
 * The "compose metadata for all software/services" subtask may be argued to be financed from already existing WP budgets
 rather than this one.
 * I'd also suggest any funds still open for the WP3 MD4T project (Utrecht University) should be reallocated on behalf of this shared epic.

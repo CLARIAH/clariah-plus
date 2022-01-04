@@ -128,11 +128,17 @@ store over an API, or we offer export facilities over an API.
         * **Provider**: CLARIN-ERIC (partner)
         * **Function**: Registry holding all tool metadata descriptions for the switchboard
 * **Service Component:** **CLARIAH Tool Store**
+    * **URL**: (does not exist yet)
     * **Function** Stores all harvested/aggregated tool metadata
     * **Function:** API for updating (invoked by harvester)
     * **Function:** API for querying (invoked by end-user, portals)
     * **Interface**: REST, possibly SPARQL
     * **TLR:** 0
+    * **Software Component: CLARIAH Tool Store**
+        * **URL**: (does not exist yet)
+        * **Provider:** ?
+        * **Comment:** There may be a role for dataverse here to serve as the implementation, but it kind of feels like overkill to me for this purpose.
+        * **Comment:** Another option is to use the baserow database we aim to use for components and instances, but here we don’t have actual Linked Open Data
     * **Software Component:** **CLARIAH Tool Harvester**
         * **URL**: (does not exist yet)
         * **Function:** Harvester for software & service metadata. Periodically queries all endpoints listed in the CLARIAH Tool Source Registry and updates the tool store.
@@ -140,8 +146,12 @@ store over an API, or we offer export facilities over an API.
         * **Implements:** 4
         * **Interface**: CLI
         * **TRL**: 0
-        * **Comment:** There may be a role for dataverse here to serve as the implementation, but it kind of feels like overkill to me for this purpose.
-        * **Comment:** Another option is to use the baserow database we aim to use for components and instances, but here we don’t have actual Linked Open Data
+        * **Software Component:** **Codemetapy**
+            * **URL**: https://github.com/proycon/codemetapy
+            * **Function:** Tool for conversion and aggregation of software metadata to codemeta
+            * **Provider**: KNAW HuC (Maarten van Gompel)
+            * **Interface**: CLI, LIB
+            * **TRL**: 7
     * **Data Component**: **CLARIAH Tool Source Registry**
         * **URL**: (does not exist yet)
         * **Provider**: ?
@@ -179,12 +189,12 @@ store over an API, or we offer export facilities over an API.
         * **URL**: <https://openapi.org>
         * **Provider**: OpenAPI Initiative (3rd party)
         * **Function**: Service API specification schema
-        * **TRL**: 8
+        * **TRL**: 9
     * **Interoperability Standard:** **CMDI**
-        * **URL**: <https://openapi.org>
-        * **Provider**: CLARIN? (partner)
+        * **URL**: <https://www.clarin.eu/content/cmdi-12>
+        * **Provider**: CLARIN Centre Committee
         * **Function**: Metadata Schema
-        * **TRL**: 8
+        * **TRL**: 9
     * **Interoperability Standard:** **CLARIAH Tool Metadata**
         * **URL**: (does not exist yet)
         * **Provider**: ?

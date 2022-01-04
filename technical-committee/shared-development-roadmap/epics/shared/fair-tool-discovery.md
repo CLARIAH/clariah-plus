@@ -168,7 +168,7 @@ store over an API, or we offer export facilities over an API.
     * **Software Component:** **Switchboard Export**
         * **URL**: (does not exist yet)
         * **Provider**: ?
-        * **Function:** Client using the tool store API (or a direct extension thereof) converting output to the format required by the CLARIN Switchboard, for interoperability with it
+        * **Function:** Client using the tool store API (or a direct extension thereof) converting output to the format required by the CLARIN Switchboard, for interoperability with it. Possibly also offer a OAI-PMH endpoint serving the converted data.
         * **Implements:** 4, 5
         * **Interface**: CLI or WebAPI
         * **TRL**: 0
@@ -231,19 +231,33 @@ store over an API, or we offer export facilities over an API.
 
 > A rough planning for this epic. The GitHub Projects kanban board for this epic should be used for more detailed planning during development
 
-We identify the following primary tasks:
+We identify the following primary tasks, more or less in chronological order, and add a very rough indication (PM=person
+months) of the work we expect. This may still shift significantly as details are decided.
 
 * [Define cross-WP team for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/30)
-* [Define components, standards, requirements for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/31)
-* [Define extra vocabulary for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/32)
-* [Implement harvester component for tool discovery]
-* [Implement tool store for tool discovery]
-* [Implement CMDI export for tool discovery]
-* [Implement Switchboard export for tool discovery]
-* [Implement Ineo export for tool discovery]
+* [Define components, standards, requirements for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/31) - 0.5PM
+* [Define extra vocabulary for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/32) - 0.5PM
+* [Compose metadata for all software/services](https://github.com/CLARIAH/clariah-plus/issues/38) - 3PM? (very hard to estimate, is a function of the number of tools, this is spread over all participating institutes)
+* [Implement harvester component for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/33) - 1.5PM
+* [Implement tool store for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/34) - 2.5PM
+* [Implement Ineo export for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/35) - 0.5PM
+* [Implement Switchboard export for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/36) - 0.5PM
+* [Implement CMDI export for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/37) - 1PM
 
 ### Resources
 
-> Resources? I don't really know what goes here yet
+Initial concept budget as set prior to full formulation of this epic:
+
+* Budget: €52,500
+    * Store  - €30,000
+    * INEO integration - €15,000
+    * Harvester - €7,500
+
+Some comments on this:
+
+* I think the subdivision may be a bit premature.
+* The "compose metadata for all software/services" subtask may be argued to be financed from already existing WP budgets
+rather than this one.
+* I'd also suggest any funds still open for the WP3 MD4T project (Utrecht University) should be reallocated on behalf of this shared epic.
 
 

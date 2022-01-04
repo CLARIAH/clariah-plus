@@ -141,7 +141,7 @@ store over an API, or we offer export facilities over an API.
         * **Comment:** Another option is to use the baserow database we aim to use for components and instances, but here we don’t have actual Linked Open Data
     * **Software Component:** **CLARIAH Tool Harvester**
         * **URL**: (does not exist yet)
-        * **Function:** Harvester for software & service metadata. Periodically queries all endpoints listed in the CLARIAH Tool Source Registry and updates the tool store.
+        * **Function:** Harvester for software & service metadata. Periodically queries all endpoints listed in the CLARIAH Tool Source Registry, converts metadata to a common scheme, and finally updates the tool store. Endpoints may be git source repositories from which metadata is extracted, or service endpoints that explicitly provided metadata.
         * **Provider**: ?
         * **Implements:** 4
         * **Interface**: CLI
@@ -230,6 +230,17 @@ store over an API, or we offer export facilities over an API.
 ### Planning
 
 > A rough planning for this epic. The GitHub Projects kanban board for this epic should be used for more detailed planning during development
+
+We identify the following primary tasks:
+
+* [Define cross-WP team for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/30)
+* [Define components, standards, requirements for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/31)
+* [Define extra vocabulary for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/32)
+* [Implement harvester component for tool discovery]
+* [Implement tool store for tool discovery]
+* [Implement CMDI export for tool discovery]
+* [Implement Switchboard export for tool discovery]
+* [Implement Ineo export for tool discovery]
 
 ### Resources
 

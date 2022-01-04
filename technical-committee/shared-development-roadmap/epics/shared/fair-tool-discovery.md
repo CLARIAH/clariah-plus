@@ -237,7 +237,7 @@ months) of the work we expect. This may still shift significantly as details are
 * [Define cross-WP team for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/30)
 * [Define components, standards, requirements for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/31) - 0.5PM
 * [Define extra vocabulary for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/32) - 0.5PM
-* [Compose metadata for all software/services](https://github.com/CLARIAH/clariah-plus/issues/38) - 3PM? (very hard to estimate, is a function of the number of tools, this is spread over all participating institutes)
+* [Compose and publish metadata for all software/services](https://github.com/CLARIAH/clariah-plus/issues/38) - 3PM? (very hard to estimate, is a function of the number of tools, this is spread over all participating institutes)
 * [Implement harvester component for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/33) - 1.5PM
 * [Implement tool store for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/34) - 2.5PM
 * [Implement Ineo export for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/35) - 0.5PM

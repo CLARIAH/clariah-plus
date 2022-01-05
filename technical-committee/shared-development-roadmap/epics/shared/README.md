@@ -11,6 +11,6 @@ shared infrastructure. Their development is typically a cross-WP effort.
 * [FAIR Vocabularies](fair-vocabularies.md)
 * [FAIR Tool Discovery](fair-tool-discovery.md)
 * [FAIR Annotations](fair-annotations.md)
-* [Scalable Multimedia Processing](processing.md)
+* [FAIR Distribution and Deployment](distribution-and-deployment.md)
 * [Data Stories](data-stories.md)
 * [Ineo](ineo.md)

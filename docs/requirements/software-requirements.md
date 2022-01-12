@@ -175,6 +175,11 @@ A project is *RECOMMENDED* to be open to contributions from the open source comm
 requests/patches), the maintainer is responsible for reviewing those. It is *RECOMMENDED* to provide a ``CONTRIBUTE.md``
 file in the version control root directory file with guidelines contributors to your software should follow.
 
+The reverse also hold true: It is *RECOMMENDED* to be to contribute to (third-party) open source software. This is also in line with
+point 8 regarding reusability. When making changes to existing software that may be to other users' benefit, you *SHOULD*
+offer those changes back to the upstream maintainer(s) (typically using a pull/merge request, or by mailing a patch).
+You *SHOULD NOT* create a hard fork of the project unless there are unbridgable differences with the original maintainer.
+
 The use of any software that is not or no longer maintained is *NOT RECOMMENDED*.
 
 ### 13. Software *MUST* be developed with attention to security & privacy

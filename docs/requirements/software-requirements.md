@@ -164,7 +164,7 @@ the README (see 2.3).
 
 ### 12. Software *MUST* have a clear maintainer
 
-All software *MUST* have a clear mainainer. The only exception is if the software is explicitly unsupported, abandoned
+All software *MUST* have a clear maintainer. The only exception is if the software is explicitly unsupported, abandoned
 or an initial experimental prototype not ready for adoption. The maintainer may be a person (or
 multiple) or an institution. The maintainer is responsible for responding to user requests, bug reports, security
 vulnerabilities and for releases and packaging. The maintainer *MUST* be specified in the formal software metadata

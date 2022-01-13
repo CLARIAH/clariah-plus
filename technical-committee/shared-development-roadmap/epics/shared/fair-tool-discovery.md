@@ -139,19 +139,37 @@ store over an API, or we offer export facilities over an API.
         * **Provider:** ?
         * **Comment:** There may be a role for dataverse here to serve as the implementation, but it kind of feels like overkill to me for this purpose.
         * **Comment:** Another option is to use the baserow database we aim to use for components and instances, but here we don’t have actual Linked Open Data
-    * **Software Component:** **CLARIAH Tool Harvester**
-        * **URL**: (does not exist yet)
-        * **Function:** Harvester for software & service metadata. Periodically queries all endpoints listed in the CLARIAH Tool Source Registry, converts metadata to a common scheme, and finally updates the tool store. Endpoints may be git source repositories from which metadata is extracted, or service endpoints that explicitly provided metadata.
-        * **Provider**: ?
+    * **Software Component:** **Codemeta Harvester** (aka CLARIAH Tool Harvester)
+        * **URL**: https://github.com/proycon/codemeta-harvester
+        * **Function:** Harvester for software & service metadata. Periodically queries all endpoints listed in the CLARIAH Tool Source Registry, converts metadata to a common scheme, and finally updates the tool store. Endpoints may be git source repositories from which metadata is extracted, or service endpoints that explicitly provide metadata.
+        * **Provider**: KNAW HuC (Maarten van Gompel)
         * **Implements:** 4
         * **Interface**: CLI
-        * **TRL**: 0
+        * **TRL**: 2
         * **Software Component:** **Codemetapy**
             * **URL**: https://github.com/proycon/codemetapy
-            * **Function:** Tool for conversion and aggregation of software metadata to codemeta
+            * **Function:** Tool for conversion and aggregation of software metadata to codemeta (especially from Python metadata)
             * **Provider**: KNAW HuC (Maarten van Gompel)
             * **Interface**: CLI, LIB
             * **TRL**: 7
+        * **Software Component:** **Codemetar**
+            * **URL**: https://github.com/ropensci/codemetar
+            * **Function:** Tool for conversion of R software metadata  to codemeta
+            * **Provider**: rOpenSci project (3rd party)
+            * **Interface**: CLI, LIB
+            * **TRL**: 7
+        * **Software Component:** **cff-converter-python**
+            * **URL**: https://github.com/citation-file-format/cff-converter-python
+            * **Function:** Tool for conversion of CITATION.cff to codemeta
+            * **Provider**: citation-file-format project (3rd party)
+            * **Interface**: CLI
+            * **TRL**: 7
+        * **Software Component:** **Software Metadata Extraction Framework (somef)**
+            * **URL**: https://github.com/KnowledgeCaptureAndDiscovery/somef
+            * **Function:** Tool for metadata extraction (to codemeta) from READMEs
+            * **Provider**: Knowledge Capture and Discovery Group, at ISI (USC) (3rd party)
+            * **Interface**: CLI
+            * **TRL**: 5
     * **Data Component**: **CLARIAH Tool Source Registry**
         * **URL**: (does not exist yet)
         * **Provider**: ?

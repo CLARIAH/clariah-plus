@@ -1,8 +1,8 @@
 plantuml.jar:
 	wget -O plantuml.jar http://sourceforge.net/projects/plantuml/files/plantuml.jar/download
 
-sdr_datamodel.png: sdr_datamodel.uml plantuml.jar
-	java -jar plantuml.jar sdr_datamodel.uml
+%.png: %.uml plantuml.jar
+	java -jar plantuml.jar $<
 
 shared-development-roadmap.md: introduction.md epics/shared/[-a-z]*.md sdr_datamodel.png
 	echo -e "---\ntitle: CLARIAH Shared Development Roadmap 2022-2023\n---\n" > shared-development-roadmap.md

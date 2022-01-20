@@ -226,6 +226,8 @@ store over an API, or we offer export facilities over an API.
 > Draw a schema indicating how the various software and data components interact. This is required only when many
 > components are involved and their connection is not immediately obvious.
 
+![Components](tool-discovery-components.png)
+
 ### Evaluation
 
 > Estimate the overall readiness of the implementation(s) for this epic in the frontmatter. You may add any additional

@@ -46,7 +46,8 @@ When **NOT** to use Git/GitHub:
 * **Privacy sensitive information!**
 * Large data; significant binary data
 * Real-time collaborative editing
-    * Using MarkDown? Consider HedgeDoc: https://pad.nixnet.services/
+    * Using MarkDown? Consider a HedgeDoc instance!
+        * example: https://pad.nixnet.services/ , https://pad.gwdg.de/
 
 ## CLARIAH on GitHub
 
@@ -158,8 +159,8 @@ Make sure to **Watch** the ``clariah-plus`` github repository!
 
 **Pull Requests**: Offers a mechanism for reviewing/accepting the work of others
 
-* https://github.com/CLARIAH/clariah-plus/pulls
-* (aka Merge Requests)
+    https://github.com/CLARIAH/clariah-plus/pulls
+
 * Discussions similar to issues
 * Offers a review mechanism, facilitates decision making process
 * Recommended for large or possibly controversial updates
@@ -181,6 +182,8 @@ Make sure to **Watch** the ``clariah-plus`` github repository!
   kanban board up to date.
 
 ## Teams
+
+     https://github.com/orgs/CLARIAH/teams
 
 * Simple mechanism to group users
 * Team per WP
@@ -220,3 +223,9 @@ Make sure to **Watch** the ``clariah-plus`` github repository!
   or summarize the output in one or more relevant issues.
 * Don't use other platforms for todos/project management/issues/document-storage; we keep things in one place for findability and transparency.
 * Don't ignore Github mail notifications or let them land in your spam box!
+
+## Further information
+
+* Git/Github Huygens Webinar by Joris van Zundert: https://knaw-huc.slack.com/files/U010F28UK61/F02VCSYCDCG/gmt20220119-130213_recording_1686x1024.mp4
+* GitHub's documentation
+

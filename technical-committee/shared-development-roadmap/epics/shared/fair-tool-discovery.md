@@ -6,6 +6,9 @@ wp: [ 1, 2, 3, 4, 5, 6] #involved workpackages
 github-projects-link: https://github.com/orgs/CLARIAH/projects/1 #link to a specific project under here
 participants:
     - Maarten van Gompel (KNAW HuC)
+    - Jan Odijk (UU)
+    - Roeland Ordelman (NIBG), stakeholder
+    - Menzo Windhouwer (KNAW HuC), liason FAIR Datasets and IG Vocabularies
 themes: [ Metadata, DevOps, Curation, Vocabularies, Sustainability, Processing, Search ]
 evaluation: #overall evaluation for the (best) implementation of this epic
     trl: 0 #technology readiness level

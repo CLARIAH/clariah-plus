@@ -225,8 +225,8 @@ Solutions include [Blue/Green](https://martinfowler.com/bliki/BlueGreenDeploymen
 ### 17. The infrastructure configuration is _declared in code_. (Should have, [AUTO](#auto))
 
 The infrastructure’s state is not the result of manual interventions (for example, running one-off commands),
-but a reflection of the configuration as it is declared in code.
-Changes made to that code are automatically rolled out,
+but a reflection of the configuration as it is declared in code and stored in a version control system (see also [Software Requirement 1](software-requirements.md)). 
+Changes are checked into version control and automatically rolled out (see also [requirement 9](#9-the-infrastructure-_automatically-delivers_-new-application-versions-to-an-acceptance-andor-production-environment-must-have-autoauto),
 an approach known as [Infrastructure as Code (IaC)](https://en.wikipedia.org/wiki/Infrastructure_as_code).
 
 Having the configuration as code makes it transparent and declarative.

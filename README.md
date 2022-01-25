@@ -19,6 +19,9 @@ shared development process.
 * [Requirements](https://github.com/CLARIAH/clariah-plus/tree/main/requirements) - Software & Infrastructure Requirements (initially discussed in [#4](https://github.com/CLARIAH/clariah-plus/issues/4) and [#5](https://github.com/CLARIAH/clariah-plus/pull/5))
 * [Technical Committee](technical-committee/) -  Output of the Technical Advisory Committee as a whole (including proceedings).
 * [Task Descriptions](task-descriptions/) - Task descriptions of tasks that are being conducted within Work Packages (primarily used by WP3 only)
+* Documentation:
+    * [CLARIAH Authentication](interest-groups/devops/authentication/authentication_clariah_nl.md)
+    * [Connect service to CLARIAH/CLARIN authentication](interest-groups/devops/authentication/CLARIAH_service_authentication_flow.md)
 * [Use cases](use-cases/) - Use cases that have been collected CLARIAH-wide
 
 ## Motivation

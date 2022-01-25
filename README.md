@@ -1,6 +1,6 @@
 # CLARIAH-PLUS Project
 
-This is the project planning repository for the the [CLARIAH-PLUS
+This is the project planning repository for the [CLARIAH-PLUS
 project](https://clariah.nl).  It groups all technical documents and
 discussions pertaining to CLARIAH-PLUS in a central place and should facilitate
 findability, transparency and project planning, for the project as a whole.

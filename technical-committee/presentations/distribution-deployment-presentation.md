@@ -8,8 +8,8 @@ aspectratio: 169
 
 * We are building a common infrastructure
 * Tools need to be **distributed** properly by tool developers
-* Tools need to de **deployed** in the infrastructure *as a service*.
-* De-coupling between **applications provider** (distribution) and **infrastructure provider** (deployment)
+* Tools need to be **deployed** in the infrastructure *as a service* by operators.
+* De-coupling between **application provider** (distribution) and **infrastructure provider** (deployment)
 
 This epic/shared service provides the embedding for this. Logical successor of the DevOps IG (RIP)
 
@@ -43,7 +43,7 @@ Broad scope! Most covered by existing WP2 tasks.
 
 ## Out of scope
 
-We focus on the shared technical dimension here, so out of scope are:
+We focus on the shared *technical* dimension here, so out of scope are:
 
 * Governance
 * Service License Agreements etc...
@@ -65,8 +65,8 @@ We focus on the shared technical dimension here, so out of scope are:
     * [Infrastructure Requirements](../../requirements/infrastructure-requirements.md)
     * Already worked on in 2021 and first version available for further review
 * **Provisioning services with documentation** (WP2)
-    * Docker Registry
-    * Authentication & Authhorization Provider (federated, single sign-on)
+    * [Set up a CLARIAH Docker Registry](https://github.com/CLARIAH/clariah-plus/issues/46)
+    * Authentication & Authorization Provider (federated, single sign-on)
     * Version control platform for infrastructure as code
     * Monitoring Solution
     * Continuous Integration/Deployment
@@ -76,4 +76,5 @@ We focus on the shared technical dimension here, so out of scope are:
 * Coordinating this, transparently, over multiple institutes
     * Not a KNAW HuC only endeavour!
 * Providing clear documentation
+* Distribution and deployment solutions for distributed computing workflows (DANE, NextFlow)
 

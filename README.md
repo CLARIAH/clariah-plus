@@ -18,6 +18,7 @@ shared development process.
 * [Interest Groups](interest-groups/) - Each Interest Group has a directory where to store its information and documents.
 * [Requirements](https://github.com/CLARIAH/clariah-plus/tree/main/requirements) - Software & Infrastructure Requirements (initially discussed in [#4](https://github.com/CLARIAH/clariah-plus/issues/4) and [#5](https://github.com/CLARIAH/clariah-plus/pull/5))
 * [Technical Committee](technical-committee/) -  Output of the Technical Advisory Committee as a whole (including proceedings).
+    * [CLARIAH Shared Development Roadmap - phase 2](technical-committee/shared-development-roadmap)
 * [Task Descriptions](task-descriptions/) - Task descriptions of tasks that are being conducted within Work Packages (primarily used by WP3 only)
 * Documentation:
     * [CLARIAH Authentication](interest-groups/devops/authentication/authentication_clariah_nl.md)

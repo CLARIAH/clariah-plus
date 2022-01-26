@@ -8,10 +8,11 @@ findability, transparency and project planning, for the project as a whole.
 This repository will hold important deliverables such as specifications and technical
 requirements we agree upon for the project as a whole.
 
-The issue tracker associated with this github repository is the main place to
+The [issue tracker](https://github.com/CLARIAH/clariah-plus/issues) associated with this github repository is the main place to
 hold tickets regarding CLARIAH-PLUS project planning. On top of this we use
-GitHub Projects to organize tickets in various kanban boards to guide our
-shared development process.
+[GitHub Projects](https://github.com/orgs/CLARIAH/projects?type=beta) to organize tickets in various kanban boards to guide our
+shared development process. The composition of our various [teams](https://github.com/orgs/CLARIAH/teams) can also be
+consulted via GitHub.
 
 ## Table of Contents
 

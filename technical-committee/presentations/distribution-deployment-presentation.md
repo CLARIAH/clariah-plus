@@ -21,7 +21,6 @@ This epic/shared service provides the embedding for this. Logical successor of t
 * **Deployment of tools**
     * Install a tool locally
     * Deploy a tool as a service in an infrastructure
-    * What infrastructure demands does CLARIAH make?
 
 ## Scope: aspects of distribution & deployment
 
@@ -31,17 +30,21 @@ This epic/shared service provides the embedding for this. Logical successor of t
 * **Container Orchestration**
 * **Infrastructure as Code** (decoupling)
 * **Security**
+    * Authentication and Authorization
     * Tools to Data / Data to Tools
     * Automated vulnerability scanning
 * **Scalability**
     * Load balancing
     * Horizontal scaling
 * **Monitoring**
-    * Service availability monitoring
-    * Usage monitoring
-* **Workflows**: accommodating/pushing existing workflow solutions (DANE, NextFlow) within our infrastructure context
+    * Service availability monitoring (from end-user point of view)
+    * Service usage monitoring
+    * Infrastructure monitoring
+* **Workflows**: 
+    * accommodating/pushing existing workflow solutions (DANE, NextFlow) within our infrastructure context
 
-Broad scope! Most covered by existing WP2 tasks.
+
+Broad scope! Most is covered by existing WP2 tasks.
 
 ## Out of scope
 
@@ -75,8 +78,9 @@ Although we will give our technical input to the person and/or group who must co
     * Version control platform for services/tools
     * Monitoring Solutions for services, usage and operations
     * Continuous Integration/Deployment
-    * Research data (results) store  
-    * Computational resources for test drives and limited deployments.
+    * Research data store (storing results)  
+    * Computational resources for test drives and limited deployments
+    * Support tools (wiki, servicedesk, maintenance tools) to support the end-users and IT-staff
 
 ## Gaps and Challenges
 
@@ -84,4 +88,11 @@ Although we will give our technical input to the person and/or group who must co
     * Not a KNAW HuC only endeavour!
 * Providing clear documentation
 * Distribution and deployment solutions for distributed computing workflows (DANE, NextFlow)
+* To find (test) end-users who are willing to take the jump and use it
+* Legal terms and conditions
 
+
+## Questions and or Suggestions
+
+* Please ask now!  or 
+* Submit an issue at https://github.com/CLARIAH/clariah-plus/issues

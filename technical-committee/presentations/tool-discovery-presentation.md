@@ -94,7 +94,7 @@ aspectratio: 169
 
 * Maarten van Gompel (KNAW HuC), developer & coordinator
 
-**Stakeholders**
+**Stakeholders**:
 
 * Menzo Windhouwer (KNAW HuC), IG Vocabularies and FAIR Datasets
 * Jan Odijk (UU), CLARIN/CMDI compatibility, MD4T task WP3
@@ -104,3 +104,4 @@ aspectratio: 169
 
 * We could use an linked data expert! (WP4?)
 * Liason from Ineo
+* Involvement from all major tool providers!

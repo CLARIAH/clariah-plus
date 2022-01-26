@@ -75,7 +75,6 @@ Although we will give our technical input to the person and/or group who must co
     * Version control platform for services/tools
     * Monitoring Solutions for services, usage and operations
     * Continuous Integration/Deployment
-    * Research data (results) store  
     * Computational resources for test drives and limited deployments.
 
 ## Gaps and Challenges

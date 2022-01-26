@@ -6,7 +6,7 @@ aspectratio: 169
 
 ## Introduction (1)
 
-* We are building a common infrastructure
+* We are building a common research infrastructure
 * Tools need to be **distributed** properly by tool developers
 * Tools need to be **deployed** in the infrastructure *as a service* by operators.
 * De-coupling between **application provider** (distribution) and **infrastructure provider** (deployment)
@@ -37,6 +37,8 @@ This epic/shared service provides the embedding for this. Logical successor of t
     * Load balancing
     * Horizontal scaling
 * **Monitoring**
+    * Service availability monitoring
+    * Usage monitoring
 * **Workflows**: accommodating/pushing existing workflow solutions (DANE, NextFlow) within our infrastructure context
 
 Broad scope! Most covered by existing WP2 tasks.
@@ -48,6 +50,8 @@ We focus on the shared *technical* dimension here, so out of scope are:
 * Governance
 * Service License Agreements etc...
 * Hardware acquisition
+
+Although we will give our technical input to the person and/or group who must cover the above.
 
 ## User Stories
 
@@ -63,13 +67,16 @@ We focus on the shared *technical* dimension here, so out of scope are:
 * **Technical Requirements**
     * [Software Requirements](../../requirements/software-requirements.md)
     * [Infrastructure Requirements](../../requirements/infrastructure-requirements.md)
-    * Already worked on in 2021 and first version available for further review
+    * Already worked on in 2021 and first version is available for further review (RFC)
 * **Provisioning services with documentation** (WP2)
-    * [Set up a CLARIAH Docker Registry](https://github.com/CLARIAH/clariah-plus/issues/46)
+    * [Docker Registry](https://github.com/CLARIAH/clariah-plus/issues/46)
     * Authentication & Authorization Provider (federated, single sign-on)
     * Version control platform for infrastructure as code
-    * Monitoring Solution
+    * Version control platform for services/tools
+    * Monitoring Solutions for services, usage and operations
     * Continuous Integration/Deployment
+    * Research data (results) store  
+    * Computational resources for test drives and limited deployments.
 
 ## Gaps and Challenges
 

@@ -16,8 +16,7 @@ infrastructure.
     * [Goals](introduction.md#goals)
     * [Definitions](introduction.md#definitions)
     * [Data Model](introduction.md#data-model)
-* [Shared Core Epics](epics/shared/README.md)
-* [Domain-Specific Epics](epics/specific/README.md)
+* [Shared Core Epics](epics/README.md)
 * Appendices
     * [Technology Readiness Level](technology-readiness-level.md)
     * [Compliance Level](compliance-level.md)
@@ -26,7 +25,6 @@ infrastructure.
 ## Generating the PDF
 
 To generate the PDF, you need GNU Make, pandoc and python, then simply run:
-
 ```
 $ make shared-development-roadmap.pdf
 ```

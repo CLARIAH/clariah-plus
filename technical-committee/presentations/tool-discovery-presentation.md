@@ -58,7 +58,7 @@ aspectratio: 169
 
 ## Software Components
 
-![Tool Discovery Component Diagram](../shared-development-roadmap/epics/shared/tool-discovery-components.png)
+![Tool Discovery Component Diagram](../../shared-development-roadmap/epics/tool-discovery-components.png)
 
 ## Guiding Principles
 

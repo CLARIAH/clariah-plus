@@ -4,7 +4,7 @@ plantuml.jar:
 %.png: %.uml plantuml.jar
 	java -jar plantuml.jar $<
 
-shared-development-roadmap.md: introduction.md epics/shared/[-a-z]*.md sdr_datamodel.png
+shared-development-roadmap.md: introduction.md epics/[-a-z]*.md sdr_datamodel.png
 	echo -e "---\ntitle: CLARIAH Shared Development Roadmap 2022-2023\n---\n" > shared-development-roadmap.md
 	cat introduction.md >> shared-development-roadmap.md
 	echo -e "# Shared Epics\n\n" >> shared-development-roadmap.md

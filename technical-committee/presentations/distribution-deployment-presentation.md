@@ -8,7 +8,7 @@ aspectratio: 169
 
 * We are building a common research infrastructure
 * Tools need to be **distributed** properly by tool developers
-* Tools need to be **deployed** in the infrastructure *as a service* by operators.
+* Tools available as a service need to be **deployed** in the infrastructure by operators.
 * De-coupling between **application provider** (distribution) and **infrastructure provider** (deployment)
 
 This epic/shared service provides the embedding for this. Logical successor of the DevOps IG (RIP)
@@ -24,13 +24,21 @@ This epic/shared service provides the embedding for this. Logical successor of t
 
 ## Scope: aspects of distribution & deployment (1)
 
+Broad scope, affecting all participants in CLARIAH:
+
 * **Version control**
 * **Packaging**
 * **Containerisation**
 * **Container Orchestration**
 * **Infrastructure as Code** (decoupling)
 
-## Scope: aspects of distribution & deployment (2)
+## Recap: From distribution to deployment
+
+![Schema](CLaaSArchitecture.png)
+
+## Scope: aspects of deployment (2)
+
+Most is covered by existing WP2 tasks.
 
 * **Security**
     * Authentication and Authorization
@@ -45,8 +53,6 @@ This epic/shared service provides the embedding for this. Logical successor of t
     * Infrastructure monitoring
 * **Workflows**:
     * accommodating/pushing existing workflow solutions (DANE, NextFlow) within our infrastructure context
-
-Broad scope! Most is covered by existing WP2 tasks.
 
 ## Out of scope
 
@@ -92,7 +98,6 @@ Although we will give our technical input to the person and/or group who must co
 * Distribution and deployment solutions for distributed computing workflows (DANE, NextFlow)
 * To find (test) end-users who are willing to take the jump and use it
 * Legal terms and conditions
-
 
 ## Questions and or Suggestions
 

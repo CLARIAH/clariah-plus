@@ -73,12 +73,16 @@ Although we will give our technical input to the person and/or group who must co
 * **As a scholar, I** expect to have access to low-level CLARIAH tools in industry-standard ways **in order to**
   use the tools in my own development setting.
 
-## Deliverables
+## Deliverables (1)
 
 * **Technical Requirements**
     * [Software Requirements](../../requirements/software-requirements.md)
     * [Infrastructure Requirements](../../requirements/infrastructure-requirements.md)
-    * Already worked on in 2021 and first version is available for further review (RFC)
+    * *Already worked on in 2021 and first version is available for further review (RFC)*
+    * Interoperability Requirements?
+
+## Deliverables (2)
+
 * **Provisioning services with documentation** (WP2)
     * [Docker Registry](https://github.com/CLARIAH/clariah-plus/issues/46)
     * Authentication & Authorization Provider (federated, single sign-on)
@@ -92,6 +96,7 @@ Although we will give our technical input to the person and/or group who must co
 
 ## Gaps and Challenges
 
+* Focus points and scope reduction
 * Coordinating this, transparently, over multiple institutes
     * Not a KNAW HuC only endeavour!
 * Providing clear documentation

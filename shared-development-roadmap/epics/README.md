@@ -8,9 +8,9 @@ recognized as such by scholars). These provide an important pillar for the
 shared infrastructure. Their development is typically a cross-WP effort.
 
 * [FAIR Datasets](fair-datasets.md)
-* [FAIR Vocabularies](fair-vocabularies.md)
+* FAIR Vocabularies
 * [FAIR Tool Discovery](fair-tool-discovery.md)
-* [FAIR Annotations](fair-annotations.md)
-* [FAIR Distribution and Deployment](distribution-and-deployment.md)
-* [Data Stories](data-stories.md)
-* [Ineo](ineo.md)
+* FAIR Annotations
+* [FAIR Distribution and Deployment](fair-distribution-and-deployment.md)
+* Data Stories
+* Ineo

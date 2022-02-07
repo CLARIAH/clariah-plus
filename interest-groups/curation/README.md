@@ -1,13 +1,14 @@
 # CLARIAH Interest Group on Curation
 
-CLARIAH is organized in Work Packages and Interest Groups (IG's). The main goal of each IG is to research, negotiate, propose, and implement technical choices that become a standard requirement in CLARIAH. This repository is intended to organize the work, output and documentation of the CLARIAH Interest Group (IG) on Curation. Please check out the overall [IG page](https://github.com/clariah/ig/) for more information.
+CLARIAH is organized in Work Packages and Interest Groups (IG's). The main goal of each IG is to research, negotiate, propose, and implement technical choices that become a standard requirement in CLARIAH. This repository is intended to organize the work of the CLARIAH Interest Group (IG) on Curation. Please check out the overall [IG page](https://github.com/clariah/ig/) for more information.
 
 ## Aims of the Interest Group
 
 The aims of the IG on Curation are:
+- inform development of CLARIAH curation services
 - foster discussion and knowledge sharing regarding data curation, modeling and enrichment
 - develop and share best practices
-- inform development of CLARIAH curation tools and services
+
 
 ## Scope of the Interest Group
 
@@ -23,10 +24,8 @@ This IG has a strong connection to IG 2: Preservation and [IG 7: Linked Open Dat
 We use the following communication channel:
 - Slack
 
-## Tasks
--
-
-## Products
+## Meetings
+- 17 February 2022, 11.00-12.00
 
 ### Topics suggested
 -  the development of a toolbox / library of conversion tools
@@ -42,18 +41,16 @@ We use the following communication channel:
 ## Group Members
 - Mike Bryant (EHRI / King's College London)
 - Steven Claeyssens (National Library of the Netherlands)
-- Sebastiaan Derks (Huygens ING / KNAW Humanities Cluster, group coordinator)
+- Sebastiaan Derks (Huygens ING / KNAW Humanities Cluster)
 - Ed de Heer (National Archives of the Netherlands)
-- Lizzy Jongma (Netwerk Oorlogsbronnen)
 - Willem Melder (Netherlands Institute for Sound and Vision)
 - Harm Nijboer (University of Amsterdam)
-- Dirk Roorda (DANS / KNAW)
 - Ruben Schalk (Utrecht University)
 - Ronald Sluijter (Huygens ING / KNAW Humanities Cluster)
 - Frank Uiterwaal (EHRI / NIOD)
 - Mari Wigham (Netherlands Institute for Sound and Vision)
-- Leon van Wissen (University of Amsterdam)
 - Douwe Zeldenrust (Meertens Institute / KNAW Humanities Cluster)
+- Femmy Admiraal (KNAW-DANS, group coordinator)
 
 The group is open to new members. 
 

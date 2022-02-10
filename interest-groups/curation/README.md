@@ -25,7 +25,7 @@ We use the following communication channel:
 - Slack
 
 ## Meetings
-- 17 February 2022, 11.00-12.00
+- [17 February 2022, 11.00-12.00] (interest-groups/curation/220217 minutes.md)
 
 ### Topics suggested
 -  the development of a toolbox / library of conversion tools

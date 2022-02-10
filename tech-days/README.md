@@ -10,6 +10,6 @@
 * [FAIR Data Stories](https://docs.google.com/presentation/d/17MzymQpiVEbxUoI6Jv3pF89h6StThJcRYh9fCIuKbF0/edit?usp=sharing)
 * [FAIR Tool Discovery](../technical-committee/presentations/tool-discovery-presentation.pdf)
 * [FAIR Distribution & Deployment](../technical-committee/presentations/distribution-deployment-presentation.pdf)
-* FAIR Annotation?
+* [FAIR Annotation](https://docs.google.com/presentation/d/1WcsEmDl-MP9ahtT3ZcpxDqCVES7rKmleJdG_Pvh1Ta4/edit?usp=sharing)
 
 

@@ -6,3 +6,6 @@
   3. FAIR Datasets
   4. DataDagen 2022
   5. AOB
+
+
+## Notulen

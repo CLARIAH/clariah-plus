@@ -25,7 +25,7 @@ We use the following communication channel:
 - Slack
 
 ## Meetings
-- [17 February 2022, 11.00-12.00] (https://github.com/CLARIAH/clariah-plus/blob/main/interest-groups/curation/220217%20minutes.md)
+- [17 February 2022, 11.00-12.00](https://github.com/CLARIAH/clariah-plus/blob/main/interest-groups/curation/220217%20minutes.md)
 
 ### Topics suggested
 -  the development of a toolbox / library of conversion tools

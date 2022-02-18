@@ -5,7 +5,7 @@ The CLARIAH Interest Groups are groups of engineers that share a common ... well
 
 It shows however, that there is a demand for much interaction between the engineers and on a more granular level. Therefore, in the current tranch of CLARIAH ('PLUS'), we foster the cooperation of engineers and harmonization of the infrastructure through Interest Groups. We set out with a number of Interest Groups but we have noticed that there was a need for alternative Interest (sub) Groups and some IG's ceased to exist. Below is the list of Interest Groups established in Q1 2022. 
 
-<-- This ['live' query](https://github.com/CLARIAH?q=ig&type=&language=) will always be more up to date. -->
+<!-- This ['live' query](https://github.com/CLARIAH?q=ig&type=&language=) will always be more up to date. -->
 
 The interest groups are:
 - [Curation](https://github.com/CLARIAH/IG-Curation)

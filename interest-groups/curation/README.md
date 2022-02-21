@@ -5,38 +5,45 @@ CLARIAH is organized in Work Packages and Interest Groups (IG's). The main goal 
 ## Aims of the Interest Group
 
 The aims of the IG on Curation are:
-- inform development of CLARIAH curation services
+- inform development of CLARIAH data services
 - foster discussion and knowledge sharing regarding data curation, modeling and enrichment
 - develop and share best practices
 
 
 ## Scope of the Interest Group
-
-- stimulate coordination between the WPs on the use of conversion tools (data converters) 
-- support for the development of a CLARIAH library of curation and conversion tools
+- support the development and implementation of the FAIR Dataset registry
 - support for the creation and maintenance of documentation on data standards and vocabularies
 - support for the implementation of the FAIR guiding principles, with specific emphasis on data interoperability and reusability
+- support for the development of a CLARIAH library of curation and conversion tools
 
-This IG has a strong connection to IG 2: Preservation and [IG 7: Linked Open Data](https://github.com/CLARIAH/IG-LOD).
+This IG has a strong connection to IG [Vocabularies](https://github.com/CLARIAH/clariah-plus/tree/main/interest-groups/vocabularies)
 
 ## Communication
 
-We use the following communication channel:
-- Slack
+We use the following communication channels:
+- emails for sharing information, invitations to events, etc.
+- Slack for quick messages
+- GitHub page for administrative issues
 
 ## Meetings
 - [17 February 2022, 11.00-12.00](https://github.com/CLARIAH/clariah-plus/blob/main/interest-groups/curation/220217%20minutes.md)
+- 2 March 2022, 11.00-12.00
+- 14 April 2022, 11.00-12.00
+- 12 May 2022, 11.00-12.00
+- 9 June 2022, 11.00-12.00
+- 14 July 2022, 11.00-12.00
+- 8 September 2022, 11.00-12.00
+- 13 October 2022, 11.00-12.00
+- 10 November 2022, 11.00-12.00
+- 8 December 2022, 11.00-12.00
 
 ### Topics suggested
--  the development of a toolbox / library of conversion tools
--  inform development of a central forum for evaluation and training data
 -  reuse and design of data models, vocabularies and ontologies
--  data validation and citizen science
 -  data provenance
+-  preferred data formats
 -  data ethics and privacy legislation
-
-### Vocabularies
-- Cf. the [awesome humanities ontologies](https://github.com/CLARIAH/awesome-humanities-ontologies) list.
+-  data validation and citizen science
+-  the development of a toolbox / library of conversion tools
 
 ## Group Members
 - Mike Bryant (EHRI / King's College London)

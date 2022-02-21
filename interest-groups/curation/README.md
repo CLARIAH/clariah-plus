@@ -25,7 +25,7 @@ We use the following communication channels:
 - Slack for quick messages
 - GitHub page for administrative issues
 
-## Meetings
+## IG Curatie (online) meetings
 - [17 February 2022, 11.00-12.00](https://github.com/CLARIAH/clariah-plus/blob/main/interest-groups/curation/220217%20minutes.md)
 - 2 March 2022, 11.00-12.00
 - 14 April 2022, 11.00-12.00
@@ -44,6 +44,9 @@ We use the following communication channels:
 -  data ethics and privacy legislation
 -  data validation and citizen science
 -  the development of a toolbox / library of conversion tools
+
+## DataDays 2022
+- 22 April at DANS, The Hague (hybrid meeting)
 
 ## Group Members
 - Mike Bryant (EHRI / King's College London)

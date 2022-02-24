@@ -14,12 +14,12 @@ Starting with the SDR development work in Q1 2022, we defined the following IGs 
 <!-- This ['live' query](https://github.com/CLARIAH?q=ig&type=&language=) will always be more up to date. -->
 
 The interest groups are:
-- [Curation](https://github.com/CLARIAH/IG-Curation)
-- Devops
+- [Curation](https://github.com/CLARIAH/clariah-plus/tree/main/interest-groups/curation)
+- [Devops] (https://github.com/CLARIAH/clariah-plus/tree/main/interest-groups/devops)
 - Linked Open Data (split into subgroups:)
-    - [Modeling and Vocabulary Alignment](https://github.com/CLARIAH/IG-Vocabularies)
+    - [Modeling and Vocabulary Alignment](https://github.com/CLARIAH/clariah-plus/tree/main/interest-groups/vocabularies)
     - [Publication and Use, Findability](https://github.com/CLARIAH/IG-LOD-Findability)
-    - [Sustainability & Storage](https://github.com/CLARIAH/IG-Sustainability)
+    - [Sustainability & Storage](https://github.com/CLARIAH/clariah-plus/tree/main/interest-groups/sustainability)
 
 <!-- - [Text processing](https://github.com/CLARIAH/IG-Text)-->
 <!-- - UI/UX-->

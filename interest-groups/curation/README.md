@@ -27,7 +27,7 @@ We use the following communication channels:
 
 ## IG Curatie (online) meetings
 - [17 February 2022, 11.00-12.00](https://github.com/CLARIAH/clariah-plus/blob/main/interest-groups/curation/220217%20minutes.md)
-- 2 March 2022, 11.00-12.00
+- 10 March 2022, 11.00-12.00
 - 14 April 2022, 11.00-12.00
 - 12 May 2022, 11.00-12.00
 - 9 June 2022, 11.00-12.00

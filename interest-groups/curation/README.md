@@ -55,7 +55,6 @@ We use the following communication channels:
 - Ed de Heer (National Archives of the Netherlands)
 - Willem Melder (Netherlands Institute for Sound and Vision)
 - Harm Nijboer (University of Amsterdam)
-- Ruben Schalk (Utrecht University)
 - Ronald Sluijter (Huygens ING / KNAW Humanities Cluster)
 - Frank Uiterwaal (EHRI / NIOD)
 - Mari Wigham (Netherlands Institute for Sound and Vision)

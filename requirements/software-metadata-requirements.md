@@ -45,7 +45,7 @@ is the input for the harvester, it merely tells the harvester where to look for 
 * A single source code repository where the source code of the tool lives. This must be  *git* repository that is publicly accessible (in line with the CLARIAH Software Requirements).
   Note that you can specify only one repository here, choose the one that is representative for the software as a whole. Any other underlying software qualifies as a dependency and should be specified
   as part of the metadata itself, not the tool source registry. If any dependencies have standalone potential and you want to include them in the tool store as well, make a seperate yaml configuration file for each.
-* Zero or more service endpoints, i.e. URLs where the tool can be accessed as a service. This may be a web application or some other form of webservice.
+* Zero or more service endpoints, i.e. URLs where the tool can be accessed as a service. This may be a web application or some other form of webservice. Rather than enumerate service endpoints individually, this should be pointed to a URL that provides itself provides a specification of endpoints, for example a URL serving a [OpenAPI](https://www.openapis.org/) specification.
 
 To add your yaml configuration, clone the [repository holding the tool source registry](https://github.com/CLARIAH/tool-discovery/), make your changes, and do a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 

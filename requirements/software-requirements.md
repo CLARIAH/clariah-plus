@@ -221,9 +221,11 @@ local Mac or Windows machine.
 
 (This corresponds to [point 1](infrastructure-requirements.md#1-the-infrastructure-runs-applications-that-are-packaged-as-oci-containers-must-have-sep) of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
 
-1. The container images *MUST* be published in CLARIAH's container registry at each release. This can be automated (see
+1. The container images *MUST* be published in CLARIAH’s container registry at each release. This can be automated (see
    [IR7](infrastructure-requirements.md#7-the-infrastructure-automatically-builds-the-application-must-have-auto)).
-2. Containers *SHOULD* be kept as lightweight application containers, not including unnecessary runtime components.
+2. The Container images *MUST* be as small as possible, using
+   [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) and other
+   [best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
 3. Configuration values (such as database connection strings or API URLs) that may vary between deployments
    *SHOULD* be parameters to the container. This is implemented through environment variables. The infrastructure in
    turn configures applications through environment variables (see [IR4](infrastructure-requirements.md#4-the-infrastructure-configures-applications-through-environment-variables-must-have-sep) and also related to point 7).

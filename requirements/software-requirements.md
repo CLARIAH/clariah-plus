@@ -223,7 +223,7 @@ local Mac or Windows machine.
 
 1. The container images *MUST* be published in CLARIAH’s container registry at each release. This can be automated (see
    [IR7](infrastructure-requirements.md#7-the-infrastructure-automatically-builds-the-application-must-have-auto)).
-2. The Container images *MUST* be as small as possible, using
+2. The Container images *SHOULD* be as small as possible, using
    [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) and other
    [best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
 3. Configuration values (such as database connection strings or API URLs) that may vary between deployments

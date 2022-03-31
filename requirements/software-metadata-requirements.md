@@ -16,7 +16,7 @@ This is in line with current best-practices as most programming language
 ecosystems already have their own ways of describing software metadata
 alongside the source code. Our second principle is to **avoid any duplication**
 so we make use of those existing metadata descriptions and convert them
-automatically to a unified [codemeta](https://codemeta.github.io/)
+automatically to a unified [CodeMeta](https://codemeta.github.io/)
 representation, which is a linked open data vocabulary built on top of
 [Schema.org](https://schema.org).
 

@@ -18,7 +18,7 @@ alongside the source code. Our second principle is to **avoid any duplication**
 so we make use of those existing metadata descriptions and convert them
 automatically to a unified [codemeta](https://codemeta.github.io/)
 representation, which is a linked open data vocabulary built on top of
-[schema.org](https://schema.org).
+[Schema.org](https://schema.org).
 
 The metadata from all of the sources within CLARIAH is harvested automatically,
 and periodically, by [a harvesting

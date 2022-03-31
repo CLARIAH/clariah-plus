@@ -46,7 +46,7 @@ We use the following communication channels:
 -  the development of a toolbox / library of conversion tools
 
 ## DataDays 2022
-- 22 April at DANS, The Hague (hybrid meeting)
+- [22 April at DANS, The Hague](https://dans.knaw.nl/nl/agenda/clariah-datadag/)
 
 ## Group Members
 - Mike Bryant (EHRI / King's College London)

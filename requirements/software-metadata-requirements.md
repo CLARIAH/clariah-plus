@@ -7,7 +7,7 @@ CLARIAH software and services. It is aimed at the developers of software and
 attempts to provide clear documentation.
 
 The main principle underlying the way we keep our software metadata is that
-**metadata is kept at the source and by the source of the software**. This
+**metadata is kept at the source and by the maintainers of the software**. This
 means that the tool developers themselves are responsible for providing
 accurate metadata and that the best place to keep this metadata is *with the
 source code* of the software, in a version-controlled repository.

@@ -5,10 +5,13 @@ coordinator: Maarten van Gompel #person or list of people
 wp: [ 1, 2, 3, 4, 5, 6] #involved workpackages
 github-projects-link: https://github.com/orgs/CLARIAH/projects/1 #link to a specific project under here
 participants:
-    - Maarten van Gompel (KNAW HuC)
+    - Maarten van Gompel (KNAW HuC), developer and coordinator
     - Jan Odijk (UU)
     - Roeland Ordelman (NIBG), stakeholder
     - Menzo Windhouwer (KNAW HuC), liason FAIR Datasets and IG Vocabularies
+    - David de Boer (NDE)
+    - Jaap Blom (NIBG)
+    - Sebastiaan Fluitsma, liason for Ineo
 themes: [ Metadata, DevOps, Curation, Vocabularies, Sustainability, Processing, Search ]
 evaluation: #overall evaluation for the (best) implementation of this epic
     trl: 0 #technology readiness level
@@ -64,6 +67,9 @@ roadmap for this service.
 4. **As an infrastructure provider, I** want all tool metadata to be automatically harvested from the source **in order to** ensure the data is always up to date and facilitate maintenance.
 5. **As an infrastructure provider, I** want to be interoperable with the wider CLARIN infrastructure **in order to** have tools available in other CLARIN portals.
 
+User stories 1-3 are not directly implemented by this epic/service, but are facilitated by it. This epic focusses on the
+data provisioning pipeline that makes these user stories possible.
+
 ### Needs & Dependencies
 
 > Describe organisational and technical dependencies that are crucial for the success of this service.
@@ -85,144 +91,35 @@ roadmap for this service.
 
 > Describe the service(s) that implement(s) this epic, mention software components, data components and interoperability standards where appropriate.
 
-This core service provides infrastructure for finding tools. The term “tool”
-here is deliberately ambiguous and can refer to a piece of software in the
-broadest sense, it may be a web application, web service, programming library,
-or any composition thereof. Tools may live in a wide variety of places. We seek
-to standardize the way by which their metadata is described using Codemeta and
-OpenAPI, which will be posited as software & infrastructure requirements.
-Codemeta provides basic software metadata, whilst OpenAPI provides metadata
-covering web service specification. We automatically collect this metadata from
-as close to the source as possible using a CLARIAH Tool Harvester, the source
-being either a source code repository or a webservice endpoint. We aggregate all
-metadata into a central backend solution called the CLARIAH Tool Store. Portals
-like Ineo, the CLARIN Switchboard or others can either directly query the tool
-store over an API, or we offer export facilities over an API.
+This core service provides infrastructure for finding tools, where the metadata for the tools is automatically and
+periodically harvested and converted to a unified representation. The term “tool” here is deliberately ambiguous and can
+refer to a piece of software in the broadest sense, it may be a web application, web service, programming library, or
+any composition thereof. Tools may live in a wide variety of places. We seek to standardize the way by which their
+metadata is described using Codemeta and OpenAPI, which will be posited as software & infrastructure requirements.
+Codemeta provides basic software metadata, whilst OpenAPI provides metadata covering web service specification. We
+automatically collect this metadata from as close to the source as possible using a CLARIAH Tool Harvester, the source
+being either a source code repository or a webservice endpoint. We aggregate all metadata into a central backend
+solution called the CLARIAH Tool Store. Portals like Ineo, the CLARIN Switchboard or others can either directly query
+the tool store over an API.
 
 ### Components
 
-> Describe the components and subcomponents involved in this epic in a simple tree form; specify whether the component
-> is: a service (instance), software, data, and estimate a TRL. Please consult the
-> [definitions](introduction.md#definitions) and [data model](introduction.md#data-model). In case of multiple
-> implementations, use multiple detached trees/lists and add a level four heading for each.
+> Describe the components and subcomponents involved in this epic in a simple table form (in a stand-off CSV file);
+> specify whether the component is: a service (instance), software, data or standard. Indicate what user stories are
+> implemented/facilitated (under the description) and indicate dependencies between components in the last column.
+> Please consult the [definitions](introduction.md#definitions) and [data model](introduction.md#data-model).
 
-* **Service Component:** **Ineo**
-    * **Function** Web-frontend for scholarly end-users for CLARIAH-wide tool discovery (amongst other things)
-    * **URL:** ?
-    * **Provider**: ?
-    * **Implements:** 1
-    * **Interface**: WebUI
-    * **TRL**: ?
-    * **Software Component:** **Ineo**
-        * **Provider**: KNAW HuC with external party
-        * **URL:** ?
-* **Service Component:** **CLARIN Switchboard**
-    * **Function** Web-application for end-user for tool discovery focussed on tools that take direct data input from a user upload throughout CLARIN.
-    * **URL:** <https://switchboard.clarin.eu/>
-    * **Provider**: CLARIN-ERIC (partner)
-    * **Implements:** 1, 2, 5
-    * **Interface**: WebUI
-    * **TRL**: 8
-    * **Software Component:** **CLARIN Switchboard**
-        * **URL:** <https://github.com/clarin-eric/switchboard>
-        * **Provider**: CLARIN-ERIC (partner)
-    * **Data Component**: **CLARIN Switchboard Tool Registry**
-        * **URL:** <https://github.com/clarin-eric/switchboard-tool-registry/>
-        * **Provider**: CLARIN-ERIC (partner)
-        * **Function**: Registry holding all tool metadata descriptions for the switchboard
-* **Service Component:** **CLARIAH Tool Store**
-    * **URL**: (does not exist yet)
-    * **Function** Stores all harvested/aggregated tool metadata
-    * **Function:** API for updating (invoked by harvester)
-    * **Function:** API for querying (invoked by end-user, portals)
-    * **Interface**: REST, possibly SPARQL
-    * **TLR:** 0
-    * **Software Component: CLARIAH Tool Store**
-        * **URL**: (does not exist yet)
-        * **Provider:** ?
-        * **Comment:** There may be a role for dataverse here to serve as the implementation, but it kind of feels like overkill to me for this purpose.
-        * **Comment:** Another option is to use the baserow database we aim to use for components and instances, but here we don’t have actual Linked Open Data
-    * **Software Component:** **Codemeta Harvester** (aka CLARIAH Tool Harvester)
-        * **URL**: https://github.com/proycon/codemeta-harvester
-        * **Function:** Harvester for software & service metadata. Periodically queries all endpoints listed in the CLARIAH Tool Source Registry, converts metadata to a common scheme, and finally updates the tool store. Endpoints may be git source repositories from which metadata is extracted, or service endpoints that explicitly provide metadata.
-        * **Provider**: KNAW HuC (Maarten van Gompel)
-        * **Implements:** 4
-        * **Interface**: CLI
-        * **TRL**: 2
-        * **Software Component:** **Codemetapy**
-            * **URL**: https://github.com/proycon/codemetapy
-            * **Function:** Tool for conversion and aggregation of software metadata to codemeta (especially from Python metadata)
-            * **Provider**: KNAW HuC (Maarten van Gompel)
-            * **Interface**: CLI, LIB
-            * **TRL**: 7
-        * **Software Component:** **Codemetar**
-            * **URL**: https://github.com/ropensci/codemetar
-            * **Function:** Tool for conversion of R software metadata  to codemeta
-            * **Provider**: rOpenSci project (3rd party)
-            * **Interface**: CLI, LIB
-            * **TRL**: 7
-        * **Software Component:** **cff-converter-python**
-            * **URL**: https://github.com/citation-file-format/cff-converter-python
-            * **Function:** Tool for conversion of CITATION.cff to codemeta
-            * **Provider**: citation-file-format project (3rd party)
-            * **Interface**: CLI
-            * **TRL**: 7
-        * **Software Component:** **Software Metadata Extraction Framework (somef)**
-            * **URL**: https://github.com/KnowledgeCaptureAndDiscovery/somef
-            * **Function:** Tool for metadata extraction (to codemeta) from READMEs
-            * **Provider**: Knowledge Capture and Discovery Group, at ISI (USC) (3rd party)
-            * **Interface**: CLI
-            * **TRL**: 5
-    * **Data Component**: **CLARIAH Tool Source Registry**
-        * **URL**: (does not exist yet)
-        * **Provider**: ?
-        * **Function:** Simple registry of software source repositories and service endpoints. Serves as input for the harvester.
-        * **Comment:** Could be Implemented as a simple plain text list of URLs in a git repository on github, new registrations can be added using pull requests. Or implemented using the planned baserow database that holds all software components.
-        * **TRL**: 0
-    * **Software Component:** **Ineo Export**
-        * **URL**: (does not exist yet)
-        * **Provider**: ?
-        * **Function:** Client using the tool store API (or a direct extension thereof) converting output to a format understood by Ineo, for interoperability with it. Needed if (and only if) we can't make Ineo correct directly to our tool store backend
-        * **Implements:** 4
-        * **Interface**: CLI or WebAPI
-        * **TRL**: 0
-    * **Software Component:** **Switchboard Export**
-        * **URL**: (does not exist yet)
-        * **Provider**: ?
-        * **Function:** Client using the tool store API (or a direct extension thereof) converting output to the format required by the CLARIN Switchboard, for interoperability with it. Possibly also offer a OAI-PMH endpoint serving the converted data.
-        * **Implements:** 4, 5
-        * **Interface**: CLI or WebAPI
-        * **TRL**: 0
-    * **Software Component:** **CMDI Export**
-        * **URL**: (does not exist yet)
-        * **Provider**: ?
-        * **Function:** Client using the tool store API (or a direct extension thereof) converting output to an established CMDI software metadata profile for interoperability with CLARIN
-        * **Implements:** 4, 5
-        * **Interface**: CLI or WebAPI
-        * **TRL**: 0
-    * **Interoperability Standard:** **CodeMeta**
-        * **URL**: <https://codemeta.github.io>
-        * **Provider**: The CodeMeta Project (3rd party)
-        * **Function**: Software metadata schema (Linked open data, aligning with schema.org)
-        * **Function**: Crosswalks for mappings with other existing metadata schemes
-        * **TRL**: 8
-    * **Interoperability Standard:** **OpenAPI**
-        * **URL**: <https://openapi.org>
-        * **Provider**: OpenAPI Initiative (3rd party)
-        * **Function**: Service API specification schema
-        * **TRL**: 9
-    * **Interoperability Standard:** **CMDI**
-        * **URL**: <https://www.clarin.eu/content/cmdi-12>
-        * **Provider**: CLARIN Centre Committee
-        * **Function**: Metadata Schema
-        * **TRL**: 9
-    * **Interoperability Standard:** **CLARIAH Tool Metadata**
-        * **URL**: (does not exist yet)
-        * **Provider**: ?
-        * **Function**: Extra domain-specific vocabulary need for CLARIAH
-        * **Comment**: CodeMeta's vocabulary is too limited to cover all our needs, we need to define extra vocabulary
-        * **Comment**: Earlier work in the WP3 ‘metadata for tools project’ can serve as valuable input here
-        * **TRL**: 0
+```table
+---
+table-width: 1.0
+width: [ 0.03, 0.1, 0.1, 0.30, 0.1, 0.10, 0.27 ]
+alignment: LLLLLRL
+include: tool-discovery-components.csv
+markdown: true
+---
+```
+**Note:** Interoperability with Ineo will be handled at the Ineo side: https://github.com/CLARIAH/clariah-plus/issues/35
+
 
 ### Workflow Schema
 
@@ -236,36 +133,60 @@ store over an API, or we offer export facilities over an API.
 > Estimate the overall readiness of the implementation(s) for this epic in the frontmatter. You may add any additional
 > evaluation here.
 
+end Q1 2022 - Initial propotype has been delivered
+
 ### Context
 
 > Sketch the wider context of the implementations for this epic in relation to other (existing/proposed) projects and initiatives.
 
-* Ineo is supposed to become the entry point for CLARIAH tools, however, it can be considered a thin layer and back-end functionality and automatic harvesting needs to be resolved separately.
-* A system called CLAPOP was developed in CLARIN and uses manually crafted software metadata descriptions in CMDI (no harvesting) with rich information for scholars. The information may be outdated however.
+* Ineo is meant to become the entry point for CLARIAH tools, however, it can be considered a thin layer and back-end functionality and automatic harvesting needs to be resolved separately, as done by this epic.
+* A system called CLAPOP was developed in CLARIN and uses manually crafted software metadata descriptions in CMDI (no harvesting) with rich information for scholars. The information is largely outdated however.
 * A LaMachine Portal (labirinto) was developed as a solution to provide a portal page for any LaMachine installation/deployment, automatically harvesting the tools available within. It uses CodeMeta which is more generic but less specific for scholars.
 * The CLARIN Switchboard is developed by CLARIN-ERIC and gives users the option to select tools from a wider CLARIN ecosystem, based on the data they upload. It is largely limited to singular data (single files).
-
 
 ### Use cases
 
 > Link to specific use cases for which this user story is relevant, use cases should reside in the [use cases directory](../../use-cases/)
+n/a
+
+### Deliverables
+
+1. **Document:** Software Metadata Requirements
+2. **Software + documentation:** [codemetapy](https://github.com/proycon/codemetapy)
+3. **Software + documentation:** [codemeta-harvester](https://github.com/proycon/codemeta-harvester)
+4. **Software + documentation:** [codemeta-server](https://github.com/proycon/codemeta-server)
+5. **Service + documentation:** [Tool Store](https://tools.clariah.nl)
 
 ### Planning
 
 > A rough planning for this epic. The GitHub Projects kanban board for this epic should be used for more detailed planning during development
 
-We identify the following primary tasks, more or less in chronological order, and add a very rough indication (PM=person
-months) of the work we expect. This may still shift significantly as details are decided.
+We identify the following primary tasks, more or less in chronological order, and add a rough indication (PM=person
+months) of the work we expect and who will perform it.
 
 * [Define cross-WP team for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/30)
-* [Define components, standards, requirements for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/31) - 0.5PM
-* [Define extra vocabulary for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/32) - 0.5PM
-* [Compose and publish metadata for all software/services](https://github.com/CLARIAH/clariah-plus/issues/38) - 3PM? (very hard to estimate, is a function of the number of tools, this is spread over all participating institutes)
-* [Implement harvester component for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/33) - 1.5PM
-* [Implement tool store for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/34) - 2.5PM
-* [Implement Ineo export for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/35) - 0.5PM
-* [Implement Switchboard export for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/36) - 0.5PM
-* [Implement CMDI export for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/37) - 1PM
+* [Define components, standards, requirements for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/31) - 0.5PM (68 hours)
+* [Define extra vocabulary for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/32) - 0.5PM (68 hours) - entire team
+    * [Development status vocabulary](https://github.com/CLARIAH/clariah-plus/issues/98)
+* [Implement codemeta validation component for tool discovery, against clariah requirements](https://github.com/CLARIAH/clariah-plus/issues/50) - +0.5PM (+68 hours) - NDE (David de Boer)
+* [Write software metadata requirements](https://github.com/CLARIAH/clariah-plus/issues/40) - 0.5PM (68 hours) - KNAW HuC (Maarten vG and others)
+* [Implement harvester component for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/33) - 1.5PM (204 hours) - KNAW HuC (Maarten vG)
+    * Includes work on the underlying conversion component (codemetapy)
+    * [Extract software metadata from the web (service endpoints and/or webpages)](https://github.com/CLARIAH/clariah-plus/issues/92)
+* [Implement tool store for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/34) - 2.0PM (272 hours) - KNAW HuC (Maarten vG)
+    * [Implement simple visualisation (portal page) for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/99)
+
+* [Implement Ineo export/import for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/35) - 0.5PM (68 hours) - KNAW HuC (Maarten vG)
+    * This involves only support for the Ineo developers to make the link. The actual implementation for
+      connectivity between tool discovery and ineo is on the Ineo side and requires more hours. The hours listed
+      here are only for supporting the Ineo developers from our side.
+* [Implement Switchboard export for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/36) - 0.5PM (68
+    hours) - Not assigned yet
+* [Implement CMDI export for tool discovery](https://github.com/CLARIAH/clariah-plus/issues/37) - 1PM (136 hours) - Not assigned yet
+* [Compose and publish metadata for all software/services](https://github.com/CLARIAH/clariah-plus/issues/38) - 3PM??? (very hard to estimate, this is a function of the number of tools, this is spread over all participating institutes)
+    * [Populate tool source registry](https://github.com/CLARIAH/clariah-plus/issues/91)
+
+Total: 10.5PM (1428 hours)
 
 ### Resources
 
@@ -273,6 +194,7 @@ Some comments on resource allocation:
 
 * The "compose metadata for all software/services" subtask may be argued to be financed from already existing WP budgets
 rather than this one.
-* I'd also suggest any funds still open for the WP3 MD4T project (Utrecht University) should be reallocated on behalf of this shared epic.
+* Any funds still open for the WP3 MD4T project (Utrecht University) should be reallocated on behalf of this shared epic.
+* Composing metadata for software/service should probably come from the existing WP budgets that maintain the software
 
 

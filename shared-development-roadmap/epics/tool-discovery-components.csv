@@ -1,0 +1,17 @@
+Num,Name,Type,Description,Producer,Deps,URL
+1,tool store,service,"Queryable backend holding all tools; with simple front-end; facitilates user stories 1,3",KNAW HuC,"5,3,11-14",https://tools.dev.clariah.nl
+2,tool source registry,data ,Input data for the harvester,KNAW HuC,,https://github.com/CLARIAH/tool-discovery/tree/master/source-registry
+3,codemeta-harvester,software,Harvester pipeline; ties togethervarious harvesting components. Implements story 4,KNAW HuC,"4,6,7,11-14",https://github.com/proycon/codemeta-harvester
+4,codemetapy,software,Conversion from various metadata formats to codemeta,KNAW HuC,"4,11-14,16",https://github.com/proycon/codemetapy
+5,codemeta-server,software,triple store with API; SPARQL endpoint; simple web frontend,KNAW HuC,"4,11-14",https://github.com/proycon/codemeta-server
+6,cffconvert,software,CITATION.cff to codemeta conversion,3rd party,11-12,https://github.com/citation-file-format/cff-converter-python 
+7,codemetar,software,R to codemeta conversion,3rd party,11-12,https://github.com/ropensci/codemetar
+8,somef,software,README parsing and to codemeta conversion,3rd party,11-13,https://github.com/KnowledgeCaptureAndDiscovery/somef 
+9,CMDI export,software,Conversion/export from codemeta to CMDI. Implements story 5,undetermined,1,not started yet
+10,CLARIN switchboard export,sofware,"Conversion for CLARIN switchboard registry. Implements story 5, facilitates 2",undetermined,1,not started yet
+11,codemeta,standard,Linked Open Data vocabulary for describing software source code metadata,3rd party,"12,15",https://codemeta.github.io
+12,schema.org,standard,Linked Open Data vocabulary,3rd party,,https://schema.org
+13,repostatus.org,standard,Linked Open Data vocabulary for software status,3rd party,,https://repostatus.org
+14,spdx.org,standard,Linked Open Data vocabulary for software licenses,3rd party,,https://spdx.org
+15,CMDI,standard,Component Metadata Infrastructure used by CLARIN,CLARIN-ERIC,,https://www.clarin.eu/content/cmdi-12
+16,OpenAPI,standard,Web API specification,3rd party,,https://www.openapis.org/

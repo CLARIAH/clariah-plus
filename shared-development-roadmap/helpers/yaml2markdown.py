@@ -18,23 +18,29 @@ def output(metadata):
         print(f"| **{key}** | {value} |")
 
 parse = False
+codeblock = False
 metadata = []
 for line in sys.stdin.readlines():
-    if line.strip() == "---":
-        if parse:
-            parse = False
-        else:
-            parse = True
+    if line.startswith("```"):
+        codeblock = not codeblock
+    if not codeblock:
+        if line.strip() == "---":
+            if parse:
+                parse = False
+            else:
+                parse = True
+                metadata = []
+        elif parse:
+            metadata.append(line.rstrip("\n"))
+        elif line.startswith("> "):
+            pass
+        elif line.startswith("#") and metadata:
+            print(line,end="")
+            print()
+            output(yaml.safe_load("\n".join(metadata)))
             metadata = []
-    elif parse:
-        metadata.append(line.rstrip("\n"))
-    elif line.startswith("> "):
-        pass
-    elif line.startswith("#") and metadata:
-        print(line,end="")
-        print()
-        output(yaml.safe_load("\n".join(metadata)))
-        metadata = []
+        else:
+            print(line,end="")
     else:
         print(line,end="")
 

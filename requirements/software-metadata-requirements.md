@@ -6,6 +6,21 @@ This document specifies requirements and instructions for software metadata for
 CLARIAH software and services. It is aimed at the developers of software and
 attempts to provide clear documentation.
 
+The software metadata from all of the sources within CLARIAH is harvested automatically,
+and periodically, by [a harvesting
+tool](https://github.com/proycon/codemeta-harvester). Subsequently, the
+harvested metadata (codemeta) is made available in the tool store, which offers
+an API that is in turn used by portals to present the tools.
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”,
+“SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be
+interpreted as described in [RFC
+2119](https://datatracker.ietf.org/doc/html/rfc2119).
+
+## Source Code Metadata Requirements
+
+### 1. Software metadata *MUST* be kept as close to the source code as possible
+
 The main principle underlying the way we keep our software metadata is that
 **metadata is kept at the source and by the maintainers of the software**. This
 means that the tool developers themselves are responsible for providing
@@ -14,76 +29,91 @@ source code* of the software, in a version-controlled repository.
 
 This is in line with current best-practices as most programming language
 ecosystems already have their own ways of describing software metadata
-alongside the source code. Our second principle is to **avoid any duplication**
-so we make use of those existing metadata descriptions and convert them
+alongside the source code. Further details on these best-practises and the
+format of the metadata is expressed in other points below.
+
+This also entails that if a third party wants to correct/revise the metadata, this should be done via the tool
+developers, typically a third part can simply do a pull/merge request on the source repository.
+
+### 2. All tools *MUST* be registered in the Tool Store Registry
+
+Tools MUST to be *registered* with the harvester via the [Tool Source
+Registry](https://github.com/CLARIAH/tool-discovery/tree/master/source-registry). This simple registry tells the
+harvester where to find, for each tool, both the source code repository *and* service endpoint(s) where the software is
+hosted as a service (optional). In order to register your tool, you issue a simple pull request on our git repository as
+explained in [these contribution guidelines](https://github.com/CLARIAH/tool-discovery/blob/master/CONTRIBUTING.md).
+
+Note that we make this explicit distinction between *software* and *software as a service*, and we use the more
+ambiguous term tool to describe either. The *software* metadata is described alongside its source code, the *service*
+metadata is provided by a service endpoint and adds some information about a specific deployment of software as a
+service. Software services may be served from multiple locations (e.g. the same software may be hosted by multiple
+institutes).
+
+### 3. Duplication of metadata *SHOULD* be avoided
+
+We make use of those existing metadata descriptions and convert them
 automatically to a unified [CodeMeta](https://codemeta.github.io/)
 representation, which is a linked open data vocabulary built on top of
 [Schema.org](https://schema.org).
 
-The metadata from all of the sources within CLARIAH is harvested automatically,
-and periodically, by [a harvesting
-tool](https://github.com/proycon/codemeta-harvester). Subsequently, the
-harvested metadata (codemeta) is made available in the tool store, which offers
-an API that is in turn used by portals to present the tools.
+What we want to prevent is that a developer or maintainer has to adapt
+the same metadata in multiple places (and multiple paradigms).
 
-Tools need to be *registered* with the harvester, we have a [Tool Source
-Registry](https://github.com/CLARIAH/tool-discovery/tree/master/source-registry)
-that tells the harvester where to find, for each tool, both the source code
-repository *and* service endpoint where the software is hosted as a service
-(optional). Note that we make this explicit distinction between *software*
-and *software as a service*. The *software* metadata is described alongside its
-source code, the *service* metadata is provided by a service endpoint and adds
-some information about a specific deployment of software as a service. Software
-services may be served from multiple locations (e.g. the same software may be
-hosted by multiple institutes).
+### 4. Tool providers *MUST* adhere to the best practices in your programming language ecosystem and specify basic metadata in the way suited for your ecosystem
 
-## Registering software/services in the Tool Source Registry.
+* For Python this is a ``setup.py``,``setup.cfg`` or ``pyproject.toml`` file
+* For Java/Maven this is a ``pom.xml`` file
+* For NodeJS/npm this is a ``package.json`` file
+* For Rust this is a `cargo.toml` file
 
-The [Tool Source Registry](https://github.com/CLARIAH/tool-discovery/tree/master/source-registry)
-is the input for the harvester, it merely tells the harvester where to look for metadata and does not contains actual metadata itself. Each tool is described by a simple yaml configuration file that lists:
+Adherence to best practises also entails what has already been started in the [software requirements](software-requirements.md):
 
-* A single source code repository where the source code of the tool lives. This must be  *git* repository that is publicly accessible (in line with the CLARIAH Software Requirements).
-  Note that you can specify only one repository here, choose the one that is representative for the software as a whole. Any other underlying software qualifies as a dependency and should be specified
-  as part of the metadata itself, not the tool source registry. If any dependencies have standalone potential and you want to include them in the tool store as well, make a seperate yaml configuration file for each.
-* Zero or more service endpoints, i.e. URLs where the tool can be accessed as a service. This may be a web application or some other form of webservice. Rather than enumerate service endpoints individually, this should be pointed to a URL that provides itself provides a specification of endpoints, for example a URL serving a [OpenAPI](https://www.openapis.org/) specification.
+* You MUST have a proper `README.md` file in all cases (Point 2 of the [software requirements](software-requirements.md))
+* You MUST have `LICENSE.md` or `LICENSE` file in all cases (Point 3 of the [software requirements](software-requirements.md))
+* You MUST release the software periodically with clear versions numbers, a git tag, and release nots (Point 4 of the [software requirements](software-requirements.md))
 
-To add your yaml configuration, clone the [repository holding the tool source registry](https://github.com/CLARIAH/tool-discovery/), make your changes, and do a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+### 5. Tool providers *SHOULD* provide a codemeta.json or codemeta-harvest.json file
 
-## Source code metadata
+[Codemeta](https://codemeta.github.io) is a linked data (structured data) vocabulary on top of [schema.org](https://schema.org) that is
+used for describing software metadata. This is the unified representation we use, along with some extensions and more
+domain specific vocabulary of our own (explain in later points). Metadata from all other sources (see point 4) is
+converted to this representation automatically by the harvester.
 
-Metadata for your software should be provided alongside the source code as follows:
+You *SHOULD* automatically generate this `codemeta.json` file by running our `codemeta-harvester` yourself. This can be
+done as follows (assuming you use docker and are in the root directory of your project's source code):
 
-1. Adhere to the best practices in your programming language ecosystem and specify basic metadata in the way suited for your ecosystem.
-    * For Python this is a ``setup.py`` or ``pyproject.toml`` file
-    * For Java/Maven this is a ``pom.xml`` file
-    * For NodeJS/npm this is a ``package.json`` file
-    * Have a proper `README.md` file in all cases
-    * Have a proper `LICENSE.md` or `LICENSE` file in all cases
-    * All releases of your software should be accompanied with a git tag corresponding to the version number of the release. The harvester will always checkout the highest git tag (i.e. the latest version number) and harvest that instead of the git head of your master/main branch. The main/master branch will only be used as a fall-back in case you have no released versions at all yet.
-2. Run the `codemeta-harvester` on your project, it will attempts to automatically extract and convert metadata and produces a ``codemeta.json``
-    * **TODO: add instructions on how to run this**
-3. Check whether the resulting `codemeta.json` is accurate (minor edits are expected) and commit it to the root of your repository. If this file is present, this will be the authoritative source of metadata and the harvester will not look further.
-    * Alternatively, you can commit a ``codemeta-harvest.json`` file instead which only contains only the subset of what you want to add/edit on top of the automatically extracted metadata. In this case our harvester automatically runs step 2 for you on each run.
-    * Though use of the harvester is strongly recommmended, you can also craft a `codemeta.json` by hand if you know what you are doing, or create one by filling the form of the [codemeta generator](https://codemeta.github.io/codemeta-generator/).
-4. Amend your `codemeta.json` or `codemeta-harvest.json` with CLARIAH-specific vocabulary as described in the next section.
+``
+docker run -v .:/data proycon/codemeta-harvester --regen
+``
 
-If you use `codemeta.json`, you must take care to update it whenever you do a release, the `version` field changes each time by definition. If you use `codemeta-harvest.json` then you can separate out the parts that are less prone to changes.
+You *SHOULD* check and possibly edit this `codemeta.json` file after generation, ensuring it is correct and complies to
+all the points in these requirements. After that is done you *MUST* add and commit it to the root of your source code
+repository. Our harvester will harvest your `codemeta.json` periodically. Tool providers *MUST* therefore ensure the
+`codemeta.json` is always kept up-to-date, especially the `version` property will by definition differ each release.
+This typically means regenerating and editing/updating it every release. As this may be cumbersome, it is *RECOMMENDED*
+to automate the regeneration part if you haved a continuous integration/deployment system. Howeveer, automating the
+editing is more problematic so there is an alternative:
 
-The harvester will attempt to do some validation on your metadata and will reject the metadata in case of blatant errors such as invalid JSON, important missing keys, mismatching versions (git tag vs version in the codemeta file).
+The alternative is that tool providers *MAY* add and commit a `codemeta-harvest.json` instead of a `codemeta.json`. This `codemeta-harvest.json` file contains only the subset of what you want to add/edit on top of the automatically extracted metadata. The only disadvantage is that, unlike `codemeta.json` which is by definition complete, this requires use of our harvester on the side of the user who wants to make actual use of the full metadata.
 
-## Required properties and additional vocabulary
+Though use of the harvester is *RECOMMENDED*, you *MAY* also craft a `codemeta.json` by hand if you know what you are doing, or create one by filling the form of the [codemeta generator](https://codemeta.github.io/codemeta-generator/).
+In line with point 3, whenever metadata is incorrect/incomplete, it is *RECOMMENDED* to solve it at the source (point 4)
+if possible rather than in the `codemeta.json`.
 
-There are a few additional metadata fields/properties and associated vocabulary
-that we as CLARIAH want you to use. These fields are expected by the portal
-tools that eventually present your software and they are usually not
-automatically extractable from existing metadata schemas but need to be
-explicitly specified by you as the tool developer.
+If no `codemeta-json` nor `codemeta-harvest.json` are provided at all, which is *NOT RECOMMENDED*, then our harvester will
+construct it on the fly, this implies that the human verification and editing stage is missing and the metadata may be
+more prone to being incorrect or incomplete.
 
-### Development Status
+### 6. Development status *MUST* be expressed
 
-The `developmentStatus` property is defined by codemeta and expresses in what stage of development the software is. It communicates what level of functionality *and* what level of support the user can expect. Codemeta recommends the use of the [repostatus.org](https://www.repostatus.org/) vocabulary and we make that a hard requirement for CLARIAH. Simple assessment criteria are available on the [repostatus](https://www.repostatus.org) website, along with instructions on how to encode this information in your own `README.md` as a so-called *badge*. Once such a badge is present in your README, our harvester will automatically detect and extract it.
+The `developmentStatus` property is defined by codemeta and expresses in what stage of development the software is. It
+communicates what level of functionality *and* what level of support the user can expect. Codemeta recommends the use of
+the [repostatus.org](https://www.repostatus.org/) vocabulary and for CLARIAH that is *REQUIRED*. Simple Assessment
+criteria are available on the [repostatus](https://www.repostatus.org) website, along with instructions on how to encode
+this information in your own `README.md` as a so-called *badge*. The use of such a badge is *RECOMMENDED*. Once such a
+badge is present in your README, our harvester will automatically detect and extract it.
 
-Of course you don't have to use the badge but can also just set it directly in your codemeta.json like for example:
+In the `codemeta.json`, this is expressed as follows, for example:
 
 ```json
 {
@@ -91,9 +121,13 @@ Of course you don't have to use the badge but can also just set it directly in y
 }
 ```
 
-### Producer
+### 7. A producer *SHOULD* be expressed
 
-Please set the `producer` property to the `Organization` that produced the software. Note that this may be distinct from the `provider` of the software as a service!
+Please set the `producer` property to the `Organization` that produced the software, i.e. the organization that employs
+the developers. Note that this may be distinct from the `provider` of the software as a service! Do not set CLARIAH as
+the producer, as that is a project rather than an institute.
+
+Syntax examples for your `codemeta.json`:
 
 ```json
     "producer": {
@@ -134,21 +168,23 @@ You can keep things shorter and just express an URI, but ideally this should the
 }
 ```
 
-### Research domain, research phase and others... (WIP)
+### 8. Extra vocabulary *SHOULD* be expressed for CLARIAH
 
-* **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/32)**
+There are a few additional metadata fields/properties and associated vocabulary that we as CLARIAH want you to use.
+These fields are expected by the portal tools that eventually present your software and they are usually not
+automatically extractable from existing metadata schemas but need to be explicitly specified by you as the tool
+developer (in `codemeta.json` or `codemeta-harvest.json`).
 
-### Input/Output formats and languages (WIP)
+* Research domain, research phase and others... (WIP)
+    * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/32)**
+* Input/Output formats and languages (WIP)
+    * **TODO: This is still an [ongoing discussion](https://github.com/codemeta/codemeta/issues/188)**
+* Interface Types (WIP)
+    * **TODO: This is still an [ongoing discussion](https://github.com/codemeta/codemeta/issues/271)**
 
-* **TODO: This is still an [ongoing discussion](https://github.com/codemeta/codemeta/issues/188)**
+### 9. You *MAY* express extra vocabulary from schema.org
 
-### Interface Types (WIP)
-
-* **TODO: This is still an [ongoing discussion](https://github.com/codemeta/codemeta/issues/271)**
-
-### Other recommended vocabulary
-
-For links to screenshots or screencasts of the application, use the [screenshot property](https://schema.org/screenshot) with a full URL:
+For links to screenshots or screencasts of the application, use the [screenshot property](https://schema.org/screenshot) with a full URL.The links *MUST* use HTTPS.
 
 ```json
 {
@@ -164,20 +200,90 @@ For thumbnails with for example the software's logo, use [thumbnailUrl property]
 }
 ```
 
-## Service metadata
+## Service metadata requirements
 
-We have seen that providing metadata for the source code is done using `codemeta.json` in the source code repository. This is the primary source for metadata. However, for *software as a service* such as web applications, webservices and even possibly even simple web pages, we may want to provide some additional metadata *on top of* the data already provided alongside the source code.
+We have seen that providing metadata for the source code is done using `codemeta.json` (or `codemeta-harvest.json`) in
+the source code repository. This is the primary source for metadata. However, for *software as a service* such as web
+applications, webservices and even possibly even simple web pages, we may want to provide some additional metadata *on
+top of* the data already provided alongside the source code.
 
-Most notably, the source code does not know where and when it is deployed, i.e. who hosts it where. The link between the source code and the service instances comes from the [Tool Source Registry](https://github.com/CLARIAH/tool-discovery/tree/master/source-registry) and is provided by the tool producer/provider when registering. It may be that that is already enough information but it is possible have web endpoints provide extra metadata.
-
+Most notably, the source code does not know where and when it is deployed, i.e. who hosts it where. The link between the
+source code and the service instances comes from the [Tool Source
+Registry](https://github.com/CLARIAH/tool-discovery/tree/master/source-registry) (see point 2) and is provided by the tool
+producer/provider when registering. It may be that that is already enough information but it is possible have web
+endpoints provide extra metadata.
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/92)**
 
-### Provider
+### 10. Software as a service endpoints *MUST* provide metadata
+
+Sofware as a service *MUST* provide some metadata through their endpoints, at least a name, description, and provider
+(see point 11). The metadata needs not be as extensive as provided at the source code level, as by definition each
+service is associated with some source code from which it derives most metadata. The registration in the tool source
+registry (see point 2) is what links these two.
+
+Specifying service metadata can be done in a variety of ways, in alignment with existing industry standards:
+
+* Add a `<script type="application/ld+json">` block in your HTML and specify a single resource of one of the following
+   `@type`s:
+    * `schema:SoftwareApplication`
+    * `schema:WebApplication`
+    * `schema:WebAPI`
+    * `schema:WebSite`
+    * `schema:WebPage`
+  This is the most explicit form to provide service metadata and the only one that ensures that all metadata ends up in the harvested end-product.
+* Register an endpoint that provides an [OpenAPI specification](https://www.openapis.org/), our harvester will extract some metadata (the info block mainly)
+* Register a [CLAM](https://proycon.github.io/clam/) webservice, our harvester will extract some metadata.
+* Use standard HTML `<meta>` tags to express metadata, as well as a `<title>`. Our harvester will parse and extract these as much as possible.
+
+Some examples, first of an inline JSON-LD block:
+
+```html
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org/",
+    "@type": "WebApplication",
+    "name": "My tool",
+    "description": "This is a web application",
+    "url": "https://example.org/my/tool",
+    "provider": {
+        "@type": "Organization",
+        "name": "My institute"
+    }
+}
+</script>
+```
+
+Or using structured data embedded in HTML:
+
+```html
+<html itemscope itemtype="https://schema.org/WebApplication">
+<head>
+    <title>My tool</title>
+    <meta itemprop="name" content="This is a web application" />
+    <meta itemprop="description" content="This is a web application" />
+    <meta itemprop="author" content="John Doe" />
+    <meta itemprop="provider" content="My institute" />
+</head>
+```
+
+or plain HTML:
+
+```html
+<head>
+    <title>My tool</title>
+    <meta name="description" content="This is a web application" />
+    <meta name="author" content="John Doe" />
+</head>
+```
+
+### 11.  Provider
 
 Please set the `provider` property to the `Organization` that provides the software, i.e. the institutes that makes is available as a service on their infrastructure. Note that this may be distinct from the `producer` that produces the software!
 
 Syntax is analogous to `producer` as listed before.
+
+
 
 
 

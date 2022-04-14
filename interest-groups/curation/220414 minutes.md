@@ -21,7 +21,7 @@
   - vrijdag 1 juli: DataDag over metadata modellen
   - donderdag 14 juli: metadata modellen
   - 8 september: provenance I
-  - 13 oktober: provenence II
+  - 13 oktober: provenance II
   - 10 november: licenties I
   - 8 december: licenties II
   

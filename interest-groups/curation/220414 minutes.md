@@ -10,7 +10,7 @@
 
 ## Notulen
   2. FAIR Datasets
-   MW heeft zich afgemeld, dus meer hierover op de DataDag
+  - MW heeft zich afgemeld, dus meer hierover op de DataDag
 
   3. DataDag 22 april
 

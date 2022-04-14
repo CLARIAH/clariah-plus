@@ -9,3 +9,22 @@
 
 
 ## Notulen
+  2. FAIR Datasets
+   MW heeft zich afgemeld, dus meer hierover op de DataDag
+
+  3. DataDag 22 april
+
+
+  4. Planning IG Curatie bijeenkomsten
+  Voorstel:
+  donderdag 12 mei: preferred formats I
+  donderdag 9 juni: preferred formats II
+  vrijdag 1 juli: DataDag over metadata modellen
+  donderdag 14 juli: metadata modellen
+  8 september: provenance
+  13 oktober: provenence
+  10 november: licenties
+  8 december: licenties
+  
+  
+  

@@ -20,10 +20,10 @@
   - donderdag 9 juni: preferred formats II
   - vrijdag 1 juli: DataDag over metadata modellen
   - donderdag 14 juli: metadata modellen
-  - 8 september: provenance
-  - 13 oktober: provenence
-  - 10 november: licenties
-  - 8 december: licenties
+  - 8 september: provenance I
+  - 13 oktober: provenence II
+  - 10 november: licenties I
+  - 8 december: licenties II
   
   
   

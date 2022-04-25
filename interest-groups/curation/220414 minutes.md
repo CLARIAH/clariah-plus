@@ -13,7 +13,8 @@
   - MW heeft zich afgemeld, dus meer hierover op de DataDag
 
   3. DataDag 22 april
-
+- FA vraagt Douwe (Meertens) en Steven (KB) om ieder een korte presentatie te geven over hun collectie tijdens de DataDag
+- programma bekend, [pagina voor aanmeldingen gedeeld](https://dans.knaw.nl/nl/agenda/clariah-datadag/).
 
   4. Planning IG Curatie bijeenkomsten voorstel:
   - donderdag 12 mei: preferred formats I
@@ -24,6 +25,9 @@
   - 13 oktober: provenance II
   - 10 november: licenties I
   - 8 december: licenties II
+
+5. AOB
+- geen verdere opmerkingen
   
   
   

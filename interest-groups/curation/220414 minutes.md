@@ -16,7 +16,7 @@
 - FA vraagt Douwe (Meertens) en Steven (KB) om ieder een korte presentatie te geven over hun collectie tijdens de DataDag
 - programma bekend, [pagina voor aanmeldingen gedeeld](https://dans.knaw.nl/nl/agenda/clariah-datadag/).
 
-  4. Planning IG Curatie bijeenkomsten voorstel:
+4. Planning IG Curatie bijeenkomsten voorstel:
   - donderdag 12 mei: preferred formats I
   - donderdag 9 juni: preferred formats II
   - vrijdag 1 juli: DataDag over metadata modellen

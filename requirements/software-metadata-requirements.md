@@ -254,7 +254,7 @@ Some examples, first of an inline JSON-LD block:
 </script>
 ```
 
-Or using structured data embedded in HTML:
+Or using structured data embedded in HTML using [microdata](https://html.spec.whatwg.org/multipage/microdata.html):
 
 ```html
 <html itemscope itemtype="https://schema.org/WebApplication">
@@ -267,6 +267,19 @@ Or using structured data embedded in HTML:
 </head>
 ```
 
+or using [RDFa](https://www.w3.org/TR/rdfa-primer/):
+
+```html
+<html vocab="https://schema.org">
+<head>
+    <title>My tool</title>
+    <meta property="name" content="This is a web application" />
+    <meta property="description" content="This is a web application" />
+    <meta property="author" content="John Doe" />
+    <meta property="provider" content="My institute" />
+</head>
+```
+
 or plain HTML:
 
 ```html
@@ -276,6 +289,8 @@ or plain HTML:
     <meta name="author" content="John Doe" />
 </head>
 ```
+
+As you see, the current codemeta-harvester attempts to be as flexible as possible.
 
 ### 11.  Provider
 

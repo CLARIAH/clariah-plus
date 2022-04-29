@@ -98,7 +98,24 @@ The alternative is that tool providers *MAY* add and commit a `codemeta-harvest.
 
 Though use of the harvester is *RECOMMENDED*, you *MAY* also craft a `codemeta.json` by hand if you know what you are doing, or create one by filling the form of the [codemeta generator](https://codemeta.github.io/codemeta-generator/).
 In line with point 3, whenever metadata is incorrect/incomplete, it is *RECOMMENDED* to solve it at the source (point 4)
-if possible rather than in the `codemeta.json`.
+if possible rather than in the `codemeta.json`. A typical `codemeta.json` file follows JSON-LD syntax and has a structure as shown in the following fairly minimal example:
+
+```json
+{
+    "@context": [
+        "https://raw.githubusercontent.com/codemeta/codemeta/2.0/codemeta.jsonld",
+        "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/13.0/schemaorgcontext.jsonld",
+        "https://w3id.org/software-types"
+    ],
+    "@id": "https://example.org/mysoftware",
+    "@type": "SoftwareSourceCode",
+    "identifier": "mysoftware",
+    "name": "My Software",
+    "description": "My software does nice stuff",
+    "codeRepository": "https://github.com/someuser/mysoftware"
+}
+```
+See the [Appendix](#Appendix) for a more elaborate example.
 
 If no `codemeta-json` nor `codemeta-harvest.json` are provided at all, which is *NOT RECOMMENDED*, then our harvester will
 construct it on the fly, this implies that the human verification and editing stage is missing and the metadata may be
@@ -167,8 +184,48 @@ You can keep things shorter and just express an URI, but ideally this should the
     "producer": "https://huc.knaw.nl"
 }
 ```
+### 8. An interface type *SHOULD* be expressed
 
-### 8. Extra vocabulary *SHOULD* be expressed for CLARIAH
+Software may present various interfaces types for different kinds of use and different audiences. For instance, there are
+command-line tools, web-applications, desktop GUI tools, web APIs, software libraries and mobile apps. Such an interface
+type *SHOULD* be explicitly expressed in the metadata.
+
+The `targetProduct` property is used to tie software source code to specific instantiations of the software that are the
+the product of the source code, in some fashion. The following example illustrates three types of target products which
+are provided by the source code whose metadata is being described:
+
+```json
+    "targetProduct": [
+        {
+            "@type": "CommandLineApplication",
+            "name": "My software",
+            "executableName": "mysoftware"
+        },
+        {
+            "@type": "SoftwareLibrary",
+            "name": "My software",
+            "executableName": "mysoftware"
+        },
+        {
+            "@type": "WebApplication",
+            "name": "My software",
+            "url": "https://example.org/mysoftware",
+            "provider": {
+                "@type": "Organization",
+                "name": "My Organization",
+                "url": "https://example.org"
+            }
+        }
+    ],
+```
+
+**Note:** This use of `targetProduct` and the specific software interface types is an extension on top of codemeta/schema.org and not in widespread use yet. It is initially proposed in [this issue](https://github.com/codemeta/codemeta/issues/271). The software types that are not in schema.org yet are being defined in [the software types repo](https://github.com/SoftwareUnderstanding/software_types), more specifically in [this JSON-LD file](https://github.com/SoftwareUnderstanding/software_types/blob/main/software-types.jsonld). Most types are subclasses of [schema:SoftwareApplication](https://schema.org/SoftwareApplication). The property `executableName` is also additional vocabulary we created and its use is *RECOMMENDED*, it defines the executable as it can be invoked within a certain runtime-context, without any OS-specific extensions (``.exe``,``.dll``,``.so``,``.dylib``).
+
+
+See the section on [service metadata requirements](#service-metadata-requirements) to understand the relation between
+software source code and service instances like web applications, web APIs and websites.
+
+### 9. Extra vocabulary *SHOULD* be expressed for CLARIAH
 
 There are a few additional metadata fields/properties and associated vocabulary that we as CLARIAH want you to use.
 These fields are expected by the portal tools that eventually present your software and they are usually not
@@ -179,10 +236,8 @@ developer (in `codemeta.json` or `codemeta-harvest.json`).
     * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/32)**
 * Input/Output formats and languages (WIP)
     * **TODO: This is still an [ongoing discussion](https://github.com/codemeta/codemeta/issues/188)**
-* Interface Types (WIP)
-    * **TODO: This is still an [ongoing discussion](https://github.com/codemeta/codemeta/issues/271)**
 
-### 9. You *MAY* express extra vocabulary from schema.org
+### 10. You *MAY* express extra vocabulary from schema.org
 
 For links to screenshots or screencasts of the application, use the [screenshot property](https://schema.org/screenshot) with a full URL.The links *MUST* use HTTPS.
 
@@ -215,7 +270,7 @@ endpoints provide extra metadata.
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/92)**
 
-### 10. Software as a service endpoints *MUST* provide metadata
+### 11. Software as a service endpoints *MUST* provide metadata
 
 Sofware as a service *MUST* provide some metadata through their endpoints, at least a name, description, and provider
 (see point 11). The metadata needs not be as extensive as provided at the source code level, as by definition each
@@ -292,15 +347,77 @@ or plain HTML:
 
 As you see, the current codemeta-harvester attempts to be as flexible as possible.
 
-### 11.  Provider
+### 12.  Provider
 
 Please set the `provider` property to the `Organization` that provides the software, i.e. the institutes that makes is available as a service on their infrastructure. Note that this may be distinct from the `producer` that produces the software!
 
 Syntax is analogous to `producer` as listed before.
 
 
+## Appendix
 
+### Codemeta JSON-LD Example
 
+This is an example of a codemeta JSON-LD file which you can use as a template or reference:
+
+```json
+{
+    "@context": [
+        "https://raw.githubusercontent.com/codemeta/codemeta/2.0/codemeta.jsonld",
+        "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/13.0/schemaorgcontext.jsonld",
+        "https://w3id.org/software-types"
+    ],
+    "@id": "https://example.org/mysoftware",
+    "@type": "SoftwareSourceCode",
+    "identifier": "mysoftware",
+    "name": "My Software",
+    "description": "My software does nice stuff",
+    "codeRepository": "https://github.com/someuser/mysoftware",
+    "url": "https://example.org/my-software-website",
+    "issueTracker": "https://github.com/someuser/mysoftware/issues",
+    "license": "https://spdx.org/licenses/GPL-3.0-only",
+    "developmentStatus": "https://www.repostatus.org/#active",
+    "author": {
+        "@type": "Person",
+        "givenName": "John",
+        "familyName": "Doe"
+    },
+    "producer": {
+        "@type": "Organization",
+        "name": "My Organization",
+        "url": "https://example.org"
+    },
+    "maintainer": {
+        "@type": "Person",
+        "givenName": "John",
+        "familyName": "Doe"
+    },
+    "targetProduct": [
+        {
+            "@type": "CommandLineApplication",
+            "name": "My software",
+            "executableName": "mysoftware"
+        },
+        {
+            "@type": "SoftwareLibrary",
+            "name": "My software",
+            "executableName": "mysoftware"
+        },
+        {
+            "@type": "WebApplication",
+            "name": "My software",
+            "url": "https://example.org/mysoftware",
+            "provider": {
+                "@type": "Organization",
+                "name": "My Organization",
+                "url": "https://example.org"
+            }
+        }
+    ],
+    "dateCreated": "2022-04-29T14:57:10Z+0200",
+    "dateModified": "2022-04-29T14:57:10Z+0200"
+}
+```
 
 
 

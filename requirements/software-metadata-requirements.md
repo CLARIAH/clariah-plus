@@ -273,10 +273,12 @@ endpoints provide extra metadata.
 
 ### 11. Software as a service endpoints *MUST* provide metadata
 
-Sofware as a service *MUST* provide some metadata through an endpoint, at least a name, description, and provider
+Software as a service *MUST* provide some metadata through an endpoint, at least a name, description, and provider
 (see point 11). The metadata needs not be as extensive as provided at the source code level, as by definition each
 service is associated with some source code from which it derives most metadata. The registration in the tool source
 registry (see point 2) is what links these two.
+
+An endpoint with metadata *MUST* be publicly available with authentication barriers.
 
 Specifying service metadata can be done in a variety of ways, in alignment with existing industry standards:
 

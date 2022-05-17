@@ -32,19 +32,19 @@ ecosystems already have their own ways of describing software metadata
 alongside the source code. Further details on these best-practises and the
 format of the metadata is expressed in other points below.
 
-This also entails that if a third party wants to correct/revise the metadata, this should be done via the tool
+This also entails that if a third party wants to correct/revise the metadata, this is done via the tool
 developers, typically a third part can simply do a pull/merge request on the source repository.
 
 ### 2. All tools *MUST* be registered in the Tool Store Registry
 
-Tools MUST to be *registered* with the harvester via the [Tool Source
+Tools MUST be *registered* with the harvester via the [Tool Source
 Registry](https://github.com/CLARIAH/tool-discovery/tree/master/source-registry). This simple registry tells the
-harvester where to find, for each tool, both the source code repository *and* service endpoint(s) where the software is
+harvester where to find, for each tool, both the source code repository *and* any service endpoint(s) where the software is
 hosted as a service (optional). In order to register your tool, you issue a simple pull request on our git repository as
 explained in [these contribution guidelines](https://github.com/CLARIAH/tool-discovery/blob/master/CONTRIBUTING.md).
 
 Note that we make this explicit distinction between *software* and *software as a service*, and we use the more
-ambiguous term tool to describe either. The *software* metadata is described alongside its source code, the *service*
+ambiguous term *tool* to describe either. The *software* metadata is described alongside its source code, the *service*
 metadata is provided by a service endpoint and adds some information about a specific deployment of software as a
 service. Software services may be served from multiple locations (e.g. the same software may be hosted by multiple
 institutes).
@@ -74,9 +74,10 @@ Adherence to best practises also entails what has already been started in the [s
 
 ### 5. Tool providers *SHOULD* provide a codemeta.json or codemeta-harvest.json file
 
-[Codemeta](https://codemeta.github.io) is a linked data (structured data) vocabulary on top of [schema.org](https://schema.org) that is
-used for describing software metadata. This is the unified representation we use, along with some extensions and more
-domain specific vocabulary of our own (explain in later points). Metadata from all other sources (see point 4) is
+[Codemeta](https://codemeta.github.io) is a linked data (structured data) vocabulary on top of
+[schema.org](https://schema.org) that is used for describing software metadata. More specifically, it describes a
+software project on the source code level. This is the unified representation we use, along with some extensions and
+more domain specific vocabulary of our own (explain in later points). Metadata from all other sources (see point 4) is
 converted to this representation automatically by the harvester.
 
 You *SHOULD* automatically generate this `codemeta.json` file by running our `codemeta-harvester` yourself. This can be
@@ -272,7 +273,7 @@ endpoints provide extra metadata.
 
 ### 11. Software as a service endpoints *MUST* provide metadata
 
-Sofware as a service *MUST* provide some metadata through their endpoints, at least a name, description, and provider
+Sofware as a service *MUST* provide some metadata through an endpoint, at least a name, description, and provider
 (see point 11). The metadata needs not be as extensive as provided at the source code level, as by definition each
 service is associated with some source code from which it derives most metadata. The registration in the tool source
 registry (see point 2) is what links these two.

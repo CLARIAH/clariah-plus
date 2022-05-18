@@ -139,13 +139,13 @@ code change.
 Deviations from this are only acceptable for initial proof-of-concept or highly
 experimental software (see 1.3).
 
-### 10. Software *MUST* define CodeMeta software metadata along with the source code
+### 10. Software *MUST* define software metadata along with the source code
 
-1. The VCS repository must have a ``codemeta.json`` file in the root directory containing basic high-level
-   software metadata. We adopt the [CodeMeta project](https://codemeta.github.io/) to this end. The ``codemeta.json`` file is a JSON-LD file that is machine-parseable and may be
-   used by metadata harvesters, for inclusion in e.g. Ineo. Moreover, it enables citability of the
-   software. The codemeta file can be in part automatically generated from the metadata you already
-   provided for your packages (see point 5)
+Software *MUST* adhere to the [software metadata requirements](software-metadata-requirements.md) set by CLARIAH. This
+stipulates that software metadata *MUST* be specified alongside the source code in the source repository (e.g. in a
+`codemeta.json` file) and that we use [codemeta](https://codemeta.github.io) and [schema.org](https://schema.org) as
+metadata vocabulary. Automatic conversion to codemeta from various industry-standard metadata specifications are available. All
+CLARIAH software *MUST* be registered in the [CLARIAH tool source repository](https://github.com/CLARIAH/tool-discovery/tree/master/source-registry).
 
 ### 11. Software *SHOULD* be documented.
 
@@ -253,18 +253,13 @@ for this communication. Instruction can be found [here](https://github.com/CLARI
 1. [OpenAPI](https://spec.openapis.org/oas/latest.html) (aka Swagger), WADL, and CLAM are *SUGGESTED* as possible interface description languages.
 2. The endpoint *SHOULD NOT* be hindered by any authentication barriers.
 
-### 19. Services *SHOULD* expose a public endpoint providing high-level CodeMeta metadata
+### 19. Services *SHOULD* expose a public endpoint providing metadata
 
-This is the corollary of point 9 for software. The codemeta metadata for the service as a whole must be available at a
-public endpoint returning a codemeta JSON-LD file. Note that this does not describe the API (unlike point 16). This
-is used for automatic harvesting and inclusion in e.g. Ineo.
+This is the corollary of point 10 for software; software as a service *MUST* adhere to the service section of the [software metadata requirements](software-metadata-requirements.md) set by CLARIAH.
 
-The only exception to this rule is if the endpoint offered in point 16 already provides enough information to *automatically*
-derive a codemeta representation from.
-
-### 20. Services *MAY* participate in the CLARIN switchboard
-
-The CLARIN switchboard aims to direct a user with a given data file to useful services. Participation is encouraged.
+In short, this stipulates that metadata for the service as a whole must be available at a public endpoint. Compliance
+with point 18 usually automatically implies compliance with this point. All CLARIAH services *MUST* be registered in the
+[CLARIAH tool source repository](https://github.com/CLARIAH/tool-discovery/tree/master/source-registry).
 
 
 ## Glossary

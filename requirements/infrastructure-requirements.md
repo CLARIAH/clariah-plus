@@ -193,9 +193,9 @@ CLARIAH services span a shared infrastucture over multiple partners, most servic
 
 ### 12. The infrastructure provisions and renews _TLS certificates_ for the web endpoints. (Must have, [REL](#rel))
 
-Users must never get a ‘certificate expired’ error in their browser,
+Users must never get a 'certificate expired' error in their browser,
 so the infrastructure must check expirations and renew certificates automatically,
-for instance using [Let’s Encrypt](https://letsencrypt.org).
+for instance using [Let's Encrypt](https://letsencrypt.org).
 
 ### 13. The infrastructure _backs up_ all application data at an agreed upon interval and has restore functionality. (Must have, [REL](#rel))
 
@@ -225,7 +225,7 @@ Solutions include [Blue/Green](https://martinfowler.com/bliki/BlueGreenDeploymen
 ### 17. The infrastructure configuration is _declared in code_. (Should have, [AUTO](#auto))
 
 The infrastructure’s state is not the result of manual interventions (for example, running one-off commands),
-but a reflection of the configuration as it is declared in code and stored in a version control system (see also [Software Requirement 1](software-requirements.md)). 
+but a reflection of the configuration as it is declared in code and stored in a version control system (see also [Software Requirement 1](software-requirements.md)).
 Changes are checked into version control and automatically rolled out (see also [requirement 9](#9-the-infrastructure-_automatically-delivers_-new-application-versions-to-an-acceptance-andor-production-environment-must-have-autoauto),
 an approach known as [Infrastructure as Code (IaC)](https://en.wikipedia.org/wiki/Infrastructure_as_code).
 

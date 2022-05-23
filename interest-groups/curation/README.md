@@ -47,6 +47,7 @@ We use the following communication channels:
 
 ## DataDays 2022
 - [22 April at DANS, The Hague](https://dans.knaw.nl/nl/agenda/clariah-datadag/)
+- 1 July at DANS, The Hague
 
 ## Group Members
 - Mike Bryant (EHRI / King's College London)

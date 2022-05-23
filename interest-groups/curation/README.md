@@ -29,9 +29,9 @@ We use the following communication channels:
 - [17 February 2022, 11.00-12.00](https://github.com/CLARIAH/clariah-plus/blob/main/interest-groups/curation/220217%20minutes.md)
 - [11 March 2022, 11.00-12.00](https://github.com/CLARIAH/clariah-plus/blob/6da19e2eff54dbee3630828becb99b4b1b63ce68/interest-groups/curation/220311%20minutes.md)
 - [14 April 2022, 11.00-12.00](https://github.com/CLARIAH/clariah-plus/blob/main/interest-groups/curation/220414%20minutes.md)
-- [12 May 2022, 11.00-12.00](https://github.com/CLARIAH/clariah-plus/blob/32714b9471af7f06fabf0929c9f52a9e0b9ace08/interest-groups/curation/220512%20minutes.md)
-- 9 June 2022, 11.00-12.00
-- 14 July 2022, 11.00-12.00
+- [12 May 2022, 11.00-12.00: preferred formats II](https://github.com/CLARIAH/clariah-plus/blob/32714b9471af7f06fabf0929c9f52a9e0b9ace08/interest-groups/curation/220512%20minutes.md)
+- 9 June 2022, 11.00-12.00: preferred formats II
+- 14 July 2022, 11.00-12.00: metadata models II (follow-up of the DataDay on 1 July)
 - 8 September 2022, 11.00-12.00
 - 13 October 2022, 11.00-12.00
 - 10 November 2022, 11.00-12.00
@@ -47,7 +47,7 @@ We use the following communication channels:
 
 ## DataDays 2022
 - [22 April at DANS, The Hague](https://dans.knaw.nl/nl/agenda/clariah-datadag/)
-- 1 July at DANS, The Hague
+- 1 July at DANS, The Hague: Metadata models
 
 ## Group Members
 - Mike Bryant (EHRI / King's College London)

@@ -70,7 +70,7 @@ Adherence to best practises also entails what has already been started in the [s
 
 * You MUST have a proper `README.md` file in all cases (Point 2 of the [software requirements](software-requirements.md))
 * You MUST have `LICENSE.md` or `LICENSE` file in all cases (Point 3 of the [software requirements](software-requirements.md))
-* You MUST release the software periodically with clear versions numbers, a git tag, and release nots (Point 4 of the [software requirements](software-requirements.md))
+* You MUST release the software periodically with clear versions numbers, a git tag, and release notes (Point 4 of the [software requirements](software-requirements.md))
 
 ### 5. Tool providers *SHOULD* provide a codemeta.json or codemeta-harvest.json file
 

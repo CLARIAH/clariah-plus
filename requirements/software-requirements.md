@@ -234,7 +234,7 @@ local Mac or Windows machine.
 5. Application data (state) that needs to be persistent between runs *MUST* be stored separate from the container (e.g. in a
    mounted volume) (See point 3 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
 
-### 15. Service developers *SHOULD* provide an initial template when multi-container orchestration is needed
+### 16. Service developers *SHOULD* provide an initial template when multi-container orchestration is needed
 
 If a complex service consists of multiple interacting containers, the developers *SHOULD* provide an initial template in
 the form of a Docker Compose configuration or a Kubernetes deployment configuration that illustrates how the containers

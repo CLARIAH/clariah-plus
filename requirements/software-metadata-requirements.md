@@ -191,6 +191,10 @@ Software may present various interfaces types for different kinds of use and dif
 command-line tools, web-applications, desktop GUI tools, web APIs, software libraries and mobile apps. Such an interface
 type *SHOULD* be explicitly expressed in the metadata.
 
+The harvester is smart enough to detect terms such as *"web application"*, *"webservice"*, *"command line application"*
+or *"library"* from the `description` property of the metadata, and convert it to a more formal representation,
+effectively providing a quick shortcut to expressing interface type.
+
 The `targetProduct` property is used to tie software source code to specific instantiations of the software that are the
 the product of the source code, in some fashion. The following example illustrates three types of target products which
 are provided by the source code whose metadata is being described:

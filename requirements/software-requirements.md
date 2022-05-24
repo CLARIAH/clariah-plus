@@ -70,10 +70,10 @@ Periodic releases of the software *SHOULD* be released with a clear version numb
 Configuration values (such as database connection strings, API URLs or secrets) *MUST* be parameterized;
 they *MUST NOT* be hard-coded in the application source.
 
-The software *MUST* read these configuration values from [environment variables](https://12factor.net/config),
-a language- and OS-agnostic standard.
+For services, also see point 15.3.
 
 This is a corollary of [Infrastructure Requirement 4](infrastructure-requirements.md).
+
 
 ### 6. Each release of the software *SHOULD* be installable through a proper package manager
 
@@ -227,8 +227,13 @@ local Mac or Windows machine.
    [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) and other
    [best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
 3. Configuration values (such as database connection strings or API URLs) that may vary between deployments
-   *SHOULD* be parameters to the container. This is implemented through environment variables. The infrastructure in
-   turn configures applications through environment variables (see [IR4](infrastructure-requirements.md#4-the-infrastructure-configures-applications-through-environment-variables-must-have-sep) and also related to point 7).
+   *MUST* be parameters to the container. This is implemented through environment variables, as this offers a generic
+   , uniform and OS-agnostic way of specifying key/value pairs; i.e. an abstraction with high granularity. The infrastructure
+   in turn configures all applications through such environment variables (see
+   [IR4](infrastructure-requirements.md#4-the-infrastructure-configures-applications-through-environment-variables-must-have-sep)
+   and also related to point 7). When a container starts (i.e. this *MUST* be at run-time and not at build-time), these
+   variables are translated into whatever form needed for the application. Aside from the deployment-specific essentials,
+   application providers themselves decide to what extent their application is configurable at run-time.
 4. Containers should output all log information to ``stdout`` so it can be captured by the infrastructure (see IR5 and
    IR6).
 5. Application data (state) that needs to be persistent between runs *MUST* be stored separate from the container (e.g. in a

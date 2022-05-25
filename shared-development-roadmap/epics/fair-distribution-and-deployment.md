@@ -59,13 +59,13 @@ This epic addresses typical DevOps aspects, in which scalability is one that rec
 
 > Describe software, infrastructure & interoperability requirements that arise from this service or that are especially relevant for this service. These must be formulated in further detail in the corresponding requirements documents.
 
-The vast majority of the [software and infrastructure requirements](../../../../requirements/README.md) relate to this epic.
+The vast majority of the [software and infrastructure requirements](../../requirements/README.md) relate to this epic.
 
 ### Service Description
 
 > Describe the service(s) that implement(s) this epic, mention software components, data components and interoperability standards where appropriate.
 
-This epic first of all results in clear [software and infrastructure requirements](../../../../requirements/README.md),
+This epic first of all results in clear [software and infrastructure requirements](../../requirements/README.md),
 that formulate how CLARIAH developers should package, publish software and how CLARIAH infrastructure operators can be
 deploy these in their infrastructure. WE aim to align with existing industry-standards and best practises.
 

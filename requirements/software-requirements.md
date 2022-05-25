@@ -6,7 +6,7 @@ This document intends to specify minimal technical requirements for CLARIAH
 software and software services. It is aimed at developers and external
 evaluators. It provides a minimal list of specific and directly actionable criteria to hold the software
 against. The aim is to ensure a certain level of software quality and
-sustainability, and to lay out basic requiments needed for interoperability
+sustainability, and to lay out basic requirements needed for interoperability
 within the larger CLARIAH infrastructure.
 Only software that is built and maintained well will get used and thus provide value.
 
@@ -248,10 +248,12 @@ CLARIAH's authentication and authorization infrastructure. That is, they should 
 [SATOSA](https://github.com/IdentityPython/SATOSA) Authentication Provider. It is *RECOMMENDED* to use OpenID Connect
 for this communication. Instruction can be found [here](https://github.com/CLARIAH/IG-DevOps/tree/main/docs/authentication).
 
+
+
 ### 18. Services *MUST* expose a public endpoint providing their specification
 
 1. [OpenAPI](https://spec.openapis.org/oas/latest.html) (aka Swagger), WADL, and CLAM are *SUGGESTED* as possible interface description languages.
-2. The endpoint *SHOULD NOT* be hindered by any authentication barriers.
+2. The specification endpoint *SHOULD NOT* be hindered by any authentication barriers.
 
 ### 19. Services *SHOULD* expose a public endpoint providing metadata
 

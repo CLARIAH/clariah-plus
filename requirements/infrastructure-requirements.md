@@ -161,7 +161,7 @@ Logs can be made available through a command-line and/or a web interface.
 
 ### 7. The infrastructure *MUST* _automatically build_ the application. ([AUTO](#auto))
 
-When commits are pushed to the application source code or releases are tagged, the infrastructure must automatically 
+When commits are pushed to the application source code or releases are tagged, the infrastructure must automatically
 (re)build the application, producing an OCI container build artefact.
 
 ### 8. The infrastructure *MUST* _automatically run application tests_ when commits are pushed to the application repository. ([AUTO](#auto))
@@ -263,7 +263,7 @@ When usage of the application increases and decreases, the infrastructure automa
 
 In the case of horizontal scaling (scaling in and out) this requires load-balancing the requests to the instances.
 
-### 23. The infrastructure *COULD* have an optimized way of hosting _static files_. ([REL](#rel))
+### 23. The infrastructure *MAY* have an optimized way of hosting _static files_. ([REL](#rel))
 
 If the infrastructure is able to directly serve static files, without configuring a web server first,
 this speeds up delivery.

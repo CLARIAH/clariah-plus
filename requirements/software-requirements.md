@@ -48,7 +48,10 @@ interpreted as described in [RFC
 The full license *MUST* be stored in a ``LICENSE`` (``LICENSE.md``) file in the root of the VCS, the same format
 recommendations and restrictions apply as to the ``README`` file.
 
-The maintainer of the software *MUST* ensure the license is not in conflict with the licenses of the dependencies they use.
+The maintainer of the software *MUST* ensure the license is not in conflict
+with the licenses of the dependencies they use. Tools such as the [JLA -
+Compatibility Checker](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-compatibility-checker)
+can help identify license conflicts.
 
 * See the list of [OSI-approved licenses](https://opensource.org/licenses). It is *RECOMMENDED* to pick one of the licenses mentioned under *popular licenses* there.
 

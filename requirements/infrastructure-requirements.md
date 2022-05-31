@@ -161,19 +161,22 @@ Logs can be made available through a command-line and/or a web interface.
 
 ### 7. The infrastructure *MUST* _automatically build_ the application. ([AUTO](#auto))
 
-When commits are pushed to the application source code or releases are tagged, the infrastructure must automatically
-(re)build the application, producing an OCI container build artefact.
+When software is released, through tagging in the Version Control System (VCS), the infrastructure must automatically
+(re)build the application, producing an OCI container build artefact. This facilitates *continuous deployment*.
 
 ### 8. The infrastructure *MUST* _automatically run application tests_ when commits are pushed to the application repository. ([AUTO](#auto))
 
-Automated tests prevent regressions only when they are run automatically on a standardized environment.
+When commits are pushed to the source code in a Version Control System (VCS),
+the infrastructure must automatically run the test suite associated with the
+software (*continuous integration*). Automated tests prevent regressions only
+when they are run automatically on a standardized environment.
 
 (This corresponds to point 8 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 9. The infrastructure *MUST* _automatically deliver_ new application versions to an acceptance and/or production environment. ([AUTO](#auto))
 
 Manual steps slow down delivery to users.
-Preferably, code changes that have been committed, tested (requirements 7 and 8) and approved are delivered continuously and automatically to users at the production environment.
+Preferably, code changes that have been committed, tested (requirements 7 and 8) and approved are delivered continuously and automatically to users at the production environment (*continuous deployment*).
 
 ### 10. The infrastructure *MUST* be _highly available_ corresponding to the infrastructure supplier’s SLA ([REL](#rel))
 

@@ -237,7 +237,7 @@ Containers are self-sufficient (without external dependencies) and uniform
 infrastructure specifics (such as the OS used by the infrastructure provider).
 The same container can be run on any Linux distribution, cloud provider
 (including AWS, Azure, Google and DigitalOcean) as well as on a developer’s
-local Mac or Windows machine.
+local Mac or Windows machine. Like point 6, this ensures that software *and all its dependencies* are installable through one single command.
 
 (This corresponds to [point 1](infrastructure-requirements.md#1-the-infrastructure-runs-applications-that-are-packaged-as-oci-containers-must-have-sep) of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
 
@@ -253,6 +253,7 @@ local Mac or Windows machine.
    IR6).
 5. Application data (state) that needs to be persistent between runs *MUST* be stored separate from the container (e.g. in a
    mounted volume) (See point 3 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
+6. The container build process *SHOULD* make use proper packaging ecosystems for installing its individual components. Providing a container *SHOULD NOT* be considered a substitute for component packaging (see point 6, which is to be considered as complementary to or a prerequisite for this one).
 
 ### 16. Service developers *SHOULD* provide an initial template when multi-container orchestration is needed
 

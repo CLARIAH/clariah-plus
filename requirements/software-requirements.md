@@ -80,32 +80,49 @@ This is a corollary of [Infrastructure Requirement 4](infrastructure-requirement
 
 ### 6. Each release of the software *SHOULD* be installable through a proper package manager
 
-When the software fits in a certain language ecosystem or targets a very
-specific distribution/OS, it *MUST* be packaged in a package manager
+When the software is of a type that fits a certain language ecosystem (e.g. a
+software library in a particular programming language) or the software targets
+a very specific distribution/OS, then it *MUST* be packaged for a package manager
 fitting the language or OS. This should ensure the software *and all of its
 dependencies* are installable through *one single command*:
 
-* Python software *SHOULD* be packaged for and submitted to the [Python Package Index](https://pypi.org), installable through ``pip``.
-* R software should be packaged for and submitted to [CRAN](https://cran.r-project.org/).
-* Perl software *SHOULD* be packaged for and submitted to [CPAN](https://www.perl.org/cpan.html).
+* Python libraries and command-line tools *SHOULD* be packaged for and submitted to the [Python Package Index](https://pypi.org), installable through ``pip``.
+* R libraries should be packaged for and submitted to [CRAN](https://cran.r-project.org/).
+* Perl libraries *SHOULD* be packaged for and submitted to [CPAN](https://www.perl.org/cpan.html).
 * Java libraries *SHOULD* be packaged for and submitted to Maven Central, installable through ``mvn``.
-* Rust software *SHOULD* be packaged for and submitted to [crates.io](https://crates.io/), installable through ``cargo``.
-* NodeJS software *SHOULD* be packaged for and submitted to [npm](https://www.npmjs.com/), installable through ``npm``.
+* Rust libraries and command-line tools *SHOULD* be packaged for and submitted to [crates.io](https://crates.io/), installable through ``cargo``.
+* NodeJS libraries *SHOULD* be packaged for and submitted to [npm](https://www.npmjs.com/), installable through ``npm``.
 * C/C++ software has no specific ecosystem for packaging. The use of
-  distribution-specific packages is *RECOMMENDED*, targeting specific Linux
-  distributions. The use of a standardized build system such as the autotools,
+  distribution-specific packages as described further below is then *RECOMMENDED*
+  The use of a standardized build system such as the autotools,
   cmake, or make is *RECOMMENDED*. Static linking *MAY* be an appropriate solution
   to handle dependencies.
-* Android software *SHOULD* be submitted to [Google Play](https://play.google.com) and alternatively also [F-Droid](https://f-droid.org/).
-* iOS software *SHOULD* be submitted to the App Store.
+* (this list is not exhaustive)
 
 This step may combine both the building of software (compilation) as well the
 installation. This rule shall only be deviated from if there is no suitable
 packaging ecosystem for the software (C/C++) or if the software is not a fit
 for the packaging ecosystem, such as the software being too high-level (e.g.  a
 complex web application) and consisting of too many components for any
-packaging ecosystem. In such a case, the individual components should still be
-packaged as much as possible.
+single packaging ecosystem. In such a case, the individual components
+should still be packaged as much as possible, and the ensemble as-a-whole
+made available through containerisation for ease of distribution and
+deployment (See point 15)
+
+If software has a high reusability potential and is often used by users of a certain
+OS/distribution, then it is *RECOMMENDED* to package it for that
+OS/distribution. Whether this is worth the extra investment is to be assessed
+individually. Unlike language-specific ecosystems, such a submission process
+generally acts as an extra quality control as there is a human review stage.
+
+* [Alpine Linux](https://wiki.alpinelinux.org/wiki/Creating_an_Alpine_package) (apk)
+* [Debian Linux](https://wiki.debian.org/Packaging) (`deb` for use with `apt`)
+  * Packages submitted to Debian will eventually also land in Debian-derivates like Ubuntu Linux
+* [Red Hat Linux](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/packaging_and_distributing_software/packaging-software_packaging-and-distributing-software) (`rpm` for use with `yum`)
+* There are many other Linux/BSD distributions which can be potential targets.
+* [Homebrew](https://brew.sh/) for macOS
+* Android apps *SHOULD* be submitted to [Google Play](https://play.google.com) and alternatively also to [F-Droid](https://f-droid.org/).
+* iOS apps *SHOULD* be submitted to the App Store.
 
 ### 7. The software *SHOULD* have a public support channel
 

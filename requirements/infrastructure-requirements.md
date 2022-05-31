@@ -208,14 +208,14 @@ If the infrastructure stores personal data, for instance logs, this must be done
 
 (This relates to point 13.4 of the [Software/Service Requirements (SR)](software-requirements.md))
 
-### 15. The infrastructure *MUST* be _secure_. ([REL](#rel))
+### 15. The infrastructure *MUST* be created and maintained with  _security_ in mind. ([REL](#rel))
 
-Access to the infrastructure must be restricted to authorized persons.
+Any administrative access to the infrastructure itself *MUST* be restricted to a minimum of authorized persons.
 Preferably, only automated processes have access to change the infrastructure (see requirement 17).
 
-All infrastructure and application components (such as containers) are automatically scanned for security vulnerabilities.
+All infrastructure and application components (such as containers) *SHOULD* be automatically scanned for security vulnerabilities.
 
-All software components, including the infrastructure’s OS and other packages, are continuously updated to incorporate security patches.
+All software components, including the infrastructure’s OS and other packages, *MUST* be continuously updated to incorporate security patches.
 
 ### 16. The infrastructure *SHOULD* support _zero-downtime deployments_. ([REL](#rel))
 

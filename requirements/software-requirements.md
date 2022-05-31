@@ -94,13 +94,16 @@ dependencies* are installable through *one single command*:
 * NodeJS libraries *SHOULD* be packaged for and submitted to [npm](https://www.npmjs.com/), installable through ``npm``.
 * C/C++ software has no specific ecosystem for packaging. The use of
   distribution-specific packages as described further below is then *RECOMMENDED*
-  The use of a standardized build system such as the autotools,
+  The use of an standardized build system such as the autotools,
   cmake, or make is *RECOMMENDED*. Static linking *MAY* be an appropriate solution
   to handle dependencies.
 * (this list is not exhaustive)
 
 This step may combine both the building of software (compilation) as well the
-installation. This rule shall only be deviated from if there is no suitable
+installation. If any building/compilation is performed, then the build process
+*MUST* make use of an *automated* and *standardized* build system. 
+
+Packaging for a package manager shall only be deviated from if there is no suitable
 packaging ecosystem for the software (C/C++) or if the software is not a fit
 for the packaging ecosystem, such as the software being too high-level (e.g.  a
 complex web application) and consisting of too many components for any
@@ -123,6 +126,7 @@ generally acts as an extra quality control as there is a human review stage.
 * [Homebrew](https://brew.sh/) for macOS
 * Android apps *SHOULD* be submitted to [Google Play](https://play.google.com) and alternatively also to [F-Droid](https://f-droid.org/).
 * iOS apps *SHOULD* be submitted to the App Store.
+
 
 ### 7. The software *SHOULD* have a public support channel
 

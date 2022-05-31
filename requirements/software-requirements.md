@@ -50,7 +50,7 @@ recommendations and restrictions apply as to the ``README`` file.
 
 The maintainer of the software *MUST* ensure the license is not in conflict with the licenses of the dependencies they use.
 
-* See the list of [OSI-approved licenses](https://opensource.org/licenses)
+* See the list of [OSI-approved licenses](https://opensource.org/licenses). It is *RECOMMENDED* to pick one of the licenses mentioned under *popular licenses* there.
 
 ### 4. The software *MUST* be released periodically with clear version numbers
 

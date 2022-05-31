@@ -254,6 +254,7 @@ for this communication. Instruction can be found [here](https://github.com/CLARI
 
 1. [OpenAPI](https://spec.openapis.org/oas/latest.html) (aka Swagger), WADL, and CLAM are *SUGGESTED* as possible interface description languages.
 2. The specification endpoint *SHOULD NOT* be hindered by any authentication barriers.
+3. The specification endpoint *SHOULD* be automatically generated
 
 ### 19. Services *SHOULD* expose a public endpoint providing metadata
 

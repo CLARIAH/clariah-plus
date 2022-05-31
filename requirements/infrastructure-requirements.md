@@ -270,7 +270,6 @@ In the case of horizontal scaling (scaling in and out) this requires load-balanc
 
 If the infrastructure is able to directly serve static files, without configuring a web server first,
 this speeds up delivery.
-Moreover, caching these files in a third-party Content Delivery Network (CDN) will reduce latency for users.
 This is useful mainly for static HTML/JavaScript applications.
 
 ## License

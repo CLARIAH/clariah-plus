@@ -53,7 +53,7 @@ with the licenses of the dependencies they use. Tools such as the [JLA -
 Compatibility Checker](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-compatibility-checker)
 can help identify license conflicts.
 
-* See the list of [OSI-approved licenses](https://opensource.org/licenses). It is *RECOMMENDED* to pick one of the licenses mentioned under *popular licenses* there.
+See the list of [OSI-approved licenses](https://opensource.org/licenses). It is *RECOMMENDED* to pick one of the licenses mentioned under *popular licenses* there.
 
 ### 4. The software *MUST* be released periodically with clear version numbers
 
@@ -65,7 +65,7 @@ Periodic releases of the software *SHOULD* be released with a clear version numb
    platforms such a GitHub, GitLab, Bitbucket.
 3. Each release *must* be accompanied by release notes describing on a more
    general level what is new in the release. Again, the release mechanisms by
-   major CVS platforms provide for this. Alternatively you *MAY* use a ``NEWS``
+   major VCS platforms provide for this. Alternatively you *MAY* use a ``NEWS``
    or a ``CHANGELOG`` file.
 
 ### 5. The software *MUST* separate code from configuration.
@@ -92,12 +92,12 @@ dependencies* are installable through *one single command*:
 * Rust software *SHOULD* be packaged for and submitted to [crates.io](https://crates.io/), installable through ``cargo``.
 * NodeJS software *SHOULD* be packaged for and submitted to [npm](https://www.npmjs.com/), installable through ``npm``.
 * C/C++ software has no specific ecosystem for packaging. The use of
-  distribution-specific packages is *RECOMMENDED*, targetting specific Linux
+  distribution-specific packages is *RECOMMENDED*, targeting specific Linux
   distributions. The use of a standardized build system such as the autotools,
   cmake, or make is *RECOMMENDED*. Static linking *MAY* be an appropriate solution
-  to handle dependecies.
+  to handle dependencies.
 * Android software *SHOULD* be submitted to [Google Play](https://play.google.com) and alternatively also [F-Droid](https://f-droid.org/).
-* iOS sofware *SHOULD* be submitted to the App Store.
+* iOS software *SHOULD* be submitted to the App Store.
 
 This step may combine both the building of software (compilation) as well the
 installation. This rule shall only be deviated from if there is no suitable
@@ -116,7 +116,7 @@ archive is available.
 Users can turn to this place for reporting any bugs they find in the software,
 or optionally post requests for new features. The public nature ensures that a
 public knowledge base is constructed where users can find answers to earlier
-posted questions, aleviating the burden on both the users as well as the
+posted questions, alleviating the burden on both the users as well as the
 developers. The public support channel also gives an indication of community
 interest in the project.
 
@@ -125,7 +125,7 @@ and unsupported, which must be clearly indicated in the README (see 2.3).
 
 ### 8. Software *SHOULD* be reusable
 
-To foster reusability, any meaningful reusable component of your sofware *SHOULD* be split into reusable software libraries/tools rather than be part of an
+To foster reusability, any meaningful reusable component of your software *SHOULD* be split into reusable software libraries/tools rather than be part of an
 indivisible monolithical whole. This ensures the work can be reused where
 appropriate.
 
@@ -181,7 +181,7 @@ file in the version control root directory file with guidelines contributors to 
 The reverse also holds true: It is *RECOMMENDED* to contribute to (third-party) open source software. This is also in line with
 point 8 regarding reusability. When making changes to existing software that may be to other users' benefit, you *SHOULD*
 offer those changes back to the upstream maintainer(s) (typically using a pull/merge request, or by mailing a patch).
-You *SHOULD NOT* create a hard fork of the project unless there are unbridgable differences with the original maintainer or the direction of the project.
+You *SHOULD NOT* create a hard fork of the project unless there are unbridgeable differences with the original maintainer or the direction of the project.
 
 The use of any software that is not or no longer maintained is *NOT RECOMMENDED*.
 

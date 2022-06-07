@@ -264,8 +264,8 @@ For thumbnails with for example the software's logo, use [thumbnailUrl property]
 
 We have seen that providing metadata for the source code is done using `codemeta.json` (or `codemeta-harvest.json`) in
 the source code repository. This is the primary source for metadata. However, for *software as a service* such as web
-applications, webservices and even possibly even simple web pages, we may want to provide some additional metadata *on
-top of* the data already provided alongside the source code.
+applications, webservices and possibly even simple web pages, we may want to provide some additional metadata *on top of*
+the data already provided alongside the source code.
 
 Most notably, the source code does not know where and when it is deployed, i.e. who hosts it where. The link between the
 source code and the service instances comes from the [Tool Source

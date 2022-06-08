@@ -48,9 +48,12 @@ interpreted as described in [RFC
 The full license *MUST* be stored in a ``LICENSE`` (``LICENSE.md``) file in the root of the VCS, the same format
 recommendations and restrictions apply as to the ``README`` file.
 
-The maintainer of the software *MUST* ensure the license is not in conflict with the licenses of the dependencies they use.
+The maintainer of the software *MUST* ensure the license is not in conflict
+with the licenses of the dependencies they use. Tools such as the [JLA -
+Compatibility Checker](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-compatibility-checker)
+can help identify license conflicts.
 
-* See the list of [OSI-approved licenses](https://opensource.org/licenses)
+See the list of [OSI-approved licenses](https://opensource.org/licenses). It is *RECOMMENDED* to pick one of the licenses mentioned under *popular licenses* there.
 
 ### 4. The software *MUST* be released periodically with clear version numbers
 
@@ -62,7 +65,7 @@ Periodic releases of the software *SHOULD* be released with a clear version numb
    platforms such a GitHub, GitLab, Bitbucket.
 3. Each release *must* be accompanied by release notes describing on a more
    general level what is new in the release. Again, the release mechanisms by
-   major CVS platforms provide for this. Alternatively you *MAY* use a ``NEWS``
+   major VCS platforms provide for this. Alternatively you *MAY* use a ``NEWS``
    or a ``CHANGELOG`` file.
 
 ### 5. The software *MUST* separate code from configuration.
@@ -77,32 +80,53 @@ This is a corollary of [Infrastructure Requirement 4](infrastructure-requirement
 
 ### 6. Each release of the software *SHOULD* be installable through a proper package manager
 
-When the software fits in a certain language ecosystem or targets a very
-specific distribution/OS, it *MUST* be packaged in a package manager
+When the software is of a type that fits a certain language ecosystem (e.g. a
+software library in a particular programming language) or the software targets
+a very specific distribution/OS, then it *MUST* be packaged for a package manager
 fitting the language or OS. This should ensure the software *and all of its
 dependencies* are installable through *one single command*:
 
-* Python software *SHOULD* be packaged for and submitted to the [Python Package Index](https://pypi.org), installable through ``pip``.
-* R software should be packaged for and submitted to [CRAN](https://cran.r-project.org/).
-* Perl software *SHOULD* be packaged for and submitted to [CPAN](https://www.perl.org/cpan.html).
+* Python libraries and command-line tools *SHOULD* be packaged for and submitted to the [Python Package Index](https://pypi.org), installable through ``pip``.
+* R libraries should be packaged for and submitted to [CRAN](https://cran.r-project.org/).
+* Perl libraries *SHOULD* be packaged for and submitted to [CPAN](https://www.perl.org/cpan.html).
 * Java libraries *SHOULD* be packaged for and submitted to Maven Central, installable through ``mvn``.
-* Rust software *SHOULD* be packaged for and submitted to [crates.io](https://crates.io/), installable through ``cargo``.
-* NodeJS software *SHOULD* be packaged for and submitted to [npm](https://www.npmjs.com/), installable through ``npm``.
+* Rust libraries and command-line tools *SHOULD* be packaged for and submitted to [crates.io](https://crates.io/), installable through ``cargo``.
+* NodeJS libraries *SHOULD* be packaged for and submitted to [npm](https://www.npmjs.com/), installable through ``npm``.
 * C/C++ software has no specific ecosystem for packaging. The use of
-  distribution-specific packages is *RECOMMENDED*, targetting specific Linux
-  distributions. The use of a standardized build system such as the autotools,
+  distribution-specific packages as described further below is then *RECOMMENDED*
+  The use of a standardized build system such as the autotools,
   cmake, or make is *RECOMMENDED*. Static linking *MAY* be an appropriate solution
-  to handle dependecies.
-* Android software *SHOULD* be submitted to [Google Play](https://play.google.com) and alternatively also [F-Droid](https://f-droid.org/).
-* iOS sofware *SHOULD* be submitted to the App Store.
+  to handle dependencies.
+* (this list is not exhaustive)
 
 This step may combine both the building of software (compilation) as well the
-installation. This rule shall only be deviated from if there is no suitable
+installation. If any building/compilation is performed, then the build process
+*MUST* make use of an *automated* and *standardized* build system. 
+
+Packaging for a package manager shall only be deviated from if there is no suitable
 packaging ecosystem for the software (C/C++) or if the software is not a fit
 for the packaging ecosystem, such as the software being too high-level (e.g.  a
 complex web application) and consisting of too many components for any
-packaging ecosystem. In such a case, the individual components should still be
-packaged as much as possible.
+single packaging ecosystem. In such a case, the individual components
+should still be packaged as much as possible, and the ensemble as-a-whole
+made available through containerisation for ease of distribution and
+deployment (See point 15)
+
+If software has a high reusability potential and is often used by users of a certain
+OS/distribution, then it is *RECOMMENDED* to package it for that
+OS/distribution. Whether this is worth the extra investment is to be assessed
+individually. Unlike language-specific ecosystems, such a submission process
+generally acts as an extra quality control as there is a human review stage.
+
+* [Alpine Linux](https://wiki.alpinelinux.org/wiki/Creating_an_Alpine_package) (apk)
+* [Debian Linux](https://wiki.debian.org/Packaging) (`deb` for use with `apt`)
+  * Packages submitted to Debian will eventually also land in Debian-derivates like Ubuntu Linux
+* [Red Hat Linux](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/packaging_and_distributing_software/packaging-software_packaging-and-distributing-software) (`rpm` for use with `yum`)
+* There are many other Linux/BSD distributions which can be potential targets.
+* [Homebrew](https://brew.sh/) for macOS
+* Android apps *SHOULD* be submitted to [Google Play](https://play.google.com) and alternatively also to [F-Droid](https://f-droid.org/).
+* iOS apps *SHOULD* be submitted to the App Store.
+
 
 ### 7. The software *SHOULD* have a public support channel
 
@@ -113,7 +137,7 @@ archive is available.
 Users can turn to this place for reporting any bugs they find in the software,
 or optionally post requests for new features. The public nature ensures that a
 public knowledge base is constructed where users can find answers to earlier
-posted questions, aleviating the burden on both the users as well as the
+posted questions, alleviating the burden on both the users as well as the
 developers. The public support channel also gives an indication of community
 interest in the project.
 
@@ -122,7 +146,7 @@ and unsupported, which must be clearly indicated in the README (see 2.3).
 
 ### 8. Software *SHOULD* be reusable
 
-To foster reusability, any meaningful reusable component of your sofware *SHOULD* be split into reusable software libraries/tools rather than be part of an
+To foster reusability, any meaningful reusable component of your software *SHOULD* be split into reusable software libraries/tools rather than be part of an
 indivisible monolithical whole. This ensures the work can be reused where
 appropriate.
 
@@ -178,7 +202,7 @@ file in the version control root directory file with guidelines contributors to 
 The reverse also holds true: It is *RECOMMENDED* to contribute to (third-party) open source software. This is also in line with
 point 8 regarding reusability. When making changes to existing software that may be to other users' benefit, you *SHOULD*
 offer those changes back to the upstream maintainer(s) (typically using a pull/merge request, or by mailing a patch).
-You *SHOULD NOT* create a hard fork of the project unless there are unbridgable differences with the original maintainer or the direction of the project.
+You *SHOULD NOT* create a hard fork of the project unless there are unbridgeable differences with the original maintainer or the direction of the project.
 
 The use of any software that is not or no longer maintained is *NOT RECOMMENDED*.
 
@@ -217,7 +241,7 @@ Containers are self-sufficient (without external dependencies) and uniform
 infrastructure specifics (such as the OS used by the infrastructure provider).
 The same container can be run on any Linux distribution, cloud provider
 (including AWS, Azure, Google and DigitalOcean) as well as on a developer’s
-local Mac or Windows machine.
+local Mac or Windows machine. Like point 6, this ensures that software *and all its dependencies* are installable through one single command.
 
 (This corresponds to [point 1](infrastructure-requirements.md#1-the-infrastructure-runs-applications-that-are-packaged-as-oci-containers-must-have-sep) of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
 
@@ -233,6 +257,7 @@ local Mac or Windows machine.
    IR6).
 5. Application data (state) that needs to be persistent between runs *MUST* be stored separate from the container (e.g. in a
    mounted volume) (See point 3 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
+6. The container build process *SHOULD* use proper packaging ecosystems for installing its individual components. Providing a container *SHOULD NOT* be considered a substitute for component packaging (see point 6, which is to be considered as complementary to or a prerequisite for this one).
 
 ### 16. Service developers *SHOULD* provide an initial template when multi-container orchestration is needed
 
@@ -254,6 +279,7 @@ for this communication. Instruction can be found [here](https://github.com/CLARI
 
 1. [OpenAPI](https://spec.openapis.org/oas/latest.html) (aka Swagger), WADL, and CLAM are *SUGGESTED* as possible interface description languages.
 2. The specification endpoint *SHOULD NOT* be hindered by any authentication barriers.
+3. The specification endpoint *SHOULD* be automatically generated.
 
 ### 19. Services *SHOULD* expose a public endpoint providing metadata
 

@@ -161,19 +161,22 @@ Logs can be made available through a command-line and/or a web interface.
 
 ### 7. The infrastructure *MUST* _automatically build_ the application. ([AUTO](#auto))
 
-When commits are pushed to the application source code or releases are tagged, the infrastructure must automatically
-(re)build the application, producing an OCI container build artefact.
+When software is released, through tagging in the Version Control System (VCS), the infrastructure must automatically
+(re)build the application, producing an OCI container build artefact. This facilitates *continuous delivery and deployment*.
 
 ### 8. The infrastructure *MUST* _automatically run application tests_ when commits are pushed to the application repository. ([AUTO](#auto))
 
-Automated tests prevent regressions only when they are run automatically on a standardized environment.
+When commits are pushed to the source code in a Version Control System (VCS),
+the infrastructure must automatically run the test suite associated with the
+software (*continuous integration*). Automated tests prevent regressions only
+when they are run automatically on a standardized environment.
 
 (This corresponds to point 8 of the [Software/Service Requirements (SR)](software-requirements.md))
 
 ### 9. The infrastructure *MUST* _automatically deliver_ new application versions to an acceptance and/or production environment. ([AUTO](#auto))
 
 Manual steps slow down delivery to users.
-Preferably, code changes that have been committed, tested (requirements 7 and 8) and approved are delivered continuously and automatically to users at the production environment.
+Preferably, code changes that have been committed, tested (requirement 8) and approved are delivered continuously and automatically to users at the production environment (*continuous deployment*).
 
 ### 10. The infrastructure *MUST* be _highly available_ corresponding to the infrastructure supplier’s SLA ([REL](#rel))
 
@@ -205,14 +208,14 @@ If the infrastructure stores personal data, for instance logs, this must be done
 
 (This relates to point 13.4 of the [Software/Service Requirements (SR)](software-requirements.md))
 
-### 15. The infrastructure *MUST* be _secure_. ([REL](#rel))
+### 15. The infrastructure *MUST* be configured with _security_ in mind. ([REL](#rel))
 
-Access to the infrastructure must be restricted to authorized persons.
+Any administrative access to the infrastructure itself *MUST* be restricted to a minimum of authorized persons.
 Preferably, only automated processes have access to change the infrastructure (see requirement 17).
 
-All infrastructure and application components (such as containers) are automatically scanned for security vulnerabilities.
+All infrastructure and application components (such as containers) *SHOULD* be automatically scanned for security vulnerabilities.
 
-All software components, including the infrastructure’s OS and other packages, are continuously updated to incorporate security patches.
+All software components, including the infrastructure’s OS and other packages, *MUST* be continuously updated to incorporate security patches.
 
 ### 16. The infrastructure *SHOULD* support _zero-downtime deployments_. ([REL](#rel))
 
@@ -267,7 +270,6 @@ In the case of horizontal scaling (scaling in and out) this requires load-balanc
 
 If the infrastructure is able to directly serve static files, without configuring a web server first,
 this speeds up delivery.
-Moreover, caching these files in a third-party Content Delivery Network (CDN) will reduce latency for users.
 This is useful mainly for static HTML/JavaScript applications.
 
 ## License

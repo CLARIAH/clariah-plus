@@ -94,7 +94,7 @@ dependencies* are installable through *one single command*:
 * NodeJS libraries *SHOULD* be packaged for and submitted to [npm](https://www.npmjs.com/), installable through ``npm``.
 * C/C++ software has no specific ecosystem for packaging. The use of
   distribution-specific packages as described further below is then *RECOMMENDED*
-  The use of an standardized build system such as the autotools,
+  The use of a standardized build system such as the autotools,
   cmake, or make is *RECOMMENDED*. Static linking *MAY* be an appropriate solution
   to handle dependencies.
 * (this list is not exhaustive)
@@ -257,7 +257,7 @@ local Mac or Windows machine. Like point 6, this ensures that software *and all 
    IR6).
 5. Application data (state) that needs to be persistent between runs *MUST* be stored separate from the container (e.g. in a
    mounted volume) (See point 3 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
-6. The container build process *SHOULD* make use proper packaging ecosystems for installing its individual components. Providing a container *SHOULD NOT* be considered a substitute for component packaging (see point 6, which is to be considered as complementary to or a prerequisite for this one).
+6. The container build process *SHOULD* use proper packaging ecosystems for installing its individual components. Providing a container *SHOULD NOT* be considered a substitute for component packaging (see point 6, which is to be considered as complementary to or a prerequisite for this one).
 
 ### 16. Service developers *SHOULD* provide an initial template when multi-container orchestration is needed
 
@@ -279,7 +279,7 @@ for this communication. Instruction can be found [here](https://github.com/CLARI
 
 1. [OpenAPI](https://spec.openapis.org/oas/latest.html) (aka Swagger), WADL, and CLAM are *SUGGESTED* as possible interface description languages.
 2. The specification endpoint *SHOULD NOT* be hindered by any authentication barriers.
-3. The specification endpoint *SHOULD* be automatically generated
+3. The specification endpoint *SHOULD* be automatically generated.
 
 ### 19. Services *SHOULD* expose a public endpoint providing metadata
 

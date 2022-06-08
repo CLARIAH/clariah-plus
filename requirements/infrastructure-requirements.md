@@ -162,7 +162,7 @@ Logs can be made available through a command-line and/or a web interface.
 ### 7. The infrastructure *MUST* _automatically build_ the application. ([AUTO](#auto))
 
 When software is released, through tagging in the Version Control System (VCS), the infrastructure must automatically
-(re)build the application, producing an OCI container build artefact. This facilitates *continuous deployment*.
+(re)build the application, producing an OCI container build artefact. This facilitates *continuous delivery and deployment*.
 
 ### 8. The infrastructure *MUST* _automatically run application tests_ when commits are pushed to the application repository. ([AUTO](#auto))
 
@@ -176,7 +176,7 @@ when they are run automatically on a standardized environment.
 ### 9. The infrastructure *MUST* _automatically deliver_ new application versions to an acceptance and/or production environment. ([AUTO](#auto))
 
 Manual steps slow down delivery to users.
-Preferably, code changes that have been committed, tested (requirements 7 and 8) and approved are delivered continuously and automatically to users at the production environment (*continuous deployment*).
+Preferably, code changes that have been committed, tested (requirement 8) and approved are delivered continuously and automatically to users at the production environment (*continuous deployment*).
 
 ### 10. The infrastructure *MUST* be _highly available_ corresponding to the infrastructure supplier’s SLA ([REL](#rel))
 
@@ -208,7 +208,7 @@ If the infrastructure stores personal data, for instance logs, this must be done
 
 (This relates to point 13.4 of the [Software/Service Requirements (SR)](software-requirements.md))
 
-### 15. The infrastructure *MUST* be created and maintained with  _security_ in mind. ([REL](#rel))
+### 15. The infrastructure *MUST* be configured with _security_ in mind. ([REL](#rel))
 
 Any administrative access to the infrastructure itself *MUST* be restricted to a minimum of authorized persons.
 Preferably, only automated processes have access to change the infrastructure (see requirement 17).

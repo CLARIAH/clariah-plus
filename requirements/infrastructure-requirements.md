@@ -260,7 +260,7 @@ It is therefore best if anyone can submit issues and propose changes.
 Automating all steps for launching new applications (including registering new hostnames and configuring DNS records)
 makes that process more reliable.
 
-### 22. The infrastructure *SHOULD* _automatically scales_ when usage changes. ([AUTO](#auto))
+### 22. The infrastructure *SHOULD* _automatically scale_ when usage changes. ([AUTO](#auto))
 
 When usage of the application increases and decreases, the infrastructure automatically adjusts capacity within set limits.
 

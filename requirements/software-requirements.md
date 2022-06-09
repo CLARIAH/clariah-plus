@@ -105,8 +105,8 @@ installation. If any building/compilation is performed, then the build process
 
 Packaging for a package manager shall only be deviated from if there is no suitable
 packaging ecosystem for the software (C/C++) or if the software is not a fit
-for the packaging ecosystem, such as the software being too high-level (e.g.  a
-complex web application) and consisting of too many components for any
+for the packaging ecosystem, such as the software being too high-level (e.g. a
+web application) and consisting of too many components for any
 single packaging ecosystem. In such a case, the individual components
 should still be packaged as much as possible, and the ensemble as-a-whole
 made available through containerisation for ease of distribution and

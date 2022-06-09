@@ -6,11 +6,6 @@ author: [ David de Boer, Maarten van Gompel, Jaap Blom, Femmy Admiraal, Hennie B
 
 # Infrastructure Requirements
 
-* [Introduction](#introduction)
-* [Principles](#principles)
-* [Definitions](#definitions)
-* [Requirements](#requirements)
-
 ## Introduction
 
 This set of requirements is largely derived from [earlier work](https://github.com/netwerk-digitaal-erfgoed/requirements-infrastructure/) done in the scope of the Netwerk Digitaal Erfgoed (NDE).

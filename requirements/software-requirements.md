@@ -1,14 +1,14 @@
 ---
-title: "Technical Requirements for Software and Services"
-date: "version 1.0, June 2022"
-author: "Technical Committee"
+title: "Software and Service Requirements"
+date: "version 1.0 (CONCEPT), June 2022"
+author: [ Maarten van Gompel, David de Boer, Thomas Vermaut, Jaap Blom, Femmy Admiraal, Hennie Brugman, Mario Mieldijk, Enno Meijers, Roeland Ordelman, Ronald Siebes, Menzo Windhouwer ]
 ---
 
-# Technical Requirements for Software and Services
+# Software and Service Requirements
 
 ## Introduction
 
-This document intends to specify minimal technical requirements for CLARIAH
+This document intends to specify minimal *technical* requirements for CLARIAH
 software and software services. It is aimed at developers and external
 evaluators. It provides a minimal list of specific and directly actionable criteria to hold the software
 against. The aim is to ensure a certain level of software quality and

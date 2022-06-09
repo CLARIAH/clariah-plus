@@ -1,4 +1,10 @@
-# CLARIAH Requirements for Application Infrastructure
+---
+title: "Infrastructure Requirements"
+date: "version 1.0 (CONCEPT), June 2022"
+author: [ David de Boer, Maarten van Gompel, Jaap Blom, Femmy Admiraal, Hennie Brugman, Mario Mieldijk, Enno Meijers, Roeland Ordelman, Ronald Siebes, Thomas Vermaut, Menzo Windhouwer ]
+---
+
+# Infrastructure Requirements
 
 * [Introduction](#introduction)
 * [Principles](#principles)

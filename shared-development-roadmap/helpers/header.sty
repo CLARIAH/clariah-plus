@@ -4,23 +4,59 @@
 \usepackage{amsmath}
 \usepackage{datetime}
 \usepackage{fancyhdr}
-\usepackage{titling}
+%\usepackage{titling}
 \usepackage{graphicx}
-\pagestyle{fancy}
+\usepackage{authoraftertitle}
 \renewcommand\familydefault{\sfdefault}
-%\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
 \hypersetup{colorlinks=true,urlcolor=blue}
 
-\pretitle{%
-    \begin{center}
-    \LARGE
-    \includegraphics[width=6cm]{../shared-development-roadmap/helpers/logo.png}
-    \\[\bigskipamount]
-}
-\posttitle{\end{center}}
 
+\makeatletter\def\@maketitle{%
+  \thispagestyle{empty}
+  \null
+  \vskip 2em%
+  \begin{center}%
+  \let \footnote \thanks
+    \includegraphics[width=6cm]{../shared-development-roadmap/helpers/logo.png}
+    \vskip 1.5em%
+  {\LARGE \textbf{\@title} \par}%
+    \vskip 1.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em
+  {\large \textit{\@date}}%
+    \\
+    \vfill
+    \small
+    Developed in the CLARIAH-PLUS project, funded by the NWO under grant 184.034.023
+    \normalsize
+  \end{center}%
+  \par
+  \pagebreak\pagestyle{fancy}}
+\makeatother
+
+%\pretitle{%
+%    \thispagestyle{empty}
+%    \begin{center}
+%    \vspace{5cm}
+%    \LARGE
+%    \includegraphics[width=6cm]{../shared-development-roadmap/helpers/logo.png}
+%    \\[\bigskipamount]
+%}
+%\preauthor{\vspace{2cm}}
+%\postdate{\\\small\vspace{2cm}CLARIAH-PLUS is funded by the NWO under grant 184.034.023\end{center}\pagebreak}
+
+%NWO Grant 184.034.023
+
+
+\pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
+\fancyhead[LO,RE]{\MyTitle}
 \fancyhead[RO,LE]{\includegraphics[width=3cm]{../shared-development-roadmap/helpers/logo.png}}
 \fancyfoot[C]{\thepage}
 

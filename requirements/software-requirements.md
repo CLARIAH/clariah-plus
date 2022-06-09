@@ -1,7 +1,7 @@
 ---
 title: "Software and Service Requirements"
 date: "version 1.0 (CONCEPT), June 2022"
-author: [ Maarten van Gompel, David de Boer, Thomas Vermaut, Jaap Blom, Femmy Admiraal, Hennie Brugman, Mario Mieldijk, Enno Meijers, Roeland Ordelman, Ronald Siebes, Menzo Windhouwer ]
+author: [ Maarten van Gompel, David de Boer, Thomas Vermaut, Hayco de Jong, Jaap Blom, Femmy Admiraal, Hennie Brugman, Mario Mieldijk, Enno Meijers, Roeland Ordelman, Ronald Siebes, Menzo Windhouwer ]
 ---
 
 # Software and Service Requirements

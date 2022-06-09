@@ -1,4 +1,10 @@
-# CLARIAH Technical Requirements for Software and Services
+---
+title: "Technical Requirements for Software and Services"
+date: "version 1.0, June 2022"
+author: "Technical Committee"
+---
+
+# Technical Requirements for Software and Services
 
 ## Introduction
 

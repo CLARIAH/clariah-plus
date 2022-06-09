@@ -3,5 +3,24 @@
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{datetime}
-\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{titling}
+\usepackage{graphicx}
+\pagestyle{fancy}
+\renewcommand\familydefault{\sfdefault}
+%\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
 \hypersetup{colorlinks=true,urlcolor=blue}
+
+\pretitle{%
+    \begin{center}
+    \LARGE
+    \includegraphics[width=6cm]{../shared-development-roadmap/helpers/logo.png}
+    \\[\bigskipamount]
+}
+\posttitle{\end{center}}
+
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[RO,LE]{\includegraphics[width=3cm]{../shared-development-roadmap/helpers/logo.png}}
+\fancyfoot[C]{\thepage}
+

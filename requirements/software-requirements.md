@@ -53,7 +53,8 @@ with the licenses of the dependencies they use. Tools such as the [JLA -
 Compatibility Checker](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-compatibility-checker)
 can help identify license conflicts.
 
-See the list of [OSI-approved licenses](https://opensource.org/licenses). It is *RECOMMENDED* to pick one of the licenses mentioned under *popular licenses* there.
+The license *MUST* be one of the [OSI-approved licenses](https://opensource.org/licenses).
+The license *SHOULD* be one of the popular licenses mentioned there or [EUPL-1.2](https://opensource.org/licenses/EUPL-1.2).
 
 ### 4. The software *MUST* be released periodically with clear version numbers
 

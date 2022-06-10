@@ -197,7 +197,7 @@ Users must never get a 'certificate expired' error in their browser,
 so the infrastructure must check expirations and renew certificates automatically,
 for instance using [Let's Encrypt](https://letsencrypt.org).
 
-### 13. The infrastructure *MUST* back up all application data at an agreed upon interval and has working restore functionality. ([REL](#rel))
+### 13. The infrastructure *MUST* back up all application data from delivered Clariah services at an agreed upon interval and has working restore functionality. ([REL](#rel))
 
 Data loss is unacceptable, especially when that data has been provided by users in
 [stateful applications](#3-the-infrastructure-must-be-able-to-run-_stateful-applications_).
@@ -218,13 +218,21 @@ All infrastructure and application components (such as containers) *SHOULD* be a
 
 All software components, including the infrastructure’s OS and other packages, *MUST* be continuously updated to incorporate security patches.
 
-### 16. The infrastructure *SHOULD* support _zero-downtime deployments_. ([REL](#rel))
+
+### 16. The infrastructure *MUST* store,manage and deliver secrets and other sensitive data to application ([REL](#rel))
+
+The infrastructure authenticates, validates, authorizes and grants access to clients for accessing secrets that are needed to use or run services within the Infrastructure.  
+
+Solutions could include kubernetes Vault https://github.com/hashicorp/vault-k8s 
+
+
+### 17. The infrastructure *SHOULD* support _zero-downtime deployments_. ([REL](#rel))
 
 When new versions of the applications are deployed (requirement 9),
 this should happen without service interruption.
 Solutions include [Blue/Green](https://martinfowler.com/bliki/BlueGreenDeployment.html) or Rolling Updates.
 
-### 17. The infrastructure configuration *SHOULD* be _declared in code_. ([AUTO](#auto))
+### 18. The infrastructure configuration *SHOULD* be _declared in code_. ([AUTO](#auto))
 
 The infrastructure’s state is not the result of manual interventions (for example, running one-off commands),
 but a reflection of the configuration as it is declared in code and stored in a version control system (see also [Software Requirement 1](software-requirements.md)).
@@ -236,7 +244,7 @@ Preferably, the code is opened up to developers, so they can view it and propose
 
 (This relates to points 1 and 17 of the [Software/Service Requirements (SR)](software-requirements.md))
 
-### 18. The infrastructure *SHOULD* _capture metrics_. (Should have, [REL](#rel))
+### 19. The infrastructure *SHOULD* _capture metrics_. (Should have, [REL](#rel))
 
 Logs (requirement 5) are used to diagnose and fix problems that have already occurred.
 Metrics, on the other hand, help prevent failures.
@@ -244,30 +252,30 @@ They are values that measure the infrastructure resources and applications.
 For example by measuring CPU usage, capacity can be increased in time so user service will not be interrupted.
 Like log output (requirement 6), the metrics must be made available for reporting and analysis, preferably in a web interface.
 
-### 19. The infrastructure *SHOULD* _send alerts_. ([AUTO](#auto))
+### 20. The infrastructure *SHOULD* _send alerts_. ([AUTO](#auto))
 
 Having a centralized place to view logs (requirement 6) is only part of a monitoring solution.
 Viewing logs is pull-based, so a push mechanism for software failure notifications, on channels such as e-mail or Slack, must be added.
 The infrastructure, therefore, must have a way to send out alerts based on both logs and metrics thresholds.
 
-### 20. The application repository *SHOULD* be _open source_. ([REL](#rel))
+### 21. The application repository *SHOULD* be _open source_. ([REL](#rel))
 
 Collaboration between developers, both inside and outside the organisation, yields reliable software.
 The ability to quickly and transparently report and fix bugs engages software developers with the application.
 It is therefore best if anyone can submit issues and propose changes.
 
-### 21. The infrastructure *SHOULD* automatically configure _DNS_. ([AUTO](#auto))
+### 22. The infrastructure *SHOULD* automatically configure _DNS_. ([AUTO](#auto))
 
 Automating all steps for launching new applications (including registering new hostnames and configuring DNS records)
 makes that process more reliable.
 
-### 22. The infrastructure *SHOULD* _automatically scale_ when usage changes. ([AUTO](#auto))
+### 23. The infrastructure *SHOULD* _automatically scale_ when usage changes. ([AUTO](#auto))
 
 When usage of the application increases and decreases, the infrastructure automatically adjusts capacity within set limits.
 
 In the case of horizontal scaling (scaling in and out) this requires load-balancing the requests to the instances.
 
-### 23. The infrastructure *MAY* have an optimized way of hosting _static files_. ([REL](#rel))
+### 24. The infrastructure *MAY* have an optimized way of hosting _static files_. ([REL](#rel))
 
 If the infrastructure is able to directly serve static files, without configuring a web server first,
 this speeds up delivery.

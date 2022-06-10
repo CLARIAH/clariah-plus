@@ -197,11 +197,11 @@ Users must never get a 'certificate expired' error in their browser,
 so the infrastructure must check expirations and renew certificates automatically,
 for instance using [Let's Encrypt](https://letsencrypt.org).
 
-### 13. The infrastructure *MUST* back up all application data from deployed services at an agreed upon interval and has working restore functionality. ([REL](#rel))
+### 13. The infrastructure *MUST* back up all application data from deployed services at an agreed upon interval. ([REL](#rel))
 
 Data loss is unacceptable, especially when that data has been provided by users in
 [stateful applications](#3-the-infrastructure-must-be-able-to-run-_stateful-applications_).
-Both backup and restore functionality must be tested.
+Both backup and restore functionality *MUST* be tested.
 
 ### 14. The infrastructure *MUST* be _GDPR-compliant_, for instance in the way it stores data.
 

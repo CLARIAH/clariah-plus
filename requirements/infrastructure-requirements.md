@@ -1,7 +1,7 @@
 ---
 title: "Infrastructure Requirements"
-date: "version 1.0 (CONCEPT), June 2022"
-author: [ David de Boer, Maarten van Gompel, Jaap Blom, Femmy Admiraal, Hennie Brugman, Mario Mieldijk, Enno Meijers, Roeland Ordelman, Ronald Siebes, Thomas Vermaut, Menzo Windhouwer ]
+date: "version 1.0.1 (CONCEPT), June 2022"
+author: [ David de Boer, Maarten van Gompel, Mario Mieldijk, Jaap Blom, Femmy Admiraal, Hennie Brugman, Enno Meijers, Roeland Ordelman, Ronald Siebes, Thomas Vermaut, Menzo Windhouwer ]
 ---
 
 # Infrastructure Requirements
@@ -139,9 +139,11 @@ For the latter to work, the infrastructure must be able to persist data between 
 
 ### 4. The infrastructure *MUST* _configure applications_ through environment variables. ([SEP](#sep))
 
-Configuration values (such as database connection strings, API URLs or secrets) must be parameterized.
+Configuration values (paths, URLs, settings) must be parameterized.
 The best way to do so is with [environment variables](https://12factor.net/config), a language- and OS-agnostic standard to specify key/value pairs at a high level of granularity.
 The infrastructure must therefore support providing these environment variables to the application.
+
+Secrets (usernames, passwords, API tokens), however, *MUST NOT* be passed as unencrypted environment variables but need special treatment. See point 16.
 
 (This corresponds to point 15.3 of the [Software/Service Requirements (SR)](software-requirements.md))
 
@@ -187,7 +189,7 @@ The application remains available with as little interruption as possible.
 
 ### 11. The infrastructure *MUST* expose applications at _public HTTPS web endpoints_.
 
-CLARIAH services span a shared infrastucture over multiple partners, most services are directly intended for public consumption, therefore they must be publicly accessible over HTTPS.
+CLARIAH services span a shared infrastructure over multiple partners, most services are directly intended for public consumption, therefore they must be publicly accessible over HTTPS.
 
 (This relates to point 13.5 of the [Software/Service Requirements (SR)](software-requirements.md))
 
@@ -197,15 +199,18 @@ Users must never get a 'certificate expired' error in their browser,
 so the infrastructure must check expirations and renew certificates automatically,
 for instance using [Let's Encrypt](https://letsencrypt.org).
 
-### 13. The infrastructure *MUST* back up all application data from delivered Clariah services at an agreed upon interval and has working restore functionality. ([REL](#rel))
+### 13. The infrastructure *MUST* back up all application data from deployed services at an agreed upon interval. ([REL](#rel))
 
 Data loss is unacceptable, especially when that data has been provided by users in
 [stateful applications](#3-the-infrastructure-must-be-able-to-run-_stateful-applications_).
-Both backup and restore functionality must be tested.
+Both backup and restore functionality *MUST* be tested.
 
 ### 14. The infrastructure *MUST* be _GDPR-compliant_, for instance in the way it stores data.
 
 If the infrastructure stores personal data, for instance logs, this must be done in a GDPR-compliant manner.
+The infrastructure *MUST* store personally identifiable information (PII) only if necessary. 
+If the infrastructure stores PII, it *MUST* give users (or software applications on behalf of users) the option to remove their data
+and it *SHOULD* give users the option to download their data.
 
 (This relates to point 13.4 of the [Software/Service Requirements (SR)](software-requirements.md))
 
@@ -219,12 +224,15 @@ All infrastructure and application components (such as containers) *SHOULD* be a
 All software components, including the infrastructure’s OS and other packages, *MUST* be continuously updated to incorporate security patches.
 
 
-### 16. The infrastructure *MUST* store,manage and deliver secrets and other sensitive data to application ([REL](#rel))
+### 16. The infrastructure *MUST* store, manage and deliver secrets and other sensitive data to application ([REL](#rel))
 
-The infrastructure authenticates, validates, authorizes and grants access to clients for accessing secrets that are needed to use or run services within the Infrastructure.  
+The infrastructure authenticates, validates, authorizes and grants access to
+clients for accessing secrets (user names, passwords, API tokens) that are
+needed to use or run services within the Infrastructure, these *MUST NOT* be
+passed as unencrypted environment variables (see also point 4) as those are by nature
+prone to leak and become compromised.
 
-Solutions could include kubernetes Vault https://github.com/hashicorp/vault-k8s 
-
+Solutions *MAY* include a secrets store such as [kubernetes Vault](https://github.com/hashicorp/vault-k8s).
 
 ### 17. The infrastructure *SHOULD* support _zero-downtime deployments_. ([REL](#rel))
 

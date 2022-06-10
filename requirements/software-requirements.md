@@ -1,6 +1,6 @@
 ---
 title: "Software and Service Requirements"
-date: "version 1.0 (CONCEPT), June 2022"
+date: "version 1.0.1 (CONCEPT), June 2022"
 author: [ Maarten van Gompel, David de Boer, Thomas Vermaut, Hayco de Jong, Jaap Blom, Femmy Admiraal, Hennie Brugman, Mario Mieldijk, Enno Meijers, Roeland Ordelman, Ronald Siebes, Menzo Windhouwer ]
 ---
 
@@ -257,7 +257,7 @@ local Mac or Windows machine. Like point 6, this ensures that software *and all 
 2. The Container images *SHOULD* be as small as possible, using
    [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) and other
    [best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
-3. Configuration values (such as database connection strings or API URLs) that may vary between deployments
+3. Configuration values (software parameters) that may vary between deployments
    *MUST* be parameters to the container. This is implemented through environment variables, as this offers a generic
    , uniform and OS-agnostic way of specifying key/value pairs; i.e. an abstraction with high granularity. The infrastructure
    in turn configures all applications through such environment variables (see
@@ -265,6 +265,9 @@ local Mac or Windows machine. Like point 6, this ensures that software *and all 
    and also related to point 7). When a container starts (i.e. this *MUST* be at run-time and not at build-time), these
    variables are translated into whatever form needed for the application. Aside from the deployment-specific essentials,
    application providers themselves decide to what extent their application is configurable at run-time.
+   An important exception is the handling of secrets (usernames, passwords, API tokens) which *MUST NOT* be passed as 
+   unencrypted environment variables but for which special facilities (e.g. vaults) are needed 
+   (See point 16 of the [Infrastructure Requirements (IR)](infrastructure-requirements.md))
 4. Containers should output all log information to ``stdout`` so it can be captured by the infrastructure (see IR5 and
    IR6).
 5. Application data (state) that needs to be persistent between runs *MUST* be stored separate from the container (e.g. in a

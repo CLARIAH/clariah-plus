@@ -208,9 +208,9 @@ Both backup and restore functionality *MUST* be tested.
 ### 14. The infrastructure *MUST* be _GDPR-compliant_, for instance in the way it stores data.
 
 If the infrastructure stores personal data, for instance logs, this must be done in a GDPR-compliant manner.
-This entails, amongst others, that the infrastructure *SHOULD* give users the
-option to download all their user data and *MUST* give users the option to
-remove their data.
+The infrastructure *MUST* store personally identifiable information (PII) only if necessary. 
+If the infrastructure stores PII, it *MUST* give users (or software applications on behalf of users) the option to remove their data
+and it *SHOULD* give users the option to download their data.
 
 (This relates to point 13.4 of the [Software/Service Requirements (SR)](software-requirements.md))
 

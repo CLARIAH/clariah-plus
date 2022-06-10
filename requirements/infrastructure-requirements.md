@@ -187,7 +187,7 @@ The application remains available with as little interruption as possible.
 
 ### 11. The infrastructure *MUST* expose applications at _public HTTPS web endpoints_.
 
-CLARIAH services span a shared infrastucture over multiple partners, most services are directly intended for public consumption, therefore they must be publicly accessible over HTTPS.
+CLARIAH services span a shared infrastructure over multiple partners, most services are directly intended for public consumption, therefore they must be publicly accessible over HTTPS.
 
 (This relates to point 13.5 of the [Software/Service Requirements (SR)](software-requirements.md))
 

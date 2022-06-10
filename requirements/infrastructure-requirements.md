@@ -232,7 +232,7 @@ needed to use or run services within the Infrastructure, these *MUST NOT* be
 passed as unencrypted environment variables (see also point 4) as those are by nature
 prone to leak and become compromised.
 
-Solutions *MAY* include [kubernetes Vault](https://github.com/hashicorp/vault-k8s) or similar software.
+Solutions *MAY* include a secrets store such as [kubernetes Vault](https://github.com/hashicorp/vault-k8s).
 
 ### 17. The infrastructure *SHOULD* support _zero-downtime deployments_. ([REL](#rel))
 

@@ -1,7 +1,7 @@
 ---
 title: "Infrastructure Requirements"
 date: "version 1.0 (CONCEPT), June 2022"
-author: [ David de Boer, Maarten van Gompel, Jaap Blom, Femmy Admiraal, Hennie Brugman, Mario Mieldijk, Enno Meijers, Roeland Ordelman, Ronald Siebes, Thomas Vermaut, Menzo Windhouwer ]
+author: [ David de Boer, Maarten van Gompel, Mario Mieldijk, Jaap Blom, Femmy Admiraal, Hennie Brugman, Enno Meijers, Roeland Ordelman, Ronald Siebes, Thomas Vermaut, Menzo Windhouwer ]
 ---
 
 # Infrastructure Requirements

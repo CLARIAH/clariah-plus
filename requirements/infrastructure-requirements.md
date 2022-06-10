@@ -139,9 +139,11 @@ For the latter to work, the infrastructure must be able to persist data between 
 
 ### 4. The infrastructure *MUST* _configure applications_ through environment variables. ([SEP](#sep))
 
-Configuration values (such as database connection strings, API URLs or secrets) must be parameterized.
+Configuration values (paths, URLs, settings) must be parameterized.
 The best way to do so is with [environment variables](https://12factor.net/config), a language- and OS-agnostic standard to specify key/value pairs at a high level of granularity.
 The infrastructure must therefore support providing these environment variables to the application.
+
+Secrets (usernames, passwords, API tokens), however, *MUST NOT* be passed as unencrypted environment variables but need special treatment. See point 16.
 
 (This corresponds to point 15.3 of the [Software/Service Requirements (SR)](software-requirements.md))
 
@@ -222,12 +224,15 @@ All infrastructure and application components (such as containers) *SHOULD* be a
 All software components, including the infrastructure’s OS and other packages, *MUST* be continuously updated to incorporate security patches.
 
 
-### 16. The infrastructure *MUST* store,manage and deliver secrets and other sensitive data to application ([REL](#rel))
+### 16. The infrastructure *MUST* store, manage and deliver secrets and other sensitive data to application ([REL](#rel))
 
-The infrastructure authenticates, validates, authorizes and grants access to clients for accessing secrets that are needed to use or run services within the Infrastructure.  
+The infrastructure authenticates, validates, authorizes and grants access to
+clients for accessing secrets (user names, passwords, API tokens) that are
+needed to use or run services within the Infrastructure, these *MUST NOT* be
+passed as unencrypted environment variables (see also point 4) as those are by nature
+prone to leak and become compromised.
 
-Solutions could include kubernetes Vault https://github.com/hashicorp/vault-k8s 
-
+Solutions *MAY* include [kubernetes Vault](https://github.com/hashicorp/vault-k8s) or similar software.
 
 ### 17. The infrastructure *SHOULD* support _zero-downtime deployments_. ([REL](#rel))
 

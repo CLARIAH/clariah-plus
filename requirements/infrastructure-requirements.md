@@ -197,7 +197,7 @@ Users must never get a 'certificate expired' error in their browser,
 so the infrastructure must check expirations and renew certificates automatically,
 for instance using [Let's Encrypt](https://letsencrypt.org).
 
-### 13. The infrastructure *MUST* back up all application data from delivered Clariah services at an agreed upon interval and has working restore functionality. ([REL](#rel))
+### 13. The infrastructure *MUST* back up all application data from deployed services at an agreed upon interval and has working restore functionality. ([REL](#rel))
 
 Data loss is unacceptable, especially when that data has been provided by users in
 [stateful applications](#3-the-infrastructure-must-be-able-to-run-_stateful-applications_).

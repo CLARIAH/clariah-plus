@@ -277,6 +277,7 @@ Example:
 ```json
     "referencePublication": {
         "@type": "ScholarlyArticle",
+        "sameAs": "https://doi.org/10.1080/non.existant",
         "name": "An efficient memory-based morphosyntactic tagger and parser for Dutch",
         "author": [ "Antal van den Bosch", "Bertjan Busser", "Sander Canisius", "Walter Daelemans" ],
         "pageStart": "99",
@@ -290,6 +291,8 @@ Example:
         "url": "http://ilk.uvt.nl/downloads/pub/papers/tadpole-final.pdf"
 	}
 ```
+
+You *SHOULD* include a [DOI](https://www.doi.org/index.html) whenever possible, either as ``@id`` or using the `sameAs` property.
 
 ## Service metadata requirements
 

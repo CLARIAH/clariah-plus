@@ -242,9 +242,9 @@ developer (in `codemeta.json` or `codemeta-harvest.json`).
 * Input/Output formats and languages (WIP)
     * **TODO: This is still an [ongoing discussion](https://github.com/codemeta/codemeta/issues/188)**
 
-### 10. You *MAY* express extra vocabulary from schema.org
+### 10. You *MAY* specify screenshots/screencasts and thumbnails using existing vocabulary from schema.org and codemeta.
 
-For links to screenshots or screencasts of the application, use the [screenshot property](https://schema.org/screenshot) with a full URL.The links *MUST* use HTTPS.
+For links to screenshots or screencasts of the application, use the [screenshot property](https://schema.org/screenshot) with a full URL. The links *MUST* use HTTPS.
 
 ```json
 {
@@ -258,6 +258,37 @@ For thumbnails with for example the software's logo, use [thumbnailUrl property]
 {
     "thumbnailUrl": "https://example.org/thumbnail.jpg"
 }
+```
+
+You *MUST NOT* use other vocabularies to exclusively express these properties.
+
+### 11. Reference publications *SHOULD* be expressed
+
+If the software can be linked to one or more scholarly publications that
+describe it, then this *SHOULD* be done using codemeta's
+``referencePublication`` property, which takes a
+[schema:ScholarlyArticle](https://schema.org/ScholarlyArticle) as object. This
+enables citation of publications related to the software, which may be
+preferable in certain circumstances to direct citation of only the software
+itself.
+
+Example:
+
+```json
+    "referencePublication": {
+        "@type": "ScholarlyArticle",
+        "name": "An efficient memory-based morphosyntactic tagger and parser for Dutch",
+        "author": [ "Antal van den Bosch", "Bertjan Busser", "Sander Canisius", "Walter Daelemans" ],
+        "pageStart": "99",
+        "pageEnd": 114,
+        "isPartOf": {
+            "@type": "PublicationIssue",
+            "datePublished": "2007",
+            "name": "Selected Papers of the 17th Computational Linguistics in the Netherlands Meeting",
+            "location": "Leuven, Belgium"
+        },
+        "url": "http://ilk.uvt.nl/downloads/pub/papers/tadpole-final.pdf"
+	}
 ```
 
 ## Service metadata requirements
@@ -275,7 +306,7 @@ endpoints provide extra metadata.
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/92)**
 
-### 11. Software as a service endpoints *MUST* provide metadata
+### 12. Software as a service endpoints *MUST* provide metadata
 
 Software as a service *MUST* provide some metadata through an endpoint, at least a name, description, and provider
 (see point 11). The metadata needs not be as extensive as provided at the source code level, as by definition each
@@ -354,7 +385,7 @@ or plain HTML:
 
 As you see, the current codemeta-harvester attempts to be as flexible as possible.
 
-### 12.  Provider
+### 13.  Provider
 
 Please set the `provider` property to the `Organization` that provides the software, i.e. the institutes that makes is available as a service on their infrastructure. Note that this may be distinct from the `producer` that produces the software!
 

@@ -133,7 +133,7 @@ markdown: true
 > Estimate the overall readiness of the implementation(s) for this epic in the frontmatter. You may add any additional
 > evaluation here.
 
-end Q1 2022 - Initial propotype has been delivered
+end Q1 2022 - Initial prototype has been delivered
 
 ### Context
 

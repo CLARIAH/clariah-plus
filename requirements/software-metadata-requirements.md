@@ -195,7 +195,7 @@ The harvester is smart enough to detect terms such as *"web application"*, *"web
 or *"library"* from the `description` property of the metadata, and convert it to a more formal representation,
 effectively providing a quick shortcut to expressing interface type.
 
-The `targetProduct` property is used to tie software source code to specific instantiations of the software that are the
+The `targetProduct` property is used to tie software source code to specific instantiations of the software that are 
 the product of the source code, in some fashion. The following example illustrates three types of target products which
 are provided by the source code whose metadata is being described:
 
@@ -298,7 +298,7 @@ Specifying service metadata can be done in a variety of ways, in alignment with 
 * Register a [CLAM](https://proycon.github.io/clam/) webservice, our harvester will extract some metadata.
 * Use standard HTML `<meta>` tags to express metadata, as well as a `<title>`. Our harvester will parse and extract these as much as possible.
 
-Some examples, first of an inline JSON-LD block:
+Some examples, first of all an inline JSON-LD block:
 
 ```html
 <script type="application/ld+json">

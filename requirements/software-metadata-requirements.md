@@ -230,39 +230,7 @@ are provided by the source code whose metadata is being described:
 See the section on [service metadata requirements](#service-metadata-requirements) to understand the relation between
 software source code and service instances like web applications, web APIs and websites.
 
-### 9. Extra vocabulary *SHOULD* be expressed for CLARIAH
-
-There are a few additional metadata fields/properties and associated vocabulary that we as CLARIAH want you to use.
-These fields are expected by the portal tools that eventually present your software and they are usually not
-automatically extractable from existing metadata schemas but need to be explicitly specified by you as the tool
-developer (in `codemeta.json` or `codemeta-harvest.json`).
-
-* Research domain, research phase and others... (WIP)
-    * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/32)**
-* Input/Output formats and languages (WIP)
-    * **TODO: This is still an [ongoing discussion](https://github.com/codemeta/codemeta/issues/188)**
-
-### 10. You *MAY* specify screenshots/screencasts and thumbnails using existing vocabulary from schema.org and codemeta.
-
-For links to screenshots or screencasts of the application, use the [screenshot property](https://schema.org/screenshot) with a full URL. The links *MUST* use HTTPS.
-
-```json
-{
-    "screenshot": "https://example.org/screenshot.jpg"
-}
-```
-
-For thumbnails with for example the software's logo, use [thumbnailUrl property](https://schema.org/thumbnailUrl):
-
-```json
-{
-    "thumbnailUrl": "https://example.org/thumbnail.jpg"
-}
-```
-
-You *MUST NOT* use other vocabularies to exclusively express these properties.
-
-### 11. Reference publications *SHOULD* be expressed
+### 9. Reference publications *SHOULD* be expressed
 
 If the software can be linked to one or more scholarly publications that
 describe it, then this *SHOULD* be done using codemeta's
@@ -294,6 +262,120 @@ Example:
 
 You *SHOULD* include a [DOI](https://www.doi.org/index.html) whenever possible, either as ``@id`` or using the `sameAs` property.
 
+### 10. You *MAY* specify screenshots/screencasts and thumbnails using existing vocabulary from schema.org and codemeta.
+
+For links to screenshots or screencasts of the application, use the [screenshot property](https://schema.org/screenshot) with a full URL. The links *MUST* use HTTPS.
+
+```json
+{
+    "screenshot": "https://example.org/screenshot.jpg"
+}
+```
+
+For thumbnails with for example the software's logo, use [thumbnailUrl property](https://schema.org/thumbnailUrl):
+
+```json
+{
+    "thumbnailUrl": "https://example.org/thumbnail.jpg"
+}
+```
+
+You *MUST NOT* use other vocabularies to exclusively express these properties.
+
+## Prescribed extra vocabulary
+
+There are a few additional metadata fields/properties and associated vocabulary
+that we as CLARIAH want you to use. These fields are expected by the portal
+tools that eventually present your software and they are usually *not
+automatically extractable* from existing metadata schemas but need to be
+*explicitly* specified by you as the tool developer (in `codemeta.json` or
+`codemeta-harvest.json`). We call these *extra* vocabularies because they are
+not defined by schema.org or codemeta, but often by us in CLARIAH itself.
+
+### 11.  You *SHOULD* express input/output formats and languages
+
+When your software consumes certain a data type as input and/or produces data
+of a certain type. Then this information *SHOULD* be encoded in the metadata in accordance with the [software
+types](https://github.com/SoftwareUnderstanding/software_types) extension to
+codemeta/schema.org. This extension defines the `consumesData` and
+`producesData` properties. The range of the properties is a
+[schema:CreativeWork](https://schema.org/CreativeWork) (or any subclass),
+offering a high degree of flexibility and re-use of existing schema.org
+properties. This allows expressing content/encoding types (MIME types), but
+also natural languages.
+
+It is *RECOMMENDED* to encode this on the `targetProduct` level. Consider a
+fictitious speech recognition tool (on the command line) for English, producing
+plain text transcriptions:
+
+```json
+{
+    "@context": [
+        "https://raw.githubusercontent.com/codemeta/codemeta/2.0/codemeta.jsonld",
+        "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/13.0/schemaorgcontext.jsonld",
+        "https://w3id.org/software-types"
+    ],
+    "@type": "SoftwareSourceCode",
+    "name": "MySpeechRecognizer",
+    "codeRepository": "https://github.com/someuser/MySpeechRecognizer",
+    ...,
+    "targetProduct": [
+        {
+            "type": "CommandLineApplication",
+            "executableName": "transcribe",
+            "name": "My Speech Recognition Tool",
+            "runtimePlatform": "Linux"
+            "consumesData": {
+                "@type": "AudioObject",
+                "encodingFormat": "audio/mp3",
+                "inLanguage": {
+                     "@id": "https://iso639-3.sil.org/code/eng",
+                     "@type": "Language",
+                     "name": "English"
+                     "identifier": "eng",
+                }
+            },
+            "producesData": {
+                "@type": "TextDigitalDocument",
+                "encodingFormat": "text/plain",
+                "inLanguage": {
+                     "@id": "https://iso639-3.sil.org/code/eng",
+                     "@type": "Language",
+                     "name": "English"
+                     "identifier": "eng",
+                }
+            }
+        },
+    ]
+}
+```
+
+Note that the metadata description does not go into detail on what
+entrypoints/endpoints are used and is not a substitute for a full API
+specification. Multiple input and output types may be specified but there
+precisely relation is not captured.
+
+For the data types, we *RECOMMENDED* use of the following types available in schema.org:
+
+* [AudioObject](https://schema.org/AudioObject)
+* [VideoObject](https://schema.org/VideoObject)
+* [ImageObject](https://schema.org/ImageObject)
+* [3DModel](https://schema.org/3DModel)
+* [TextDigitalDocument](https://schema.org/TextDigitalDocument)
+* [PresentationDigitalDocument](https://schema.org/PresentationDigitalDocument)
+* [SpreadsheetDigitalDocument](https://schema.org/SpreadsheetDigitalDocument)
+* [Dataset](https://schema.org/Dataset)
+
+
+### 12.  You *SHOULD* express a technology readiness level 
+
+* **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/98)**
+
+### 13.  You *SHOULD* express a research domain and research activity
+
+* **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/32)**
+
+
 ## Service metadata requirements
 
 We have seen that providing metadata for the source code is done using `codemeta.json` (or `codemeta-harvest.json`) in
@@ -309,14 +391,14 @@ endpoints provide extra metadata.
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/92)**
 
-### 12. Software as a service endpoints *MUST* provide metadata
+### 14. Software as a service endpoints *MUST* provide metadata
 
 Software as a service *MUST* provide some metadata through an endpoint, at least a name, description, and provider
-(see point 11). The metadata needs not be as extensive as provided at the source code level, as by definition each
+(see point 19 of the [software requirements](software-requirements.md)). The metadata needs not be as extensive as provided at the source code level, as by definition each
 service is associated with some source code from which it derives most metadata. The registration in the tool source
 registry (see point 2) is what links these two.
 
-An endpoint with metadata *MUST* be publicly available with authentication barriers.
+An endpoint with metadata *MUST* be publicly available without authentication barriers.
 
 Specifying service metadata can be done in a variety of ways, in alignment with existing industry standards:
 
@@ -388,7 +470,7 @@ or plain HTML:
 
 As you see, the current codemeta-harvester attempts to be as flexible as possible.
 
-### 13.  Provider
+### 15.  Provider
 
 Please set the `provider` property to the `Organization` that provides the software, i.e. the institutes that makes is available as a service on their infrastructure. Note that this may be distinct from the `producer` that produces the software!
 

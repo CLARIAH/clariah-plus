@@ -12,14 +12,13 @@ aspectratio: 169
 
 Scholars face various challenges:
 
-1. How to get an *up to date* and *complete* overview of all tools produced in CLARIAH?
+1. How to learn what tools CLARIAH has to offer? -- How to get an *up to date* and *complete* overview of all tools produced in CLARIAH?
     * Projects like CLARIAH and predecessors (CLARIN-NL) produce a large amount of software tools
-    * Which tools are even considered CLARIAH tools? 
-    * How much legacy to carry along?
+    * Which tools are even considered CLARIAH tools? How much legacy from the past do we want to carry along?
     * Existing portals are often *incomplete* and *out of date* (e.g. CLAPOP), too reliant on manual curation
     * Existing portals cover only a single institute or a subset of CLARIAH tools
 
-## How to **NOT** get a sensible overview of all tools produced in CLARIAH?
+## How **NOT** to get a sensible overview of all tools produced in CLARIAH?
 
 Manually compiled lists, shared ad-hoc, are not sustainable:
 
@@ -27,11 +26,17 @@ Manually compiled lists, shared ad-hoc, are not sustainable:
 
 ## Existing portals are often *incomplete* and *out of date*
 
-**Why?**: rely on manual curation by a content maintainer
+**Why?**: they rely on manual curation by a content maintainer
 
 ... or they are simply down altogether:
 
 ![Portal down](down.png)
+
+## Existing portals are often *incomplete* and *out of date*
+
+**Why?**: they harvest old information from other portals. Unnecessary middle-men
+
+![Virtual Language Observatory](vlo.png)
 
 ## Existing portals only cover a single institute or a subset of tools
 
@@ -43,8 +48,8 @@ Scholars face various challenges:
 
 1. How to get an **up-to-date** and **complete** overview of all tools produced in CLARIAH?
 2. How to **identify** which tools are suitable for their needs?
-    * Relies on *accurate* metadata
-    * Software offers various interfaces, suited for particular audiences (CLI, Web application, web service, python module)
+    * Relies on availability of *accurate* and *complete* metadata
+    * Software offers various interfaces, suited for specific audiences *(e.g CLI, Web application, web service, python module)*
     * Software may be too experimental
     * Software may be unmaintained/outdated
 
@@ -60,6 +65,10 @@ Scholars will get frustrated when:
 * There's nobody who can answer support questions, fix bugs (software not maintained?)
 
 ![Frustrated user](frustrated.png)
+
+## Out Mission
+
+*Our mission:* We want to provide accurate **software metadata** so the user doesn't fall prey to these frustrations
 
 ## Our solution (1)
 

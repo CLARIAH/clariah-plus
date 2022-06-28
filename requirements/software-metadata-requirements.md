@@ -470,7 +470,7 @@ or plain HTML:
 
 As you see, the current codemeta-harvester attempts to be as flexible as possible.
 
-### 15.  Provider
+### 15. Software as a service *MUST* specify a provider
 
 Please set the `provider` property to the `Organization` that provides the software, i.e. the institutes that makes is available as a service on their infrastructure. Note that this may be distinct from the `producer` that produces the software!
 

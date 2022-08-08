@@ -107,7 +107,7 @@ if possible rather than in the `codemeta.json`. A typical `codemeta.json` file f
         "https://raw.githubusercontent.com/codemeta/codemeta/2.0/codemeta.jsonld",
         "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/13.0/schemaorgcontext.jsonld",
         "https://w3id.org/software-types",
-        "https://w3id.org/software-io"
+        "https://w3id.org/software-iodata"
     ],
     "@id": "https://example.org/mysoftware",
     "@type": "SoftwareSourceCode",
@@ -295,7 +295,7 @@ not defined by schema.org or codemeta, but often by us in CLARIAH itself.
 ### 11.  You *SHOULD* express input/output formats and languages
 
 When your software consumes certain a data type as input and/or produces data
-of a certain type. Then this information *SHOULD* be encoded in the metadata in accordance with the [software-io](https://github.com/SoftwareUnderstanding/software-io) extension to
+of a certain type. Then this information *SHOULD* be encoded in the metadata in accordance with the [software-iodata](https://github.com/SoftwareUnderstanding/software-iodata) extension to
 codemeta/schema.org. This extension defines the `consumesData` and
 `producesData` properties. The range of the properties is a
 [schema:CreativeWork](https://schema.org/CreativeWork) (or any subclass),
@@ -313,7 +313,7 @@ plain text transcriptions:
         "https://raw.githubusercontent.com/codemeta/codemeta/2.0/codemeta.jsonld",
         "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/13.0/schemaorgcontext.jsonld",
         "https://w3id.org/software-types",
-        "https://w3id.org/software-io"
+        "https://w3id.org/software-iodata"
     ],
     "@type": "SoftwareSourceCode",
     "name": "MySpeechRecognizer",
@@ -489,7 +489,7 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
         "https://raw.githubusercontent.com/codemeta/codemeta/2.0/codemeta.jsonld",
         "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/13.0/schemaorgcontext.jsonld",
         "https://w3id.org/software-types",
-        "https://w3id.org/software-io"
+        "https://w3id.org/software-iodata"
     ],
     "@id": "https://example.org/mysoftware",
     "@type": "SoftwareSourceCode",

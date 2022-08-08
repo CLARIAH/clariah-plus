@@ -355,7 +355,7 @@ entrypoints/endpoints are used and is not a substitute for a full API
 specification. Multiple input and output types may be specified but there
 precisely relation is not captured.
 
-For the data types, we *RECOMMENDED* use of the following types available in schema.org:
+For the data types, the use of the following types available in schema.org is *RECOMMENDED*:
 
 * [AudioObject](https://schema.org/AudioObject)
 * [VideoObject](https://schema.org/VideoObject)

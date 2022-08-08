@@ -224,8 +224,7 @@ are provided by the source code whose metadata is being described:
     ],
 ```
 
-**Note:** This use of `targetProduct` and the specific software interface types is an extension on top of codemeta/schema.org and not in widespread use yet. It is initially proposed in [this issue](https://github.com/codemeta/codemeta/issues/271). The software types that are not in schema.org yet are being defined in [the software types repo](https://github.com/SoftwareUnderstanding/software_types), more specifically in [this JSON-LD file](https://github.com/SoftwareUnderstanding/software_types/blob/main/software-types.jsonld). Most types are subclasses of [schema:SoftwareApplication](https://schema.org/SoftwareApplication). The property `executableName` is also additional vocabulary we created and its use is *RECOMMENDED*, it defines the executable as it can be invoked within a certain runtime-context, without any OS-specific extensions (``.exe``,``.dll``,``.so``,``.dylib``).
-
+**Note:** This use of `targetProduct` and the specific software interface types is an extension on top of codemeta/schema.org and not in widespread use yet. It is initially proposed in [this issue](https://github.com/codemeta/codemeta/issues/271). The software types that are not in schema.org yet are being defined in [the software types repo](https://github.com/SoftwareUnderstanding/software_types), more specifically in [this JSON-LD file](https://github.com/SoftwareUnderstanding/software_types/blob/main/software-types.jsonld). Most types are subclasses of [schema:SoftwareApplication](https://schema.org/SoftwareApplication). The property `executableName` is also additional vocabulary we created and its use is *RECOMMENDED*, it defines the executable filename (no full path) of the application.
 
 See the section on [service metadata requirements](#service-metadata-requirements) to understand the relation between
 software source code and service instances like web applications, web APIs and websites.
@@ -524,7 +523,6 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
         {
             "@type": "SoftwareLibrary",
             "name": "My software",
-            "executableName": "mysoftware"
         },
         {
             "@type": "WebApplication",

@@ -352,7 +352,7 @@ plain text transcriptions:
 
 Note that the metadata description does not go into detail on what
 entrypoints/endpoints are used and is not a substitute for a full API
-specification. Multiple input and output types may be specified but there
+specification. Multiple input and output types may be specified but their
 precisely relation is not captured.
 
 For the data types, the use of the following types available in schema.org is *RECOMMENDED*:

@@ -92,7 +92,7 @@ all the points in these requirements. After that is done you *MUST* add and comm
 repository. Our harvester will harvest your `codemeta.json` periodically. Tool providers *MUST* therefore ensure the
 `codemeta.json` is always kept up-to-date, especially the `version` property will by definition differ each release.
 This typically means regenerating and editing/updating it every release. As this may be cumbersome, it is *RECOMMENDED*
-to automate the regeneration part if you haved a continuous integration/deployment system. Howeveer, automating the
+to automate the regeneration part if you have a continuous integration/deployment system. However, automating the
 editing is more problematic so there is an alternative:
 
 The alternative is that tool providers *MAY* add and commit a `codemeta-harvest.json` instead of a `codemeta.json`. This `codemeta-harvest.json` file contains only the subset of what you want to add/edit on top of the automatically extracted metadata. The only disadvantage is that, unlike `codemeta.json` which is by definition complete, this requires use of our harvester on the side of the user who wants to make actual use of the full metadata.
@@ -123,7 +123,25 @@ If no `codemeta-json` nor `codemeta-harvest.json` are provided at all, which is 
 construct it on the fly, this implies that the human verification and editing stage is missing and the metadata may be
 more prone to being incorrect or incomplete.
 
-### 6. Development status *MUST* be expressed
+### 6. Basic software metadata *MUST* be expressed
+
+The following basic metadata *MUST* be expressed. That means is must be present in the ``codemeta.json`` that our harvester produces when processing your project, either because you provide an explicit `codemeta.json`, `codemeta-harvest.json`, or because the information is automatically harvestable from other metadata sources in your project. (see point 5).
+
+1. The software *MUST* have a name. This is the name for presentation purposes and must be human readable
+2. The authors of the software source code *MUST* be expressed. The authors are the main developers of the software.
+3. A maintainer *MUST* be expressed. These is the person or persons who maintain the software. (Corollary of point 12 of the [software requirements](software-requirements.md))
+4. Software *MUST* have a code repository URL. (Corollary of point 1 of the [software requirements](software-requirements.md)). The single `SoftwareSourceCode` class in your `codemeta.json` *MUST* describe exactly one such code repository. 
+
+In addition, the following basic metadata is *RECOMMENDED*:
+
+5. Software source code *SHOULD* link to a continuous integration service that builds the software and runs the software's test
+6. Contributors *SHOULD* be expressed. Contributors are everyone who contributed to the code base, no matter how minor.
+
+The following are *OPTIONAL*:
+
+7. You *MAY* express the programming language(s) used
+
+### 7. Development status *MUST* be expressed
 
 The `developmentStatus` property is defined by codemeta and expresses in what stage of development the software is. It
 communicates what level of functionality *and* what level of support the user can expect. Codemeta recommends the use of
@@ -140,7 +158,7 @@ In the `codemeta.json`, this is expressed as follows, for example:
 }
 ```
 
-### 7. A producer *SHOULD* be expressed
+### 8. A producer *SHOULD* be expressed
 
 Please set the `producer` property to the `Organization` that produced the software, i.e. the organization that employs
 the developers. Note that this may be distinct from the `provider` of the software as a service! Do not set CLARIAH as
@@ -186,7 +204,7 @@ You can keep things shorter and just express an URI, but ideally this should the
     "producer": "https://huc.knaw.nl"
 }
 ```
-### 8. An interface type *SHOULD* be expressed
+### 9. An interface type *SHOULD* be expressed
 
 Software may present various interfaces types for different kinds of use and different audiences. For instance, there are
 command-line tools, web-applications, desktop GUI tools, web APIs, software libraries and mobile apps. Such an interface
@@ -230,7 +248,7 @@ are provided by the source code whose metadata is being described:
 See the section on [service metadata requirements](#service-metadata-requirements) to understand the relation between
 software source code and service instances like web applications, web APIs and websites.
 
-### 9. Reference publications *SHOULD* be expressed
+### 10. Reference publications *SHOULD* be expressed
 
 If the software can be linked to one or more scholarly publications that
 describe it, then this *SHOULD* be done using codemeta's
@@ -262,7 +280,7 @@ Example:
 
 You *SHOULD* include a [DOI](https://www.doi.org/index.html) whenever possible, either as ``@id`` or using the `sameAs` property.
 
-### 10. You *MAY* specify screenshots/screencasts and thumbnails using existing vocabulary from schema.org and codemeta.
+### 11. You *MAY* specify screenshots/screencasts and thumbnails using existing vocabulary from schema.org and codemeta.
 
 For links to screenshots or screencasts of the application, use the [screenshot property](https://schema.org/screenshot) with a full URL. The links *MUST* use HTTPS.
 
@@ -292,7 +310,7 @@ automatically extractable* from existing metadata schemas but need to be
 `codemeta-harvest.json`). We call these *extra* vocabularies because they are
 not defined by schema.org or codemeta, but often by us in CLARIAH itself.
 
-### 11.  You *SHOULD* express input/output formats and languages
+### 12.  You *SHOULD* express input/output formats and languages
 
 When your software consumes certain a data type as input and/or produces data
 of a certain type. Then this information *SHOULD* be encoded in the metadata in accordance with the [software-iodata](https://github.com/SoftwareUnderstanding/software-iodata) extension to
@@ -367,11 +385,11 @@ For the data types, the use of the following types available in schema.org is *R
 * [Dataset](https://schema.org/Dataset)
 
 
-### 12.  You *SHOULD* express a technology readiness level 
+### 13.  You *SHOULD* express a technology readiness level 
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/98)**
 
-### 13.  You *SHOULD* express a research domain and research activity
+### 14.  You *SHOULD* express a research domain and research activity
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/32)**
 
@@ -391,7 +409,7 @@ endpoints provide extra metadata.
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/92)**
 
-### 14. Software as a service endpoints *MUST* provide metadata
+### 15. Software as a service endpoints *MUST* provide metadata
 
 Software as a service *MUST* provide some metadata through an endpoint, at least a name, description, and provider
 (see point 19 of the [software requirements](software-requirements.md)). The metadata needs not be as extensive as provided at the source code level, as by definition each
@@ -470,7 +488,7 @@ or plain HTML:
 
 As you see, the current codemeta-harvester attempts to be as flexible as possible.
 
-### 15. Software as a service *MUST* specify a provider
+### 16. Software as a service *MUST* specify a provider
 
 Please set the `provider` property to the `Organization` that provides the software, i.e. the institutes that makes is available as a service on their infrastructure. Note that this may be distinct from the `producer` that produces the software!
 

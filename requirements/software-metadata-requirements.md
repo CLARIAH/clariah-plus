@@ -19,6 +19,9 @@ interpreted as described in [RFC
 
 ## Source Code Metadata Requirements
 
+For all of the mentioned properties it in this section it holds that you *MUST
+NOT* use other vocabularies to exclusively express these properties.
+
 ### 1. Software metadata *MUST* be kept as close to the source code as possible
 
 The main principle underlying the way we keep our software metadata is that
@@ -305,7 +308,73 @@ For thumbnails with for example the software's logo, use [thumbnailUrl property]
 }
 ```
 
-You *MUST NOT* use other vocabularies to exclusively express these properties.
+### 12. System requirements *SHOULD* be expressed 
+
+Software does not exist in isolation but runs on certain hardware and is dependent on certain other software.
+The metadata should express these via the following properties. You *MAY* use any and *SHOULD* use those that are very relevant to your software's functioning:
+
+* ``runtimePlatform`` - Runtime platform or script interpreter dependencies (for example: Java 8, Python 3.10). Use the property multiple times if specifying multiple platforms.
+* ``operatingSystem`` - Operating systems supported (for example: Linux, macOS 10.6, Android, Windows 11). Use the property multiple times if specifying multiple operating systems. You *MUST NOT* add any operating systems that are only supported via virtualisation.
+* ``browserRequirements`` - Specifies browser requirements in human-readable text. For example, 'requires HTML5 support'. Used for software that is served as a web application.
+
+These schema.org properties are first and foremost meant to be informative to the user rather than machine-actionable. It is up to the software developer to determine how specific to be.
+
+* ``softwareRequirements`` - This property links software source code to other software dependencies (``SoftwareApplication`` instances), that are needed to run the software.
+
+In addition to software requirements, you *MAY* use any of the following properties to express hardware constraints, and *SHOULD* use them if they are important to your software's functioning:
+
+* ``processorRequirements`` - Processor architecture required to run the application (e.g. x86_64). May also state a minimum number of cores.
+* ``memoryRequirements``- Minimum memory requirements.
+* ``storageRequirements``- Minimum storage requirements (free disk space).
+
+We recognize that such requirements are often hard to formulate and may be very dependent on factor such as input data, parameter selection and the level of concurrency. Descriptions are textual and *MAY* add clarifications.
+
+You use these properties either directly on ``SoftwareSourceCode``, or on specific ``SoftwareApplication`` resources via ``targetProduct``, as explained in Point 9.
+
+
+Consider the following fictitious example that illustrates all of the above:
+
+```json
+{
+    "@context": [
+        "https://raw.githubusercontent.com/codemeta/codemeta/2.0/codemeta.jsonld",
+        "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/13.0/schemaorgcontext.jsonld",
+        "https://w3id.org/software-types",
+    ],
+    "@type": "SoftwareSourceCode",
+    "name": "MySpeechRecognizer",
+    "codeRepository": "https://github.com/someuser/MySpeechRecognizer",
+    ...,
+    "operatingSystem": [ "Linux", "BSD", "macOS" ],
+    "runtimePlatform": "Python >= 3.6",
+    "softwareRequirements": [
+        { 
+            "@type": "SoftwareLibrary",
+            "name": "transformers",
+            "producer": {
+                "@type": "Organization",
+                "name": "Huggingface",
+            },
+            "version": ">= 4.20",
+        },
+        { 
+            "@type": "SoftwareLibrary",
+            "name": "SciPy",
+            "version": ">= 1.8",
+        }
+    ],
+    "processorRequirements": "x86_64",
+    "memoryRequirements": "1GB",
+    "storageRequirements": "20GB (included models are large)",
+    "targetProduct": [
+        {
+            "@type": "CommandLineApplication",
+            "executableName": "transcribe",
+            "name": "My Speech Recognition Tool",
+        },
+    ]
+}
+```
 
 ## Prescribed extra vocabulary
 
@@ -317,7 +386,7 @@ automatically extractable* from existing metadata schemas but need to be
 `codemeta-harvest.json`). We call these *extra* vocabularies because they are
 not defined by schema.org or codemeta, but often by us in CLARIAH itself.
 
-### 12.  You *SHOULD* express input/output formats and languages
+### 13.  You *SHOULD* express input/output formats and languages
 
 When your software consumes certain a data type as input and/or produces data
 of a certain type. Then this information *SHOULD* be encoded in the metadata in accordance with the [software-iodata](https://github.com/SoftwareUnderstanding/software-iodata) extension to
@@ -346,7 +415,7 @@ plain text transcriptions:
     ...,
     "targetProduct": [
         {
-            "type": "CommandLineApplication",
+            "@type": "CommandLineApplication",
             "executableName": "transcribe",
             "name": "My Speech Recognition Tool",
             "runtimePlatform": "Linux"
@@ -392,11 +461,11 @@ For the data types, the use of the following types available in schema.org is *R
 * [Dataset](https://schema.org/Dataset)
 
 
-### 13.  You *SHOULD* express a technology readiness level 
+### 14.  You *SHOULD* express a technology readiness level 
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/98)**
 
-### 14.  You *SHOULD* express a research domain and research activity
+### 15.  You *SHOULD* express a research domain and research activity
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/32)**
 
@@ -416,7 +485,7 @@ endpoints provide extra metadata.
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/92)**
 
-### 15. Software as a service endpoints *MUST* provide metadata
+### 16. Software as a service endpoints *MUST* provide metadata
 
 Software as a service *MUST* provide some metadata through an endpoint, at least a name, description, and provider
 (see point 19 of the [software requirements](software-requirements.md)). The metadata needs not be as extensive as provided at the source code level, as by definition each
@@ -495,7 +564,7 @@ or plain HTML:
 
 As you see, the current codemeta-harvester attempts to be as flexible as possible.
 
-### 16. Software as a service *MUST* specify a provider
+### 17. Software as a service *MUST* specify a provider
 
 Please set the `provider` property to the `Organization` that provides the software, i.e. the institutes that makes is available as a service on their infrastructure. Note that this may be distinct from the `producer` that produces the software!
 
@@ -541,6 +610,17 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
         "givenName": "John",
         "familyName": "Doe"
     },
+    "operatingSystem": [ "Linux", "Windows", "macOS", "BSD" ],
+    "processorRequirements": [ "x84_64", "aarch64" ] ,
+    "memoryRequirements": "2GB",
+    "runtimePlatform": "Python >= 3.6",
+    "softwareRequirements": [
+        {
+            "@type": "SoftwareLibrary",
+            "name": "Some required library",
+            "version": ">= 2.3"
+        },
+    ],
     "targetProduct": [
         {
             "@type": "CommandLineApplication",

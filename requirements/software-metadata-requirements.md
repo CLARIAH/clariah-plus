@@ -390,7 +390,7 @@ If the project is funded by CLARIAH-PLUS, it should be expressed as follows in `
 ```json
     "funding": {
         "@type": "Grant",
-        "name": "CLARIAH-PLUS (grant 184.034.023)",
+        "name": "CLARIAH-PLUS (NWO grant 184.034.023)",
         "funder": {
             "@type": "Organization",
             "name": "NWO", 
@@ -401,8 +401,8 @@ If the project is funded by CLARIAH-PLUS, it should be expressed as follows in `
 
 Of course, any additional funders *SHOULD* also be acknowledged in a similar fashion. Here are some predecessors that might require acknowledgement:
 
-* CLARIAH-CORE (grant 184.033.101)
-* CLARIN-NL (grant 184.021.003)
+* CLARIAH-CORE (NWO grant 184.033.101)
+* CLARIN-NL (NWO grant 184.021.003)
 
 ## Prescribed extra vocabulary
 
@@ -672,7 +672,7 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
     ],
     "funding": {
         "@type": "Grant",
-        "name": "CLARIAH-PLUS (grant 184.034.023)",
+        "name": "CLARIAH-PLUS (NWO grant 184.034.023)",
         "funder": {
             "@type": "Organization",
             "name": "NWO", 

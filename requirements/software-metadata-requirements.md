@@ -387,7 +387,7 @@ Consider the following fictitious example that illustrates all of the above:
 
 If the project is funded by CLARIAH-PLUS, it should be expressed as follows in `codemeta.json`/`codemeta-harvest.json`:
 
-```
+```json
     "funding": {
         "@type": "Grant",
         "name": "CLARIAH-PLUS (grant 184.034.023)",
@@ -670,6 +670,15 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
             }
         }
     ],
+    "funding": {
+        "@type": "Grant",
+        "name": "CLARIAH-PLUS (grant 184.034.023)",
+        "funder": {
+            "@type": "Organization",
+            "name": "NWO", 
+            "url": "https://www.nwo.nl"
+        }
+    },
     "dateCreated": "2022-04-29T14:57:10Z+0200",
     "dateModified": "2022-04-29T14:57:10Z+0200"
 }

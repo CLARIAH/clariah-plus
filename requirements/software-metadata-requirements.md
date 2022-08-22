@@ -120,6 +120,7 @@ if possible rather than in the `codemeta.json`. A typical `codemeta.json` file f
     "codeRepository": "https://github.com/someuser/mysoftware"
 }
 ```
+
 See the [Appendix](#Appendix) for a more elaborate example.
 
 If no `codemeta-json` nor `codemeta-harvest.json` are provided at all, which is *NOT RECOMMENDED*, then our harvester will
@@ -128,22 +129,28 @@ more prone to being incorrect or incomplete.
 
 ### 6. Basic software metadata *MUST* be expressed
 
-The following basic metadata *MUST* be expressed. That means it must be present in the ``codemeta.json`` that our harvester produces when processing your project, either because you provide an explicit `codemeta.json`, `codemeta-harvest.json` yourself (see previous point 5), or because the information is automatically harvestable from other metadata sources in your project.
+The following basic metadata *MUST* be expressed. That means it must be present in the ``codemeta.json`` that our harvester produces when processing your project, either because you provide an explicit `codemeta.json`, `codemeta-harvest.json` yourself (see previous point 5), or because the information is automatically harvestable from other metadata sources in your project. The [Appendix](#Appendix) contains an elaborate `codemeta.json` example that confirms to all these points:
 
 1. The software *MUST* have a name. This is the name for presentation purposes and must be human readable
 2. The software *MUST* have a (short) description. 
 3. The authors of the software source code *MUST* be expressed. The authors are the main developers of the software.
-4. A maintainer *MUST* be expressed. These is the person or persons who maintain the software. (Corollary of point 12 of the [software requirements](software-requirements.md))
+    * If you're not using `codemeta.json` directly, then a simple text file named `AUTHORS` (at the root of your repository) with one author per line (``Full name <mail@provider.com>``) *MAY* be used.
+    * You *SHOULD* use names of individual persons rather than institutions here. Individuals can be tied to institutions via the `affiliation` property.
+4. A maintainer *MUST* be expressed. This is the person or persons who maintain the software. (Corollary of point 12 of the [software requirements](software-requirements.md))
+    * If you're not using `codemeta.json` directly, then a simple text file named `MAINTAINERS` (at the root of your repository) with one maintainer per line (``Full name <mail@provider.com>``) *MAY* be used.
+    * You *SHOULD* use names of individual persons rather than institutions here. Individuals can be tied to institutions via the `affiliation` property.
 5. Software *MUST* have a code repository URL. (Corollary of point 1 of the [software requirements](software-requirements.md)). The single `SoftwareSourceCode` class in your `codemeta.json` *MUST* describe exactly one such code repository. 
 6. Software *MUST* have a proper README (Corollary of point 2 of the [software requirements](software-requirements.md))
 7. Software *MUST* state its license (Corollary of point 3 of the [software requirements](software-requirements.md))
+    * If not expressed in 
 8. Software *MUST* state its version (Corollary of point 4 of the [software requirements](software-requirements.md))
-
 
 In addition, the following basic metadata is *RECOMMENDED*:
 
 9. Software source code *SHOULD* link to a continuous integration service that builds the software and runs the software's test (Corollary of point 9 of the [software requirements](software-requirements.md))
 10. All contributors *SHOULD* be expressed. Contributors are everyone who contributed to the code base, no matter how minor.
+    * Our harvester will automatically extract all contributors from the git history. Additionally, aside from `codemeta.json` or `codemeta-harvest.json`, a simple text file named `CONTRIBUTORS` (at the root of your repository) with one contributor per line (``Full name <mail@provider.com>``) can be used.
+    * You *SHOULD* use names of individual persons rather than institutions here. Individuals can be tied to institutions via the `affiliation` property.
 
 The following are *OPTIONAL*:
 
@@ -170,7 +177,7 @@ In the `codemeta.json`, this is expressed as follows, for example:
 
 ### 8. A producer *SHOULD* be expressed
 
-Please set the `producer` property to the `Organization` that produced the software, i.e. the organization that employs
+Please set the `producer` property to the `Organization` that produced the software, i.e. the organization(s) that employ(s)
 the developers. Note that this may be distinct from the `provider` of the software as a service! Do not set CLARIAH as
 the producer, as that is a project rather than an institute.
 
@@ -566,7 +573,7 @@ As you see, the current codemeta-harvester attempts to be as flexible as possibl
 
 ### 17. Software as a service *MUST* specify a provider
 
-Please set the `provider` property to the `Organization` that provides the software, i.e. the institutes that makes is available as a service on their infrastructure. Note that this may be distinct from the `producer` that produces the software!
+Please set the `provider` property to the `Organization` that provides the software, i.e. the institutes that makes it available as a service on their infrastructure. Note that this may be distinct from the `producer` that produces the software!
 
 Syntax is analogous to `producer` as listed before.
 

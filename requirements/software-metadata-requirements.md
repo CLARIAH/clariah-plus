@@ -383,6 +383,27 @@ Consider the following fictitious example that illustrates all of the above:
 }
 ```
 
+### 13. Funders *SHOULD* be acknowledged
+
+If the project is funded by CLARIAH-PLUS, it should be expressed as follows in `codemeta.json`/`codemeta-harvest.json`:
+
+```
+    "funding": {
+        "@type": "Grant",
+        "name": "CLARIAH-PLUS (grant 184.034.023)",
+        "funder": {
+            "@type": "Organization",
+            "name": "NWO", 
+            "url": "https://www.nwo.nl"
+        }
+    }
+```
+
+Of course, any additional funders *SHOULD* also be acknowledged in a similar fashion. Here are some predecessors that might require acknowledgement:
+
+* CLARIAH-CORE (grant 184.033.101)
+* CLARIN-NL (grant 184.021.003)
+
 ## Prescribed extra vocabulary
 
 There are a few additional metadata fields/properties and associated vocabulary
@@ -393,7 +414,7 @@ automatically extractable* from existing metadata schemas but need to be
 `codemeta-harvest.json`). We call these *extra* vocabularies because they are
 not defined by schema.org or codemeta, but often by us in CLARIAH itself.
 
-### 13.  You *SHOULD* express input/output formats and languages
+### 14.  You *SHOULD* express input/output formats and languages
 
 When your software consumes certain a data type as input and/or produces data
 of a certain type. Then this information *SHOULD* be encoded in the metadata in accordance with the [software-iodata](https://github.com/SoftwareUnderstanding/software-iodata) extension to
@@ -468,11 +489,11 @@ For the data types, the use of the following types available in schema.org is *R
 * [Dataset](https://schema.org/Dataset)
 
 
-### 14.  You *SHOULD* express a technology readiness level 
+### 15.  You *SHOULD* express a technology readiness level 
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/98)**
 
-### 15.  You *SHOULD* express a research domain and research activity
+### 16.  You *SHOULD* express a research domain and research activity
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/32)**
 
@@ -492,7 +513,7 @@ endpoints provide extra metadata.
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/92)**
 
-### 16. Software as a service endpoints *MUST* provide metadata
+### 17. Software as a service endpoints *MUST* provide metadata
 
 Software as a service *MUST* provide some metadata through an endpoint, at least a name, description, and provider
 (see point 19 of the [software requirements](software-requirements.md)). The metadata needs not be as extensive as provided at the source code level, as by definition each
@@ -571,7 +592,7 @@ or plain HTML:
 
 As you see, the current codemeta-harvester attempts to be as flexible as possible.
 
-### 17. Software as a service *MUST* specify a provider
+### 18. Software as a service *MUST* specify a provider
 
 Please set the `provider` property to the `Organization` that provides the software, i.e. the institutes that makes it available as a service on their infrastructure. Note that this may be distinct from the `producer` that produces the software!
 

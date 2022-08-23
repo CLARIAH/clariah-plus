@@ -265,7 +265,28 @@ are provided by the source code whose metadata is being described:
 See the section on [service metadata requirements](#service-metadata-requirements) to understand the relation between
 software source code and service instances like web applications, web APIs and websites.
 
-### 10. Reference publications *SHOULD* be expressed
+### 10. Documentation *SHOULD* be expressed
+
+If there is any kind of documentation available aside from the mandatory
+README, then it *SHOULD* be expressed using the ``softwareHelp`` property. 
+This is the corollary of point 11 of the [software requirements](software-requirements.md))
+A very common scenario is when the documentation is on some external website (in
+which case you can use `@type: Website`), for example:
+
+```json
+    "softwareHelp": [
+        {
+            "@id": "https://frognlp.readthedocs.io",
+            "@type": "WebSite",
+            "name": "Introduction — frog documentation",
+            "url": "https://frognlp.readthedocs.io"
+        }
+    ]
+```
+
+For scientific publications, see the next point instead.
+
+### 11. Reference publications *SHOULD* be expressed
 
 If the software can be linked to one or more scholarly publications that
 describe it, then this *SHOULD* be done using codemeta's
@@ -297,7 +318,7 @@ Example:
 
 You *SHOULD* include a [DOI](https://www.doi.org/index.html) whenever possible, either as ``@id`` or using the `sameAs` property.
 
-### 11. You *MAY* specify screenshots/screencasts and thumbnails using existing vocabulary from schema.org and codemeta.
+### 12. You *MAY* specify screenshots/screencasts and thumbnails using existing vocabulary from schema.org and codemeta.
 
 For links to screenshots or screencasts of the application, use the [screenshot property](https://schema.org/screenshot) with a full URL. The links *MUST* use HTTPS.
 
@@ -315,7 +336,7 @@ For thumbnails with for example the software's logo, use [thumbnailUrl property]
 }
 ```
 
-### 12. System requirements *SHOULD* be expressed 
+### 13. System requirements *SHOULD* be expressed 
 
 Software does not exist in isolation but runs on certain hardware and is dependent on certain other software.
 The metadata should express these via the following properties. You *MAY* use any and *SHOULD* use those that are very relevant to your software's functioning:
@@ -648,6 +669,14 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
             "name": "Some required library",
             "version": ">= 2.3"
         },
+    ],
+    "softwareHelp": [
+        {
+            "@id": "https://example.readthedocs.io",
+            "@type": "WebSite",
+            "name": "My example documentation",
+            "url": "https://example.readthedocs.io"
+        }
     ],
     "targetProduct": [
         {

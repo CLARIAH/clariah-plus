@@ -38,8 +38,11 @@ Document: https://github.com/CLARIAH/clariah-plus/blob/main/requirements/softwar
 * [codemeta-server](https://github.com/proycon/codemeta-server)
 * [CLARIAH tool discovery & source registry](https://github.com/CLARIAH/tool-discovery)
 
+Work done:
+
 * Various fixes and improvements
 * Signs of community interest; significant contributions from external contributor
+* Validation...
 
 ## Validation
 

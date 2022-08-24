@@ -663,6 +663,7 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
     "processorRequirements": [ "x84_64", "aarch64" ] ,
     "memoryRequirements": "2GB",
     "runtimePlatform": "Python >= 3.6",
+    "programmingLanguage": "Python",
     "softwareRequirements": [
         {
             "@type": "SoftwareLibrary",

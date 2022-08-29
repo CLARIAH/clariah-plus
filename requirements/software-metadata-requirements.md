@@ -344,6 +344,7 @@ The metadata should express these via the following properties. You *MAY* use an
 * ``runtimePlatform`` - Runtime platform or script interpreter dependencies (for example: Java 8, Python 3.10). Use the property multiple times if specifying multiple platforms.
 * ``operatingSystem`` - Operating systems supported (for example: Linux, macOS 10.6, Android, Windows 11). Use the property multiple times if specifying multiple operating systems. You *MUST NOT* add any operating systems that are only supported via virtualisation.
 * ``browserRequirements`` - Specifies browser requirements in human-readable text. For example, 'requires HTML5 support'. Used for software that is served as a web application.
+* ``permissions`` - Specifies permission requirements on the host OS in human-readable text. For example, 'requires camera access'. Used for software that is served as a web or mobile application.
 
 These schema.org properties are first and foremost meant to be informative to the user rather than machine-actionable. It is up to the software developer to determine how specific to be.
 
@@ -393,6 +394,7 @@ Consider the following fictitious example that illustrates all of the above:
     ],
     "processorRequirements": "x86_64",
     "memoryRequirements": "1GB",
+    "permissions": "Requires microphone access",
     "storageRequirements": "20GB (included models are large)",
     "targetProduct": [
         {

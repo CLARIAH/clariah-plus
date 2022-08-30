@@ -52,6 +52,15 @@ metadata is provided by a service endpoint and adds some information about a spe
 service. Software services may be served from multiple locations (e.g. the same software may be hosted by multiple
 institutes).
 
+When we say '*all tools*' in this context, we distinguish the following three
+tiers and do not discriminate based on interface type, intended audience,
+producer/provider, or otherwise:
+
+1. Tools built in CLARIAH-PLUS. These *MUST* all be registered and we expect a high level of compliance with regard to these software (metadata) requirements.
+2. Tools built in CLARIAH-CORE. These *MUST* all be registered and we expect a fair degree of compliance with regard to these software (metadata) requirements.
+3. Tools built in other CLARIAH-related projects. This explicitly includes predecessors like CLARIN-NL but also extends to sister projects that make use of the CLARIAH infrastructure. These *SHOULD* be registered
+and we request a certain degree of compliance with regard to our software (metadata) requirements.
+
 ### 3. Duplication of metadata *SHOULD* be avoided
 
 We make use of those existing metadata descriptions and convert them

@@ -107,8 +107,8 @@ if possible rather than in the `codemeta.json`. A typical `codemeta.json` file f
 ```json
 {
     "@context": [
-        "https://raw.githubusercontent.com/codemeta/codemeta/2.0/codemeta.jsonld",
-        "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/13.0/schemaorgcontext.jsonld",
+        "https://doi.org/10.5063/schema/codemeta-2.0",
+        "http://schema.org",
         "https://w3id.org/software-types",
         "https://w3id.org/software-iodata"
     ],
@@ -366,8 +366,8 @@ Consider the following fictitious example that illustrates all of the above:
 ```json
 {
     "@context": [
-        "https://raw.githubusercontent.com/codemeta/codemeta/2.0/codemeta.jsonld",
-        "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/13.0/schemaorgcontext.jsonld",
+        "https://doi.org/10.5063/schema/codemeta-2.0",
+        "http://schema.org",
         "https://w3id.org/software-types",
     ],
     "@type": "SoftwareSourceCode",
@@ -455,8 +455,8 @@ plain text transcriptions:
 ```json
 {
     "@context": [
-        "https://raw.githubusercontent.com/codemeta/codemeta/2.0/codemeta.jsonld",
-        "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/13.0/schemaorgcontext.jsonld",
+        "https://doi.org/10.5063/schema/codemeta-2.0",
+        "http://schema.org",
         "https://w3id.org/software-types",
         "https://w3id.org/software-iodata"
     ],

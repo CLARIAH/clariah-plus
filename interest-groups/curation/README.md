@@ -13,7 +13,7 @@ The aims of the IG on Curation are:
 ## Scope of the Interest Group
 - support the development and implementation of the FAIR Dataset registry
 - support for the creation and maintenance of documentation on data standards and vocabularies
-- support for the implementation of the FAIR guiding principles, with specific emphasis on data interoperability and reusability
+- support for the implementation of the FAIR guiding principles, working towards a set of CLARIAH Data Requirements
 - support for the development of a CLARIAH library of curation and conversion tools
 
 This IG has a strong connection to IG [Vocabularies](https://github.com/CLARIAH/clariah-plus/tree/main/interest-groups/vocabularies)
@@ -32,18 +32,12 @@ We use the following communication channels:
 - [12 May 2022, 11.00-12.00: preferred formats I](https://github.com/CLARIAH/clariah-plus/blob/32714b9471af7f06fabf0929c9f52a9e0b9ace08/interest-groups/curation/220512%20minutes.md)
 - ~~9 June 2022, 11.00-12.00: preferred formats II~~
 - 14 July 2022, 11.00-12.00: metadata models II (follow-up of the DataDay on 1 July)
-- 8 September 2022, 11.00-12.00: provenance I
-- 13 October 2022, 11.00-12.00: provenance II
-- 10 November 2022, 11.00-12.00: licenties I
-- 8 December 2022, 11.00-12.00: licenties II
-
-### Topics suggested
--  reuse and design of data models, vocabularies and ontologies
--  data provenance
--  preferred data formats
--  data ethics and privacy legislation
--  data validation and citizen science
--  the development of a toolbox / library of conversion tools
+- 30 August 2022, 10.00-12.00: Writing Sprint CLARIAH Data Requirements
+- 8 September 2022, 11.00-12.00: CLARIAH Data Requirements
+- 20 September 2022, 10.00-12.00: Writing Sprint CLARIAH Data Requirements
+- 13 October 2022, 11.00-12.00
+- 10 November 2022, 11.00-12.00
+- 8 December 2022, 11.00-12.00
 
 ## DataDays 2022
 - [22 April at DANS, The Hague](https://dans.knaw.nl/nl/agenda/clariah-datadag/)

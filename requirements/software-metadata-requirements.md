@@ -564,7 +564,7 @@ Some examples, first of all an inline JSON-LD block:
 ```html
 <script type="application/ld+json">
 {
-    "@context": "https://schema.org/",
+    "@context": "http://schema.org/",
     "@type": "WebApplication",
     "name": "My tool",
     "description": "This is a web application",
@@ -580,7 +580,7 @@ Some examples, first of all an inline JSON-LD block:
 Or using structured data embedded in HTML using [microdata](https://html.spec.whatwg.org/multipage/microdata.html):
 
 ```html
-<html itemscope itemtype="https://schema.org/WebApplication">
+<html itemscope itemtype="http://schema.org/WebApplication">
 <head>
     <title>My tool</title>
     <meta itemprop="name" content="This is a web application" />
@@ -593,7 +593,7 @@ Or using structured data embedded in HTML using [microdata](https://html.spec.wh
 or using [RDFa](https://www.w3.org/TR/rdfa-primer/):
 
 ```html
-<html vocab="https://schema.org">
+<html vocab="http://schema.org">
 <head>
     <title>My tool</title>
     <meta property="name" content="This is a web application" />
@@ -631,8 +631,8 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
 ```json
 {
     "@context": [
-        "https://raw.githubusercontent.com/codemeta/codemeta/2.0/codemeta.jsonld",
-        "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/13.0/schemaorgcontext.jsonld",
+        "https://doi.org/10.5063/schema/codemeta-2.0",
+        "http://schema.org",
         "https://w3id.org/software-types",
         "https://w3id.org/software-iodata"
     ],

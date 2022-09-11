@@ -138,7 +138,7 @@ more prone to being incorrect or incomplete.
 
 ### 6. Basic software metadata *MUST* be expressed
 
-The following basic metadata *MUST* be expressed. That means it must be present in the ``codemeta.json`` that our harvester produces when processing your project, either because you provide an explicit `codemeta.json`, `codemeta-harvest.json` yourself (see previous point 5), or because the information is automatically harvestable from other metadata sources in your project. The [Appendix](#Appendix) contains an elaborate `codemeta.json` example that confirms to all these points:
+The following basic metadata *MUST* be expressed. That means it must be present in the ``codemeta.json`` that our harvester produces when processing your project, either because you provide an explicit `codemeta.json`, `codemeta-harvest.json` yourself (see previous point 5), or because the information is automatically harvestable from other metadata sources in your project. The [Appendix](#Appendix) contains an elaborate `codemeta.json` example that conforms to all these points:
 
 1. The software *MUST* have a name. This is the name for presentation purposes and must be human readable
 2. The software *MUST* have a (short) description. 
@@ -540,7 +540,7 @@ the data already provided alongside the source code.
 Most notably, the source code does not know where and when it is deployed, i.e. who hosts it where. The link between the
 source code and the service instances comes from the [Tool Source
 Registry](https://github.com/CLARIAH/tool-discovery/tree/master/source-registry) (see point 2) and is provided by the tool
-producer/provider when registering. It may be that that is already enough information but it is possible have web
+producer/provider when registering. It may be that that is already enough information but it is possible to have web
 endpoints provide extra metadata.
 
 * **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/92)**

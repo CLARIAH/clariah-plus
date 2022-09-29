@@ -523,12 +523,97 @@ For the data types, the use of the following types available in schema.org is *R
 
 ### 15.  You *SHOULD* express a technology readiness level 
 
-* **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/98)**
+The *Technology Readiness Level* (TRL) expresses how mature or ready the
+software is, including the technological solution that the software implements.
+This is interpreted more from a user-perspective than a developer perspective.
+There is some apparent overlap with `developmentStatus`, but whereas
+`developmentStatus` places a strong focus on a *maintenance* dimension (which
+is fully absent in the TRL) and where software is in its development cycle, the
+`technologyReadinessLevel` property places more emphasis on *maturity* and
+*validation* (which is fully absent in `developmentStatus`) in scientific
+settings. 
 
-### 16.  You *SHOULD* express a research domain and research activity
+The Technology Readiness Levels are grouped into four broad stages and 10 more
+narrowly defined levels. You *MAY* point to either a stage or one of the
+levels.
 
-* **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/32)**
+* **Planning stage** *(pre-alpha)* - The technology is in an initial planning stage (pre-alpha), no implementation is available yet - `https://w3id.org/research-technology-readiness-level#Stage1Planning`
+    * *0 - Idea* - Unproven, untested and largely unformulated concept - `https://w3id.org/research-technology-readiness-level#Level0Idea`
+    * *1 - Initial Research* - Basic (scholarly) needs observed and reported - `https://w3id.org/research-technology-readiness-level#Level1InitialResearch`
+    * *2 - Concept Formulated* - Initial technology/application has been concept formulated - `https://w3id.org/research-technology-readiness-level#Level2ConceptFormulated`
+* **Proof of Concept stage** *(alpha)* - An initial proof-of-concept implementation of the technology is available (alpha). It is not mature enough for end-users yet. - `https://w3id.org/research-technology-readiness-level#Stage2ProofOfConcept`
 
+   *  *3 - Proof of Concept* - Initial Proof-of-concept of key functionality . Concept presented for initial feedback from scholarly users. Not yet validated and not suitable for end-users yet. - `https://w3id.org/research-technology-readiness-level#Level3ProofOfConcept`
+   *  *4 - Validated Proof of Concept* - Validated Proof-of-concept of key functionality. Technology validated in its own experimental setting (e.g. the lab). Not mature enough for end-users yet.- `https://w3id.org/research-technology-readiness-level#Level4ProofOfConcept`
+* **Experimental stage** *(beta)* - The technology is implemented and ready for experimental settings (beta), but requires further work and validation - `https://w3id.org/research-technology-readiness-level#Stage3Experimental`
+
+   * *5 - Early Prototype* - Technology validated in target setting (e.g. with potential end-users)- `https://w3id.org/research-technology-readiness-level#Level5EarlyPrototype`
+
+   * *6 - Late Prototype* - Technology demonstrated in target setting, end-users adopt it for testing purposes.- `https://w3id.org/research-technology-readiness-level#Level5LatePrototype`
+
+   * *7 - Release Candidate* - Technology ready enough and in initial use by end-users in intended scholarly environments. Further validation in progress. - `https://w3id.org/research-technology-readiness-level#Level7ReleaseCandidate`
+
+* **Completed stage** *(stable)* - The technology is complete, stable and deployed in production scenarios for end-users - `https://w3id.org/research-technology-readiness-level#Stage4Complete`
+   * *8 - Complete* - Technology complete and qualified, released for all end-users in scholarly environments. - `https://w3id.org/research-technology-readiness-level#Level8Complete`
+   * *9 - Proven* - Technology complete and proven in practice by real users - `https://w3id.org/research-technology-readiness-level#Level9Proven`
+
+This ontology is defined using SKOS and can be found [here](https://w3id.org/research-technology-readiness-level).
+
+You *SHOULD* pick only one of the above URIs and inject it into your codemeta as in the following example:
+
+```
+{
+    "technologyReadinessLevel": "https://w3id.org/research-technology-readiness-level#Stage3Experimental"
+}
+```
+
+If you provide no explicit TRL but do provide a `developmentStatus`, our
+automatic harvester attempts to deduce one of the first three stages from that.
+
+### 16.  You *SHOULD* express a TaDiRAH research activity as category
+
+The *research activity* is expressed using the
+[TaDiRaH](https://vocabs.dariah.eu/tadirah) ontology. This is used by the DARIAH project,
+adopted by Ineo, and formulated in SKOS. It consists of the following top-level categories:
+
+* [Analyzing](https://vocabs.dariah.eu/tadirah/analyzing)
+* [Capturing](https://vocabs.dariah.eu/tadirah/capturing)
+* [Creating](https://vocabs.dariah.eu/tadirah/creating)
+* [Disseminating](https://vocabs.dariah.eu/tadirah/disseminating)
+* [Enriching](https://vocabs.dariah.eu/tadirah/enriching)
+* [Interpreting](https://vocabs.dariah.eu/tadirah/interpreting])
+* [Storing](https://vocabs.dariah.eu/tadirah/storing)
+
+Each is subdivided into multiple subcategories (and deeper levels). Click the links above and pick from
+any of them the ones (multiple allowed) that cover your tool, preferably from
+the deeper levels, and add it as a category to your codemeta as follows. You
+*MUST* use the exact URI of the TaDiRaH concept here.
+
+```
+{
+    "applicationCategory": "https://vocabs.dariah.eu/tadirah/enriching"
+    "applicationCategory": "https://vocabs.dariah.eu/tadirah/structuralAnalysis"
+}
+```
+
+You *SHOULD* express at least one category using TaDiRaH and you *MAY* also
+express additional categories using any other vocabularies.
+
+### 17.  You *SHOULD* express a research domain as a category
+
+Research domains are also expressed using `applicationCategory` using the [NWO
+research fields vocabulary](https://www.nwo.nl/en/nwo-research-fields). A
+formal ontology (SKOS) is still in the making, look up the six-digit code (for
+instance 37.10.00 for *Software for humanities* and append it to an URI prefix
+as in the following example:
+
+```
+{
+    "applicationCategory": "https://w3id.org/nwo-research-fields#37.10.00"
+}
+```
+
+You *MAY* specify multiple research domains.
 
 ## Service metadata requirements
 
@@ -543,9 +628,8 @@ Registry](https://github.com/CLARIAH/tool-discovery/tree/master/source-registry)
 producer/provider when registering. It may be that that is already enough information but it is possible to have web
 endpoints provide extra metadata.
 
-* **TODO: This is still an [ongoing discussion](https://github.com/CLARIAH/clariah-plus/issues/92)**
 
-### 17. Software as a service endpoints *MUST* provide metadata
+### 18. Software as a service endpoints *MUST* provide metadata
 
 Software as a service *MUST* provide some metadata through an endpoint, at least a name, description, and provider
 (see point 19 of the [software requirements](software-requirements.md)). The metadata needs not be as extensive as provided at the source code level, as by definition each
@@ -624,12 +708,24 @@ or plain HTML:
 
 As you see, the current codemeta-harvester attempts to be as flexible as possible.
 
-### 18. Software as a service *MUST* specify a provider
+
+### 19. Software as a service *MUST* specify a provider
 
 Please set the `provider` property to the `Organization` that provides the software, i.e. the institutes that makes it available as a service on their infrastructure. Note that this may be distinct from the `producer` that produces the software!
 
 Syntax is analogous to `producer` as listed before.
 
+### 20. Software as a service *SHOULD* specify extra metadata if it was omitted on the source level
+
+You *MAY*  express a `technologyReadinessLevel` (point 15) and a research
+domain (point 17) and research activity (point 16) at the service metadata
+level (e.g. as properties on `schema:SoftwareApplication` or any of the
+others). Especially for `technologyReadinessLevel` this makes sense as a there
+may be service provider specific circumstances (uptime/downtime, security
+checks) that have an impact on the Technology Readiness Level.
+
+If for some reason you have not yet expressed this at the source level, then
+you *SHOULD* even express these on this service level instead.
 
 ## Appendix
 

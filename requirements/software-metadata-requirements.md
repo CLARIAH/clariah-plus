@@ -603,15 +603,45 @@ express additional categories using any other vocabularies.
 
 Research domains are also expressed using `applicationCategory` using the [NWO
 research fields vocabulary](https://www.nwo.nl/en/nwo-research-fields). A
-formal ontology (SKOS) is still in the making, look up the six-digit code (for
-instance 37.10.00 for *Software for humanities* and append it to an URI prefix
-as in the following example:
+[formal ontolology (SKOS) is
+available](https://github.com/CLARIAH/tool-discovery/blob/master/schemas/nwo-research-fields.jsonld).
+When specifying a research domain, you *MUST* specify the URI (starting with
+`https://w3id.org/nwo-research-fields#`). The quickest way to find it is by
+first picking a category from the NWO site, noting its six-digit number, and
+then looking it up in the JSON-LD file and copying the `@id` there. For example
+for *Software for humanities* (37.10.00):
 
 ```
 {
-    "applicationCategory": "https://w3id.org/nwo-research-fields#37.10.00"
+    "applicationCategory": "https://w3id.org/nwo-research-fields#SoftwareForHumanities"
 }
 ```
+
+You *MAY* pick from either the fine-grained categories (each has a six digit
+number) or from the top-level categories. The following is just a non-exhaustive excerpt of a
+few categories (with URIs) that might be relevant for CLARIAH:
+
+* **Linguistics** - `https://w3id.org/nwo-research-fields#Linguistics` - (Work Package 3)
+    * **Phonetics and phonology** - `https://w3id.org/nwo-research-fields#PhoneticsAndPhonology` 
+    * **Morphology, grammar and syntax** - `https://w3id.org/nwo-research-fields#MorphologyGrammarAndSyntax`
+    * **Computational linguistics and philology** - `https://w3id.org/nwo-research-fields#ComputationalLinguisticsAndPhilology`
+    * **Psycholinguistics and neurolinguistics** - `https://w3id.org/nwo-research-fields#PsycholinguisticsAndNeuroLinguistics`
+    * **Language teaching and acquisition** - `https://w3id.org/nwo-research-fields#LanguageTeachingAndAcquisition`
+* **History** - `https://w3id.org/nwo-research-fields#History` 
+* **Philosophy** - `https://w3id.org/nwo-research-fields#Philosophy` 
+* **Communication Science** - `https://w3id.org/nwo-research-fields#CommunicationScience` 
+* **Computer Science** - `https://w3id.org/nwo-research-fields#ComputerScience` 
+    * **Artificial intelligence, expert systems** - `https://w3id.org/nwo-research-fields#ArtificialIntelligenceExpertSystems` 
+* **Computers and the Humanities** - `https://w3id.org/nwo-research-fields#ComputersAndTheHumanities` 
+    * **Software for the Humanities** - `https://w3id.org/nwo-research-fields#SoftwareForTheHumanities` 
+    * **Textual and content analysis** - `https://w3id.org/nwo-research-fields#TextualAndContentAnalysis`  (Work Packages 3 and 6)
+    * **Textual and linguistic corpora** - `https://w3id.org/nwo-research-fields#TextualAndLinguisticCorpora` (Work Packages 3 and 6)
+    * **Databases for humanities** - `https://w3id.org/nwo-research-fields#DatabasesForHumanities`
+    * **Hypertexts and Multimedia** - `https://w3id.org/nwo-research-fields#HypertextsAndMultimedia`
+* **Music, theatre, performing arts and media** - `https://w3id.org/nwo-research-fields#MusicTheatrePerformingArtsAndMedia` (Work package 5)
+    * **Film, photography and audio-visual media** - `https://w3id.org/nwo-research-fields#FilmPhotographyAndAudioVisualMedia`
+    * **Journalism and mass communications** - `https://w3id.org/nwo-research-fields#JournalismAndMassCommunications`
+    * **Media studies** - `https://w3id.org/nwo-research-fields#MediaStudies`
 
 You *MAY* specify multiple research domains.
 

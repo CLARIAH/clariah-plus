@@ -184,6 +184,8 @@ In the `codemeta.json`, this is expressed as follows, for example:
 }
 ```
 
+In addition, we *RECOMMEND* adding a second `developmentStatus` property expressing a technology readiness level, see point 15.
+
 ### 8. A producer *SHOULD* be expressed
 
 Please set the `producer` property to the `Organization` that produced the software, i.e. the organization(s) that employ(s)
@@ -526,11 +528,11 @@ For the data types, the use of the following types available in schema.org is *R
 The *Technology Readiness Level* (TRL) expresses how mature or ready the
 software is, including the technological solution that the software implements.
 This is interpreted more from a user-perspective than a developer perspective.
-There is some apparent overlap with `developmentStatus`, but whereas
-`developmentStatus` places a strong focus on a *maintenance* dimension (which
+This is expressed using `developmentStatus`, which we have used before with the repostatus vocabulary.
+The difference between the two vocabularies is that the repostatus vocabulary places a strong focus on a *maintenance* dimension (which
 is fully absent in the TRL) and where software is in its development cycle, the
-`technologyReadinessLevel` property places more emphasis on *maturity* and
-*validation* (which is fully absent in `developmentStatus`) in scientific
+TRL vocabulary places more emphasis on *maturity* and
+*validation* in scientific
 settings. 
 
 The Technology Readiness Levels are grouped into four broad stages (1-4) and 10 more
@@ -558,12 +560,9 @@ You *SHOULD* pick only one of the above URIs and inject it into your codemeta as
 
 ```
 {
-    "technologyReadinessLevel": "https://w3id.org/research-technology-readiness-level#Stage3Experimental"
+    "developmentStatus": "https://w3id.org/research-technology-readiness-level#Stage3Experimental"
 }
 ```
-
-If you provide no explicit TRL but do provide a `developmentStatus`, our
-automatic harvester attempts to deduce one of the first three stages from that.
 
 ### 16.  You *SHOULD* express a TaDiRAH research activity as category
 
@@ -845,7 +844,6 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
     "dateModified": "2022-04-29T14:57:10Z+0200"
 }
 ```
-
 
 
 

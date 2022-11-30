@@ -35,8 +35,8 @@ We use the following communication channels:
 - 30 August 2022, 10.00-12.00: Writing Sprint CLARIAH Data Requirements
 - 8 September 2022, 11.00-12.00: CLARIAH Data Requirements
 - 20 September 2022, 10.00-12.00: Writing Sprint CLARIAH Data Requirements
-- 13 October 2022, 11.00-12.00
-- 10 November 2022, 11.00-12.00
+- ~~13 October 2022, 11.00-12.00~~
+- ~~10 November 2022, 11.00-12.00~~
 - 8 December 2022, 11.00-12.00
 
 ## DataDays 2022
@@ -54,7 +54,9 @@ We use the following communication channels:
 - Frank Uiterwaal (EHRI / NIOD)
 - Mari Wigham (Netherlands Institute for Sound and Vision)
 - Douwe Zeldenrust (Meertens Institute / KNAW Humanities Cluster)
-- Femmy Admiraal (KNAW-DANS, group coordinator)
+- ~~Femmy Admiraal (KNAW-DANS, group coordinator), change of position October 2022)~~
+- Andrea Scharnhorst (KNAW-DANS, temporary group coordinator)
+- Roosmarijn de Groot (NISV)
 
 The group is open to new members. 
 

@@ -763,7 +763,8 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
         "https://doi.org/10.5063/schema/codemeta-2.0",
         "http://schema.org",
         "https://w3id.org/software-types",
-        "https://w3id.org/software-iodata"
+        "https://w3id.org/software-iodata",
+        "https://w3id.org/research-technology-readiness-levels"
     ],
     "@id": "https://example.org/mysoftware",
     "@type": "SoftwareSourceCode",

@@ -297,7 +297,7 @@ which case you can use `@type: Website`), for example:
 
 For scientific publications, see the next point instead.
 
-### 11. Reference publications *SHOULD* be expressed
+### 11. Reference publications *SHOULD* be expressed, if any
 
 If the software can be linked to one or more scholarly publications that
 describe it, then this *SHOULD* be done using codemeta's
@@ -328,6 +328,8 @@ Example:
 ```
 
 You *SHOULD* include a [DOI](https://www.doi.org/index.html) whenever possible, either as ``@id`` or using the `sameAs` property.
+
+If there are no reference publications whatsoever then just omit this.
 
 ### 12. You *MAY* specify screenshots/screencasts and thumbnails using existing vocabulary from schema.org and codemeta.
 

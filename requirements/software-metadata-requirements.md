@@ -592,7 +592,7 @@ the deeper levels, and add it as a category to your codemeta as follows. You
 You *SHOULD* express at least one category using TaDiRaH and you *MAY* also
 express additional categories using any other vocabularies.
 
-### 17.  You *SHOULD* express a research domain as a category
+### 17.  You *SHOULD* express a research domain as a category, if applicable
 
 Research domains are also expressed using `applicationCategory` using the [NWO
 research fields vocabulary](https://www.nwo.nl/en/nwo-research-fields). A
@@ -636,7 +636,7 @@ few categories (with URIs) that might be relevant for CLARIAH:
     * **Journalism and mass communications** - `https://w3id.org/nwo-research-fields#JournalismAndMassCommunications`
     * **Media studies** - `https://w3id.org/nwo-research-fields#MediaStudies`
 
-You *MAY* specify multiple research domains.
+You *MAY* specify multiple research domains. If assigning a research domain feels entirely not applicable to your software, then you *MAY* leave it out entirely.
 
 ## Service metadata requirements
 

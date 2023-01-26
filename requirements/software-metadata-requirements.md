@@ -558,7 +558,7 @@ This ontology is defined using SKOS and can be found [here](https://w3id.org/res
 
 You *SHOULD* pick only one of the above URIs and inject it into your codemeta as in the following example, or use the appropriate badge and add it to your `README.md`:
 
-```
+```json
 {
     "developmentStatus": "https://w3id.org/research-technology-readiness-levels#Stage3Experimental"
 }
@@ -583,10 +583,9 @@ any of them the ones (multiple allowed) that cover your tool, preferably from
 the deeper levels, and add it as a category to your codemeta as follows. You
 *MUST* use the exact URI of the TaDiRaH concept here.
 
-```
+```json
 {
-    "applicationCategory": "https://vocabs.dariah.eu/tadirah/enriching"
-    "applicationCategory": "https://vocabs.dariah.eu/tadirah/structuralAnalysis"
+    "applicationCategory": [ "https://vocabs.dariah.eu/tadirah/enriching", "applicationCategory": "https://vocabs.dariah.eu/tadirah/structuralAnalysis" ]
 }
 ```
 
@@ -605,7 +604,7 @@ first picking a category from the NWO site, noting its six-digit number, and
 then looking it up in the JSON-LD file and copying the `@id` there. For example
 for *Software for humanities* (37.10.00):
 
-```
+```json
 {
     "applicationCategory": "https://w3id.org/nwo-research-fields#SoftwareForHumanities"
 }

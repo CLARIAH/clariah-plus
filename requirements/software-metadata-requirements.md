@@ -585,7 +585,7 @@ the deeper levels, and add it as a category to your codemeta as follows. You
 
 ```json
 {
-    "applicationCategory": [ "https://vocabs.dariah.eu/tadirah/enriching", "applicationCategory": "https://vocabs.dariah.eu/tadirah/structuralAnalysis" ]
+    "applicationCategory": [ "https://vocabs.dariah.eu/tadirah/enriching", "https://vocabs.dariah.eu/tadirah/structuralAnalysis" ]
 }
 ```
 

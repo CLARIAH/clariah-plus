@@ -556,7 +556,7 @@ levels. Each stage/level has a badge, it is *RECOMMENDED* to put this badge in y
    * *8 - Complete* - Technology complete and qualified, released for all end-users in scholarly environments. - `https://w3id.org/research-technology-readiness-levels#Level8Complete` - ![Technology Readiness Level 8/9 - Complete - Technology complete and qualified, released for all end-users in scholarly environments.](https://w3id.org/research-technology-readiness-levels/Level8Complete.svg)
    * *9 - Proven* - Technology complete and proven in practice by real users - `https://w3id.org/research-technology-readiness-levels#Level9Proven` - ![Technology Readiness Level 9/9 - Proven - Technology complete and proven in practise by real users](https://w3id.org/research-technology-readiness-levels/Level9Proven.svg)
 
-This ontology is defined using SKOS and can be found [here](https://w3id.org/research-technology-readiness-level).
+This ontology is defined using SKOS and can be found [here](https://w3id.org/research-technology-readiness-levels).
 
 You *SHOULD* pick only one of the above URIs and inject it into your codemeta as in the following example, or use the appropriate badge and add it to your `README.md`:
 

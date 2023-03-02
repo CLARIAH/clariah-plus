@@ -772,11 +772,13 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
     "identifier": "mysoftware",
     "name": "My Software",
     "description": "My software does nice stuff",
+    "version": "0.0.1",
     "codeRepository": "https://github.com/someuser/mysoftware",
     "url": "https://example.org/my-software-website",
     "issueTracker": "https://github.com/someuser/mysoftware/issues",
     "license": "https://spdx.org/licenses/GPL-3.0-only",
     "developmentStatus": "https://www.repostatus.org/#active",
+    "applicationCategory": [ "https://w3id.org/nwo-research-fields#SoftwareForHumanities", "https://vocabs.dariah.eu/tadirah/enriching" ],
     "author": {
         "@type": "Person",
         "givenName": "John",
@@ -797,6 +799,8 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
     "memoryRequirements": "2GB",
     "runtimePlatform": "Python >= 3.6",
     "programmingLanguage": "Python",
+    "thumbnailUrl": "https://example.org/my-logo.svg",
+    "screenshot": [ "https://example.org/screenshot1.jpg","https://example.org/screenshot2.jpg" ],
     "softwareRequirements": [
         {
             "@type": "SoftwareLibrary",
@@ -812,6 +816,21 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
             "url": "https://example.readthedocs.io"
         }
     ],
+    "referencePublication": {
+        "@type": "ScholarlyArticle",
+        "sameAs": "https://doi.org/10.1080/non.existant",
+        "name": "My awesome paper",
+        "author": [ "John Doe", "Jane Doe" ],
+        "pageStart": "99",
+        "pageEnd": 114,
+        "isPartOf": {
+            "@type": "PublicationIssue",
+            "datePublished": "1970",
+            "name": "Selected Papers of Some Awesome Conference",
+            "location": "Amsterdam, the Netherlands"
+        },
+        "url": "https://example.org/my-paper.pdf"
+	}
     "targetProduct": [
         {
             "@type": "CommandLineApplication",

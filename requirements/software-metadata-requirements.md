@@ -774,6 +774,7 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
     "description": "My software does nice stuff",
     "version": "0.0.1",
     "codeRepository": "https://github.com/someuser/mysoftware",
+    "contIntegration": "https://github.com/someuser/mysoftware/actions",
     "url": "https://example.org/my-software-website",
     "issueTracker": "https://github.com/someuser/mysoftware/issues",
     "license": "https://spdx.org/licenses/GPL-3.0-only",

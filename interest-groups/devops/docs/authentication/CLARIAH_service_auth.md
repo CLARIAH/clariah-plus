@@ -147,37 +147,71 @@ def do_login(self, oauth, redirect_user_to_uri=None):
     )
 ```
 
-When the user authenticates SATOSA calls the configured `redirect_uri`, which is handled by the following function:
+When the user authenticates SATOSA calls the configured `redirect_uri`. In case your service does not require a an Authorization Code Flow, it's enough implement `oidc_auth_redirect` like this:
 
-TODO clean up this function for this documentation
 
 ```python
+def oidc_auth_redirect(self, oauth, idp_whitelist, idp_user_whitelist):
+
+    # check if the authentication server returned an error (see NOTE 1)
+    if not __check_openid_server_error(request):
+        return __redirect_to_login_failed(  # (see NOTE 2)
+            "The authentucation server returned an error, preventing your logging in"
+        )
+
+    #TODO write some code that fetches just the user_info to check the whitelists
+```
+
+## Authorization Code Flow (ACF)
+
+To wire up the ACF, implement the `oidc_auth_redirect` along the following lines:
+
+
+```python
+# example idp_whitelist
+idp_whitelist = [
+    "https://some-idp.example.com",
+    "https://some-other-idp.example.com"
+]
+
+# example idp_user_whitelist
+idp_user_whitelist =  {
+    "https://some-idp.example.com": [
+        "user1@some-idp.example.com",
+        "user2@some-idp.example.com"
+    ]
+}
+
 # called by SATOSA after the user has tried to authenticate at the IdP
-def oidc_auth_redirect(self, oauth):
-    if not self.__check_openid_server_error(request):
-        return self.__redirect_to_login_failed(
-            "The login server returned an error preventing a successful login"
+def oidc_auth_redirect(self, oauth, idp_whitelist, idp_user_whitelist):
+
+    # check if the authentication server returned an error (see NOTE 1)
+    if not __check_openid_server_error(request):
+        return __redirect_to_login_failed(  # (see NOTE 2)
+            "The authentucation server returned an error, preventing your logging in"
         )
 
     # the user is authenticated, now request an access token for the APIs
     token = None
     try:
+        # Authlib takes care of the underlying Authorization Code Flow and returns 
+        # a token, containing namely: the access_token, refresh_token and user_info, but more as well
         token = oauth.clariah.authorize_access_token()
     except OAuthError:
-        logger.exception("Error: could not fetch initial access token")
+        logger.exception("Error: could not fetch access_token")
 
     if not token:
-        return self.__redirect_to_login_failed(
+        return __redirect_to_login_failed(
             "The server failed to fullfil your login request"
         )
 
     if not token.get("access_token", None):
-        return self.__redirect_to_login_failed(
+        return __redirect_to_login_failed(
             "The server failed to obtain an access token"
         )
 
     if not token.get("userinfo", None):
-        return self.__redirect_to_login_failed(
+        return __redirect_to_login_failed(
             "The server failed to obtain any user info"
         )
 
@@ -186,24 +220,23 @@ def oidc_auth_redirect(self, oauth):
     user_info = token["userinfo"]
     refresh_token = token["refresh_token"]
     expires_in = token["expires_in"]
-    logger.info("access_token and userinfo found, checking idp whitelist")
 
     # check if the user's idp is whitelisted
-    allowed_idp = get_allowed_user_idp(user_info, self.OIDC_IDP_WHITELIST)
+    allowed_idp = get_allowed_user_idp(user_info, idp_whitelist)
     if not allowed_idp:
-        return self.__redirect_to_login_failed(
-            "The organisation you are authenticating from is not authorized access to the CLARIAH Media Suite"
+        return __redirect_to_login_failed(
+            "The organisation you are authenticating from is not authorized to access this service"
         )
 
     # check if the user is specically whitelisted for a certain institution
     if not check_idp_user_whitelist(
-        user_info, allowed_idp, self.OIDC_IDP_USER_WHITELIST
+        user_info, allowed_idp, idp_user_whitelist
     ):
-        return self.__redirect_to_login_failed(
-            "You are not allowed to login via CLARIN please ask for dispensation via the CLARIAH project"
+        return __redirect_to_login_failed(
+            "You are not allowed to login via this organisation; please contact the service owner to request access"
         )
 
-    # all is good, make sure the user session is setup & redirect
+    # all is good, make sure to keep the vital information in the session cookie
     session["oidcIsAuthenticated"] = True
     session["access_token"] = access_token
     session["userinfo"] = user_info
@@ -211,14 +244,18 @@ def oidc_auth_redirect(self, oauth):
     session["expires_in"] = expires_in
     session["token_obtained"] = int(time())
 
-    return self.__redirect_to_requested_url()
+    # now finally redirect the user to the lastly visited page before logging in
+    return __redirect_to_requested_url()
 ```
 
+**Note 1**: The `check_openid_server_error` can be implemented with [this](https://www.oauth.com/oauth2-servers/authorization/the-authorization-response/) in mind.
+
+**Note 2**: The `__redirect_to_login_failed` function should redirect the user to a page that shows the provided string as a nicely legible message.
 
 
-## Authorization Code Flow
+### Refreshing the access_token
 
-Ensure `access_tokens` are refreshed before expiring.
+To ensure `access_tokens` are refreshed before expiring, e.g. implement:
 
 ```python
 # see https://flask.palletsprojects.com/en/1.1.x/api/ (this will make sessions expire after 31 days)
@@ -238,3 +275,4 @@ def make_session_permanent():
 
 - [auth0.com: Authorization Code Flow](https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow)
 - [openid.net: Authorization Code Flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth)
+- [Considerations concerning the access_token_lifetime](https://www.oauth.com/oauth2-servers/access-tokens/access-token-lifetime/)

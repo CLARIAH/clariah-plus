@@ -1,59 +1,69 @@
 # STAM: Stand-off Text Annotation Model
 
-## Objective
+## Introduction
 
-1. We want to formulate a *simple* but *powerful* base model for text annotation,
-   the model provides a foundation to efficiently encode all kinds of annotations on text.
+![Logo](https://raw.githubusercontent.com/annotation/stam/master/logo.svg)
 
-    * *separation from semantics*: We want the base model to be agnostic with regard to vocabulary and annotation paradigm: 
-    * *separation from syntax*: We want a simple format (JSON, CSV) to express the model (serialisation), but the model does not depend on any single serialisation.
-    * *separation from implementation*: Although we aim for a complete reference implementation, the model itself should be formulated independently in a clear and simple specification.
-    * *separation from dependencies*: We want a model that does not depend on further complex models. We do want to support 
-      transformations to established models like RDF and W3C Web Annotations.
-    * the core model is deliberately kept as minimal as necessary, extras are formulated as *extensions*.
+## Objective (1/2)
 
-## Objective (2)
+1. We want to formulate a *simple and minimal* **data model** for **stand-off** annotation on **text**.
+   The model provides a foundation to efficiently encode all kinds of annotations on text.
 
-2. We want a *reusable* implementation for working with annotations on text.
+>   * **separation from semantics**: We want the data model to be *agnostic* with regard to vocabulary and annotation paradigm.
+>   * **separation from syntax**: We want a simple format (JSON, CSV) to express the model (serialisation), but the model does not depend on any single serialisation.
+>   * **separation from implementation**: Although we aim for a complete reference implementation, the model itself should be formulated independently in a clear and simple specification.
+>   * **separation from dependencies**: We want a model that does *not depend* on further complex models. We do want to support 
+>     transformations to established models like RDF and W3C Web Annotations.
+>   * the core model is deliberately kept as minimal as necessary, extras are formulated as **extensions**.
+
+## Motivation
+
+**Q:** Why a new model? What about W3C Web Annotations? LAF? etc?
+
+* Not minimal, high complexity (W3C Web Annotations, TEI, FoLIA)
+    * Tied to a serialisation format (TEI, FoLiA)
+    * Tied to vocabularies (TEI, FoLiA)
+* Too academic/generic, no actual tooling (LAF)
+
+STAM is *NOT* a substitute for any of these, it is merely a foundational model in which others can be expressed.
+
+## Core Data Model
+
+![Core Model](https://raw.githubusercontent.com/annotation/stam/master/coremodel_schema.png)
+
+## Objective (2/2)
+
+2. We want a **reusable implementation** for working with annotations on text.
    On top of this more specific applications can be implemented. It should
    implement a wide variety of operations that are common on stand-off annotated text.
 
-    * We want an *efficient* and *performant* implementation. Let's implement all the core logic once and as well as we can.
-    * We do not want any heavy dependencies. The implementation should run on a wide variety of systems and be independent of any wider service infrastructure (including CLARIAH's!): It should not depend on any software services.
-    * We want a programming library as well as simple command-line tools for basic operations. 
+>   * We want an **efficient** and **performant** implementation. Let's implement all the core logic once in a performant low-level language (Rust) and as well as we can.
+>   * We do not want any heavy dependencies. The implementation should run on a wide variety of systems and be independent of any wider service infrastructure (including CLARIAH's!): It should not depend on any software services.
+>   * We want a programming library as well as simple command-line tools for basic operations. 
 
 ## Use-cases (1)
 
-* As a researcher, You want a simple model to express annotation on text
-    * you want complete freedom to use whatever vocabulary/annotation paradigm you see fit; either existing vocabularies or newly designed ones.
-* As a researcher, you want to move from a simpler annotation model to a more formal model like web annotations -  STAM acts as a pivot model
-* As a researcher/data scientist - You want to do low-level search on text and annotations without requiring complex infrastructure.
-    * you want to find annotations based on relations like overlap, embedding, adjacency etc
-    * you want to find annotations based on the content of the annotation
-    * you want to find annotations based on text
-    * you want to find/convert/compute offset information
+> * As a researcher, You want a simple model to express annotation on text
+>    * you want complete freedom to use whatever vocabulary/annotation paradigm you see fit; either existing vocabularies or newly designed ones.
+> * As a researcher, you want to move from a simpler annotation model to a more formal model like web annotations -  STAM acts as a pivot model
+> * As a researcher/data scientist - You want to do low-level search on text and annotations without requiring complex infrastructure.
+>    * you want to find annotations based on relations like overlap, embedding, adjacency etc
+>    * you want to find annotations based on the content of the annotation
+>    * you want to find annotations based on text
+>    * you want to find/convert/compute offset information
 
 ## Use-cases (2)
 
-* As a researcher/data scientist, you want to do basic low-level manipulation on text and annotations without requiring complex infrastructure
-* As a researcher/data scientist, you want to quickly ingest annotation data from simple JSON, CSV formats.
-* As a developer, you want a programming library that you can use to build an application handling stand-off annotation on text.
-* As a development team, you don't want to implement similar base logic for annotations over an over again in different applications.
-* As CLARIAH WP3, we want to facilitate conversion paths for CLARIAH formats like FoLiA XML and ubiquitous 3rd party formats like TEI, so they can be more comfortably used with other tools in the infrastructure that converge more towards stand-off annotation and linked open data.
+> * As a researcher/data scientist, you want to do basic low-level manipulation on text and annotations without requiring complex infrastructure
+> * As a researcher/data scientist, you want to quickly ingest annotation data from simple JSON, CSV formats.
+> * As a developer, you want a programming library that you can use to build an application handling stand-off annotation on text.
+> * As a development team, you don't want to implement similar base logic for annotations over an over again in different applications.
+> * As CLARIAH WP3, we want to facilitate conversion paths for CLARIAH formats like FoLiA XML and ubiquitous 3rd party formats like TEI, so they can be more comfortably used with other tools in the infrastructure that converge more towards stand-off annotation and linked open data.
 
-## The Model
 
-* An **Annotation** says something about a target that it *selects* and associates (one or more) **AnnotationData**.
-* **AnnotationData** consists of a **DataKey** and a **DataValue**.
-* The **DataKey** is a field in whatever vocabulary .
-* The **DataValue** is typed (string, integer, etc...
-* A **TextResource** holds a text.
-* An **AnnotationDataSet** holds **DataKeys** and **AnnotationData**, it essentially represents a *vocabulary*. 
-* An **AnnotationStore** holds **Annotations**, **AnnotationDataSets**, **TextResources**. It is essentially the *workspace*
+## Model Example
 
-The model is set up in such a way that there is as good as no
-duplication/redundancy in the representation. Making it space-efficient to
-implement.
+![Example A (overview)](examples/example_a_overview.svg)
 
 ## Limitations
 

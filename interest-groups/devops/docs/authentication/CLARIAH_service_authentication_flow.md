@@ -33,7 +33,7 @@ The code below shows how the flow is implemented in the Media Suite (in Python)
 
 ### Request a code
 
-```
+```python
 def request_code(self):
     params = {
         'client_id' : '[OIDC CLIENT ID]',
@@ -61,7 +61,7 @@ Note that by providing the `claims` this way, you're asking the auth server to g
 
 ### When receiving the code (via redirect_uri)
 
-```
+```python
 """
 {
     'access_token': '5949566e577445ac9f3cf3ac689971f1',
@@ -127,7 +127,7 @@ def redirect_uri(self):
 
 ### Request an access token with the code
 
-```
+```python
     def request_token(self, code):
         self.logger.info('requesting token with code %s' % code)
         client_auth = requests.auth.HTTPBasicAuth(
@@ -152,7 +152,7 @@ def redirect_uri(self):
 
 ### Request the user info/attributes
 
-```
+```python
 """
     {
         "edupersontargetedid": [

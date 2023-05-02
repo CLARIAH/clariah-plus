@@ -26,8 +26,8 @@ consulted via GitHub.
 * [Technical Committee](technical-committee/) -  Output of the Technical Advisory Committee as a whole (including proceedings).
 * [Task Descriptions](task-descriptions/) - Task descriptions of tasks that are being conducted within Work Packages (primarily used by WP3 only)
 * Documentation:
-    * [CLARIAH Authentication](interest-groups/devops/authentication/authentication_clariah_nl.md)
-    * [Connect service to CLARIAH/CLARIN authentication](interest-groups/devops/authentication/CLARIAH_service_authentication_flow.md)
+    * [CLARIAH Authentication](interest-groups/devops/docs/authentication/authentication_clariah_nl.md)
+    * [Connect service to CLARIAH/CLARIN authentication](interest-groups/devops/docs/authentication/CLARIAH_service_authentication_flow.md)
 * [Use cases](use-cases/) - Use cases that have been collected CLARIAH-wide
 
 ## Motivation

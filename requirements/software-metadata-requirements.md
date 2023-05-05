@@ -428,9 +428,9 @@ If the project is funded by CLARIAH-PLUS, it should be expressed as follows in `
         "@type": "Grant",
         "name": "CLARIAH-PLUS (NWO grant 184.034.023)",
         "funder": {
+            "@id": "https://www.nwo.nl",
             "@type": "Organization",
-            "name": "NWO", 
-            "url": "https://www.nwo.nl"
+            "name": "NWO"
         }
     }
 ```
@@ -857,9 +857,9 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
         "@type": "Grant",
         "name": "CLARIAH-PLUS (NWO grant 184.034.023)",
         "funder": {
+            "@id": "https://www.nwo.nl",
             "@type": "Organization",
-            "name": "NWO", 
-            "url": "https://www.nwo.nl"
+            "name": "NWO"
         }
     },
     "dateCreated": "2022-04-29T14:57:10Z+0200",

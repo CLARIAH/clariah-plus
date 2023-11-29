@@ -125,16 +125,16 @@
        transform="translate(-0.79241439,-0.18569552)"><tspan
          x="144.92128"
          y="106.40366"
-         id="tspan9"><tspan
+         id="tspan5"><tspan
    style="font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans'"
-   id="tspan7">Rule-based tokeniser for various languages, with</tspan><tspan
+   id="tspan3">Rule-based tokeniser for various languages, with</tspan><tspan
    y="106.40366"
-   id="tspan14"> </tspan></tspan><tspan
+   id="tspan11"> </tspan></tspan><tspan
          x="144.92128"
          y="115.99745"
-         id="tspan22"><tspan
+         id="tspan23"><tspan
            style="font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans'"
-           id="tspan21">FoLiA XML support</tspan></tspan></text>
+           id="tspan20">FoLiA XML support</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:3.48116px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';text-align:start;text-anchor:start;fill:#445500;stroke-width:0.200025"
@@ -191,14 +191,14 @@
     <text
        xml:space="preserve"
        style="font-style:italic;font-size:7.76111px;line-height:4.31712px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';fill:#800080;stroke-width:0.200025"
-       x="216.08441"
-       y="179.02998"
+       x="186.36655"
+       y="167.0827"
        id="text4-0-4"><tspan
          sodipodi:role="line"
          id="tspan4-6-4"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:4.31712px;font-family:'SauceCodePro Nerd Font';-inkscape-font-specification:'SauceCodePro Nerd Font';fill:#800000;stroke-width:0.200025"
-         x="216.08441"
-         y="179.02998">pip install ucto</tspan></text>
+         x="186.36655"
+         y="167.0827">pip install python-ucto</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:italic;font-size:9.87778px;line-height:5.49452px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';fill:#800080;stroke-width:0.200025"

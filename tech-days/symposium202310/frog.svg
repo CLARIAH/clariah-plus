@@ -153,7 +153,7 @@
        id="text11"><tspan
          sodipodi:role="line"
          id="tspan11"
-         style="stroke-width:0.200025"></tspan></text>
+         style="stroke-width:0.200025" /></text>
     <text
        xml:space="preserve"
        style="font-size:11.2889px;line-height:9.59379px;font-family:Monospace;-inkscape-font-specification:Monospace;text-align:center;text-anchor:middle;white-space:pre;inline-size:264.294;display:inline;fill:#225500;stroke-width:0.200025"
@@ -162,22 +162,22 @@
        id="text1-7"><tspan
          x="144.92128"
          y="106.40366"
-         id="tspan7"><tspan
+         id="tspan21"><tspan
            style="font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans'"
-           id="tspan3">Dutch PoS-tagger, lemmatiser, NER, shallow parser,
+           id="tspan14">Dutch PoS-tagger, lemmatiser, NER, shallow parser,
 </tspan></tspan><tspan
          x="144.92128"
          y="115.99745"
-         id="tspan23"><tspan
-           style="font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans'"
-           id="tspan9">dependency parser, morphological analysis, with</tspan><tspan
-           y="115.99745"
-           id="tspan24"> </tspan></tspan><tspan
+         id="tspan27"><tspan
+   style="font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans'"
+   id="tspan22">dependency parser, morphological analysis, with</tspan><tspan
+   y="115.99745"
+   id="tspan28"> </tspan></tspan><tspan
          x="144.92128"
          y="125.59124"
-         id="tspan26"><tspan
+         id="tspan30"><tspan
            style="font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans'"
-           id="tspan25">FoLiA XML support</tspan></tspan></text>
+           id="tspan29">FoLiA XML support</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:3.48116px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';text-align:start;text-anchor:start;fill:#445500;stroke-width:0.200025"
@@ -247,14 +247,14 @@
     <text
        xml:space="preserve"
        style="font-style:italic;font-size:7.76111px;line-height:4.31712px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';fill:#800080;stroke-width:0.200025"
-       x="216.87683"
-       y="179.21568"
+       x="185.80455"
+       y="168.10693"
        id="text4-0-4"><tspan
          sodipodi:role="line"
          id="tspan4-6-4"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:4.31712px;font-family:'SauceCodePro Nerd Font';-inkscape-font-specification:'SauceCodePro Nerd Font';fill:#800000;stroke-width:0.200025"
-         x="216.87683"
-         y="179.21568">pip install frog</tspan></text>
+         x="185.80455"
+         y="168.10693">pip install python-frog</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777px;line-height:5.49452px;font-family:'SauceCodePro Nerd Font';-inkscape-font-specification:'SauceCodePro Nerd Font';text-align:start;text-anchor:start;fill:#800000;stroke-width:0.200025"
@@ -263,7 +263,7 @@
        id="text20"><tspan
          sodipodi:role="line"
          id="tspan20"
-         style="stroke-width:0.200025"></tspan></text>
+         style="stroke-width:0.200025" /></text>
     <text
        xml:space="preserve"
        style="font-style:italic;font-size:9.87778px;line-height:5.49452px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';fill:#800080;stroke-width:0.200025"

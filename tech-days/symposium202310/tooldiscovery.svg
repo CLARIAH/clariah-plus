@@ -24,11 +24,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="3.3638608"
-     inkscape:cx="765.04354"
-     inkscape:cy="439.67336"
-     inkscape:window-width="3840"
-     inkscape:window-height="2131"
+     inkscape:zoom="1.1893044"
+     inkscape:cx="765.15314"
+     inkscape:cy="439.75285"
+     inkscape:window-width="1719"
+     inkscape:window-height="555"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -4279,5 +4279,17 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;fill:#000000;fill-opacity:1;stroke:#cccccc;stroke-width:0.106035px;stroke-opacity:1"
          x="249.84126"
          y="166.31502">codemeta2html</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.39312px;line-height:1.69656px;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#cccccc;stroke-width:0.106035px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="209.0267"
+       y="32.405052"
+       id="text98512-8-0-6-2"
+       transform="rotate(26.346084)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;fill:#000000;fill-opacity:1;stroke:#cccccc;stroke-width:0.106035px;stroke-opacity:1"
+         x="209.0267"
+         y="32.405052"
+         id="tspan103808-7">ineo-collaboration</tspan></text>
   </g>
 </svg>

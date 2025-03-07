@@ -116,7 +116,7 @@ if possible rather than in the `codemeta.json`. A typical `codemeta.json` file f
 ```json
 {
     "@context": [
-        "https://w3id.org/codemeta/v3.0",
+        "https://w3id.org/codemeta/3.0",
         "http://schema.org",
         "https://w3id.org/software-types",
         "https://w3id.org/software-iodata"
@@ -380,7 +380,7 @@ Consider the following fictitious example that illustrates all of the above:
 ```json
 {
     "@context": [
-        "https://w3id.org/codemeta/v3.0",
+        "https://w3id.org/codemeta/3.0",
         "http://schema.org",
         "https://w3id.org/software-types",
     ],
@@ -469,7 +469,7 @@ plain text transcriptions:
 ```json
 {
     "@context": [
-        "https://w3id.org/codemeta/v3.0",
+        "https://w3id.org/codemeta/3.0",
         "http://schema.org",
         "https://w3id.org/software-types",
         "https://w3id.org/software-iodata"
@@ -762,7 +762,7 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
 ```json
 {
     "@context": [
-        "https://w3id.org/codemeta/v3.0",
+        "https://w3id.org/codemeta/3.0",
         "http://schema.org",
         "https://w3id.org/software-types",
         "https://w3id.org/software-iodata",

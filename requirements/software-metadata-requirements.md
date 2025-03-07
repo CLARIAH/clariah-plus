@@ -116,7 +116,7 @@ if possible rather than in the `codemeta.json`. A typical `codemeta.json` file f
 ```json
 {
     "@context": [
-        "https://doi.org/10.5063/schema/codemeta-2.0",
+        "https://w3id.org/codemeta/v3.0",
         "http://schema.org",
         "https://w3id.org/software-types",
         "https://w3id.org/software-iodata"
@@ -242,12 +242,12 @@ The harvester is smart enough to detect terms such as *"web application"*, *"web
 or *"library"* from the `description` property of the metadata, and convert it to a more formal representation,
 effectively providing a quick shortcut to expressing interface type.
 
-The `targetProduct` property is used to tie software source code to specific instantiations of the software that are 
-the product of the source code, in some fashion. The following example illustrates three types of target products which
+The `isSourceCodeOf` property is used to tie software source code to specific instantiations of the software that are 
+the product of the source code, in some fashion. The following example illustrates three types of software which
 are provided by the source code whose metadata is being described:
 
 ```json
-    "targetProduct": [
+    "isSourceCodeOf": [
         {
             "@type": "CommandLineApplication",
             "name": "My software",
@@ -271,7 +271,8 @@ are provided by the source code whose metadata is being described:
     ],
 ```
 
-**Note:** This use of `targetProduct` and the specific software interface types is an extension on top of codemeta/schema.org and not in widespread use yet. It is initially proposed in [this issue](https://github.com/codemeta/codemeta/issues/271). The software types that are not in schema.org yet are being defined in [the software types repo](https://github.com/SoftwareUnderstanding/software_types), more specifically in [this JSON-LD file](https://github.com/SoftwareUnderstanding/software_types/blob/main/software-types.jsonld). Most types are subclasses of [schema:SoftwareApplication](https://schema.org/SoftwareApplication). The property `executableName` is also additional vocabulary we created and its use is *RECOMMENDED*, it defines the executable filename (no full path) of the application.
+**Note:** This use of `isSourceCodeOf` in combination with specific software interface types is an extension on top of codemeta/schema.org and not in widespread use yet. It is initially proposed in [this issue](https://github.com/codemeta/codemeta/issues/271). The software types that are not in schema.org yet are being defined in [the software types repo](https://github.com/SoftwareUnderstanding/software_types), more specifically in [this JSON-LD file](https://github.com/SoftwareUnderstanding/software_types/blob/main/software-types.jsonld). Most types are subclasses of [schema:SoftwareApplication](https://schema.org/SoftwareApplication). The property `executableName` is also additional vocabulary we created and its use is *RECOMMENDED*, it defines the executable filename (no full path) of the application. In Codemeta v2, we used ``schema:targetProduct`` instead of ``codemeta:isSourceCode``, which got introduced in codemeta 3.0. The codemeta harvesting software for CLARIAH will automatically convert the former into the latter.
+
 
 See the section on [service metadata requirements](#service-metadata-requirements) to understand the relation between
 software source code and service instances like web applications, web APIs and websites.
@@ -371,7 +372,7 @@ In addition to software requirements, you *MAY* use any of the following propert
 
 We recognize that such requirements are often hard to formulate and may be very dependent on factor such as input data, parameter selection and the level of concurrency. Descriptions are textual and *MAY* add clarifications.
 
-You use these properties either directly on ``SoftwareSourceCode``, or on specific ``SoftwareApplication`` resources via ``targetProduct``, as explained in Point 9.
+You use these properties either directly on ``SoftwareSourceCode``, or on specific ``SoftwareApplication`` resources via ``isSourceCodeOf``, as explained in Point 9.
 
 
 Consider the following fictitious example that illustrates all of the above:
@@ -379,7 +380,7 @@ Consider the following fictitious example that illustrates all of the above:
 ```json
 {
     "@context": [
-        "https://doi.org/10.5063/schema/codemeta-2.0",
+        "https://w3id.org/codemeta/v3.0",
         "http://schema.org",
         "https://w3id.org/software-types",
     ],
@@ -409,7 +410,7 @@ Consider the following fictitious example that illustrates all of the above:
     "memoryRequirements": "1GB",
     "permissions": "Requires microphone access",
     "storageRequirements": "20GB (included models are large)",
-    "targetProduct": [
+    "isSourceCodeOf": [
         {
             "@type": "CommandLineApplication",
             "executableName": "transcribe",
@@ -461,14 +462,14 @@ offering a high degree of flexibility and re-use of existing schema.org
 properties. This allows expressing content/encoding types (MIME types), but
 also natural languages.
 
-It is *RECOMMENDED* to encode this on the `targetProduct` level. Consider a
+It is *RECOMMENDED* to encode this on the application level via `isSourceCodeOf`. Consider a
 fictitious speech recognition tool (on the command line) for English, producing
 plain text transcriptions:
 
 ```json
 {
     "@context": [
-        "https://doi.org/10.5063/schema/codemeta-2.0",
+        "https://w3id.org/codemeta/v3.0",
         "http://schema.org",
         "https://w3id.org/software-types",
         "https://w3id.org/software-iodata"
@@ -477,7 +478,7 @@ plain text transcriptions:
     "name": "MySpeechRecognizer",
     "codeRepository": "https://github.com/someuser/MySpeechRecognizer",
     ...,
-    "targetProduct": [
+    "isSourceCodeOf": [
         {
             "@type": "CommandLineApplication",
             "executableName": "transcribe",
@@ -761,7 +762,7 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
 ```json
 {
     "@context": [
-        "https://doi.org/10.5063/schema/codemeta-2.0",
+        "https://w3id.org/codemeta/v3.0",
         "http://schema.org",
         "https://w3id.org/software-types",
         "https://w3id.org/software-iodata",
@@ -774,7 +775,7 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
     "description": "My software does nice stuff",
     "version": "0.0.1",
     "codeRepository": "https://github.com/someuser/mysoftware",
-    "contIntegration": "https://github.com/someuser/mysoftware/actions",
+    "continuousIntegration": "https://github.com/someuser/mysoftware/actions",
     "url": "https://example.org/my-software-website",
     "issueTracker": "https://github.com/someuser/mysoftware/issues",
     "license": "https://spdx.org/licenses/GPL-3.0-only",
@@ -832,7 +833,7 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
         },
         "url": "https://example.org/my-paper.pdf"
 	}
-    "targetProduct": [
+    "isSourceCodeOf": [
         {
             "@type": "CommandLineApplication",
             "name": "My software",
@@ -866,7 +867,6 @@ This is an example of a codemeta JSON-LD file which you can use as a template or
     "dateModified": "2022-04-29T14:57:10Z+0200"
 }
 ```
-
 
 
 
